@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISION IMAGE DOWNLOADER - official Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="is-initializing">
+
+    <!-- Background Visual Elements -->
+    <div class="bg-elements">
+        <div class="bg-glow blob-1"></div>
+        <div class="bg-glow blob-2"></div>
+        <div class="bg-glow blob-3"></div>
+        <!-- Giant Abstract Geometry -->
+        <div class="bg-geometry">
+            <div class="wireframe-ring">
+                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="500" cy="500" r="450" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.3" />
+                    <circle cx="500" cy="500" r="400" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.2" />
+                    <circle cx="500" cy="500" r="350" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.15" />
+                    <ellipse cx="500" cy="500" rx="480" ry="200" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.3" transform="rotate(45 500 500)" />
+                    <ellipse cx="500" cy="500" rx="480" ry="200" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.3" transform="rotate(-45 500 500)" />
+                    <ellipse cx="500" cy="500" rx="480" ry="100" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.15" transform="rotate(20 500 500)" />
+                    <ellipse cx="500" cy="500" rx="480" ry="100" fill="none" stroke="currentColor" stroke-width="1.2"
+                        opacity="0.15" transform="rotate(-20 500 500)" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Nav -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo-d.svg" alt="REVISION Logo" class="logo-svg logo-dark">
+                <img src="assets/logo-l.svg" alt="REVISION Logo" class="logo-svg logo-light">
+            </a>
+
+            <ul class="nav-links">
+                <!-- Navigation links removed for a cleaner landing experience -->
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <!-- Sun Icon (for light mode) -->
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display: none; width: 22px; height: 22px; color: var(--text-main);">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (for dark mode) -->
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="width: 22px; height: 22px; color: var(--text-main);">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#" class="btn-primary-sm">Get Extension</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge">Revision Labs: Reclaiming Time</div>
+                    <h1>THE STANDARD OF<br><span class="text-gradient">IMAGE EXTRACTION</span></h1>
+                    <p class="hero-desc">
+                        Leave image exploration and organization to REVISION.<br>
+                        Save your valuable time for true creativity.<br>
+                        Preview instantly, filter perfectly, and download only what you need.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#" class="btn-primary">Add to Chrome — It's Free</a>
+                        <a href="#manifesto" class="btn-secondary">Our Manifesto</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item"><strong>Exceptional Velocity</strong> Speed Benchmark</div>
+                        <div class="stat-item"><strong>Precision Extraction</strong> Success Rate</div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-box">
+                        <video src="./assets/launch.mp4" autoplay loop muted playsinline preload="auto"
+                            poster="./assets/hero.png" class="hero-video"></video>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section: Advancing the Standard -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>ADVANCING THE STANDARD</h2>
+                    <p>What others call premium, we call the baseline.</p>
+                </div>
+                <div class="utility-grid">
+                    <!-- Zero-Clutter Downloads -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Zero-Clutter Downloads</h4>
+                            <p>Custom folders and auto-numbering keep your workspace absolutely spotless.</p>
+                        </div>
+                    </div>
+                    <!-- Smart Format Conversion -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 4 23 10 17 10" />
+                                <polyline points="1 20 1 14 7 14" />
+                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Smart Format Conversion</h4>
+                            <p>Batch convert mixed elements like WebP or AVIF straight into high-quality JPG or PNG.</p>
+                        </div>
+                    </div>
+                    <!-- Lightning-fast Viewer -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Lightning-Fast Viewer</h4>
+                            <p>Preview high-res assets in real-time. Never download gigabytes of junk you don't need.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Flexible Archiving -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Flexible Archiving</h4>
+                            <p>Grab individual shots or securely pack hundreds of selected images into a tidy ZIP file.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Multi-Tab Mastery -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <line x1="3" y1="9" x2="21" y2="9" />
+                                <line x1="9" y1="21" x2="9" y2="9" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Multi-Tab Mastery</h4>
+                            <p>Seamlessly scan and command images across all your active tabs in one unified window.</p>
+                        </div>
+                    </div>
+                    <!-- Ethical Engine -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Ethical Engine</h4>
+                            <p>Operates gently. Safe, optimized crawling that respects host traffic and your local CPU.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Theme Personalization -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5" />
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Theme Personalization</h4>
+                            <p>Create your perfect workspace with freely customizable color palettes and seamless dark
+                                mode.</p>
+                        </div>
+                    </div>
+                    <!-- Built By A Creator -->
+                    <div class="u-item">
+                        <div class="u-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <div class="u-text">
+                            <h4>Built for Creators, by a Creator</h4>
+                            <p>Born from a veteran designer's frustration. Actively used and constantly refined from
+                                real-world usage.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Showcase Section -->
+        <section id="showcase" class="showcase">
+            <div class="container">
+                <div class="section-title">
+                    <h2>PRECISION INTERFACE</h2>
+                    <p>Experience the beauty of high-performance utility.</p>
+                </div>
+                <div class="showcase-grid">
+                    <!-- Main Frame -->
+                    <div class="shot-frame main-shot">
+                        <div class="placeholder-img" id="img-main">
+                            <img src="assets/shot-main.png" alt="REVISION Main Interface">
+                        </div>
+                        <div class="frame-overlay"></div>
+                    </div>
+                    <!-- Detail Column 1 -->
+                    <div class="side-shots">
+                        <div class="shot-frame detail-shot">
+                            <div class="placeholder-img" id="img-detail-1">
+                                <img src="assets/shot-detail-1.png" alt="Advanced Filtering Technology">
+                            </div>
+                            <div class="frame-overlay"></div>
+                        </div>
+                        <div class="shot-frame detail-shot">
+                            <div class="placeholder-img" id="img-detail-2">
+                                <img src="assets/shot-detail-2.png" alt="Pure Organization Settings">
+                            </div>
+                            <div class="frame-overlay"></div>
+                        </div>
+                    </div>
+                    <!-- Detail Column 2 (New) -->
+                    <div class="side-shots">
+                        <div class="shot-frame detail-shot">
+                            <div class="placeholder-img" id="img-detail-3">
+                                <img src="assets/shot-detail-3.png" alt="App Element Precision View 1">
+                            </div>
+                            <div class="frame-overlay"></div>
+                        </div>
+                        <div class="shot-frame detail-shot">
+                            <div class="placeholder-img" id="img-detail-4">
+                                <img src="assets/shot-detail-4.png" alt="App Element Precision View 2">
+                            </div>
+                            <div class="frame-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Help & Information Section: Tutorial + FAQ Combined -->
+        <section id="help-center" class="help-section">
+            <div class="container">
+                <div class="help-grid">
+                    <!-- Tutorial Column -->
+                    <div class="help-card tutorial-column">
+                        <div class="section-title text-left">
+                            <div class="badge">Walkthrough</div>
+                            <h2>Three Clicks to Perfection</h2>
+                        </div>
+                        <div class="step-list-vertical">
+                            <div class="step-v">
+                                <span class="step-v-num">01</span>
+                                <div class="step-v-content">
+                                    <h4>Open & Scan</h4>
+                                    <p>Navigate to any website and click the icon. Our engine starts instantly.</p>
+                                </div>
+                            </div>
+                            <div class="step-v">
+                                <span class="step-v-num">02</span>
+                                <div class="step-v-content">
+                                    <h4>Pick & Refine</h4>
+                                    <p>Use range sliders to find assets. Select all or pick individual shots.</p>
+                                </div>
+                            </div>
+                            <div class="step-v">
+                                <span class="step-v-num">03</span>
+                                <div class="step-v-content">
+                                    <h4>Download</h4>
+                                    <p>Set your naming pattern and hit Download. It's that simple.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Column -->
+                    <div class="help-card faq-column">
+                        <div class="section-title text-left">
+                            <div class="badge">Support</div>
+                            <h2>Frequently Asked Questions</h2>
+                        </div>
+                        <div class="faq-list-compact">
+                            <div class="faq-item">
+                                <button class="faq-toggle">Why can't I see the download popup?</button>
+                                <div class="faq-content">
+                                    <p>Chrome may block multiple download requests. Check settings at <code
+                                            class="code-inline">chrome://settings/downloads</code> and disable "Ask
+                                        where to save each file".</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-toggle">Does it work on Instagram or Pinterest?</button>
+                                <div class="faq-content">
+                                    <p>Yes. REVISION features a special social media driver that handles complex URL
+                                        patterns found on these platforms.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-toggle">Can I convert images to JPG or PNG?</button>
+                                <div class="faq-content">
+                                    <p>Absolutely. You can choose to save files in their original format or convert them
+                                        within the download settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <div class="badge">Testimonials</div>
+                    <h2>What Creators are saying</h2>
+                    <p>Designed for professionals, loved by creators worldwide.</p>
+                </div>
+                <div class="testimonial-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testi-card">
+                        <div class="testi-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
+                            </svg>
+                        </div>
+                        <div class="t-quote">This is exactly what I've been waiting for.</div>
+                        <p class="t-text">The built-in high-res viewer is an absolute game-changer. It completely
+                            eliminates the need to download megabytes of junk files just to check the quality. My
+                            workflow has never been this fast.</p>
+                        <div class="t-author">
+                            <div class="t-avatar">S</div>
+                            <div class="t-info">
+                                <span class="t-name">Senior Web Designer</span>
+                                <span class="t-role">Agency Creative</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testi-card">
+                        <div class="testi-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
+                            </svg>
+                        </div>
+                        <div class="t-quote">Zero clutter. Pure organization.</div>
+                        <p class="t-text">The ability to set custom folders and auto-number patterns right from the
+                            extension saves me hours of manual renaming every week. My downloads folder has never looked
+                            this clean.</p>
+                        <div class="t-author">
+                            <div class="t-avatar">C</div>
+                            <div class="t-info">
+                                <span class="t-name">Content Strategist</span>
+                                <span class="t-role">Digital Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testi-card">
+                        <div class="testi-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
+                            </svg>
+                        </div>
+                        <div class="t-quote">A beautifully engineered powerhouse.</div>
+                        <p class="t-text">Grabbing hundreds of obscure WebP and AVIF files and batch-converting them
+                            into high-quality PNGs with a single click is pure magic. It handles heavy lifting
+                            effortlessly.</p>
+                        <div class="t-author">
+                            <div class="t-avatar">D</div>
+                            <div class="t-info">
+                                <span class="t-name">Creative Developer</span>
+                                <span class="t-role">Frontend Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testi-card">
+                        <div class="testi-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
+                            </svg>
+                        </div>
+                        <div class="t-quote">Built by someone who truly understands.</div>
+                        <p class="t-text">No bloated ads, no aggressive scripts causing lag. Just fluid, precise control
+                            across multiple tabs. You can immediately feel this was designed by a professional who
+                            actually uses it.</p>
+                        <div class="t-author">
+                            <div class="t-avatar">A</div>
+                            <div class="t-info">
+                                <span class="t-name">Art Director</span>
+                                <span class="t-role">Brand Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manifesto Section -->
+        <section id="manifesto" class="manifesto">
+            <div class="container">
+                <div class="manifest manifesto-grid">
+                    <div class="manifesto-content">
+                        <div class="badge">Revision Labs</div>
+                        <h2>THE HIGH-STANDARD MANIFESTO</h2>
+                        <p class="manifesto-lead">The Standard is no longer a compromise. <br>It is the new pinnacle.
+                        </p>
+                        <p class="manifesto-desc">
+                            This project began as a personal mission to liberate creativity.<br>
+                            I believe that high-standard tools should be an essential right,<br>
+                            empowering individuals to shape the future without barriers.
+                        </p>
+                        <div class="manifesto-tags">
+                            <span class="m-tag">Efficiency as a Right.</span>
+                            <span class="m-tag">Freedom over Restrictions.</span>
+                            <span class="m-tag">Universal Excellence.</span>
+                        </div>
+                        <p class="manifesto-signature">“One mind, dedicated to saving your time.”</p>
+                    </div>
+                    <div class="manifesto-visual">
+                        <img src="assets/manifesto.png" alt="Manifesto Abstract Visualization" class="manifesto-img">
+                        <div class="manifesto-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final Trust Section: Solo Vision + Privacy Architecture -->
+        <section class="trust-footer-section">
+            <div class="container">
+                <div class="trust-grid-combined">
+                    <!-- The Vision Card -->
+                    <div class="trust-card solo-card">
+                        <div class="badge">The Vision</div>
+                        <h2>A Professional Standard, <br>Built for Endless Evolution.</h2>
+                        <p>REVISION was born in the studio out of a veteran designer-developer's frustration with
+                            mediocre image hunting. It is the definitive answer to a professional’s daily struggle for a
+                            better workflow. This isn’t dead software abandoned after launch—it is deeply integrated
+                            into its creator's daily workflow, guaranteeing it continuously evolves and improves for
+                            every visual thinker on the planet.</p>
+                        <ul class="benefit-list">
+                            <li><strong class="text-primary">Born from Real Friction.</strong> Solving actual creative
+                                bottlenecks, not imagined ones.</li>
+                            <li><strong class="text-primary">Living Software.</strong> Constantly refined because the
+                                creator relies on it daily.</li>
+                            <li><strong class="text-primary">Creator-Obsessed.</strong> A pure, purposeful bridge
+                                connecting deep research with brilliant creation.</li>
+                        </ul>
+                        <div class="accent-box-mini">
+                            <div class="stat-mini">Built by a Professional. <br>Refined by Daily Reality.</div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Card -->
+                    <div class="trust-card privacy-card" id="privacy">
+                        <div class="badge badge-privacy">Privacy</div>
+                        <h2>Security is Not a Feature; <br>It’s Our Infrastructure.</h2>
+                        <p class="last-updated">Last Updated: February 2026</p>
+                        <div class="privacy-content">
+                            <p>Your data is your intellect. REVISION operates with a zero-knowledge philosophy, where
+                                your creative process remains strictly yours.</p>
+                            <ul>
+                                <li><strong class="text-primary">100% Local Logic.</strong> All scanning and processing
+                                    take place directly on your device.</li>
+                                <li><strong class="text-primary">Zero Metadata Tracking.</strong> No browsing history or
+                                    personal data is collected or transmitted.</li>
+                                <li><strong class="text-primary">Privacy-First Intelligence.</strong> Our entire engine
+                                    is built around your anonymity.</li>
+                                <li><strong class="text-primary">Minimal Permissions.</strong> We only request what is
+                                    essential for image extraction.</li>
+                            </ul>
+                            <p class="copyright-note">User is responsible for respecting the copyright of downloaded
+                                images.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <p class="footer-brand-line">REVISION — Elevating your web media experience.</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2026 REVISION. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
