@@ -11,8 +11,8 @@
     --bg-header: rgba(10, 10, 12, 0.8);
     --bg-header-scrolled: rgba(10, 10, 12, 0.95);
     --bg-footer: rgba(10, 10, 12, 0.5);
-    --font-head: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-head: 'Outfit', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+    --font-body: 'Inter', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
 }
 
 [data-theme="light"] {
@@ -409,13 +409,13 @@ nav {
     border: 1px solid rgba(99, 102, 241, 0.2);
 }
 
-h1 {
+.hero-content h1 {
     font-family: var(--font-head);
-    font-size: 3.6rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
 }
 
