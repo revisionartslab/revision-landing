@@ -134,37 +134,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 3. Simple Reveal Animation on Scroll
-    const revealElements = document.querySelectorAll('.u-item, .step-v, .testi-card, .trust-card, .privacy-box');
+    // 3. Simple Reveal Animation Removal (Removed due to user request for zero-animation reliability)
+    /* 
+    The IntersectionObserver revealed elements such as .u-item, .step-v, etc.
+    Deleting this section ensures all content is visible immediately and fixes 
+    display issues on some systems.
+    */
 
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-                revealObserver.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-
-    revealElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease-out';
-        revealObserver.observe(el);
-    });
-
-    // 4. Giant Geometry Parallax Effect
-    const ring = document.querySelector('.wireframe-ring');
-    if (ring) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            // 스크롤 속도의 0.15배 만큼만 천천히 움직이게 함 (패럴랙스)
-            ring.style.transform = `rotate(-15deg) translateY(${scrolled * 0.15}px)`;
-        });
-    }
+    // 4. Giant Geometry Parallax Effect Removal (Simplified for cleaner performance)
+    /*
+    Parallax on .wireframe-ring handled here. Deleted per user request to 
+    eliminate all scroll-based layout/animation shifts.
+    */
 
     // 5. Removing 'initializing' class smoothly after fonts & DOM are totally ready
     const removeInitializing = () => {
