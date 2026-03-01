@@ -147,6 +147,24 @@ document.addEventListener('DOMContentLoaded', () => {
     eliminate all scroll-based layout/animation shifts.
     */
 
+    // 6. Back to Top Logic
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
     // 5. Removing 'initializing' class smoothly after fonts & DOM are totally ready
     const removeInitializing = () => {
         document.body.classList.remove('is-initializing');

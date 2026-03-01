@@ -1240,6 +1240,61 @@ html[lang="ja"] .hero-content h1 {
     text-decoration: underline;
 }
 
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+}
+
+.back-to-top:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary-glow);
+    transform: translateY(-5px);
+}
+
+[data-theme="light"] .back-to-top {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(24, 119, 242, 0.2);
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.1);
+}
+
+[data-theme="light"] .back-to-top:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+
 
 /* --- Footer --- */
 footer {
