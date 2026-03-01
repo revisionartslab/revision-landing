@@ -21,7 +21,7 @@
     --primary: #1877F2;
     --primary-glow: rgba(24, 119, 242, 0.2);
     --accent: #c000fb;
-    --text-main: #0f172a;
+    --text-main: #334155;
     --text-dim: #475569;
     --border: rgba(0, 0, 0, 0.1);
     --bg-header: rgba(255, 255, 255, 0.8);
@@ -412,11 +412,18 @@ nav {
 .hero-content h1 {
     font-family: var(--font-head);
     font-size: 4rem;
-    line-height: 1;
+    line-height: 1.1;
+    /* Slightly increased for better overall balance */
     font-weight: 900;
     margin-bottom: 2rem;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+}
+
+/* Specific adjustment for CJK Title to prevent overlap/cramping */
+html[lang="ko"] .hero-content h1,
+html[lang="ja"] .hero-content h1 {
+    line-height: 1.25;
 }
 
 .text-gradient {
@@ -1215,6 +1222,24 @@ nav {
         min-height: auto;
         /* Reset min-height for mobile stacking */
     }
+}
+
+.footer-support {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.footer-support a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.footer-support a:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 
