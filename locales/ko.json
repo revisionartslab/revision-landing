@@ -1,6 +1,6 @@
 {
     "nav": {
-        "get_extension": "확정 프로그램 설치"
+        "get_extension": "확장 프로그램 설치"
     },
     "hero": {
         "badge": "Revision Labs: 시간의 재발견",
@@ -116,4 +116,5 @@
         "brand_line": "REVISION — 당신의 웹 미디어 경험을 한 단계 높입니다.",
         "copyright": "&copy; 2026 REVISION. All rights reserved."
     }
+
 }
