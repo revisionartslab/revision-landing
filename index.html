@@ -54,30 +54,47 @@
             <ul class="nav-links">
                 <!-- Navigation links removed for a cleaner landing experience -->
             </ul>
-            <div style="display: flex; gap: 1rem; align-items: center;">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
-                    <!-- Sun Icon (for light mode) -->
-                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round"
-                        style="display: none; width: 22px; height: 22px; color: var(--text-main);">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            <div class="lang-selector">
+                <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="width: 20px; height: 20px;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
                     </svg>
-                    <!-- Moon Icon (for dark mode) -->
-                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round"
-                        style="width: 22px; height: 22px; color: var(--text-main);">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
+                    <span id="current-lang">EN</span>
                 </button>
-                <a href="#" class="btn-primary-sm">Get Extension</a>
+                <div id="lang-dropdown" class="lang-dropdown">
+                    <button data-lang="en">English (EN)</button>
+                    <button data-lang="ko">한국어 (KO)</button>
+                    <button data-lang="ja">日本語 (JA)</button>
+                </div>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                <!-- Sun Icon (for light mode) -->
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    style="display: none; width: 22px; height: 22px; color: var(--text-main);">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon (for dark mode) -->
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"
+                    style="width: 22px; height: 22px; color: var(--text-main);">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <a href="#" class="btn-primary-sm" data-i18n="nav.get_extension">Get Extension</a>
             </div>
         </nav>
     </header>
@@ -87,20 +104,23 @@
         <section id="hero" class="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="badge">Revision Labs: Reclaiming Time</div>
-                    <h1>THE STANDARD OF<br><span class="text-gradient">IMAGE EXTRACTION</span></h1>
-                    <p class="hero-desc">
+                    <div class="badge" data-i18n="hero.badge">Revision Labs: Reclaiming Time</div>
+                    <h1 data-i18n="hero.title">THE STANDARD OF<br><span class="text-gradient">IMAGE EXTRACTION</span>
+                    </h1>
+                    <p class="hero-desc" data-i18n="hero.desc">
                         Leave image exploration and organization to REVISION.<br>
                         Save your valuable time for true creativity.<br>
                         Preview instantly, filter perfectly, and download only what you need.
                     </p>
                     <div class="hero-btns">
-                        <a href="#" class="btn-primary">Add to Chrome — It's Free</a>
-                        <a href="#manifesto" class="btn-secondary">Our Manifesto</a>
+                        <a href="#" class="btn-primary" data-i18n="hero.btn_primary">Add to Chrome — It's Free</a>
+                        <a href="#manifesto" class="btn-secondary" data-i18n="hero.btn_secondary">Our Manifesto</a>
                     </div>
                     <div class="hero-stats">
-                        <div class="stat-item"><strong>Exceptional Velocity</strong> Speed Benchmark</div>
-                        <div class="stat-item"><strong>Precision Extraction</strong> Success Rate</div>
+                        <div class="stat-item" data-i18n="hero.stat_velocity"><strong>Exceptional Velocity</strong>
+                            Speed Benchmark</div>
+                        <div class="stat-item" data-i18n="hero.stat_precision"><strong>Precision Extraction</strong>
+                            Success Rate</div>
                     </div>
                 </div>
                 <div class="hero-visual">
@@ -117,8 +137,8 @@
         <section id="features" class="features">
             <div class="container">
                 <div class="section-title">
-                    <h2>ADVANCING THE STANDARD</h2>
-                    <p>What others call premium, we call the baseline.</p>
+                    <h2 data-i18n="features.title">ADVANCING THE STANDARD</h2>
+                    <p data-i18n="features.subtitle">What others call premium, we call the baseline.</p>
                 </div>
                 <div class="utility-grid">
                     <!-- Zero-Clutter Downloads -->
@@ -130,8 +150,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Zero-Clutter Downloads</h4>
-                            <p>Custom folders and auto-numbering keep your workspace absolutely spotless.</p>
+                            <h4 data-i18n="features.f1_title">Zero-Clutter Downloads</h4>
+                            <p data-i18n="features.f1_desc">Custom folders and auto-numbering keep your workspace
+                                absolutely spotless.</p>
                         </div>
                     </div>
                     <!-- Smart Format Conversion -->
@@ -145,8 +166,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Smart Format Conversion</h4>
-                            <p>Batch convert mixed elements like WebP or AVIF straight into high-quality JPG or PNG.</p>
+                            <h4 data-i18n="features.f2_title">Smart Format Conversion</h4>
+                            <p data-i18n="features.f2_desc">Batch convert mixed elements like WebP or AVIF straight into
+                                high-quality JPG or PNG.</p>
                         </div>
                     </div>
                     <!-- Lightning-fast Viewer -->
@@ -159,8 +181,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Lightning-Fast Viewer</h4>
-                            <p>Preview high-res assets in real-time. Never download gigabytes of junk you don't need.
+                            <h4 data-i18n="features.f3_title">Lightning-Fast Viewer</h4>
+                            <p data-i18n="features.f3_desc">Preview high-res assets in real-time. Never download
+                                gigabytes of junk you don't need.
                             </p>
                         </div>
                     </div>
@@ -176,8 +199,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Flexible Archiving</h4>
-                            <p>Grab individual shots or securely pack hundreds of selected images into a tidy ZIP file.
+                            <h4 data-i18n="features.f4_title">Flexible Archiving</h4>
+                            <p data-i18n="features.f4_desc">Grab individual shots or securely pack hundreds of selected
+                                images into a tidy ZIP file.
                             </p>
                         </div>
                     </div>
@@ -192,8 +216,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Multi-Tab Mastery</h4>
-                            <p>Seamlessly scan and command images across all your active tabs in one unified window.</p>
+                            <h4 data-i18n="features.f5_title">Multi-Tab Mastery</h4>
+                            <p data-i18n="features.f5_desc">Seamlessly scan and command images across all your active
+                                tabs in one unified window.</p>
                         </div>
                     </div>
                     <!-- Ethical Engine -->
@@ -205,8 +230,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Ethical Engine</h4>
-                            <p>Operates gently. Safe, optimized crawling that respects host traffic and your local CPU.
+                            <h4 data-i18n="features.f6_title">Ethical Engine</h4>
+                            <p data-i18n="features.f6_desc">Operates gently. Safe, optimized crawling that respects host
+                                traffic and your local CPU.
                             </p>
                         </div>
                     </div>
@@ -227,8 +253,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Theme Personalization</h4>
-                            <p>Create your perfect workspace with freely customizable color palettes and seamless dark
+                            <h4 data-i18n="features.f7_title">Theme Personalization</h4>
+                            <p data-i18n="features.f7_desc">Create your perfect workspace with freely customizable color
+                                palettes and seamless dark
                                 mode.</p>
                         </div>
                     </div>
@@ -241,8 +268,9 @@
                             </svg>
                         </div>
                         <div class="u-text">
-                            <h4>Built for Creators, by a Creator</h4>
-                            <p>Born from a veteran designer's frustration. Actively used and constantly refined from
+                            <h4 data-i18n="features.f8_title">Built for Creators, by a Creator</h4>
+                            <p data-i18n="features.f8_desc">Born from a veteran designer's frustration. Actively used
+                                and constantly refined from
                                 real-world usage.</p>
                         </div>
                     </div>
@@ -256,8 +284,8 @@
         <section id="showcase" class="showcase">
             <div class="container">
                 <div class="section-title">
-                    <h2>PRECISION INTERFACE</h2>
-                    <p>Experience the beauty of high-performance utility.</p>
+                    <h2 data-i18n="showcase.title">PRECISION INTERFACE</h2>
+                    <p data-i18n="showcase.subtitle">Experience the beauty of high-performance utility.</p>
                 </div>
                 <div class="showcase-grid">
                     <!-- Main Frame -->
@@ -309,29 +337,32 @@
                     <!-- Tutorial Column -->
                     <div class="help-card tutorial-column">
                         <div class="section-title text-left">
-                            <div class="badge">Walkthrough</div>
-                            <h2>Three Clicks to Perfection</h2>
+                            <div class="badge" data-i18n="help.badge_walkthrough">Walkthrough</div>
+                            <h2 data-i18n="help.title_walkthrough">Three Clicks to Perfection</h2>
                         </div>
                         <div class="step-list-vertical">
                             <div class="step-v">
-                                <span class="step-v-num">01</span>
+                                <span class="step-v-num" data-i18n="help.step1_num">01</span>
                                 <div class="step-v-content">
-                                    <h4>Open & Scan</h4>
-                                    <p>Navigate to any website and click the icon. Our engine starts instantly.</p>
+                                    <h4 data-i18n="help.step1_title">Open & Scan</h4>
+                                    <p data-i18n="help.step1_desc">Navigate to any website and click the icon. Our
+                                        engine starts instantly.</p>
                                 </div>
                             </div>
                             <div class="step-v">
-                                <span class="step-v-num">02</span>
+                                <span class="step-v-num" data-i18n="help.step2_num">02</span>
                                 <div class="step-v-content">
-                                    <h4>Pick & Refine</h4>
-                                    <p>Use range sliders to find assets. Select all or pick individual shots.</p>
+                                    <h4 data-i18n="help.step2_title">Pick & Refine</h4>
+                                    <p data-i18n="help.step2_desc">Use range sliders to find assets. Select all or pick
+                                        individual shots.</p>
                                 </div>
                             </div>
                             <div class="step-v">
-                                <span class="step-v-num">03</span>
+                                <span class="step-v-num" data-i18n="help.step3_num">03</span>
                                 <div class="step-v-content">
-                                    <h4>Download</h4>
-                                    <p>Set your naming pattern and hit Download. It's that simple.</p>
+                                    <h4 data-i18n="help.step3_title">Download</h4>
+                                    <p data-i18n="help.step3_desc">Set your naming pattern and hit Download. It's that
+                                        simple.</p>
                                 </div>
                             </div>
                         </div>
@@ -340,29 +371,34 @@
                     <!-- FAQ Column -->
                     <div class="help-card faq-column">
                         <div class="section-title text-left">
-                            <div class="badge">Support</div>
-                            <h2>Frequently Asked Questions</h2>
+                            <div class="badge" data-i18n="help.badge_support">Support</div>
+                            <h2 data-i18n="help.title_faq">Frequently Asked Questions</h2>
                         </div>
                         <div class="faq-list-compact">
                             <div class="faq-item">
-                                <button class="faq-toggle">Why can't I see the download popup?</button>
+                                <button class="faq-toggle" data-i18n="help.q1">Why can't I see the download
+                                    popup?</button>
                                 <div class="faq-content">
-                                    <p>Chrome may block multiple download requests. Check settings at <code
-                                            class="code-inline">chrome://settings/downloads</code> and disable "Ask
+                                    <p data-i18n="help.a1">Chrome may block multiple download requests. Check settings
+                                        at <code class="code-inline">chrome://settings/downloads</code> and disable "Ask
                                         where to save each file".</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <button class="faq-toggle">Does it work on Instagram or Pinterest?</button>
+                                <button class="faq-toggle" data-i18n="help.q2">Does it work on Instagram or
+                                    Pinterest?</button>
                                 <div class="faq-content">
-                                    <p>Yes. REVISION features a special social media driver that handles complex URL
+                                    <p data-i18n="help.a2">Yes. REVISION features a special social media driver that
+                                        handles complex URL
                                         patterns found on these platforms.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
-                                <button class="faq-toggle">Can I convert images to JPG or PNG?</button>
+                                <button class="faq-toggle" data-i18n="help.q3">Can I convert images to JPG or
+                                    PNG?</button>
                                 <div class="faq-content">
-                                    <p>Absolutely. You can choose to save files in their original format or convert them
+                                    <p data-i18n="help.a3">Absolutely. You can choose to save files in their original
+                                        format or convert them
                                         within the download settings.</p>
                                 </div>
                             </div>
@@ -376,9 +412,9 @@
         <section id="testimonials" class="testimonials">
             <div class="container">
                 <div class="section-title">
-                    <div class="badge">Testimonials</div>
-                    <h2>What Creators are saying</h2>
-                    <p>Designed for professionals, loved by creators worldwide.</p>
+                    <div class="badge" data-i18n="testimonials.badge">Testimonials</div>
+                    <h2 data-i18n="testimonials.title">What Creators are saying</h2>
+                    <p data-i18n="testimonials.subtitle">Designed for professionals, loved by creators worldwide.</p>
                 </div>
                 <div class="testimonial-grid">
                     <!-- Testimonial 1 -->
@@ -390,15 +426,17 @@
                                     d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
                             </svg>
                         </div>
-                        <div class="t-quote">This is exactly what I've been waiting for.</div>
-                        <p class="t-text">The built-in high-res viewer is an absolute game-changer. It completely
+                        <div class="t-quote" data-i18n="testimonials.t1_quote">This is exactly what I've been waiting
+                            for.</div>
+                        <p class="t-text" data-i18n="testimonials.t1_desc">The built-in high-res viewer is an absolute
+                            game-changer. It completely
                             eliminates the need to download megabytes of junk files just to check the quality. My
                             workflow has never been this fast.</p>
                         <div class="t-author">
                             <div class="t-avatar">S</div>
                             <div class="t-info">
-                                <span class="t-name">Senior Web Designer</span>
-                                <span class="t-role">Agency Creative</span>
+                                <span class="t-name" data-i18n="testimonials.t1_name">Senior Web Designer</span>
+                                <span class="t-role" data-i18n="testimonials.t1_role">Agency Creative</span>
                             </div>
                         </div>
                     </div>
@@ -411,15 +449,16 @@
                                     d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
                             </svg>
                         </div>
-                        <div class="t-quote">Zero clutter. Pure organization.</div>
-                        <p class="t-text">The ability to set custom folders and auto-number patterns right from the
+                        <div class="t-quote" data-i18n="testimonials.t2_quote">Zero clutter. Pure organization.</div>
+                        <p class="t-text" data-i18n="testimonials.t2_desc">The ability to set custom folders and
+                            auto-number patterns right from the
                             extension saves me hours of manual renaming every week. My downloads folder has never looked
                             this clean.</p>
                         <div class="t-author">
                             <div class="t-avatar">C</div>
                             <div class="t-info">
-                                <span class="t-name">Content Strategist</span>
-                                <span class="t-role">Digital Marketing</span>
+                                <span class="t-name" data-i18n="testimonials.t2_name">Content Strategist</span>
+                                <span class="t-role" data-i18n="testimonials.t2_role">Digital Marketing</span>
                             </div>
                         </div>
                     </div>
@@ -432,15 +471,17 @@
                                     d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
                             </svg>
                         </div>
-                        <div class="t-quote">A beautifully engineered powerhouse.</div>
-                        <p class="t-text">Grabbing hundreds of obscure WebP and AVIF files and batch-converting them
+                        <div class="t-quote" data-i18n="testimonials.t3_quote">A beautifully engineered powerhouse.
+                        </div>
+                        <p class="t-text" data-i18n="testimonials.t3_desc">Grabbing hundreds of obscure WebP and AVIF
+                            files and batch-converting them
                             into high-quality PNGs with a single click is pure magic. It handles heavy lifting
                             effortlessly.</p>
                         <div class="t-author">
                             <div class="t-avatar">D</div>
                             <div class="t-info">
-                                <span class="t-name">Creative Developer</span>
-                                <span class="t-role">Frontend Studio</span>
+                                <span class="t-name" data-i18n="testimonials.t3_name">Creative Developer</span>
+                                <span class="t-role" data-i18n="testimonials.t3_role">Frontend Studio</span>
                             </div>
                         </div>
                     </div>
@@ -453,15 +494,17 @@
                                     d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2zm14 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.243 0-2 .75-2 1.972V11c0 1.25.757 2 2 2 1 0 1 0 1 1v1c0 2.514-1.686 4-4 4v2z" />
                             </svg>
                         </div>
-                        <div class="t-quote">Built by someone who truly understands.</div>
-                        <p class="t-text">No bloated ads, no aggressive scripts causing lag. Just fluid, precise control
+                        <div class="t-quote" data-i18n="testimonials.t4_quote">Built by someone who truly understands.
+                        </div>
+                        <p class="t-text" data-i18n="testimonials.t4_desc">No bloated ads, no aggressive scripts causing
+                            lag. Just fluid, precise control
                             across multiple tabs. You can immediately feel this was designed by a professional who
                             actually uses it.</p>
                         <div class="t-author">
                             <div class="t-avatar">A</div>
                             <div class="t-info">
-                                <span class="t-name">Art Director</span>
-                                <span class="t-role">Brand Design</span>
+                                <span class="t-name" data-i18n="testimonials.t4_name">Art Director</span>
+                                <span class="t-role" data-i18n="testimonials.t4_role">Brand Design</span>
                             </div>
                         </div>
                     </div>
@@ -474,21 +517,23 @@
             <div class="container">
                 <div class="manifest manifesto-grid">
                     <div class="manifesto-content">
-                        <div class="badge">Revision Labs</div>
-                        <h2>THE HIGH-STANDARD MANIFESTO</h2>
-                        <p class="manifesto-lead">The Standard is no longer a compromise. <br>It is the new pinnacle.
+                        <div class="badge" data-i18n="manifesto.badge">Revision Labs</div>
+                        <h2 data-i18n="manifesto.title">THE HIGH-STANDARD MANIFESTO</h2>
+                        <p class="manifesto-lead" data-i18n="manifesto.lead">The Standard is no longer a compromise.
+                            <br>It is the new pinnacle.
                         </p>
-                        <p class="manifesto-desc">
+                        <p class="manifesto-desc" data-i18n="manifesto.desc">
                             This project began as a personal mission to liberate creativity.<br>
                             I believe that high-standard tools should be an essential right,<br>
                             empowering individuals to shape the future without barriers.
                         </p>
                         <div class="manifesto-tags">
-                            <span class="m-tag">Efficiency as a Right.</span>
-                            <span class="m-tag">Freedom over Restrictions.</span>
-                            <span class="m-tag">Universal Excellence.</span>
+                            <span class="m-tag" data-i18n="manifesto.tag1">Efficiency as a Right.</span>
+                            <span class="m-tag" data-i18n="manifesto.tag2">Freedom over Restrictions.</span>
+                            <span class="m-tag" data-i18n="manifesto.tag3">Universal Excellence.</span>
                         </div>
-                        <p class="manifesto-signature">“One mind, dedicated to saving your time.”</p>
+                        <p class="manifesto-signature" data-i18n="manifesto.signature">“One mind, dedicated to saving
+                            your time.”</p>
                     </div>
                     <div class="manifesto-visual">
                         <img src="assets/manifesto.png" alt="Manifesto Abstract Visualization" class="manifesto-img">
@@ -503,45 +548,59 @@
                 <div class="trust-grid-combined">
                     <!-- The Vision Card -->
                     <div class="trust-card solo-card">
-                        <div class="badge">The Vision</div>
-                        <h2>A Professional Standard, <br>Built for Endless Evolution.</h2>
-                        <p>REVISION was born in the studio out of a veteran designer-developer's frustration with
+                        <div class="badge" data-i18n="trust.badge_vision">The Vision</div>
+                        <h2 data-i18n="trust.title_vision">A Professional Standard, <br>Built for Endless Evolution.
+                        </h2>
+                        <p data-i18n="trust.desc_vision">REVISION was born in the studio out of a veteran
+                            designer-developer's frustration with
                             mediocre image hunting. It is the definitive answer to a professional’s daily struggle for a
                             better workflow. This isn’t dead software abandoned after launch—it is deeply integrated
                             into its creator's daily workflow, guaranteeing it continuously evolves and improves for
                             every visual thinker on the planet.</p>
                         <ul class="benefit-list">
-                            <li><strong class="text-primary">Born from Real Friction.</strong> Solving actual creative
-                                bottlenecks, not imagined ones.</li>
-                            <li><strong class="text-primary">Living Software.</strong> Constantly refined because the
-                                creator relies on it daily.</li>
-                            <li><strong class="text-primary">Creator-Obsessed.</strong> A pure, purposeful bridge
-                                connecting deep research with brilliant creation.</li>
+                            <li><strong class="text-primary" data-i18n="trust.v_point1_title">Born from Real
+                                    Friction.</strong> <span data-i18n="trust.v_point1_desc">Solving actual creative
+                                    bottlenecks, not imagined ones.</span></li>
+                            <li><strong class="text-primary" data-i18n="trust.v_point2_title">Living Software.</strong>
+                                <span data-i18n="trust.v_point2_desc">Constantly refined because the
+                                    creator relies on it daily.</span></li>
+                            <li><strong class="text-primary" data-i18n="trust.v_point3_title">Creator-Obsessed.</strong>
+                                <span data-i18n="trust.v_point3_desc">A pure, purposeful bridge
+                                    connecting deep research with brilliant creation.</span></li>
                         </ul>
                         <div class="accent-box-mini">
-                            <div class="stat-mini">Built by a Professional. <br>Refined by Daily Reality.</div>
+                            <div class="stat-mini" data-i18n="trust.accent">Built by a Professional. <br>Refined by
+                                Daily Reality.</div>
                         </div>
                     </div>
 
                     <!-- Privacy Card -->
                     <div class="trust-card privacy-card" id="privacy">
-                        <div class="badge badge-privacy">Privacy</div>
-                        <h2>Security is Not a Feature; <br>It’s Our Infrastructure.</h2>
-                        <p class="last-updated">Last Updated: February 2026</p>
+                        <div class="badge badge-privacy" data-i18n="trust.badge_privacy">Privacy</div>
+                        <h2 data-i18n="trust.title_privacy">Security is Not a Feature; <br>It’s Our Infrastructure.</h2>
+                        <p class="last-updated" data-i18n="trust.last_updated">Last Updated: February 2026</p>
                         <div class="privacy-content">
-                            <p>Your data is your intellect. REVISION operates with a zero-knowledge philosophy, where
+                            <p data-i18n="trust.desc_privacy">Your data is your intellect. REVISION operates with a
+                                zero-knowledge philosophy, where
                                 your creative process remains strictly yours.</p>
                             <ul>
-                                <li><strong class="text-primary">100% Local Logic.</strong> All scanning and processing
-                                    take place directly on your device.</li>
-                                <li><strong class="text-primary">Zero Metadata Tracking.</strong> No browsing history or
-                                    personal data is collected or transmitted.</li>
-                                <li><strong class="text-primary">Privacy-First Intelligence.</strong> Our entire engine
-                                    is built around your anonymity.</li>
-                                <li><strong class="text-primary">Minimal Permissions.</strong> We only request what is
-                                    essential for image extraction.</li>
+                                <li><strong class="text-primary" data-i18n="trust.p_point1_title">100% Local
+                                        Logic.</strong> <span data-i18n="trust.p_point1_desc">All scanning and
+                                        processing
+                                        take place directly on your device.</span></li>
+                                <li><strong class="text-primary" data-i18n="trust.p_point2_title">Zero Metadata
+                                        Tracking.</strong> <span data-i18n="trust.p_point2_desc">No browsing history or
+                                        personal data is collected or transmitted.</span></li>
+                                <li><strong class="text-primary" data-i18n="trust.p_point3_title">Privacy-First
+                                        Intelligence.</strong> <span data-i18n="trust.p_point3_desc">Our entire engine
+                                        is built around your anonymity.</span></li>
+                                <li><strong class="text-primary" data-i18n="trust.p_point4_title">Minimal
+                                        Permissions.</strong> <span data-i18n="trust.p_point4_desc">We only request what
+                                        is
+                                        essential for image extraction.</span></li>
                             </ul>
-                            <p class="copyright-note">User is responsible for respecting the copyright of downloaded
+                            <p class="copyright-note" data-i18n="trust.copyright_responsibility">User is responsible for
+                                respecting the copyright of downloaded
                                 images.</p>
                         </div>
                     </div>
@@ -554,10 +613,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <p class="footer-brand-line">REVISION — Elevating your web media experience.</p>
+                    <p class="footer-brand-line" data-i18n="footer.brand_line">REVISION — Elevating your web media
+                        experience.</p>
                 </div>
                 <div class="footer-links">
-                    <p>&copy; 2026 REVISION. All rights reserved.</p>
+                    <p data-i18n="footer.copyright">&copy; 2026 REVISION. All rights reserved.</p>
                 </div>
             </div>
         </div>

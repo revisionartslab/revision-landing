@@ -31,6 +31,81 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // 0-1. Language Selector & i18n
+    const langBtn = document.getElementById('lang-btn');
+    const langDropdown = document.getElementById('lang-dropdown');
+    const currentLangText = document.getElementById('current-lang');
+    let currentLang = localStorage.getItem('revision_landing_lang') || navigator.language.split('-')[0] || 'en';
+
+    // Default to 'en' if language is not supported
+    if (!['en', 'ko', 'ja'].includes(currentLang)) currentLang = 'en';
+
+    let translations = {};
+
+    async function loadTranslations(lang) {
+        try {
+            const response = await fetch(`./locales/${lang}.json`);
+            if (!response.ok) throw new Error('Failed to load translations');
+            translations = await response.json();
+            applyTranslations();
+            updateLangUI(lang);
+        } catch (error) {
+            console.error('Error loading translations:', error);
+            // Fallback to English if loading fails
+            if (lang !== 'en') loadTranslations('en');
+        }
+    }
+
+    function applyTranslations() {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const translation = getNestedTranslation(translations, key);
+            if (translation) {
+                // If it contains tags, use innerHTML
+                if (translation.includes('<')) {
+                    el.innerHTML = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            }
+        });
+    }
+
+    function getNestedTranslation(obj, path) {
+        return path.split('.').reduce((prev, curr) => {
+            return prev ? prev[curr] : null;
+        }, obj);
+    }
+
+    function updateLangUI(lang) {
+        currentLangText.textContent = lang.toUpperCase();
+        langDropdown.classList.remove('show');
+        localStorage.setItem('revision_landing_lang', lang);
+    }
+
+    // Initial load
+    loadTranslations(currentLang);
+
+    langBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langDropdown.classList.toggle('show');
+    });
+
+    langDropdown.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const selectedLang = btn.getAttribute('data-lang');
+            if (selectedLang !== currentLang) {
+                currentLang = selectedLang;
+                loadTranslations(currentLang);
+            }
+        });
+    });
+
+    document.addEventListener('click', () => {
+        langDropdown.classList.remove('show');
+    });
+
     // 1. FAQ Accordion Interaction
     const faqItems = document.querySelectorAll('.faq-item');
 
