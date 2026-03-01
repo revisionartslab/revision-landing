@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Simple Reveal Animation on Scroll
-    const revealElements = document.querySelectorAll('.feature-card, .step, .privacy-box');
+    const revealElements = document.querySelectorAll('.u-item, .step-v, .testi-card, .trust-card, .privacy-box');
 
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
