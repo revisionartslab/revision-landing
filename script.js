@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateLangUI(lang) {
-        currentLangText.textContent = lang.toUpperCase();
+        const displayLang = lang === 'ja' ? 'JP' : lang.toUpperCase();
+        currentLangText.textContent = displayLang;
         langDropdown.classList.remove('show');
         localStorage.setItem('revision_landing_lang', lang);
     }
