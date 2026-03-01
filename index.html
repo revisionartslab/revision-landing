@@ -54,47 +54,48 @@
             <ul class="nav-links">
                 <!-- Navigation links removed for a cleaner landing experience -->
             </ul>
-            <div class="lang-selector">
-                <button id="lang-btn" class="lang-btn" aria-label="Change Language">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" style="width: 20px; height: 20px;">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="2" y1="12" x2="22" y2="12"></line>
-                        <path
-                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                        </path>
-                    </svg>
-                    <span id="current-lang">EN</span>
-                </button>
-                <div id="lang-dropdown" class="lang-dropdown">
-                    <button data-lang="en">English (EN)</button>
-                    <button data-lang="ko">한국어 (KO)</button>
-                    <button data-lang="ja">日本語 (JA)</button>
+            <div class="nav-actions">
+                <div class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button data-lang="en">English (EN)</button>
+                        <button data-lang="ko">한국어 (KO)</button>
+                        <button data-lang="ja">日本語 (JA)</button>
+                    </div>
                 </div>
-            </div>
-            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
-                <!-- Sun Icon (for light mode) -->
-                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    style="display: none; width: 22px; height: 22px; color: var(--text-main);">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <!-- Moon Icon (for dark mode) -->
-                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    style="width: 22px; height: 22px; color: var(--text-main);">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
-            <a href="#" class="btn-primary-sm" data-i18n="nav.get_extension">Get Extension</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <!-- Sun Icon (for light mode) -->
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display: none; width: 22px; height: 22px; color: var(--text-main);">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (for dark mode) -->
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="width: 22px; height: 22px; color: var(--text-main);">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#" class="btn-primary-sm" data-i18n="nav.get_extension">Get Extension</a>
             </div>
         </nav>
     </header>
@@ -563,10 +564,12 @@
                                     bottlenecks, not imagined ones.</span></li>
                             <li><strong class="text-primary" data-i18n="trust.v_point2_title">Living Software.</strong>
                                 <span data-i18n="trust.v_point2_desc">Constantly refined because the
-                                    creator relies on it daily.</span></li>
+                                    creator relies on it daily.</span>
+                            </li>
                             <li><strong class="text-primary" data-i18n="trust.v_point3_title">Creator-Obsessed.</strong>
                                 <span data-i18n="trust.v_point3_desc">A pure, purposeful bridge
-                                    connecting deep research with brilliant creation.</span></li>
+                                    connecting deep research with brilliant creation.</span>
+                            </li>
                         </ul>
                         <div class="accent-box-mini">
                             <div class="stat-mini" data-i18n="trust.accent">Built by a Professional. <br>Refined by

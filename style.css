@@ -264,11 +264,29 @@ header.header-scrolled {
     box-shadow: 0 10px 30px rgba(24, 119, 242, 0.1);
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .nav-actions {
+        gap: 0.8rem;
+    }
+
+    .btn-primary-sm {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
 nav {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .logo {
