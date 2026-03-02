@@ -141,11 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
     display issues on some systems.
     */
 
-    // 4. Giant Geometry Parallax Effect Removal (Simplified for cleaner performance)
-    /*
-    Parallax on .wireframe-ring handled here. Deleted per user request to 
-    eliminate all scroll-based layout/animation shifts.
-    */
+    // 4. Giant Geometry Parallax Effect
+    const ring = document.querySelector('.wireframe-ring');
+    if (ring) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            // 스크롤 속도의 0.15배 만큼만 천천히 움직이게 함 (패럴랙스)
+            ring.style.transform = `rotate(-15deg) translateY(${scrolled * 0.15}px)`;
+        });
+    }
 
     // 6. Back to Top Logic
     const backToTopBtn = document.getElementById('back-to-top');

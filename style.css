@@ -130,9 +130,11 @@ body.is-initializing {
     height: auto;
     color: var(--primary);
     opacity: 0.6;
-    transform: rotate(-15deg);
-    /* Removed animation and translateZ for zero-animation reliability */
+    transform: rotate(-15deg) translateZ(0);
+    /* GPU 가속 */
+    animation: floatRotate 60s linear infinite;
     pointer-events: none;
+    will-change: transform;
 }
 
 
