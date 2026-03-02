@@ -169,20 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Removing 'initializing' class smoothly after fonts & DOM are totally ready
-    const removeInitializing = () => {
-        document.body.classList.remove('is-initializing');
-    };
 
-    if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(removeInitializing);
-        // Fallback in case fonts hang
-        setTimeout(removeInitializing, 800);
-    } else {
-        // Fallback for older browsers
-        window.addEventListener('load', removeInitializing);
-        setTimeout(removeInitializing, 800);
-    }
 
     // 7. Email Copy Logic
     const copyEmail = document.getElementById('copy-email');
