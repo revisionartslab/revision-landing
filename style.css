@@ -6,7 +6,8 @@
     --accent: #c000fb;
     /* Vibrant Purple Accent */
     --text-main: #f8fafc;
-    --text-dim: #94a3b8;
+    --text-dim: #cbd5e1;
+    /* Lightened from #94a3b8 for better readability */
     --border: rgba(255, 255, 255, 0.1);
     --bg-header: rgba(10, 10, 12, 0.8);
     --bg-header-scrolled: rgba(10, 10, 12, 0.95);
@@ -31,6 +32,16 @@
     --bg-header: rgba(255, 255, 255, 0.8);
     --bg-header-scrolled: rgba(255, 255, 255, 0.95);
     --bg-footer: rgba(240, 244, 248, 0.6);
+}
+
+[data-theme="light"] body {
+    background-color: #f8fafc;
+}
+
+[data-theme="light"] .bg-glow {
+    mix-blend-mode: multiply;
+    opacity: 0.08;
+    /* Subtle background for light mode */
 }
 
 [data-theme="light"] .u-item,
@@ -66,6 +77,9 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    /* Force immediate repaint on theme change for mobile */
+    transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
