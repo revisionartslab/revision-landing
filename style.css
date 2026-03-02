@@ -738,6 +738,12 @@ html[lang="ja"] .hero-content h1 {
     display: flex;
     flex-direction: column;
     transition: border-color 0.3s;
+    /* [Fix] 라이트 모드 이미지 돌출 해결: 
+       프레임의 곡률을 무시하고 내부 이미지가 사각형으로 보이는 현상 원천 차단 */
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
 }
 
 .shot-frame:hover {
@@ -763,6 +769,9 @@ html[lang="ja"] .hero-content h1 {
     overflow: hidden;
     position: relative;
     display: block;
+    /* [Fix] 내부 클리핑 보강: shot-frame의 자식 요소로서 완벽한 곡률 전달 보장 */
+    border-radius: inherit;
+    isolation: isolate;
 }
 
 .placeholder-img img {
