@@ -49,8 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
             translations = await response.json();
             applyTranslations();
             updateLangUI(lang);
+            // Hide loading overlay only after translations are applied
+            document.body.classList.remove('lang-loading');
         } catch (error) {
             console.error('Error loading translations:', error);
+            document.body.classList.remove('lang-loading');
             // Fallback to English if loading fails
             if (lang !== 'en') loadTranslations('en');
         }
