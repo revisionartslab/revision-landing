@@ -144,14 +144,25 @@ document.addEventListener('DOMContentLoaded', () => {
     display issues on some systems.
     */
 
-    // 4. Giant Geometry Parallax Effect
+    // 4. Giant Geometry Parallax Effect (Optimized with requestAnimationFrame)
     const ring = document.querySelector('.wireframe-ring');
     if (ring) {
+        let lastScrollY = window.pageYOffset;
+        let ticking = false;
+
+        function updateParallax() {
+            // rotate(-15deg) is original, translateY moves with scroll
+            ring.style.transform = `rotate(-15deg) translateY(${lastScrollY * 0.15}px)`;
+            ticking = false;
+        }
+
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            // 스크롤 속도의 0.15배 만큼만 천천히 움직이게 함 (패럴랙스)
-            ring.style.transform = `rotate(-15deg) translateY(${scrolled * 0.15}px)`;
-        });
+            lastScrollY = window.pageYOffset;
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }, { passive: true });
     }
 
     // 6. Back to Top Logic
