@@ -36,10 +36,14 @@
 [data-theme="light"] .u-item,
 [data-theme="light"] .trust-card,
 [data-theme="light"] .help-card,
-[data-theme="light"] .faq-item {
-    border: 1px solid rgba(24, 119, 242, 0.25);
-    box-shadow: 0 8px 30px rgba(24, 119, 242, 0.08);
-    /* 파란빛 섀도우 부품 */
+[data-theme="light"] .faq-item,
+[data-theme="light"] .image-box,
+[data-theme="light"] .shot-frame,
+[data-theme="light"] .manifesto-visual {
+    background: rgba(255, 255, 255, 0.8);
+    /* Frosted glass for light mode */
+    border: 1px solid rgba(24, 119, 242, 0.15);
+    box-shadow: 0 15px 35px rgba(24, 119, 242, 0.08);
 }
 
 * {
@@ -483,10 +487,27 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    background: rgba(255, 255, 255, 0.05);
+    /* Glass base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    /* More rounded for premium feel */
+    padding: 12px;
+    /* Inner frame padding */
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    /* Inner reflection */
     overflow: hidden;
+}
+
+.image-box video,
+.image-box img {
+    border-radius: 28px;
+    /* Inner rounding */
+    display: block;
 }
 
 .hero-video {
@@ -618,7 +639,6 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
     border-color: var(--primary);
     background: var(--border);
 }
@@ -681,14 +701,36 @@ html[lang="ja"] .hero-content h1 {
 
 .shot-frame {
     position: relative;
-    border-radius: 20px;
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    /* Glass base */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* Sophisticated glass border */
+    padding: 10px;
+    /* Glass frame padding */
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: border-color 0.3s;
 }
+
+.shot-frame:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    /* Subtle highlight only */
+}
+
+.shot-frame img {
+    border-radius: 16px;
+    /* Inner rounding for image */
+    transition: all 0.3s;
+}
+
+/* Intelligent Focus Mode REMOVED */
 
 
 .placeholder-img {
@@ -1007,7 +1049,7 @@ html[lang="ja"] .hero-content h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: stretch;
+    align-items: center;
 }
 
 .manifesto-content h2 {
@@ -1059,17 +1101,30 @@ html[lang="ja"] .hero-content h1 {
 .manifesto-visual {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 560px;
+    /* Optimized to match manifesto-content height on desktop */
+    background: rgba(255, 255, 255, 0.05);
+    /* Glass base */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    /* Matching Hero style */
+    padding: 12px;
+    /* Inner frame padding */
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
     overflow: hidden;
 }
 
 .manifesto-img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 28px;
+    /* Inner rounding matching Hero */
+    display: block;
 }
 
 .manifesto-glow {
