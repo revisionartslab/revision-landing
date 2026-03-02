@@ -515,6 +515,7 @@ html[lang="ja"] .hero-content h1 {
         inset 0 1px 1px rgba(255, 255, 255, 0.1);
     /* Inner reflection */
     overflow: hidden;
+    contain: content;
 }
 
 .image-box video,

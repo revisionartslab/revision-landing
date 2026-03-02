@@ -127,15 +127,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Header Style on Scroll
+    // 2. Optimized Global Scroll Manager
     const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+    const ring = document.querySelector('.wireframe-ring');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+
+    function onScrollUpdate() {
+        // Header logic
+        if (lastScrollY > 50) {
             header.classList.add('header-scrolled');
         } else {
             header.classList.remove('header-scrolled');
         }
-    });
+
+        // Back to top logic
+        if (lastScrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+
+        // Parallax logic
+        if (ring) {
+            ring.style.transform = `rotate(-15deg) translateY(${lastScrollY * 0.15}px)`;
+        }
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        lastScrollY = window.pageYOffset;
+        if (!ticking) {
+            window.requestAnimationFrame(onScrollUpdate);
+            ticking = true;
+        }
+    }, { passive: true });
 
     // 3. Simple Reveal Animation Removal (Removed due to user request for zero-animation reliability)
     /* 
@@ -144,37 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
     display issues on some systems.
     */
 
-    // 4. Giant Geometry Parallax Effect (Optimized with requestAnimationFrame)
-    const ring = document.querySelector('.wireframe-ring');
-    if (ring) {
-        let lastScrollY = window.pageYOffset;
-        let ticking = false;
 
-        function updateParallax() {
-            // rotate(-15deg) is original, translateY moves with scroll
-            ring.style.transform = `rotate(-15deg) translateY(${lastScrollY * 0.15}px)`;
-            ticking = false;
-        }
 
-        window.addEventListener('scroll', () => {
-            lastScrollY = window.pageYOffset;
-            if (!ticking) {
-                window.requestAnimationFrame(updateParallax);
-                ticking = true;
-            }
-        }, { passive: true });
-    }
 
-    // 6. Back to Top Logic
-    const backToTopBtn = document.getElementById('back-to-top');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            backToTopBtn.classList.add('show');
-        } else {
-            backToTopBtn.classList.remove('show');
-        }
-    });
 
     backToTopBtn.addEventListener('click', () => {
         window.scrollTo({
@@ -220,7 +221,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (heroVideo) {
-        // 이미 충분히 로드되었는지 확인
+        // [Smart Pause] Intersection Observer to save resources
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Video in view - resume
+                    if (heroVideo.paused && heroVideo.classList.contains('v-visible')) {
+                        heroVideo.play().catch(() => { });
+                    }
+                } else {
+                    // Video out of view - pause to save GPU/CPU
+                    heroVideo.pause();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        observer.observe(heroVideo);
+
+        // Initial ready check
         if (heroVideo.readyState >= 3) {
             startVideo();
         } else {
