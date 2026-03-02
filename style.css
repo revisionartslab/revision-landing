@@ -516,7 +516,7 @@ html[lang="ja"] .hero-content h1 {
 .utility {
     padding: var(--section-p-v) 0;
     position: relative;
-    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.5), transparent);
+    /* Removed heavy dark gradient for consistent global background */
 }
 
 .utility-grid {
@@ -668,7 +668,7 @@ html[lang="ja"] .hero-content h1 {
 /* --- Showcase Section --- */
 .showcase {
     padding: var(--section-p-v) 0;
-    background: linear-gradient(to bottom, transparent, rgba(10, 10, 10, 0.4), transparent);
+    /* Removed heavy dark gradient for consistent global background */
 }
 
 .showcase-grid {
@@ -778,7 +778,7 @@ html[lang="ja"] .hero-content h1 {
 /* --- Bottom Trust Section (Solo Vision + Privacy Combined) --- */
 .trust-footer-section {
     padding: var(--section-p-v) 0;
-    background: linear-gradient(180deg, transparent, rgba(21, 101, 192, 0.03));
+    /* Removed heavy dark gradient for consistent global background */
 }
 
 .trust-grid-combined {
