@@ -531,10 +531,15 @@ html[lang="ja"] .hero-content h1 {
     object-fit: cover;
     /* 비율을 유지하면서 영역을 꽉 채움 */
     display: block;
-
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
     /* GPU 가속 활성화 */
     transform: translateZ(0);
     will-change: transform;
+}
+
+.hero-video.v-visible {
+    opacity: 1;
 }
 
 .glow-effect {

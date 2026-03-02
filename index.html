@@ -128,8 +128,11 @@
                 </div>
                 <div class="hero-visual">
                     <div class="image-box">
-                        <video src="./assets/launch.mp4" autoplay loop muted playsinline preload="auto"
-                            poster="./assets/hero.png" class="hero-video"></video>
+                        <video id="hero-video" loop muted playsinline preload="auto" poster="./assets/hero.png"
+                            class="hero-video">
+                            <source src="./assets/launch.webm" type="video/webm">
+                            <source src="./assets/launch.mp4" type="video/mp4">
+                        </video>
                         <div class="glow-effect"></div>
                     </div>
                 </div>

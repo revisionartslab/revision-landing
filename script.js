@@ -195,4 +195,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 8. Elegant Hero Video Playback
+    const heroVideo = document.getElementById('hero-video');
+
+    function startVideo() {
+        if (!heroVideo) return;
+        heroVideo.play().then(() => {
+            heroVideo.classList.add('v-visible');
+        }).catch(e => {
+            // 브라우저 정책으로 차단된 경우 대기
+            console.warn("Autoplay blocked, waiting for interaction:", e);
+        });
+    }
+
+    if (heroVideo) {
+        // 이미 충분히 로드되었는지 확인
+        if (heroVideo.readyState >= 3) {
+            startVideo();
+        } else {
+            heroVideo.addEventListener('canplay', startVideo, { once: true });
+        }
+    }
+
 });
