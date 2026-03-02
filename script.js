@@ -184,4 +184,25 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(removeInitializing, 800);
     }
 
+    // 7. Email Copy Logic
+    const copyEmail = document.getElementById('copy-email');
+    const copyTooltip = document.getElementById('copy-tooltip');
+
+    if (copyEmail) {
+        copyEmail.addEventListener('click', () => {
+            const email = copyEmail.textContent;
+            navigator.clipboard.writeText(email).then(() => {
+                // Show tooltip
+                copyTooltip.classList.add('show');
+
+                // Hide tooltip after 1.5s
+                setTimeout(() => {
+                    copyTooltip.classList.remove('show');
+                }, 1500);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        });
+    }
+
 });
