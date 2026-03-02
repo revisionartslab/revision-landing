@@ -13,6 +13,10 @@
     --bg-footer: rgba(10, 10, 12, 0.5);
     --font-head: 'Outfit', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
     --font-body: 'Inter', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+
+    /* Spacing System */
+    --section-p-v: 140px;
+    /* Consistent vertical padding for sections */
 }
 
 [data-theme="light"] {
@@ -507,9 +511,10 @@ html[lang="ja"] .hero-content h1 {
     z-index: -1;
 }
 
-/* --- Utility Section (Premium Glass Tiles) --- */
+/* --- Features/Utility Section (Premium Glass Tiles) --- */
+.features,
 .utility {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     position: relative;
     background: linear-gradient(to bottom, rgba(10, 10, 10, 0.5), transparent);
 }
@@ -585,6 +590,7 @@ html[lang="ja"] .hero-content h1 {
 .section-title h2 {
     font-family: var(--font-head);
     font-size: 2.5rem;
+    line-height: 1.2;
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
     text-wrap: balance;
@@ -661,7 +667,7 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Showcase Section --- */
 .showcase {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     background: linear-gradient(to bottom, transparent, rgba(10, 10, 10, 0.4), transparent);
 }
 
@@ -771,7 +777,7 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Bottom Trust Section (Solo Vision + Privacy Combined) --- */
 .trust-footer-section {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     background: linear-gradient(180deg, transparent, rgba(21, 101, 192, 0.03));
 }
 
@@ -887,7 +893,7 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Testimonials Section (Social Proof) --- */
 .testimonials {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     position: relative;
 }
 
@@ -993,7 +999,7 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .manifesto {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     overflow: hidden;
 }
 
@@ -1096,7 +1102,7 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Help Section (Tutorial + FAQ Combined) --- */
 .help-section {
-    padding: 120px 0;
+    padding: var(--section-p-v) 0;
     background: linear-gradient(to bottom, transparent, rgba(99, 102, 241, 0.02), transparent);
 }
 
@@ -1339,6 +1345,11 @@ footer {
 }
 
 @media (max-width: 900px) {
+    :root {
+        --section-p-v: 80px;
+        /* Standard mobile section spacing */
+    }
+
     .container {
         width: 92%;
     }
@@ -1418,11 +1429,11 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2.1rem;
-        /* Increased for better hierarchy */
+        font-size: 2.8rem;
+        /* Corrected: Hero must be the largest */
         word-break: keep-all;
-        /* Keeps CJK phrases together */
-        line-height: 1.2;
+        overflow-wrap: break-word;
+        line-height: 1.15;
         margin-bottom: 1.5rem;
     }
 
@@ -1457,9 +1468,7 @@ footer {
         border-radius: 20px;
     }
 
-    .features {
-        padding: 50px 0;
-    }
+    /* Removed individual section padding overrides to use the centralized variable */
 
     .section-title {
         font-size: 1.5rem;
@@ -1468,6 +1477,9 @@ footer {
     }
 
     .section-title h2 {
+        font-size: 1.8rem;
+        /* Corrected: Smaller than Hero h1 */
+        line-height: 1.2;
         word-break: keep-all;
         overflow-wrap: break-word;
     }
