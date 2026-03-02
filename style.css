@@ -1313,12 +1313,10 @@ html[lang="ja"] .hero-content h1 {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
-    border-bottom: 1px dashed var(--primary);
 }
 
 .email-text:hover {
     color: var(--accent);
-    border-bottom-color: var(--accent);
 }
 
 .copy-tooltip {
