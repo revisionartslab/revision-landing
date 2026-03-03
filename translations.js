@@ -1,3 +1,10 @@
+/**
+ * [LEGACY - NOT IN USE]
+ * 이 파일은 landing/locales/*.json 방식으로 전환된 이후 사용되지 않습니다.
+ * 실제 번역은 locales/en.json, locales/ko.json, locales/ja.json에서 관리됩니다.
+ * script.js의 loadTranslations()가 locales/*.json을 fetch하여 사용합니다.
+ * 참고용으로만 보존되며, 삭제해도 기능에 영향 없습니다.
+ */
 const translations = {
     en: {
         nav_features: "Features",
