@@ -1329,6 +1329,46 @@ html[lang="ja"] .hero-content h1 {
     }
 }
 
+.footer-donations {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+    justify-content: flex-end;
+}
+
+.footer-donate-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.footer-donate-link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.footer-donate-link svg {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer-donate-link:hover svg {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+@media (max-width: 900px) {
+    .footer-donations {
+        justify-content: center;
+    }
+}
+
 .footer-support {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;

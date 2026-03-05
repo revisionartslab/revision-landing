@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('revision_landing_theme', newTheme);
         updateThemeIcons(newTheme);
+
+        // [Fix] 모바일 테마 변경 시 배경색 렉 해결: 강제 리플로우 유도
+        void document.body.offsetHeight;
     });
 
     function updateThemeIcons(theme) {
