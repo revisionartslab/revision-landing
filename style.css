@@ -12,9 +12,8 @@
     --bg-header: rgba(10, 10, 12, 0.8);
     --bg-header-scrolled: rgba(10, 10, 12, 0.95);
     --bg-footer: rgba(10, 10, 12, 0.5);
-    --bg-footer: rgba(10, 10, 12, 0.5);
-    --font-head: 'Outfit', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
-    --font-body: 'Inter', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+    --font-head: 'Outfit', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
+    --font-body: 'Inter', 'Noto Sans SC', 'Noto Sans TC', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
 
     /* Spacing System */
     --section-p-v: 140px;

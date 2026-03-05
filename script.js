@@ -38,10 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const langBtn = document.getElementById('lang-btn');
     const langDropdown = document.getElementById('lang-dropdown');
     const currentLangText = document.getElementById('current-lang');
-    let currentLang = localStorage.getItem('revision_landing_lang') || navigator.language.split('-')[0] || 'en';
 
-    // Default to 'en' if language is not supported
-    if (!['en', 'ko', 'ja', 'zh', 'tw', 'es', 'pt'].includes(currentLang)) currentLang = 'en';
+    // Improved language detection
+    let rawLang = localStorage.getItem('revision_landing_lang') || navigator.language.toLowerCase();
+    let currentLang = 'en';
+
+    if (rawLang.startsWith('ko')) currentLang = 'ko';
+    else if (rawLang.startsWith('ja')) currentLang = 'ja';
+    else if (rawLang.includes('zh-tw') || rawLang.includes('zh-hk') || rawLang.includes('zh-hant')) currentLang = 'zh-hant';
+    else if (rawLang.startsWith('zh')) currentLang = 'zh-hans';
+    else if (rawLang.startsWith('es')) currentLang = 'es';
+    else if (rawLang.startsWith('pt')) currentLang = 'pt';
+    else currentLang = 'en';
 
     let translations = {};
 
@@ -53,39 +61,40 @@ document.addEventListener('DOMContentLoaded', () => {
             applyTranslations();
             updateLangUI(lang);
             // Hide loading overlay only after translations are applied
-            document.body.classList.remove('lang-loading');
+            setTimeout(() => {
+                const loader = document.getElementById('loading-overlay');
+                if (loader) loader.classList.add('hide');
+            }, 300);
         } catch (error) {
             console.error('Error loading translations:', error);
-            document.body.classList.remove('lang-loading');
-            // Fallback to English if loading fails
+            // Fallback to English if current lang fails
             if (lang !== 'en') loadTranslations('en');
         }
     }
 
     function applyTranslations() {
-        const elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(el => {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            const translation = getNestedTranslation(translations, key);
-            if (translation) {
-                // If it contains tags, use innerHTML
-                if (translation.includes('<')) {
-                    el.innerHTML = translation;
-                } else {
-                    el.textContent = translation;
-                }
-            }
+            const value = getNestedValue(translations, key);
+            if (value) el.innerHTML = value;
         });
     }
 
-    function getNestedTranslation(obj, path) {
-        return path.split('.').reduce((prev, curr) => {
-            return prev ? prev[curr] : null;
-        }, obj);
+    function getNestedValue(obj, key) {
+        return key.split('.').reduce((p, c) => p && p[c], obj);
     }
 
     function updateLangUI(lang) {
-        currentLangText.textContent = lang.toUpperCase();
+        const labels = {
+            'en': 'EN',
+            'ko': 'KO',
+            'ja': 'JA',
+            'zh-hans': 'ZH',
+            'zh-hant': 'TW',
+            'es': 'ES',
+            'pt': 'PT'
+        };
+        currentLangText.textContent = labels[lang] || lang.toUpperCase();
         langDropdown.classList.remove('show');
         localStorage.setItem('revision_landing_lang', lang);
     }
