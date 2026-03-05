@@ -50,10 +50,12 @@
 [data-theme="light"] .faq-item,
 [data-theme="light"] .image-box,
 [data-theme="light"] .shot-frame,
-[data-theme="light"] .manifesto-visual {
+[data-theme="light"] .manifesto-visual,
+[data-theme="light"] .testi-card {
     background: #ffffff;
     border: 1px solid var(--border);
     box-shadow: none;
+    backdrop-filter: none;
 }
 
 * {
@@ -553,10 +555,8 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .u-item {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 30px 25px;
     display: flex;
@@ -719,6 +719,11 @@ html[lang="ja"] .hero-content h1 {
     aspect-ratio: 1200 / 800;
 }
 
+.main-shot {
+    aspect-ratio: auto;
+    height: 100%;
+}
+
 
 
 .shot-frame:hover {
@@ -837,10 +842,8 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .trust-card {
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 40px;
     padding: 60px;
     display: flex;
@@ -953,16 +956,13 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .testi-card {
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 32px;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: border-color 0.3s, background-color 0.3s;
 }
 
 .testi-card:hover {
@@ -1033,12 +1033,7 @@ html[lang="ja"] .hero-content h1 {
     color: var(--text-dim);
 }
 
-/* Light mode adjustments for testimonials */
-[data-theme="light"] .testi-card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(24, 119, 242, 0.15);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
+
 
 @media (max-width: 992px) {
     .testimonial-grid {
@@ -1165,17 +1160,13 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .help-card {
-    background: rgba(255, 255, 255, 0.02);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
     /* trust-card와 동일한 얇은 실선 */
     border-radius: 40px;
     /* trust-card와 동일한 둥글기 */
     padding: 50px;
     min-height: 650px;
-    /* Increased min-height to 650px to provide more stable room for translations (KO/JP) and accordion expansion */
-    /* Pre-allocate space to prevent layout shift */
     display: flex;
     flex-direction: column;
 }
