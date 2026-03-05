@@ -211,95 +211,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Hero Video Playback (Robust Edition)
+    // 8. Hero Video Playback (Simple & Stable)
+    // 파일 크기: webm=918KB, mp4=1.54MB → 즉시 로드 가능 수준
+    // 이전의 stalled 핸들러, Watchdog, 중복 play() 호출이 서로 충돌하여 끊김이 발생했음
+    // 해결책: 브라우저의 네이티브 loop 기능에 위임 + 뷰포트 이탈 시만 스마트 일시정지
     const heroVideo = document.getElementById('hero-video');
 
     if (heroVideo) {
-        let isVisible = true;
-        let isPlaying = false;
-        let stallTimer = null;
-
-        // [통합 재생 함수] 모든 재생 요청을 이 함수 하나로 일원화
-        function tryPlay() {
-            if (!isVisible || isPlaying) return;
-            heroVideo.play().then(() => {
-                isPlaying = true;
-                heroVideo.classList.add('v-visible');
-            }).catch(e => {
-                isPlaying = false;
-                console.warn("Autoplay blocked:", e);
-            });
-        }
-
-        // [버퍼 부족 자동 복구] stalled 감지 후 1초 대기해도 재생 안 되면 처음부터 재시작
-        // currentTime 복원 후 load()는 loop 비디오에서 버퍼를 무한 재무효화시키므로 제거
-        function handleStall() {
-            if (stallTimer) return; // 이미 대기 중
-            stallTimer = setTimeout(() => {
-                stallTimer = null;
-                if (!isVisible || isPlaying) return;
-                isPlaying = false;
-                heroVideo.currentTime = 0;
-                tryPlay();
-            }, 1000);
-        }
-
-        heroVideo.addEventListener('stalled', handleStall);
-        heroVideo.addEventListener('waiting', () => { isPlaying = false; });
-        heroVideo.addEventListener('playing', () => {
-            isPlaying = true;
-            if (stallTimer) { clearTimeout(stallTimer); stallTimer = null; }
-        });
-        heroVideo.addEventListener('pause', () => { isPlaying = false; });
-        heroVideo.addEventListener('ended', () => {
-            // loop 속성이 있어도 일부 모바일에서 ended가 발생할 수 있음
-            isPlaying = false;
-            tryPlay();
-        });
-
-        // [Smart Pause] 화면 밖으로 나가면 일시정지하여 리소스 절약
-        const observer = new IntersectionObserver((entries) => {
+        // 뷰포트 밖으로 나가면 일시정지, 다시 들어오면 재생 (리소스 절약)
+        const videoObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                isVisible = entry.isIntersecting;
-                if (isVisible) {
-                    tryPlay();
+                if (entry.isIntersecting) {
+                    heroVideo.play().catch(() => { }); // 브라우저 정책으로 막힌 경우 조용히 무시
                 } else {
                     heroVideo.pause();
-                    isPlaying = false;
-                    if (stallTimer) { clearTimeout(stallTimer); stallTimer = null; }
                 }
             });
         }, { threshold: 0.1 });
 
-        observer.observe(heroVideo);
+        videoObserver.observe(heroVideo);
 
-        // [Watchdog] 3초마다 상태를 체크하여 화면 내에 있는데 멈춰있으면 재생 시도
-        setInterval(() => {
-            if (isVisible && !isPlaying && heroVideo.paused) {
-                console.log("Watchdog: Restarting stalled video");
-                tryPlay();
-            }
-        }, 3000);
-
-        // [Global Interaction] 첫 클릭시 재생 시도 (브라우저 정책 대응)
+        // 브라우저 autoplay 정책 대응: 첫 사용자 인터랙션 시 재생 시도
+        // (이미 재생 중이면 아무 일도 일어나지 않음)
         document.addEventListener('click', () => {
-            if (isVisible && heroVideo.paused) tryPlay();
+            if (heroVideo.paused) heroVideo.play().catch(() => { });
         }, { once: true });
-
-        // [초기 재생] canplaythrough = 버퍼 충분히 쌓인 후 시작 (끊김 방지)
-        if (heroVideo.readyState >= 4) {
-            tryPlay();
-        } else {
-            let started = false;
-            const onReady = () => { if (!started) { started = true; tryPlay(); } };
-            heroVideo.addEventListener('canplaythrough', onReady, { once: true });
-            setTimeout(() => {
-                if (!started) {
-                    started = true;
-                    heroVideo.addEventListener('canplay', tryPlay, { once: true });
-                }
-            }, 2000);
-        }
     }
 
 });
