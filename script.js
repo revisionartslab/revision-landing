@@ -214,8 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroVideo = document.getElementById('hero-video');
 
     if (heroVideo) {
-        let isVisible = true; // IntersectionObserver 기준 화면 내 여부
-        let isPlaying = false; // 실제 재생 중 여부 (중복 play() 호출 방지)
+        let isVisible = true;
+        let isPlaying = false;
+        let stallTimer = null;
 
         // [통합 재생 함수] 모든 재생 요청을 이 함수 하나로 일원화
         function tryPlay() {
@@ -229,21 +230,31 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // [버퍼 부족 자동 복구] stalled / waiting 이벤트 시 강제 재로드 후 재생
+        // [버퍼 부족 자동 복구] stalled 감지 후 1초 대기해도 재생 안 되면 처음부터 재시작
+        // currentTime 복원 후 load()는 loop 비디오에서 버퍼를 무한 재무효화시키므로 제거
         function handleStall() {
-            isPlaying = false;
-            if (!isVisible) return;
-            // 현재 재생 위치를 기억하고 load() 후 복구
-            const t = heroVideo.currentTime;
-            heroVideo.load();
-            heroVideo.currentTime = t;
-            tryPlay();
+            if (stallTimer) return; // 이미 대기 중
+            stallTimer = setTimeout(() => {
+                stallTimer = null;
+                if (!isVisible || isPlaying) return;
+                isPlaying = false;
+                heroVideo.currentTime = 0;
+                tryPlay();
+            }, 1000);
         }
 
         heroVideo.addEventListener('stalled', handleStall);
         heroVideo.addEventListener('waiting', () => { isPlaying = false; });
-        heroVideo.addEventListener('playing', () => { isPlaying = true; });
+        heroVideo.addEventListener('playing', () => {
+            isPlaying = true;
+            if (stallTimer) { clearTimeout(stallTimer); stallTimer = null; }
+        });
         heroVideo.addEventListener('pause', () => { isPlaying = false; });
+        heroVideo.addEventListener('ended', () => {
+            // loop 속성이 있어도 일부 모바일에서 ended가 발생할 수 있음
+            isPlaying = false;
+            tryPlay();
+        });
 
         // [Smart Pause] 화면 밖으로 나가면 일시정지하여 리소스 절약
         const observer = new IntersectionObserver((entries) => {
@@ -254,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     heroVideo.pause();
                     isPlaying = false;
+                    if (stallTimer) { clearTimeout(stallTimer); stallTimer = null; }
                 }
             });
         }, { threshold: 0.1 });
@@ -264,7 +276,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (heroVideo.readyState >= 4) {
             tryPlay();
         } else {
-            // canplaythrough 우선, 2초 이내 미발생 시 canplay로 폴백
             let started = false;
             const onReady = () => { if (!started) { started = true; tryPlay(); } };
             heroVideo.addEventListener('canplaythrough', onReady, { once: true });
