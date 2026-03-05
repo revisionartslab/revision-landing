@@ -1543,7 +1543,8 @@ footer {
         /* Reduced gap to save horizontal space */
     }
 
-    .btn-primary-sm {
+    .btn-primary-sm,
+    .btn-outline-sm {
         padding: 0.5rem 0.7rem;
         /* Compact padding */
         font-size: 0.68rem;

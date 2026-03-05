@@ -272,6 +272,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         observer.observe(heroVideo);
 
+        // [Watchdog] 3초마다 상태를 체크하여 화면 내에 있는데 멈춰있으면 재생 시도
+        setInterval(() => {
+            if (isVisible && !isPlaying && heroVideo.paused) {
+                console.log("Watchdog: Restarting stalled video");
+                tryPlay();
+            }
+        }, 3000);
+
+        // [Global Interaction] 첫 클릭시 재생 시도 (브라우저 정책 대응)
+        document.addEventListener('click', () => {
+            if (isVisible && heroVideo.paused) tryPlay();
+        }, { once: true });
+
         // [초기 재생] canplaythrough = 버퍼 충분히 쌓인 후 시작 (끊김 방지)
         if (heroVideo.readyState >= 4) {
             tryPlay();
