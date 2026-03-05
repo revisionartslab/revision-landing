@@ -1449,11 +1449,17 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Footer --- */
 footer {
-    padding: 1.2rem 0;
+    height: 80px;
     border-top: 1px solid var(--border);
     background: var(--bg-footer);
     backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
     transition: background-color 0.3s;
+}
+
+footer .container {
+    width: 100%;
 }
 
 .footer-grid {
@@ -1646,12 +1652,15 @@ footer {
 
     .footer-grid {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
+        padding: 2rem 0;
+        /* 모바일에서는 높이 대신 패딩 사용 */
     }
 
-    .footer-info {
-        margin-bottom: 0;
+    footer {
+        height: auto;
+        /* 모바일에서는 가변 높이 */
     }
 
     .footer-links {
