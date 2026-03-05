@@ -231,6 +231,7 @@ header.header-scrolled {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     padding: 6px 10px;
     border-radius: 20px;
@@ -246,11 +247,10 @@ header.header-scrolled {
 
 .lang-dropdown {
     position: absolute;
-    top: 100%;
-    right: 0;
-    margin-top: 12px;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
     background: #1a1a1e;
-    /* Solid background for dark mode */
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 8px;
@@ -259,7 +259,6 @@ header.header-scrolled {
     min-width: 140px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     z-index: 2000;
-    /* Increased z-index to stay above all elements */
 }
 
 .lang-dropdown.show {
@@ -271,7 +270,7 @@ header.header-scrolled {
     border: none;
     color: var(--text-main);
     padding: 8px 14px;
-    text-align: left;
+    text-align: center;
     cursor: pointer;
     border-radius: 6px;
     font-size: 0.85rem;
