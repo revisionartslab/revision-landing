@@ -502,7 +502,7 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: #161618;
     border: 1px solid var(--border);
     border-radius: 40px;
     padding: 12px;
@@ -708,7 +708,7 @@ html[lang="ja"] .hero-content h1 {
 .shot-frame {
     position: relative;
     border-radius: 24px;
-    background: #000000;
+    background: #161618;
     border: 1px solid var(--border);
     padding: 10px;
     overflow: hidden;
@@ -1103,7 +1103,7 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 560px;
-    background: #000000;
+    background: #161618;
     border: 1px solid var(--border);
     border-radius: 40px;
     padding: 12px;
