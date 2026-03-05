@@ -12,6 +12,7 @@
     --bg-header: rgba(10, 10, 12, 0.8);
     --bg-header-scrolled: rgba(10, 10, 12, 0.95);
     --bg-footer: rgba(10, 10, 12, 0.5);
+    --bg-footer: rgba(10, 10, 12, 0.5);
     --font-head: 'Outfit', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
     --font-body: 'Inter', 'Noto Sans KR', 'Noto Sans JP', sans-serif;
 
@@ -31,6 +32,7 @@
     --border: rgba(0, 0, 0, 0.1);
     --bg-header: rgba(255, 255, 255, 0.8);
     --bg-header-scrolled: rgba(255, 255, 255, 0.95);
+    --bg-footer: rgba(240, 244, 248, 0.6);
     --bg-footer: rgba(240, 244, 248, 0.6);
 }
 
@@ -673,12 +675,6 @@ html[lang="ja"] .hero-content h1 {
     border: 1px solid var(--border);
     padding: 3rem 2rem;
     border-radius: 24px;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.feature-card:hover {
-    border-color: var(--primary);
-    background: var(--border);
 }
 
 .f-icon {
@@ -754,13 +750,6 @@ html[lang="ja"] .hero-content h1 {
 .main-shot {
     aspect-ratio: auto;
     height: 100%;
-}
-
-
-
-.shot-frame:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-    /* Subtle highlight only */
 }
 
 .shot-frame img {
@@ -995,11 +984,6 @@ html[lang="ja"] .hero-content h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.testi-card:hover {
-    border-color: rgba(255, 255, 255, 0.12);
-    background-color: rgba(255, 255, 255, 0.04);
 }
 
 .testi-icon {
@@ -1259,11 +1243,6 @@ html[lang="ja"] .hero-content h1 {
     border: 1px solid var(--border);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.01);
-    transition: background 0.3s;
-}
-
-.faq-item:hover {
-    background: rgba(255, 255, 255, 0.03);
 }
 
 .faq-toggle {
