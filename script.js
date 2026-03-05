@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const langDropdown = document.getElementById('lang-dropdown');
     const currentLangText = document.getElementById('current-lang');
 
-    // Improved language detection
-    let rawLang = localStorage.getItem('revision_landing_lang') || navigator.language.toLowerCase();
+    // Improved language detection (Safer)
+    let rawLang = localStorage.getItem('revision_landing_lang') || (navigator.language || 'en').toLowerCase();
     let currentLang = 'en';
 
     if (rawLang.startsWith('ko')) currentLang = 'ko';
@@ -61,16 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
             applyTranslations();
             updateLangUI(lang);
             // Hide loading overlay only after translations are applied
-            setTimeout(() => {
-                const loader = document.getElementById('loading-overlay');
-                if (loader) loader.classList.add('hide');
-            }, 300);
+            document.body.classList.remove('lang-loading');
         } catch (error) {
             console.error('Error loading translations:', error);
-            // Fallback to English if current lang fails
-            if (lang !== 'en') loadTranslations('en');
+            // Safety: show content even if loading fails
+            setTimeout(() => document.body.classList.remove('lang-loading'), 500);
+            // Fallback to English if current lang fails (avoid infinite loop)
+            if (lang !== 'en') {
+                loadTranslations('en');
+            } else {
+                // If even English fails, force display
+                document.body.classList.remove('lang-loading');
+            }
         }
     }
+
+    // Fail-safe: Always show content after 1.5s regardless of JSON status
+    setTimeout(() => {
+        if (document.body.classList.contains('lang-loading')) {
+            console.warn('IETF fail-safe: Forcing site display');
+            document.body.classList.remove('lang-loading');
+        }
+    }, 1500);
 
     function applyTranslations() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
