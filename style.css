@@ -51,10 +51,9 @@
 [data-theme="light"] .image-box,
 [data-theme="light"] .shot-frame,
 [data-theme="light"] .manifesto-visual {
-    background: rgba(255, 255, 255, 0.8);
-    /* Frosted glass for light mode */
-    border: 1px solid rgba(24, 119, 242, 0.15);
-    box-shadow: 0 15px 35px rgba(24, 119, 242, 0.08);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -501,7 +500,8 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.05);
+    background: #000000;
+    /* Pure black for dark mode visual containers */
     /* Glass base */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -1133,8 +1133,8 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 560px;
-    /* Optimized to match manifesto-content height on desktop */
-    background: rgba(255, 255, 255, 0.05);
+    background: #000000;
+    /* Pure black for dark mode visual containers */
     /* Glass base */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
