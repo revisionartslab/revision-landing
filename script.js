@@ -190,13 +190,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // 7. Email Copy Logic
-    const copyEmail = document.getElementById('copy-email');
+    const footerEmail = document.getElementById('footer-email');
     const copyTooltip = document.getElementById('copy-tooltip');
 
-    if (copyEmail) {
-        copyEmail.addEventListener('click', () => {
-            const email = copyEmail.textContent;
-            navigator.clipboard.writeText(email).then(() => {
+    if (footerEmail) {
+        footerEmail.addEventListener('click', (e) => {
+            e.preventDefault();
+            const emailText = document.getElementById('footer-email-text').textContent;
+            navigator.clipboard.writeText(emailText).then(() => {
                 // Show tooltip
                 copyTooltip.classList.add('show');
 
