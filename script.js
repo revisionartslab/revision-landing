@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLang = localStorage.getItem('revision_landing_lang') || navigator.language.split('-')[0] || 'en';
 
     // Default to 'en' if language is not supported
-    if (!['en', 'ko', 'ja'].includes(currentLang)) currentLang = 'en';
+    if (!['en', 'ko', 'ja', 'zh', 'tw', 'es', 'pt'].includes(currentLang)) currentLang = 'en';
 
     let translations = {};
 
