@@ -384,6 +384,12 @@ nav {
 .btn-primary-sm {
     padding: 0.6rem 1.4rem;
     font-size: 0.85rem;
+    min-width: 154px;
+    /* [Stabilize] 고정 너비로 언어 변경 시 변동 방지 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn-primary:hover,
@@ -401,7 +407,12 @@ nav {
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.85rem;
-    display: inline-block;
+    min-width: 200px;
+    /* [Stabilize] 영문 "SUPPORT THE PROJECT" 기준으로 너비 고정 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     transition: border-color 0.3s, color 0.3s, background 0.3s;
     white-space: nowrap;
 }
@@ -1482,9 +1493,16 @@ footer {
 
 .footer-links {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
+    flex-direction: row;
+    /* 나란히 배치 */
+    align-items: center;
+    gap: 1rem;
+}
+
+#footer-email {
+    min-width: auto;
+    /* 이메일 주소 길이에 맞게 자동 조절 */
+    padding: 0.6rem 1.2rem;
 }
 
 .footer-links p {
@@ -1662,6 +1680,14 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
+        width: 100%;
+    }
+
+    #footer-kofi,
+    #footer-email {
+        width: 100%;
+        max-width: 320px;
+        min-width: 0;
     }
 }
 
