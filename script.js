@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'ko': 'KO',
             'ja': 'JA',
             'zh-hans': 'ZH',
-            'zh-hant': 'TW',
+            'zh-hant': 'ZHT',
             'es': 'ES',
             'pt': 'PT'
         };
