@@ -1,6 +1,9 @@
 {
+    "kofi_header": "開発を支援する",
+    "kofi_footer": "開発を支援する",
     "nav": {
-        "get_extension": "拡張機能をインストール"
+        "get_extension": "拡張機能をインストール",
+        "support_kofi": "開発を支援する"
     },
     "hero": {
         "badge": "Revision Labs: 時間の再発見",
@@ -115,6 +118,7 @@
     "footer": {
         "brand_line": "REVISION — ウェブメディアの体験を品格あるものにします。",
         "support": "サポート",
+        "support_kofi": "開発を支援する",
         "copyright": "© 2026 REVISION ARTS. All rights reserved."
     }
 }

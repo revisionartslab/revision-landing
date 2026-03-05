@@ -1,6 +1,9 @@
 {
+    "kofi_header": "SUPPORT THE PROJECT",
+    "kofi_footer": "SUPPORT THE PROJECT",
     "nav": {
-        "get_extension": "Get Extension"
+        "get_extension": "Get Extension",
+        "support_kofi": "SUPPORT THE PROJECT"
     },
     "hero": {
         "badge": "Revision Labs: Reclaiming Time",
@@ -115,6 +118,7 @@
     "footer": {
         "brand_line": "REVISION — Elevating your web media experience.",
         "support": "Contact Support",
+        "support_kofi": "Support the Project",
         "copyright": "© 2026 REVISION ARTS. All rights reserved."
     }
 }
