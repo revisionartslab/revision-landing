@@ -525,6 +525,7 @@ html[lang="ja"] .hero-content h1 {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     transform: translateZ(0);
+    will-change: transform;
 }
 
 .hero-video.v-visible {

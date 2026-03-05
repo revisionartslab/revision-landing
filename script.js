@@ -210,42 +210,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Elegant Hero Video Playback
+    // 8. Hero Video Playback (Robust Edition)
     const heroVideo = document.getElementById('hero-video');
 
-    function startVideo() {
-        if (!heroVideo) return;
-        heroVideo.play().then(() => {
-            heroVideo.classList.add('v-visible');
-        }).catch(e => {
-            // 브라우저 정책으로 차단된 경우 대기
-            console.warn("Autoplay blocked, waiting for interaction:", e);
-        });
-    }
-
     if (heroVideo) {
-        // [Smart Pause] Intersection Observer to save resources
+        let isVisible = true; // IntersectionObserver 기준 화면 내 여부
+        let isPlaying = false; // 실제 재생 중 여부 (중복 play() 호출 방지)
+
+        // [통합 재생 함수] 모든 재생 요청을 이 함수 하나로 일원화
+        function tryPlay() {
+            if (!isVisible || isPlaying) return;
+            heroVideo.play().then(() => {
+                isPlaying = true;
+                heroVideo.classList.add('v-visible');
+            }).catch(e => {
+                isPlaying = false;
+                console.warn("Autoplay blocked:", e);
+            });
+        }
+
+        // [버퍼 부족 자동 복구] stalled / waiting 이벤트 시 강제 재로드 후 재생
+        function handleStall() {
+            isPlaying = false;
+            if (!isVisible) return;
+            // 현재 재생 위치를 기억하고 load() 후 복구
+            const t = heroVideo.currentTime;
+            heroVideo.load();
+            heroVideo.currentTime = t;
+            tryPlay();
+        }
+
+        heroVideo.addEventListener('stalled', handleStall);
+        heroVideo.addEventListener('waiting', () => { isPlaying = false; });
+        heroVideo.addEventListener('playing', () => { isPlaying = true; });
+        heroVideo.addEventListener('pause', () => { isPlaying = false; });
+
+        // [Smart Pause] 화면 밖으로 나가면 일시정지하여 리소스 절약
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Video in view - resume
-                    if (heroVideo.paused && heroVideo.classList.contains('v-visible')) {
-                        heroVideo.play().catch(() => { });
-                    }
+                isVisible = entry.isIntersecting;
+                if (isVisible) {
+                    tryPlay();
                 } else {
-                    // Video out of view - pause to save GPU/CPU
                     heroVideo.pause();
+                    isPlaying = false;
                 }
             });
         }, { threshold: 0.1 });
 
         observer.observe(heroVideo);
 
-        // Initial ready check
-        if (heroVideo.readyState >= 3) {
-            startVideo();
+        // [초기 재생] canplaythrough = 버퍼 충분히 쌓인 후 시작 (끊김 방지)
+        if (heroVideo.readyState >= 4) {
+            tryPlay();
         } else {
-            heroVideo.addEventListener('canplay', startVideo, { once: true });
+            // canplaythrough 우선, 2초 이내 미발생 시 canplay로 폴백
+            let started = false;
+            const onReady = () => { if (!started) { started = true; tryPlay(); } };
+            heroVideo.addEventListener('canplaythrough', onReady, { once: true });
+            setTimeout(() => {
+                if (!started) {
+                    started = true;
+                    heroVideo.addEventListener('canplay', tryPlay, { once: true });
+                }
+            }, 2000);
         }
     }
 
