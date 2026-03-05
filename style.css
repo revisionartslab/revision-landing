@@ -539,7 +539,7 @@ html[lang="ja"] .hero-content h1 {
     border-radius: 40px;
     padding: 12px;
     overflow: hidden;
-    contain: content;
+    z-index: 1;
 }
 
 .image-box video,
@@ -554,14 +554,10 @@ html[lang="ja"] .hero-content h1 {
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
     transform: translateZ(0);
     will-change: transform;
-}
-
-.hero-video.v-visible {
-    opacity: 1;
 }
 
 .glow-effect {

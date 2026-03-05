@@ -239,24 +239,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroVideo = document.getElementById('hero-video');
 
     if (heroVideo) {
-        // 뷰포트 밖으로 나가면 일시정지, 다시 들어오면 재생 (리소스 절약)
+        // [Simple & Strong] 뷰포트 핸들러
         const videoObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    heroVideo.play().catch(() => { }); // 브라우저 정책으로 막힌 경우 조용히 무시
+                    heroVideo.play().catch(() => { });
                 } else {
                     heroVideo.pause();
                 }
             });
-        }, { threshold: 0.1 });
+        }, { threshold: 0 }); // 0%만 보여도 즉시 재생 시도
 
         videoObserver.observe(heroVideo);
 
-        // 브라우저 autoplay 정책 대응: 첫 사용자 인터랙션 시 재생 시도
-        // (이미 재생 중이면 아무 일도 일어나지 않음)
-        document.addEventListener('click', () => {
+        // [Global Event] 정책 대응 및 강제 시작
+        const playVideo = () => {
             if (heroVideo.paused) heroVideo.play().catch(() => { });
-        }, { once: true });
+        };
+
+        document.addEventListener('click', playVideo, { once: true });
+        document.addEventListener('touchstart', playVideo, { once: true });
+
+        // 페이지 로딩 완료(lang-loading 제거) 시점에 한번 더 트리거
+        const checkInterval = setInterval(() => {
+            if (!document.body.classList.contains('lang-loading')) {
+                playVideo();
+                clearInterval(checkInterval);
+            }
+        }, 100);
+        setTimeout(() => clearInterval(checkInterval), 3000); // 최대 3초만 시도
     }
 
 });
