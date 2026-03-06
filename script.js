@@ -113,6 +113,48 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLangText.textContent = labels[lang] || lang.toUpperCase();
         langDropdown.classList.remove('show');
         localStorage.setItem('revision_landing_lang', lang);
+
+        // Dynamic Dropdown Rendering with specific order
+        renderLangDropdown();
+    }
+
+    function renderLangDropdown() {
+        const langOrder = ['en', 'ko', 'ja', 'zh-hans', 'zh-hant', 'de', 'es', 'fr', 'pt'];
+        const langNames = {
+            'en': 'English',
+            'ko': '한국어',
+            'ja': '日本語',
+            'zh-hans': '简体中文',
+            'zh-hant': '繁體中文',
+            'de': 'Deutsch',
+            'es': 'Español',
+            'fr': 'Français',
+            'pt': 'Português'
+        };
+
+        langDropdown.innerHTML = '';
+
+        // Sort: current on top, then the rest follows the master order
+        const sortedLangs = [currentLang, ...langOrder.filter(l => l !== currentLang)];
+
+        sortedLangs.forEach(lang => {
+            const btn = document.createElement('button');
+            btn.setAttribute('data-lang', lang);
+            btn.textContent = langNames[lang];
+
+            if (lang === currentLang) {
+                btn.classList.add('active-lang');
+            }
+
+            btn.addEventListener('click', () => {
+                if (lang !== currentLang) {
+                    currentLang = lang;
+                    loadTranslations(currentLang);
+                }
+            });
+
+            langDropdown.appendChild(btn);
+        });
     }
 
     // Initial load
@@ -123,15 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
         langDropdown.classList.toggle('show');
     });
 
+    // Removal of static button logic as it's now handled by renderLangDropdown()
+    /*
     langDropdown.querySelectorAll('button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const selectedLang = btn.getAttribute('data-lang');
-            if (selectedLang !== currentLang) {
-                currentLang = selectedLang;
-                loadTranslations(currentLang);
-            }
-        });
+        ...
     });
+    */
 
     document.addEventListener('click', () => {
         langDropdown.classList.remove('show');
