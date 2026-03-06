@@ -292,16 +292,24 @@ header.header-scrolled {
 }
 
 .lang-dropdown button:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(24, 119, 242, 0.05);
+    /* Very subtle primary tint */
+    color: var(--primary);
+    /* Text changes to primary color on hover */
 }
 
 .lang-dropdown button.active-lang {
     color: var(--primary);
-    background: rgba(24, 119, 242, 0.08);
+    background: rgba(24, 119, 242, 0.1);
+    /* Slightly stronger tint for active state */
+}
+
+[data-theme="light"] .lang-dropdown button:hover {
+    background: rgba(24, 119, 242, 0.03);
 }
 
 [data-theme="light"] .lang-dropdown button.active-lang {
-    background: rgba(24, 119, 242, 0.05);
+    background: rgba(24, 119, 242, 0.06);
 }
 
 [data-theme="light"] .lang-dropdown {
