@@ -281,18 +281,27 @@ header.header-scrolled {
     background: transparent;
     border: none;
     color: var(--text-main);
-    padding: 8px 14px;
+    padding: 8.5px 14px;
     text-align: center;
     cursor: pointer;
     border-radius: var(--radius-inner);
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 600;
     transition: background 0.2s, color 0.2s;
     white-space: nowrap;
 }
 
 .lang-dropdown button:hover {
-    background: var(--primary);
-    color: white;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.lang-dropdown button.active-lang {
+    color: var(--primary);
+    background: rgba(24, 119, 242, 0.08);
+}
+
+[data-theme="light"] .lang-dropdown button.active-lang {
+    background: rgba(24, 119, 242, 0.05);
 }
 
 [data-theme="light"] .lang-dropdown {
