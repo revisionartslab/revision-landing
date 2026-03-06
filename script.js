@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (rawLang.startsWith('zh')) currentLang = 'zh-hans';
     else if (rawLang.startsWith('es')) currentLang = 'es';
     else if (rawLang.startsWith('pt')) currentLang = 'pt';
+    else if (rawLang.startsWith('fr')) currentLang = 'fr';
+    else if (rawLang.startsWith('de')) currentLang = 'de';
     else currentLang = 'en';
 
     let translations = {};
@@ -104,7 +106,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'zh-hans': 'ZH',
             'zh-hant': 'ZHT',
             'es': 'ES',
-            'pt': 'PT'
+            'pt': 'PT',
+            'fr': 'FR',
+            'de': 'DE'
         };
         currentLangText.textContent = labels[lang] || lang.toUpperCase();
         langDropdown.classList.remove('show');
