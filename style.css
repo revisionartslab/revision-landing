@@ -22,6 +22,13 @@
     /* Radius System */
     --radius-main: 12px;
     --radius-inner: 8px;
+
+    /* Card System */
+    --bg-glass-card: rgba(255, 255, 255, 0.03);
+    --glass-blur: blur(20px);
+    --card-border: 1px solid rgba(255, 255, 255, 0.1);
+    --padding-large: 50px;
+    --padding-medium: 30px;
 }
 
 [data-theme="light"] {
@@ -538,8 +545,9 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #161618;
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
     padding: 12px;
     overflow: hidden;
@@ -588,10 +596,11 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .u-item {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
-    padding: 30px 25px;
+    padding: var(--padding-medium);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -670,9 +679,10 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .feature-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    padding: 3rem 2rem;
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
+    padding: var(--padding-medium);
     border-radius: var(--radius-main);
 }
 
@@ -735,8 +745,9 @@ html[lang="ja"] .hero-content h1 {
 .shot-frame {
     position: relative;
     border-radius: var(--radius-main);
-    background: #161618;
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     padding: 10px;
     overflow: hidden;
     display: flex;
@@ -862,10 +873,11 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .trust-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
-    padding: 60px;
+    padding: var(--padding-large);
     display: flex;
     flex-direction: column;
 }
@@ -976,10 +988,11 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .testi-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
-    padding: 40px;
+    padding: var(--padding-medium);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1118,8 +1131,9 @@ html[lang="ja"] .hero-content h1 {
     position: relative;
     width: 100%;
     height: 560px;
-    background: #161618;
-    border: 1px solid var(--border);
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
     padding: 12px;
     overflow: hidden;
@@ -1175,12 +1189,11 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .help-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    /* trust-card와 동일한 얇은 실선 */
+    background: var(--bg-glass-card);
+    backdrop-filter: var(--glass-blur);
+    border: var(--card-border);
     border-radius: var(--radius-main);
-    /* trust-card와 동일한 둥글기 */
-    padding: 50px;
+    padding: var(--padding-large);
     min-height: 650px;
     display: flex;
     flex-direction: column;
@@ -1239,9 +1252,9 @@ html[lang="ja"] .hero-content h1 {
 }
 
 .faq-item {
-    border: 1px solid var(--border);
+    border: var(--card-border);
     border-radius: var(--radius-main);
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .faq-toggle {
