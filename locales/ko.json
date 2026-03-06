@@ -3,7 +3,8 @@
     "kofi_footer": "개발자에게 커피 한잔",
     "nav": {
         "get_extension": "확장 프로그램 설치",
-        "support_kofi": "개발자에게 커피 한잔"
+        "support_kofi": "프로젝트 후원하기",
+        "rate_on_store": "앱 평가하기"
     },
     "hero": {
         "badge": "Revision Labs : 시간의 재발견",

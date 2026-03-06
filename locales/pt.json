@@ -2,8 +2,9 @@
     "kofi_header": "APOIAR O PROJETO",
     "kofi_footer": "Apoiar o Projeto",
     "nav": {
-        "get_extension": "Instalar extensão",
-        "support_kofi": "APOIAR O PROJETO"
+        "get_extension": "Obter extensão",
+        "support_kofi": "APOIAR O PROJETO",
+        "rate_on_store": "AVALIAR APP"
     },
     "hero": {
         "badge": "Revision Labs : Recuperando seu tempo",

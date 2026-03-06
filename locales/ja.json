@@ -2,8 +2,9 @@
     "kofi_header": "開発を支援する",
     "kofi_footer": "開発を支援する",
     "nav": {
-        "get_extension": "拡張機能をインストール",
-        "support_kofi": "開発を支援する"
+        "get_extension": "拡張機能を入手",
+        "support_kofi": "プロジェクトを支援",
+        "rate_on_store": "アプリを評価"
     },
     "hero": {
         "badge": "Revision Labs : 時間の再発見",

@@ -3,7 +3,8 @@
     "kofi_footer": "支持專案",
     "nav": {
         "get_extension": "安裝擴充功能",
-        "support_kofi": "支持專案"
+        "support_kofi": "支持專案",
+        "rate_on_store": "評價擴充"
     },
     "hero": {
         "badge": "Revision Labs：奪回你的時間",

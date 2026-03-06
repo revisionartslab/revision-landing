@@ -3,7 +3,8 @@
     "kofi_footer": "ПОДДЕРЖАТЬ ПРОЕКТ",
     "nav": {
         "get_extension": "Установить расширение",
-        "support_kofi": "ПОДДЕРЖАТЬ ПРОЕКТ"
+        "support_kofi": "ПОДДЕРЖАТЬ ПРОЕКТ",
+        "rate_on_store": "ОЦЕНИТЬ"
     },
     "hero": {
         "badge": "Revision Labs: Возвращаем время",
