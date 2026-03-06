@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     else if (rawLang.startsWith('pt')) currentLang = 'pt';
     else if (rawLang.startsWith('fr')) currentLang = 'fr';
     else if (rawLang.startsWith('de')) currentLang = 'de';
+    else if (rawLang.startsWith('it')) currentLang = 'it';
+    else if (rawLang.startsWith('ru')) currentLang = 'ru';
     else currentLang = 'en';
 
     let translations = {};
@@ -108,7 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'es': 'ES',
             'pt': 'PT',
             'fr': 'FR',
-            'de': 'DE'
+            'de': 'DE',
+            'it': 'IT',
+            'ru': 'RU'
         };
         currentLangText.textContent = labels[lang] || lang.toUpperCase();
         langDropdown.classList.remove('show');
@@ -119,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderLangDropdown() {
-        const langOrder = ['en', 'ko', 'ja', 'zh-hans', 'zh-hant', 'de', 'es', 'fr', 'pt'];
+        const langOrder = ['en', 'ko', 'ja', 'zh-hans', 'zh-hant', 'de', 'es', 'fr', 'it', 'pt', 'ru'];
         const langNames = {
             'en': 'English',
             'ko': '한국어',
@@ -129,7 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'de': 'Deutsch',
             'es': 'Español',
             'fr': 'Français',
-            'pt': 'Português'
+            'it': 'Italiano',
+            'pt': 'Português',
+            'ru': 'Русский'
         };
 
         langDropdown.innerHTML = '';
