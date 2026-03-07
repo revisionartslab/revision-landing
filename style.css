@@ -429,8 +429,6 @@ nav {
 .btn-primary-sm {
     padding: 0.6rem 1.4rem;
     font-size: 0.85rem;
-    min-width: 154px;
-    /* [Stabilize] 고정 너비로 언어 변경 시 변동 방지 */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -452,8 +450,6 @@ nav {
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.85rem;
-    min-width: 200px;
-    /* [Stabilize] 영문 "SUPPORT THE PROJECT" 기준으로 너비 고정 */
     display: inline-flex;
     align-items: center;
     justify-content: center;
