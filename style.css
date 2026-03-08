@@ -1539,11 +1539,35 @@ footer .container {
 @media (max-width: 900px) {
     :root {
         --section-p-v: 80px;
-        /* Standard mobile section spacing */
     }
 
     .container {
         width: 92%;
+    }
+
+    /* Disable backdrop-filter on mobile to avoid rendering artifacts (white boxes) */
+    header,
+    footer {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    header {
+        background: var(--bg-header-scrolled) !important;
+    }
+
+    footer {
+        background: var(--bg-dark) !important;
+    }
+
+    /* Disable blurred background blobs on mobile as they often cause "square block" rendering errors */
+    .bg-glow {
+        display: none !important;
+    }
+
+    /* Hide back-to-top on mobile/tablet for cleaner UX and to avoid fixed-pos artifacts */
+    .back-to-top {
+        display: none !important;
     }
 
     .hero-grid {
