@@ -16,12 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     themeBtn.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        // 1. 테마 속성 변경
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('revision_landing_theme', newTheme);
         updateThemeIcons(newTheme);
 
-        // [Fix] 모바일 테마 변경 시 배경색 렉 해결: 강제 리플로우 유도
-        void document.body.offsetHeight;
+        // 2. [Mobile Fix] 강제 리플로우 및 스타일 갱신 유도
+        // 단순히 body의 높이를 읽는 것보다 더 확실하게 전체 레이어를 리프레시합니다.
+        document.body.style.display = 'none';
+        document.body.offsetHeight; // 리플로우 유도
+        document.body.style.display = 'block';
     });
 
     function updateThemeIcons(theme) {

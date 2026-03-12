@@ -1490,13 +1490,13 @@ html[lang="ja"] .hero-content h1 {
 
 /* --- Footer --- */
 footer {
-    height: 80px;
+    padding: 60px 0;
     border-top: 1px solid var(--border);
     background: var(--bg-footer);
     backdrop-filter: blur(20px);
-    display: flex;
-    align-items: center;
     transition: background-color 0.3s;
+    position: relative;
+    z-index: 10;
 }
 
 footer .container {
@@ -1717,15 +1717,14 @@ footer .container {
 
     .footer-grid {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 2rem;
         text-align: center;
-        padding: 2rem 0;
-        /* 모바일에서는 높이 대신 패딩 사용 */
+        padding: 0;
     }
 
     footer {
         height: auto;
-        /* 모바일에서는 가변 높이 */
+        padding: 60px 0;
     }
 
     .footer-links {
@@ -1734,13 +1733,16 @@ footer .container {
         align-items: center;
         gap: 0.8rem;
         width: 100%;
+        padding: 0 20px;
     }
 
     #footer-kofi,
+    #footer-rate,
     #footer-email {
         width: 100%;
         max-width: 320px;
         min-width: 0;
+        justify-content: center;
     }
 }
 
