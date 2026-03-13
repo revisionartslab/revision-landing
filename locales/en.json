@@ -8,8 +8,8 @@
     },
     "hero": {
         "badge": "Revision Labs : Reclaiming Time",
-        "title": "THE STANDARD OF<br><span class=\"text-gradient\">IMAGE EXTRACTION</span>",
-        "desc": "Leave image exploration and organization to REVISION.<br>Save your valuable time for true creativity.<br>Preview instantly, filter perfectly, and download only what you need.",
+        "title": "IMAGE DOWNLOADER<br><span class=\"text-gradient\">REVISION</span>",
+        "desc": "Leave image exploration and organization to REVISION. The ultimate Image Downloader built for creators. Save your valuable time for true creativity.<br>Preview instantly, filter perfectly, and download only what you need.",
         "btn_primary": "Add to Chrome — It's Free",
         "btn_secondary": "Our Manifesto",
         "stat_velocity": "<strong>Exceptional Velocity</strong> Speed Benchmark",
@@ -58,7 +58,9 @@
         "q2": "Does it work on Instagram or Pinterest?",
         "a2": "Yes. REVISION features a special social media driver that handles complex URL patterns found on these platforms.",
         "q3": "Can I convert images to JPG or PNG?",
-        "a3": "Absolutely. You can choose to save files in their original format or convert them within the download settings."
+        "a3": "Absolutely. You can choose to save files in their original format or convert them within the download settings.",
+        "q4": "Is it safe and server-friendly?",
+        "a4": "Yes. REVISION uses an 'Eco-Scan' logic that prioritizes your local browser cache. It avoids unnecessary traffic and respects server resources, ensuring total safety and preventing IP bans."
     },
     "testimonials": {
         "badge": "Testimonials",
