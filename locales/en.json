@@ -4,6 +4,7 @@
     "nav": {
         "get_extension": "Get Extension",
         "support_kofi": "SUPPORT THE PROJECT",
+        "support_toonation": "TOONATION",
         "rate_on_store": "RATE ON STORE"
     },
     "hero": {
@@ -122,6 +123,7 @@
         "brand_line": "REVISION — Elevating your web media experience.",
         "support": "Contact Support",
         "support_kofi": "SUPPORT THE PROJECT",
+        "support_toonation": "TOONATION",
         "copied": "Copied!",
         "copyright": "© 2026 REVISION ARTS. All rights reserved."
     }

@@ -123,6 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
         langDropdown.classList.remove('show');
         localStorage.setItem('revision_landing_lang', lang);
 
+        const navToonation = document.getElementById('nav-toonation');
+        const footerToonation = document.getElementById('footer-toonation');
+        if (navToonation) navToonation.style.display = (lang === 'ko') ? 'inline-flex' : 'none';
+        if (footerToonation) footerToonation.style.display = (lang === 'ko') ? 'inline-flex' : 'none';
+
         // Dynamic Dropdown Rendering with specific order
         renderLangDropdown();
     }
