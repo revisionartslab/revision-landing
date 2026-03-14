@@ -80,7 +80,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
-    /* Fixed header offset */
+    /* [UX] 모바일 레이아웃 흔들림(덜컹거림) 방지: 루트 수준에서 가로 스크롤 완전 차단 */
+    overflow-x: hidden;
 }
 
 body {
@@ -260,8 +261,8 @@ header.header-scrolled {
 .lang-dropdown {
     position: absolute;
     top: calc(100% + 12px);
-    left: 50%;
-    transform: translateX(-50%);
+    /* [UX] 중앙 정렬 해제 -> 오른쪽 가이드라인에 맞춤 (모바일 화면 이탈 방지) */
+    right: 0;
     background: #1a1a1e;
     border: 1px solid var(--border);
     border-radius: var(--radius-main);
@@ -523,7 +524,9 @@ nav {
 
 /* Specific adjustment for CJK Title to prevent overlap/cramping */
 html[lang="ko"] .hero-content h1,
-html[lang="ja"] .hero-content h1 {
+html[lang="ja"] .hero-content h1,
+html[lang="zh-hans"] .hero-content h1,
+html[lang="zh-hant"] .hero-content h1 {
     line-height: 1.25;
 }
 
@@ -1647,8 +1650,8 @@ footer .container {
 
     .hero-content h1 {
         font-size: 2.8rem;
-        /* Corrected: Hero must be the largest */
-        word-break: keep-all;
+        /* [CJK] 일본어/중국어 등 띄어쓰기 없는 언어의 화면 뚫고나감 방지 */
+        word-break: normal;
         overflow-wrap: break-word;
         line-height: 1.15;
         margin-bottom: 1.5rem;
