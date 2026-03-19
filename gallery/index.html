@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISION ARTS GALLERY | Premium Artwork Exhibition</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore the premium AI artwork and design portfolio of REVISION ARTS. A high-performance gallery featuring cutting-edge visuals.">
+    <meta name="keywords" content="REVISION ARTS, Artwork, AI Art, Design, Portfolio, Gallery">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="REVISION ARTS GALLERY">
+    <meta property="og:description" content="Premium Artwork Exhibition by REVISION ARTS">
+    <meta property="og:type" content="website">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="gallery-style.css">
+</head>
+<body>
+    <header class="glass">
+        <div class="container nav-content">
+            <div class="logo" onclick="window.location.href=window.location.pathname" style="cursor: pointer; user-select: none;">
+                <h2>REVISION ARTS</h2>
+                <p>Inspiration by Eternity</p>
+            </div>
+            <nav class="header-nav rv-scrollbar" id="header-nav">
+                <!-- Categories will be dynamically injected here by JS -->
+            </nav>
+
+            <div style="display: flex; align-items: center; gap: 12px; flex-shrink: 0; margin-left: 20px;">
+                <div class="density-ctrl">
+                    <input type="range" id="density-slider" class="density-range" min="0" max="10" value="5" step="1" oninput="updateDensity(this.value)">
+                </div>
+                <button class="theme-toggle-dot" onclick="toggleTheme()"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="scroll-root">
+        <div class="container">
+            <div id="gallery" class="gallery-grid">
+                <!-- Dynamic RV-CARDS will be injected here -->
+            </div>
+            
+            <!-- Premium Loader -->
+            <div id="loader" style="padding: 40px; display: none; text-align: center;">
+                <div class="rv-loader" style="display: inline-block;"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cinematic Detail Viewer (Custom Implementation) -->
+    <div id="rv-viewer" class="rv-viewer">
+        <!-- Top Logic Bar -->
+        <div class="viewer-controls">
+            <button id="viewer-info-btn" class="viewer-control-btn" onclick="toggleInfoGlobal()">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </button>
+            <button class="viewer-control-btn share" onclick="copyViewerLinkDirect()" style="position: relative;">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+                <!-- Tooltip adjusted to match proximity of smaller buttons -->
+                <span id="share-copy-feedback" class="copy-feedback-mini" style="position: absolute; right: 50%; transform: translateX(50%) translateY(0); bottom: calc(100% - 1px); transition: opacity 0.3s, transform 0.3s;">COPIED</span>
+            </button>
+            <button class="viewer-control-btn" onclick="copyEmailGlobal(this)" style="position: relative;">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <span class="copy-feedback-mini email-feedback" style="position: absolute; right: 50%; transform: translateX(50%) translateY(0); bottom: calc(100% - 1px); transition: opacity 0.3s, transform 0.3s;">COPIED</span>
+            </button>
+            <button class="viewer-control-btn close" onclick="closeViewer()">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+            </button>
+        </div>
+        
+        <div class="viewer-media-panel">
+            <!-- Navigation Arrows (Solid Style) -->
+            <div class="viewer-nav viewer-nav-prev" onclick="navViewer(-1)">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </div>
+            <div class="viewer-nav viewer-nav-next" onclick="navViewer(1)">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </div>
+
+            <div class="viewer-img-container" onclick="event.stopPropagation()">
+                <img id="viewer-img" src="" alt="">
+            </div>
+        </div>
+
+        <div class="viewer-info-panel">
+            <div class="viewer-header">
+                <p class="viewer-category">
+                    <span id="viewer-category"></span>
+                    <button class="copy-token-btn" onclick="copyRawTitle()" style="position: relative;">
+                        <span id="copy-feedback" class="copy-feedback-mini" style="position: absolute; right: 50%; transform: translateX(50%) translateY(0); bottom: calc(100% + 1px); transition: opacity 0.3s, transform 0.3s;">COPIED</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="8" width="14" height="14" rx="1.5" /><rect x="8" y="2" width="14" height="14" rx="1.5" stroke="var(--bg-main)" stroke-width="2.5" /></svg>
+                    </button>
+                </p>
+                <h1 id="viewer-title" class="viewer-title"></h1>
+            </div>
+
+            <!-- PROMPT PANEL (이스터에그 진입: 제목 3클릭으로 활성화) -->
+            <div id="prompt-section" style="display:none;">
+                <div id="prompt-panel" class="prompt-panel" style="display:none;">
+                    <!-- Use same hierarchy as viewer-category for seamless look -->
+                    <div class="viewer-category" style="margin-bottom: 12px; border-bottom: none; background: transparent; padding: 0;">
+                        <span>PROMPT</span>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <button class="copy-token-btn" onclick="copyPromptText()" style="position: relative;">
+                                <span id="prompt-copy-feedback" class="copy-feedback-mini" style="position: absolute; right: 50%; transform: translateX(50%) translateY(0); bottom: calc(100% + 1px); transition: opacity 0.3s, transform 0.3s;">COPIED</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="8" width="14" height="14" rx="1.5" /><rect x="8" y="2" width="14" height="14" rx="1.5" stroke="var(--bg-main)" stroke-width="2.5" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <pre id="prompt-content" class="prompt-content">Loading...</pre>
+                </div>
+            </div>
+            
+            <p id="viewer-desc" class="viewer-desc"></p>
+
+            <div class="viewer-meta-grid">
+                <div class="meta-item">
+                    <label>Resolution</label>
+                    <p id="viewer-res">---</p>
+                </div>
+                <div class="meta-item">
+                    <label>Asset ID</label>
+                    <p id="viewer-id">---</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Move to Top Button -->
+    <button id="move-to-top" class="viewer-control-btn move-to-top" onclick="scrollToTop()">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <!-- Premium Toast Notification -->
+    <div id="toast" class="rv-toast">Asset link copied to clipboard</div>
+
+    <!-- Scripts -->
+    <script type="module" src="gallery-logic.js?v=2.4"></script>
+</body>
+</html>
