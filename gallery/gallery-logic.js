@@ -1928,6 +1928,10 @@ window.openViewer = async function (index) {
 
     currentViewerIndex = index;
 
+    // Hide 'Move to Top' button while viewer is open
+    const topBtn = document.getElementById('move-to-top');
+    if (topBtn) topBtn.classList.remove('visible');
+
     const vImg = document.getElementById('viewer-img');
     const titleEl = document.getElementById('viewer-title');
 
@@ -1937,6 +1941,7 @@ window.openViewer = async function (index) {
     // ★ EASTER EGG: titleEl 직접 바인딩 (openViewer마다 새로 설정)
     titleEl._eggCount = 0;
     clearTimeout(titleEl._eggTimer);
+
     
     // Robust listener that catches clicks even on nested spans
     titleEl.onclick = async function (e) {
@@ -2076,11 +2081,15 @@ window.openViewer = async function (index) {
         }
     }
 
+    // ── PROMPT PRE-LOAD: Fetch immediately so it's ready for the easter egg ──
+    if (promptContent && promptContent._promptUrl && !promptContent._loaded) {
+        // We don't await here; let it load in the background
+        fetchPromptContent(promptContent);
+    }
+
     // Always apply the current mode state when a new image is opened
     applyEggUIState(window.__eggMode);
-    if (window.__eggMode && promptContent && !promptContent._loaded) {
-        await fetchPromptContent(promptContent);
-    }
+
 
     const tempImg = new Image();
     tempImg.src = item.url;
@@ -2102,6 +2111,13 @@ window.closeViewer = function () {
     document.documentElement.style.overflow = '';
     if (mainContent) mainContent.style.overflow = 'auto';
     window.location.hash = '';
+
+    // Restore 'Move to Top' button visibility based on scroll position
+    if (mainContent && mainContent.scrollTop > 400) {
+        const topBtn = document.getElementById('move-to-top');
+        if (topBtn) topBtn.classList.add('visible');
+    }
+
 
     const menu = document.getElementById('share-menu');
     if (menu) menu.classList.remove('active');
