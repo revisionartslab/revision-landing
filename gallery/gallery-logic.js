@@ -2218,7 +2218,6 @@ window.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowUp') { e.preventDefault(); applyZoom(0.1); }
     if (e.key === 'ArrowDown') { e.preventDefault(); applyZoom(-0.1); }
     if (e.key.toLowerCase() === 'c') { e.preventDefault(); resetImage(); }
-    if (e.key.toLowerCase() === 'r') { e.preventDefault(); window.handleShuffle(); }
 });
 
 let currentZoom = 1;
