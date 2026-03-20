@@ -2049,8 +2049,13 @@ window.openViewer = async function (index) {
     const isMobile = window.innerWidth <= 1024;
     
     if (isMobile) {
-        // --- Mobile Mode: Pinterest Carousel ---
         initViewerSlider(); // Ensure slides are ready
+        
+        // --- Mobile Mode: Pinterest Carousel --- //
+        // 1. Mobile ALWAYS opens in "Immersive" (Info Hidden) by default to prevent DOM lag and maximize image space
+        isInfoEnabled = false;
+        syncInfoState();
+        
         isSliderScrolling = true;
         slider.scrollTo({ left: index * slider.clientWidth, behavior: 'auto' });
         
@@ -2338,6 +2343,20 @@ function showToast(message) {
 viewer.addEventListener('dblclick', (e) => {
     // Prevent trigger if clicking on buttons or info panel
     if (e.target.closest('.viewer-info-panel') || e.target.closest('.viewer-controls')) return;
+    
+    // --- Mobile Double Tap (Full-Bleed Zoom Toggle) ---
+    if (window.innerWidth <= 1024) {
+        viewer.classList.toggle('global-fullscreen-zoom');
+        
+        // Also enforce closing the info panel if they try to enter full-bleed
+        if (viewer.classList.contains('global-fullscreen-zoom') && isInfoEnabled) {
+            isInfoEnabled = false;
+            syncInfoState();
+        }
+        return;
+    }
+    
+    // --- PC Mode Reset ---
     resetImage();
 });
 

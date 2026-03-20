@@ -1149,6 +1149,15 @@ button .copy-feedback-mini.active {
         padding-top: 24px;
     }
 
+    /* Stage 3: Double Tap Full Bleed Zoom */
+    .global-fullscreen-zoom .viewer-slide img {
+        object-fit: cover !important;
+        transform: scale(1) !important; /* Lock scale so it doesn't drift if touched */
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+    }
+
     /* Hide large navigation arrows on very small screens to favor gestures */
     @media (max-width: 480px) {
         .viewer-nav {
