@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REVISION ARTS GALLERY | Premium Artwork Exhibition</title>
     
+    <!-- Trailing Slash Fixer: Ensures relative paths like gallery-style.css work correctly -->
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            if (path.length > 1 && !path.endsWith('/') && !path.includes('.')) {
+                window.location.replace(path + '/');
+            }
+        })();
+    </script>
+
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="Explore the premium AI artwork and design portfolio of REVISION ARTS. A high-performance gallery featuring cutting-edge visuals.">
     <meta name="keywords" content="REVISION ARTS, Artwork, AI Art, Design, Portfolio, Gallery">
@@ -16,6 +27,8 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="gallery-style.css">
+
+
 
 </head>
 <body>
@@ -140,6 +153,8 @@
 
     <!-- Scripts -->
     <script type="module" src="gallery-logic.js?v=2.4"></script>
+
+
 
 </body>
 </html>
