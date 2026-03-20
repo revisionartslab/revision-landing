@@ -1827,32 +1827,53 @@ window.toggleTheme = function() {
 const slider = document.getElementById('viewer-slider');
 let isSliderScrolling = false;
 
+let sliderObserver = null;
+
 function initViewerSlider() {
     if (!slider) return;
     if (window.innerWidth > 1024) {
         slider.innerHTML = ''; // Keep slider empty on PC to avoid layout noise
+        if (sliderObserver) sliderObserver.disconnect();
         return;
     }
+    
+    // Disconnect old observer to prevent duplicates
+    if (sliderObserver) sliderObserver.disconnect();
+    
     slider.innerHTML = '';
+    
+    // A modern observer to track exactly which slide naturally snaps into the center viewport
+    sliderObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            // A slide is active when it dominates 60%+ of the viewport horizontally
+            if (entry.isIntersecting && !isSliderScrolling) {
+                const index = parseInt(entry.target.dataset.index);
+                if (!isNaN(index) && index !== currentViewerIndex) {
+                    updateViewerMetadata(index);
+                }
+            }
+        });
+    }, {
+        root: slider,
+        threshold: 0.6 // Trigger when 60% visible
+    });
+
     filteredItems.forEach((item, index) => {
         const slide = document.createElement('div');
         slide.className = 'viewer-slide';
+        slide.dataset.index = index; // Embed index to track elegantly
+        
         const img = document.createElement('img');
         img.dataset.src = item.url;
         img.alt = escapeHtml(item.title);
+        
         slide.appendChild(img);
         slider.appendChild(slide);
+        
+        sliderObserver.observe(slide);
     });
 }
 initViewerSlider();
-
-slider.addEventListener('scroll', () => {
-    if (isSliderScrolling) return;
-    const index = Math.round(slider.scrollLeft / slider.clientWidth);
-    if (index !== currentViewerIndex && index >= 0 && index < filteredItems.length) {
-        updateViewerMetadata(index);
-    }
-});
 
 
 
