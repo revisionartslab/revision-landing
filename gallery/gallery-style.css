@@ -1071,7 +1071,14 @@ button .copy-feedback-mini.active {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px 16px; /* Spacing for neighboring images hint */
+        padding: 0; /* Removing the hint padding so images can reach physical edges */
+        transition: opacity 0.3s;
+    }
+
+    /* Secret technique: When user pinches to zoom natively, we transparentize neighbors */
+    .rv-viewer.isolating-zoom .viewer-slide:not(.active-slide) {
+        opacity: 0 !important;
+        pointer-events: none;
     }
 
     .viewer-slide img {
@@ -1100,8 +1107,12 @@ button .copy-feedback-mini.active {
     }
 
     .rv-viewer.info-collapsed .viewer-media-panel {
-        height: 100vh;
-        padding: 60px 20px;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%; /* Fully dynamic height, handling landscape rotation safely */
+        padding: 0 !important;
+        background: #000; /* Deep black for true cinema feel */
     }
 
     /* Stage 1: Ghost UI (Hide controls until touched) */
@@ -1152,10 +1163,10 @@ button .copy-feedback-mini.active {
     /* Stage 3: Double Tap Full Bleed Zoom */
     .global-fullscreen-zoom .viewer-slide img {
         object-fit: cover !important;
-        transform: scale(1) !important; /* Lock scale so it doesn't drift if touched */
         width: 100% !important;
         height: 100% !important;
         border-radius: 0 !important;
+        transform: scale(1) !important;
     }
 
     /* Hide large navigation arrows on very small screens to favor gestures */

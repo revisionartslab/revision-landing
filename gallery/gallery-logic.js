@@ -1845,11 +1845,17 @@ function initViewerSlider() {
     // A modern observer to track exactly which slide naturally snaps into the center viewport
     sliderObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            // A slide is active when it dominates 60%+ of the viewport horizontally
-            if (entry.isIntersecting && !isSliderScrolling) {
-                const index = parseInt(entry.target.dataset.index);
-                if (!isNaN(index) && index !== currentViewerIndex) {
-                    updateViewerMetadata(index);
+            if (entry.isIntersecting) {
+                // Keep the active slide cleanly marked for isolated zooming
+                const allSlides = slider.querySelectorAll('.viewer-slide');
+                allSlides.forEach(s => s.classList.remove('active-slide'));
+                entry.target.classList.add('active-slide');
+
+                if (!isSliderScrolling) {
+                    const index = parseInt(entry.target.dataset.index);
+                    if (!isNaN(index) && index !== currentViewerIndex) {
+                        updateViewerMetadata(index);
+                    }
                 }
             }
         });
@@ -2440,6 +2446,18 @@ let touchStartX = 0, touchStartY = 0;
 let touchEndX = 0, touchEndY = 0;
 let activeTouchImage = null; // Cache to avoid multiple querySelectors
 const DISMISS_THRESHOLD = 150; // Threshold to close by pulling down
+
+// Intercept Visual Viewport scaling to hide neighboring slides when natively zoomed in
+if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', () => {
+        if (!viewer.classList.contains('active')) return;
+        if (visualViewport.scale > 1.05) {
+            viewer.classList.add('isolating-zoom');
+        } else {
+            viewer.classList.remove('isolating-zoom');
+        }
+    });
+}
 
 viewer.addEventListener('touchstart', (e) => {
     if (e.touches.length > 1) return;
