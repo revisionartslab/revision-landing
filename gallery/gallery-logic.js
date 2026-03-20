@@ -2475,8 +2475,10 @@ syncInfoState(); // Initial sync on load to ensure PC start is consistent
 
 viewer.addEventListener('contextmenu', (e) => {
     if (viewer.classList.contains('active')) {
-        // If clicking directly on the image, allow the default browser context menu
-        if (e.target.id === 'viewer-img') {
+        // Allow default context menu on image, info panel, and controls
+        if (e.target.id === 'viewer-img' || 
+            e.target.closest('.viewer-info-panel') || 
+            e.target.closest('.viewer-controls')) {
             return; 
         }
         
