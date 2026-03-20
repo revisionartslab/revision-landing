@@ -2037,6 +2037,9 @@ window.openViewer = async function (index) {
         loadSlideImage(index - 1);
         
         setTimeout(() => { isSliderScrolling = false; }, 50);
+
+        // Stage 1: Ghost UI init
+        triggerMobileGhostUI();
     } else {
         // --- PC Mode: Robust Single Image (Pan/Zoom) ---
         resetImage(); 
@@ -2069,6 +2072,18 @@ function loadSlideImage(index) {
 
     // Pre-fetch related prompt text for instant display if requested later
     preloadPromptText(index);
+}
+
+let ghostUITimer = null;
+function triggerMobileGhostUI() {
+    const isMobile = window.innerWidth <= 1024;
+    if (!isMobile) return;
+    
+    viewer.classList.add('show-mobile-controls');
+    clearTimeout(ghostUITimer);
+    ghostUITimer = setTimeout(() => {
+        viewer.classList.remove('show-mobile-controls');
+    }, 2500);
 }
 
 function updateViewerMetadata(index) {
@@ -2302,6 +2317,13 @@ viewer.addEventListener('dblclick', (e) => {
     // Prevent trigger if clicking on buttons or info panel
     if (e.target.closest('.viewer-info-panel') || e.target.closest('.viewer-controls')) return;
     resetImage();
+});
+
+// Mobile Ghost UI Trigger on Tap
+viewer.addEventListener('click', (e) => {
+    // Only trigger if clicking on the media panel (the image area)
+    if (e.target.closest('.viewer-controls') || e.target.closest('.viewer-info-panel')) return;
+    triggerMobileGhostUI();
 });
 
 window.addEventListener('keydown', (e) => {

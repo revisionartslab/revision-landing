@@ -1014,6 +1014,15 @@ button .copy-feedback-mini.active {
 
 /* Responsive Overrides */
 @media (max-width: 1024px) {
+    /* Stage 1: Remove Hover Elements & Footer for pure mobile experience */
+    .app-footer {
+        display: none !important;
+    }
+    
+    .card-overlay {
+        display: none !important;
+    }
+
     .rv-viewer {
         flex-direction: column;
         overflow-y: auto; /* Allow the whole viewer to scroll if needed */
@@ -1086,6 +1095,7 @@ button .copy-feedback-mini.active {
         padding: 60px 20px;
     }
 
+    /* Stage 1: Ghost UI (Hide controls until touched) */
     .viewer-controls {
         top: 12px;
         right: 12px;
@@ -1094,6 +1104,14 @@ button .copy-feedback-mini.active {
         padding: 4px;
         border-radius: 20px;
         gap: 4px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+    }
+    
+    .rv-viewer.show-mobile-controls .viewer-controls {
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .viewer-control-btn svg {
