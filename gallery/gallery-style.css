@@ -1032,186 +1032,176 @@ button .copy-feedback-mini.active {
     to { transform: rotate(360deg); }
 }
 
-/* Responsive Overrides */
-@media (max-width: 1024px) {
-    /* Stage 1: Remove Hover Elements & Footer for pure mobile experience */
-    .app-footer {
-        display: none !important;
-    }
-    
-    .card-overlay {
-        display: none !important;
-    }
+/* ═══════════════════════════════════════════════════════════════════
+   MOBILE — everything below 1024px
+   Architecture: Full-screen image canvas + fixed bottom bar + sliding info sheet
+   PC layout (flex row with info panel on right) is completely untouched.
+═══════════════════════════════════════════════════════════════════ */
 
+/* Hide elements not needed on mobile */
+.app-footer { display: none !important; }
+.card-overlay { display: none !important; }
+.viewer-nav { display: none; } /* Arrows are PC-only. Mobile uses swipe. */
+
+/* Base hide classes for mobile-only architecture (Hidden on PC) */
+.mobile-canvas { display: none; }
+.mobile-bottom-bar { display: none; }
+.mobile-info-sheet { display: none; }
+
+/* Mobile viewer: full-screen black canvas */
+@media (max-width: 1024px) {
     .rv-viewer {
         flex-direction: column;
-        overflow-y: auto; /* Allow the whole viewer to scroll if needed */
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .viewer-media-panel {
-        flex: none;
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        padding: 0 !important;
-        background: #000;
-        order: 1;
         overflow: hidden;
+        background: #000;
     }
 
-    /* Slider Container Architecture */
-    .viewer-slider {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    .viewer-slider::-webkit-scrollbar {
+    /* PC info panel is hidden on mobile – we use the mobile-info-sheet instead */
+    .viewer-info-panel {
         display: none;
     }
 
-    .viewer-slide {
-        flex: 0 0 100%;
-        width: 100%;
-        height: 100%;
-        scroll-snap-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0; /* Removing the hint padding so images can reach physical edges */
-        transition: opacity 0.3s;
-    }
-
-    /* Secret technique: When user pinches to zoom natively, we transparentize neighbors */
-    .rv-viewer.isolating-zoom .viewer-slide:not(.active-slide) {
-        opacity: 0 !important;
-        pointer-events: none;
-    }
-
-    .viewer-slide img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-    }
-
-    .viewer-info-panel {
+    /* Media panel fills the whole screen */
+    .viewer-media-panel {
+        position: absolute;
+        inset: 0;
         flex: none;
         width: 100%;
-        height: auto;
-        border-left: none;
-        border-top: 1px solid var(--border-main);
-        padding: 40px 20px 80px 20px;
-        order: 2;
-        transform: none;
-        position: relative;
-        background: var(--bg-main);
-        z-index: 2200;
+        height: 100%;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
     }
 
-    .viewer-bottom-wrapper {
+    /* PC img container hidden on mobile */
+    .viewer-img-container {
+        display: none;
+    }
+
+    /* ── Mobile Canvas Engine ── */
+    .mobile-canvas {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        pointer-events: none; /* Pass clicks */
-        z-index: 2500;
-        transition: opacity 0.3s;
+        display: block; /* show on mobile */
+        /* Three slots: prev | curr | next  – JS controls translateX */
+        overflow: visible;
+        touch-action: none; /* JS owns ALL touch events */
+        user-select: none;
+        -webkit-user-select: none;
     }
 
-    /* Fixed UI bar at the bottom center */
-    .viewer-controls {
-        position: relative;
-        top: auto;
-        right: auto;
-        bottom: 20px;
-        background: rgba(10, 10, 12, 0.85); /* Deep translucent */
-        backdrop-filter: blur(12px);
-        padding: 6px 12px;
-        border-radius: 30px;
-        gap: 12px;
-        border: 1px solid var(--border-main);
-        opacity: 1 !important; /* Fully abolish Ghost UI opacity toggling */
-        pointer-events: auto !important; /* Fully clickable */
-    }
-
-    .viewer-control-btn {
-        background: transparent;
-        padding: 8px;
-        margin: 0;
-    }
-    .viewer-control-btn svg {
-        width: 22px;
-        height: 22px;
-        color: #fff;
-    }
-
-    .viewer-info-panel {
+    .canvas-slot {
+        position: absolute;
+        top: 0;
         width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #000;
+    }
+
+    #canvas-prev { left: -100%; }
+    #canvas-curr { left: 0; }
+    #canvas-next { left: 100%; }
+
+
+    .canvas-slot img {
+        /* Image fills as large as possible while preserving aspect ratio */
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
         height: auto;
-        max-height: 75vh;
-        border-left: none;
-        border-top: 1px solid var(--border-main);
-        padding: 30px 20px 40px 20px;
-        background: var(--bg-main);
-        pointer-events: auto;
-        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-        transform: translateY(0);
-        position: relative; /* Inside flex */
+        object-fit: contain;
+        display: block;
+        user-select: none;
+        -webkit-user-select: none;
+        pointer-events: none; /* Prevent drag events on img itself */
+        /* transform applied by JS – do NOT set transition here,
+           JS applies transitions manually when needed */
+        transform-origin: center center;
+        will-change: transform;
     }
 
-    .rv-viewer.info-collapsed .viewer-bottom-wrapper {
-        transform: none; /* Do not translate the whole wrapper on mobile! */
-        right: auto;
+    /* ── Bottom Bar – fixed, always visible ── */
+    .mobile-bottom-bar {
+        display: flex; /* show on mobile */
     }
 
-    .rv-viewer.info-collapsed .viewer-info-panel {
-        transform: translateY(100%);
-        position: absolute; /* Take out of flow, so buttons sink to bottom */
-        bottom: 0;
-    }
-
-    /* Hide UI entirely when in full-bleed mode */
-    .rv-viewer.global-fullscreen-zoom .viewer-bottom-wrapper {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .viewer-meta-grid {
-        margin-top: 32px;
-        padding-top: 24px;
-    }
-
-    /* Stage 3: Double Tap Full Bleed Zoom */
-    .global-fullscreen-zoom .viewer-slide img {
-        object-fit: cover !important;
-        width: 100% !important;
-        height: 100% !important;
-        border-radius: 0 !important;
-        transform: scale(1) !important;
-    }
-
-    /* Hide large navigation arrows on all touch layouts to favor gestures (PC Exclusive) */
-    @media (max-width: 1024px) {
-        .viewer-nav {
-            display: none;
-        }
+    /* ── Info Sheet – hidden by default, slides up ── */
+    .mobile-info-sheet {
+        display: block; /* show on mobile */
     }
 }
 
+/* ── Bottom Bar base styles (mobile only) ── */
+.mobile-bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
+    background: rgba(10, 10, 12, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 0 12px env(safe-area-inset-bottom, 12px);
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
 
-/* Move to Top Button (Inherits viewer-control-btn styles) */
+.mbb-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.75);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mbb-btn:active { color: #fff; }
+
+.mbb-btn.active { color: var(--point); }
+
+/* ── Mobile Info Sheet base styles ── */
+.mobile-info-sheet {
+    position: absolute;
+    bottom: 60px; /* sit just above bottom bar */
+    left: 0;
+    right: 0;
+    z-index: 2900;
+    background: var(--bg-main);
+    border-top: 1px solid var(--border-main);
+    padding: 24px 20px 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    transform: translateY(100%); /* hidden below screen by default */
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    overscroll-behavior: contain;
+}
+
+.mobile-info-sheet.open {
+    transform: translateY(0);
+}
+
+.mis-header {
+    margin-bottom: 16px;
+}
+
+/* When info sheet is open, hide bottom bar info button active state */
+.rv-viewer.info-sheet-open .mbb-info {
+    color: var(--point);
+}
+
+/* Move to Top Button */
 .move-to-top {
     position: fixed;
     bottom: 30px;
@@ -1235,7 +1225,6 @@ button .copy-feedback-mini.active {
 /* PROMPT PANEL — Generation Prompt Viewer                                    */
 /* -------------------------------------------------------------------------- */
 
-/* Toggle button (VIEW PROMPT) */
 .btn-prompt-toggle {
     display: inline-flex;
     align-items: center;
@@ -1266,7 +1255,6 @@ button .copy-feedback-mini.active {
     color: white;
 }
 
-/* Sections and Layout */
 #prompt-section {
     flex: 1;
     display: flex;
@@ -1274,7 +1262,6 @@ button .copy-feedback-mini.active {
     min-height: 0;
 }
 
-/* Panel container: Seamless, borderless integration */
 .prompt-panel {
     border: none;
     background: transparent;
@@ -1285,7 +1272,6 @@ button .copy-feedback-mini.active {
     min-height: 0;
 }
 
-/* Prompt text area - Aligned left padding with parent info-panel (40px) */
 .prompt-content {
     font-size: 11.5px;
     font-weight: 400;
@@ -1293,9 +1279,9 @@ button .copy-feedback-mini.active {
     color: var(--text-muted);
     white-space: pre-wrap;
     word-break: break-word;
-    padding: 0 16px 0 0; /* Right padding creates breathing room between text and scrollbar */
+    padding: 0 16px 0 0;
     flex: 1;
-    min-height: 0; /* CRITICAL FIX: Allows flex child to shrink and scroll internally instead of overflowing parent */
+    min-height: 0;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: var(--sb-thumb) transparent;
@@ -1303,55 +1289,12 @@ button .copy-feedback-mini.active {
     -webkit-user-select: text;
 }
 
-/* -------------------------------------------------------------------------- */
-/* Mobile Bottom Navigation (Pinterest Aesthetic)                             */
-/* -------------------------------------------------------------------------- */
-.mobile-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 64px;
-    background: var(--bg-modal); /* Opaque for floating feels */
-    backdrop-filter: blur(20px);
-    border-top: 1px solid var(--border-main);
-    display: none; /* Desktop hidden */
-    justify-content: space-around;
-    align-items: center;
-    z-index: 4000;
-    padding: 0 10px 10px 10px; /* Shifted up for iOS safe area */
+.mobile-nav { display: none !important; }
+
+
+/* PC: Show arrows */
+@media (min-width: 1025px) {
+    .viewer-nav { display: flex; }
 }
 
-@media (max-width: 600px) {
-    .mobile-nav {
-        display: none !important; /* User specifically requested no mobile footer */
-    }
-}
 
-.mobile-nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    color: var(--text-dim);
-    font-size: 10px;
-    font-weight: 700;
-    transition: all 0.2s;
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex: 1;
-}
-
-.mobile-nav-item svg {
-    width: 22px;
-    height: 22px;
-}
-
-.mobile-nav-item.active {
-    color: var(--text-main);
-}
-
-.mobile-nav-item:active {
-    transform: scale(0.9);
-}

@@ -2045,6 +2045,284 @@ function renderNextBatch() {
 // Custom Cinematic Viewer Logic
 // --------------------------------------------------------------------------
 
+// ── Mobile Canvas Engine ──────────────────────────────────────────────────
+// Three-slot virtual track: [prev | curr | next]
+// JS directly controls translateX on #mobile-canvas, never touches scroll.
+// Pinch zoom and pan are computed from raw Touch coordinates, completely
+// independent of any browser scroll mechanism.
+
+const mCanvas     = document.getElementById('mobile-canvas');
+const mSlotPrev   = document.getElementById('canvas-prev');
+const mSlotCurr   = document.getElementById('canvas-curr');
+const mSlotNext   = document.getElementById('canvas-next');
+const mInfoSheet  = document.getElementById('mobile-info-sheet');
+const mBottomBar  = document.getElementById('mobile-bottom-bar');
+
+// Track state
+let mcIndex = 0;        // current image index in filteredItems
+let mcScale = 1;        // current zoom level
+let mcTx = 0;           // image pan X
+let mcTy = 0;           // image pan Y
+let mcInfoOpen = false; // info sheet visibility
+
+// Touch tracking for state machine
+const MC = {
+    state: 'IDLE',  // IDLE | DRAG | PINCH | SNAP
+    t0x: 0, t0y: 0,         // initial touch position
+    tx: 0,  ty: 0,          // last touch position
+    px: 0,  py: 0,          // track X during drag
+    pDist: 0,               // pinch initial distance
+    pScale: 1,              // pinch base scale
+    pCx: 0, pCy: 0,         // pinch center
+    baseImgTx: 0, baseImgTy: 0, // image offset when pinch started
+    startTime: 0,
+    tapTimer: null,
+    tapCount: 0,
+};
+
+const MC_W = () => window.innerWidth;
+
+function mcSetTrack(offsetX, animated) {
+    // offsetX = canvas track translateX (e.g. -MC_W() for prev, 0 for curr, +MC_W() for next)
+    mCanvas.style.transition = animated ? 'transform 0.32s cubic-bezier(0.22,1,0.36,1)' : 'none';
+    mCanvas.style.transform = `translateX(${offsetX}px)`;
+}
+
+function mcSetImage(img, item) {
+    // Apply zoom+pan transform to the image in curr slot
+    img.style.transition = 'none';
+    img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
+}
+
+function mcResetZoom(animated) {
+    mcScale = 1; mcTx = 0; mcTy = 0;
+    const img = mSlotCurr.querySelector('img');
+    if (!img) return;
+    if (animated) img.style.transition = 'transform 0.3s cubic-bezier(0.22,1,0.36,1)';
+    else img.style.transition = 'none';
+    img.style.transform = 'translate(0,0) scale(1)';
+}
+
+function mcLoadSlot(slot, index) {
+    const img = slot.querySelector('img');
+    if (!img) return;
+    if (index < 0 || index >= filteredItems.length) {
+        img.src = '';
+        img.style.opacity = '0';
+        return;
+    }
+    const item = filteredItems[index];
+
+    img.style.transition = 'none';
+    img.style.transform = 'translate(0,0) scale(1)';
+    img.onload = () => { img.style.transition = 'opacity 0.3s'; img.style.opacity = '1'; };
+
+    // Prevent onload caching bug when re-assigning the exact same source
+    const targetSrc = item.url;
+    if (img.getAttribute('src') === targetSrc || img.src.endsWith(targetSrc)) {
+         img.style.transition = 'opacity 0.3s'; img.style.opacity = '1';
+    } else {
+         img.style.opacity = '0';
+         img.src = targetSrc;
+    }
+    preloadPromptText(index);
+}
+
+function mcNavigate(step) {
+    const next = mcIndex + step;
+    if (next < 0 || next >= filteredItems.length) {
+        // Bounce back
+        mcSetTrack(0, true);
+        return;
+    }
+    mcResetZoom(false);
+    mcIndex = next;
+    // Reuse slots: rotate slot references logically via transform trick
+    mcSetTrack(0, false);
+    mcLoadSlot(mSlotPrev, mcIndex - 1);
+    mcLoadSlot(mSlotCurr, mcIndex);
+    mcLoadSlot(mSlotNext, mcIndex + 1);
+    updateViewerMetadata(mcIndex);
+}
+
+function mcOpenInfo() {
+    mcInfoOpen = true;
+    mInfoSheet?.classList.add('open');
+    document.getElementById('mbb-info-btn')?.classList.add('active');
+    // Populate mobile-specific text fields
+    const item = filteredItems[mcIndex];
+    if (!item) return;
+    const mc = document.getElementById('m-viewer-category');
+    const mt = document.getElementById('m-viewer-title');
+    const md = document.getElementById('m-viewer-desc');
+    const mr = document.getElementById('m-viewer-res');
+    const mi = document.getElementById('m-viewer-id');
+    if (mc) mc.innerText = (item.tags||[]).join(' / ').toUpperCase();
+    if (mt) mt.innerText = item.title || '';
+    if (md) md.innerText = item.description || '';
+    if (mr) mr.innerText = item.resolution || '---';
+    if (mi) mi.innerText = generateAssetId(item);
+}
+
+function mcCloseInfo() {
+    mcInfoOpen = false;
+    mInfoSheet?.classList.remove('open');
+    document.getElementById('mbb-info-btn')?.classList.remove('active');
+}
+
+window.toggleMobileInfo = function() {
+    mcInfoOpen ? mcCloseInfo() : mcOpenInfo();
+};
+
+// Clamp a value
+function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+// Distance between two touch points
+function pinchDist(t1, t2) {
+    return Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+}
+function pinchCenter(t1, t2) {
+    return { x: (t1.clientX + t2.clientX) / 2, y: (t1.clientY + t2.clientY) / 2 };
+}
+
+// ── State Machine Touch Handlers ──────────────────────────────────────────
+if (mCanvas) {
+    mCanvas.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        const touches = e.touches;
+
+        if (touches.length === 1) {
+            MC.state = 'DRAG';
+            MC.t0x = MC.tx = touches[0].clientX;
+            MC.t0y = MC.ty = touches[0].clientY;
+            MC.px = 0;
+            MC.baseImgTx = mcTx;
+            MC.baseImgTy = mcTy;
+            MC.startTime = Date.now();
+
+            // Double-tap detection
+            clearTimeout(MC.tapTimer);
+            MC.tapCount++;
+            if (MC.tapCount === 2) {
+                MC.tapCount = 0;
+                // Double tap: toggle zoom
+                if (mcScale > 1) {
+                    mcResetZoom(true);
+                } else {
+                    mcScale = 2.5;
+                    mcTx = 0; mcTy = 0;
+                    const img = mSlotCurr.querySelector('img');
+                    if (img) {
+                        img.style.transition = 'transform 0.3s cubic-bezier(0.22,1,0.36,1)';
+                        img.style.transform = `translate(0,0) scale(2.5)`;
+                    }
+                }
+                return;
+            }
+            MC.tapTimer = setTimeout(() => { MC.tapCount = 0; }, 350);
+
+        } else if (touches.length === 2) {
+            MC.state = 'PINCH';
+            MC.pDist = pinchDist(touches[0], touches[1]);
+            MC.pScale = mcScale;
+            const c = pinchCenter(touches[0], touches[1]);
+            MC.pCx = c.x; MC.pCy = c.y;
+            MC.baseImgTx = mcTx;
+            MC.baseImgTy = mcTy;
+        }
+    }, { passive: false });
+
+    mCanvas.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const touches = e.touches;
+        const img = mSlotCurr.querySelector('img');
+        if (!img) return;
+
+        if (MC.state === 'PINCH' && touches.length >= 2) {
+            const newDist = pinchDist(touches[0], touches[1]);
+            const newScale = clamp(MC.pScale * (newDist / MC.pDist), 1, 5);
+            mcScale = newScale;
+            // Optionally shift pan based on pinch center drift (simplified: keep center)
+            img.style.transition = 'none';
+            img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
+            return;
+        }
+
+        if (MC.state !== 'DRAG' || touches.length !== 1) return;
+
+        const cx = touches[0].clientX;
+        const cy = touches[0].clientY;
+        const dx = cx - MC.tx;
+        const dy = cy - MC.ty;
+        MC.tx = cx;
+        MC.ty = cy;
+
+        if (mcScale > 1) {
+            // PAN mode: move image freely
+            mcTx = MC.baseImgTx + (cx - MC.t0x);
+            mcTy = MC.baseImgTy + (cy - MC.t0y);
+            img.style.transition = 'none';
+            img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
+        } else {
+            // SWIPE mode: move the whole canvas track
+            MC.px += dx;
+            mcSetTrack(MC.px, false);
+
+            // Pull-to-dismiss vertical
+            const totalDy = cy - MC.t0y;
+            if (totalDy > 20 && Math.abs(MC.px) < 20) {
+                const opacity = clamp(1 - totalDy / 400, 0.3, 1);
+                mCanvas.style.opacity = opacity;
+            }
+        }
+    }, { passive: false });
+
+    mCanvas.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        const img = mSlotCurr.querySelector('img');
+
+        if (MC.state === 'PINCH') {
+            MC.state = 'IDLE';
+            if (mcScale <= 1.05) mcResetZoom(true);
+            return;
+        }
+
+        if (MC.state !== 'DRAG') return;
+        MC.state = 'IDLE';
+
+        const totalDx = MC.tx - MC.t0x;
+        const totalDy = MC.ty - MC.t0y;
+        const elapsed = Date.now() - MC.startTime;
+        const velocity = Math.abs(totalDx) / elapsed;
+
+        mCanvas.style.opacity = '1';
+
+        if (mcScale > 1) {
+            // Stay in zoom/pan mode, no navigation
+            return;
+        }
+
+        // Pull-to-dismiss: significant downward swipe
+        if (totalDy > 140 && Math.abs(totalDx) < 80) {
+            closeViewer();
+            return;
+        }
+
+        // Swipe threshold: >30% of screen width OR fast flick
+        const threshold = MC_W() * 0.3;
+        if (totalDx < -threshold || (velocity > 0.4 && totalDx < -30)) {
+            mcNavigate(1);
+        } else if (totalDx > threshold || (velocity > 0.4 && totalDx > 30)) {
+            mcNavigate(-1);
+        } else {
+            // Snap back
+            mcSetTrack(0, true);
+        }
+    }, { passive: false });
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+
 window.openViewer = async function (index) {
     const item = filteredItems[index];
     if (!item) return;
@@ -2055,26 +2333,18 @@ window.openViewer = async function (index) {
     const isMobile = window.innerWidth <= 1024;
     
     if (isMobile) {
-        initViewerSlider(); // Ensure slides are ready
-        
-        // --- Mobile Mode: Pinterest Carousel --- //
-        // 1. Mobile ALWAYS opens in "Immersive" (Info Hidden) by default to prevent DOM lag and maximize image space
-        isInfoEnabled = false;
-        syncInfoState();
-        
-        isSliderScrolling = true;
-        slider.scrollTo({ left: index * slider.clientWidth, behavior: 'auto' });
-        
-        loadSlideImage(index);
-        loadSlideImage(index + 1);
-        loadSlideImage(index - 1);
-        
-        setTimeout(() => { isSliderScrolling = false; }, 50);
+        // Reset canvas engine state
+        mcIndex = index;
+        mcResetZoom(false);
+        mcCloseInfo();
+        mcSetTrack(0, false);
 
-        // Stage 1: Ghost UI init
-        triggerMobileGhostUI();
+        // Load three slots
+        mcLoadSlot(mSlotPrev, index - 1);
+        mcLoadSlot(mSlotCurr, index);
+        mcLoadSlot(mSlotNext, index + 1);
     } else {
-        // --- PC Mode: Robust Single Image (Pan/Zoom) ---
+        // PC Mode
         resetImage(); 
         const vImg = document.getElementById('viewer-img');
         if (vImg) {
@@ -2089,35 +2359,15 @@ window.openViewer = async function (index) {
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden';
     if (mainContent) mainContent.style.overflow = 'hidden';
-
-
 };
 
+// (loadSlideImage kept for PC metadata resolution update, mobile uses mcLoadSlot)
 function loadSlideImage(index) {
-    if (index < 0 || index >= filteredItems.length) return;
-    const slides = slider.querySelectorAll('.viewer-slide');
-    const img = slides[index]?.querySelector('img');
-    if (img && img.dataset.src) {
-        img.src = img.dataset.src;
-        img.removeAttribute('data-src');
-        img.onload = () => img.style.opacity = '1';
-    }
-
-    // Pre-fetch related prompt text for instant display if requested later
     preloadPromptText(index);
 }
 
-let ghostUITimer = null;
-function triggerMobileGhostUI() {
-    const isMobile = window.innerWidth <= 1024;
-    if (!isMobile) return;
-    
-    viewer.classList.add('show-mobile-controls');
-    clearTimeout(ghostUITimer);
-    ghostUITimer = setTimeout(() => {
-        viewer.classList.remove('show-mobile-controls');
-    }, 2500);
-}
+// triggerMobileGhostUI is no longer needed (controls are static)
+function triggerMobileGhostUI() {}
 
 function updateViewerMetadata(index) {
     const item = filteredItems[index];
@@ -2195,8 +2445,7 @@ function updateViewerMetadata(index) {
     const isMobile = window.innerWidth <= 1024;
     let img;
     if (isMobile) {
-        const slides = slider.querySelectorAll('.viewer-slide');
-        img = slides[index]?.querySelector('img');
+        img = mSlotCurr?.querySelector('img');
     } else {
         img = document.getElementById('viewer-img');
     }
@@ -2261,19 +2510,13 @@ viewer.addEventListener('contextmenu', (e) => {
 });
 
 window.navViewer = function (step) {
-    let nextIndex = currentViewerIndex + step;
-    if (nextIndex < 0) nextIndex = filteredItems.length - 1;
-    if (nextIndex >= filteredItems.length) nextIndex = 0;
-    
     const isMobile = window.innerWidth <= 1024;
-    
     if (isMobile) {
-        isSliderScrolling = true;
-        slider.scrollTo({ left: nextIndex * slider.clientWidth, behavior: 'smooth' });
-        updateViewerMetadata(nextIndex);
-        setTimeout(() => { isSliderScrolling = false; }, 400); // Wait for smooth scroll
+        mcNavigate(step);
     } else {
-        // Essential for PC Mode: Trigger logic that updates img#viewer-img
+        let nextIndex = currentViewerIndex + step;
+        if (nextIndex < 0) nextIndex = filteredItems.length - 1;
+        if (nextIndex >= filteredItems.length) nextIndex = 0;
         openViewer(nextIndex); 
     }
 };
@@ -2449,142 +2692,6 @@ document.addEventListener('mousedown', (e) => {
     }
 });
 
-// --- MOBILE TOUCH GESTURES (Custom Physics Engine) ---
-let touchStartX = 0, touchStartY = 0;
-let touchEndX = 0, touchEndY = 0;
-let activeTouchImage = null; 
-const DISMISS_THRESHOLD = 150; 
-
-// Custom Zoom Engine States
-let customScale = 1;
-let customTranslateX = 0;
-let customTranslateY = 0;
-let basePinchDistance = null;
-let baseScale = 1;
-
-viewer.addEventListener('touchstart', (e) => {
-    // Stage 1: Ghost UI is dead. The controls are static at bottom.
-
-    if (e.touches.length === 2 && window.innerWidth <= 1024) {
-        // Init Pinch
-        const t1 = e.touches[0];
-        const t2 = e.touches[1];
-        basePinchDistance = Math.hypot(t1.screenX - t2.screenX, t1.screenY - t2.screenY);
-        baseScale = customScale;
-        activeTouchImage = slider.querySelectorAll('.viewer-slide')[currentViewerIndex]?.querySelector('img');
-        if (activeTouchImage) activeTouchImage.style.transition = 'none';
-        return;
-    }
-
-    if (e.touches.length === 1) {
-        touchStartX = e.touches[0].screenX;
-        touchStartY = e.touches[0].screenY;
-        
-        activeTouchImage = slider.querySelectorAll('.viewer-slide')[currentViewerIndex]?.querySelector('img');
-        if (activeTouchImage && customScale > 1) {
-            activeTouchImage.style.transition = 'none'; // Prepare for panning
-        }
-    }
-}, { passive: false });
-
-viewer.addEventListener('touchmove', (e) => {
-    if (!activeTouchImage || window.innerWidth > 1024) return;
-    
-    // 1. Pinch to Zoom
-    if (e.touches.length === 2 && basePinchDistance) {
-        e.preventDefault(); // Kill native browser zoom!
-        const t1 = e.touches[0];
-        const t2 = e.touches[1];
-        const currentDist = Math.hypot(t1.screenX - t2.screenX, t1.screenY - t2.screenY);
-        
-        customScale = Math.max(1, Math.min(baseScale * (currentDist / basePinchDistance), 5));
-        
-        if (customScale > 1.05) {
-            viewer.classList.add('global-fullscreen-zoom'); 
-            isInfoEnabled = false; syncInfoState();
-            slider.style.overflowX = 'hidden'; // Freeze swipe carousel while zooming
-        }
-
-        activeTouchImage.style.transform = `translate(${customTranslateX}px, ${customTranslateY}px) scale(${customScale})`;
-        return;
-    }
-    
-    // 2. Pan (Drag) while zoomed
-    if (e.touches.length === 1 && customScale > 1) {
-        e.preventDefault(); // Kill native scroll swipe!
-        const deltaX = e.changedTouches[0].screenX - touchStartX;
-        const deltaY = e.changedTouches[0].screenY - touchStartY;
-        
-        customTranslateX += deltaX;
-        customTranslateY += deltaY;
-        
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
-        
-        activeTouchImage.style.transform = `translate(${customTranslateX}px, ${customTranslateY}px) scale(${customScale})`;
-        return;
-    }
-    
-    // 3. Pull-to-Dismiss (Only when NOT zoomed)
-    if (e.touches.length === 1 && customScale <= 1) {
-        touchEndY = e.changedTouches[0].screenY;
-        const pullDist = touchEndY - touchStartY;
-        
-        // Native horizontal scroll handles swiping organically, we only care about vertical pulls
-        if (pullDist > 0 && Math.abs(e.changedTouches[0].screenX - touchStartX) < Math.abs(pullDist)) {
-            const pullFactor = Math.min(pullDist / 500, 1);
-            const scale = 1 - (pullFactor * 0.2);
-            const opacity = 1 - (pullFactor * 0.5);
-            
-            activeTouchImage.style.transform = `translateY(${pullDist * 0.4}px) scale(${scale})`;
-            activeTouchImage.style.opacity = opacity;
-            
-            viewer.style.backgroundColor = `rgba(0, 0, 0, ${0.98 * (1 - pullFactor)})`;
-        }
-    }
-}, { passive: false }); // Needs to be false to allow preventDefault
-
-viewer.addEventListener('touchend', (e) => {
-    if (e.touches.length > 0) return;
-    touchEndX = e.changedTouches[0].screenX;
-    touchEndY = e.changedTouches[0].screenY;
-    
-    // Check custom zoom cleanup
-    if (customScale > 1) {
-        // Leave zoomed, freeze boundaries so they don't bounce back
-        return;
-    }
-    
-    // If they pinched DOWN back to 1.0 or less, seamlessly exit zoom mode
-    if (customScale <= 1 && basePinchDistance) {
-        customScale = 1;
-        customTranslateX = 0; customTranslateY = 0;
-        basePinchDistance = null;
-        if (activeTouchImage) {
-            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
-            activeTouchImage.style.transform = `translate(0, 0) scale(1)`;
-        }
-        slider.style.overflowX = 'scroll'; // Re-enable carousel
-        viewer.classList.remove('global-fullscreen-zoom');
-        return; // Don't process dismiss if they just finished zooming out
-    }
-    
-    const pullDist = touchEndY - touchStartY;
-    const horizontalDist = Math.abs(touchEndX - touchStartX);
-
-    // 1. Check for Dismiss (Pull Down)
-    if (pullDist > DISMISS_THRESHOLD && horizontalDist < 100) {
-        closeViewer();
-    } else {
-        // Snap back to normal if not dismissed
-        if (activeTouchImage) {
-            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s';
-            activeTouchImage.style.transform = `scale(1) translate(0, 0)`;
-            activeTouchImage.style.opacity = '1';
-        }
-        viewer.style.backgroundColor = '';
-    }
-});
 
 
 
