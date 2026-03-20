@@ -1169,8 +1169,8 @@ button .copy-feedback-mini.active {
         transform: scale(1) !important;
     }
 
-    /* Hide large navigation arrows on very small screens to favor gestures */
-    @media (max-width: 480px) {
+    /* Hide large navigation arrows on all touch layouts to favor gestures (PC Exclusive) */
+    @media (max-width: 1024px) {
         .viewer-nav {
             display: none;
         }

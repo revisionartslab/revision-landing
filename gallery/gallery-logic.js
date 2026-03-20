@@ -2366,12 +2366,7 @@ viewer.addEventListener('dblclick', (e) => {
     resetImage();
 });
 
-// Mobile Ghost UI Trigger on Tap
-viewer.addEventListener('click', (e) => {
-    // Only trigger if clicking on the media panel (the image area)
-    if (e.target.closest('.viewer-controls') || e.target.closest('.viewer-info-panel')) return;
-    triggerMobileGhostUI();
-});
+// The click listener is removed; Ghost UI is now perfectly handled by touchstart and click bubbling differently.
 
 window.addEventListener('keydown', (e) => {
     if (!viewer.classList.contains('active')) return;
@@ -2460,6 +2455,11 @@ if (window.visualViewport) {
 }
 
 viewer.addEventListener('touchstart', (e) => {
+    // 💡 Instant Ghost UI Feedback upon touch (Bypasses scroll-swallowing bugs)
+    if (!e.target.closest('.viewer-controls') && !e.target.closest('.viewer-info-panel')) {
+        triggerMobileGhostUI();
+    }
+
     if (e.touches.length > 1) return;
     touchStartX = e.changedTouches[0].screenX;
     touchStartY = e.changedTouches[0].screenY;
