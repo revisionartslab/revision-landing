@@ -2295,6 +2295,39 @@ document.addEventListener('mousedown', (e) => {
     }
 });
 
+// --- MOBILE TOUCH GESTURES (SWIPE TO NAVIGATE) ---
+let touchStartX = 0;
+let touchEndX = 0;
+const SWIPE_THRESHOLD = 50;
+
+viewer.addEventListener('touchstart', (e) => {
+    // Prevent swipe conflict if user is using multiple fingers (zooming)
+    if (e.touches.length > 1) return;
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+viewer.addEventListener('touchend', (e) => {
+    if (e.touches.length > 0) return;
+    touchEndX = e.changedTouches[0].screenX;
+    
+    // 💡 Only navigate if the image is at base zoom
+    if (currentZoom <= 1.05) {
+        handleSwipe();
+    }
+}, { passive: true });
+
+function handleSwipe() {
+    const diff = touchEndX - touchStartX;
+    if (Math.abs(diff) > SWIPE_THRESHOLD) {
+        if (diff > 0) {
+            navViewer(-1); // Swipe Right -> Previous Image
+        } else {
+            navViewer(1);  // Swipe Left -> Next Image
+        }
+    }
+}
+
+
 function resetImage() {
     currentZoom = 1; translateX = 0; translateY = 0;
     const vImg = document.getElementById('viewer-img');
