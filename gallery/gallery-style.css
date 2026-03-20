@@ -101,6 +101,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent !important;
 }
 
 html {
@@ -891,7 +892,7 @@ button .copy-feedback-mini.active {
     position: fixed;
     bottom: 40px;
     left: 50%;
-    transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(50px);
     background: var(--point);
     color: white;
     padding: 12px 24px;
@@ -899,11 +900,17 @@ button .copy-feedback-mini.active {
     font-weight: 700;
     border-radius: 0; /* Sharp corners */
     z-index: 9999;
-    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s, visibility 0.3s;
 }
 
 .rv-toast.active {
     transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .meta-item {
@@ -1262,10 +1269,7 @@ button .copy-feedback-mini.active {
 
 @media (max-width: 600px) {
     .mobile-nav {
-        display: flex;
-    }
-    .header-nav {
-        display: none !important; /* Hide old nav in favor of bottom nav */
+        display: none !important; /* User specifically requested no mobile footer */
     }
 }
 
