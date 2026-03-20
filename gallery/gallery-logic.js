@@ -1987,11 +1987,12 @@ function renderNextBatch() {
         // ── SECURITY: Build card via DOM API to prevent XSS ──
         const cardMedia = document.createElement('div');
         cardMedia.className = 'card-media';
+        // Handle click at the parent level so pseudo-elements (like ::after) don't block it
+        cardMedia.onclick = () => openViewer(absoluteIndex);
 
         const img = document.createElement('img');
         img.src = item.url;
         img.alt = escapeHtml(item.title);
-        img.onclick = () => openViewer(absoluteIndex);
         img.onload = function() { this.classList.add('loaded'); };
 
         const overlay = document.createElement('div');

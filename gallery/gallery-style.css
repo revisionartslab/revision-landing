@@ -498,10 +498,6 @@ header {
     z-index: 1;
 }
 
-.card-media:hover::after {
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .card-media img {
     width: 100%;
     display: block;
@@ -526,10 +522,6 @@ header {
     z-index: 2;
 }
 
-.card-media:hover .card-overlay {
-    opacity: 1;
-}
-
 .zoom-icon {
     color: var(--text-dim);
     transform: scale(0.6); /* Reduced base size */
@@ -539,9 +531,19 @@ header {
     justify-content: center;
 }
 
-.card-media:hover .zoom-icon {
-    transform: scale(0.8); /* Refined, non-intrusive hover scale */
-    color: #fff; /* Static white is fine here as it overlays dark images */
+@media (hover: hover) {
+    .card-media:hover::after {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .card-media:hover .card-overlay {
+        opacity: 1;
+    }
+
+    .card-media:hover .zoom-icon {
+        transform: scale(0.8); /* Refined, non-intrusive hover scale */
+        color: #fff; /* Static white is fine here as it overlays dark images */
+    }
 }
 
 /* End of Card Styles */
