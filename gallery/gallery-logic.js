@@ -2350,14 +2350,27 @@ viewer.addEventListener('dblclick', (e) => {
     // Prevent trigger if clicking on buttons or info panel
     if (e.target.closest('.viewer-info-panel') || e.target.closest('.viewer-controls')) return;
     
-    // --- Mobile Double Tap (Full-Bleed Zoom Toggle) ---
+    // --- Mobile Double Tap (Mathematical Toggle) ---
     if (window.innerWidth <= 1024) {
-        viewer.classList.toggle('global-fullscreen-zoom');
+        activeTouchImage = slider.querySelectorAll('.viewer-slide')[currentViewerIndex]?.querySelector('img');
+        if (!activeTouchImage) return;
         
-        // Also enforce closing the info panel if they try to enter full-bleed
-        if (viewer.classList.contains('global-fullscreen-zoom') && isInfoEnabled) {
-            isInfoEnabled = false;
-            syncInfoState();
+        if (customScale > 1) {
+            // Instantly unzoom, restore carousel functionality
+            customScale = 1;
+            customTranslateX = 0; customTranslateY = 0;
+            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
+            activeTouchImage.style.transform = `translate(0px, 0px) scale(1)`;
+            slider.style.overflowX = 'scroll';
+            viewer.classList.remove('global-fullscreen-zoom');
+        } else {
+            // Instantly zoom in 2.5x, lock carousel, hide UI
+            customScale = 2.5;
+            viewer.classList.add('global-fullscreen-zoom');
+            isInfoEnabled = false; syncInfoState();
+            slider.style.overflowX = 'hidden';
+            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
+            activeTouchImage.style.transform = `translate(0px, 0px) scale(2.5)`;
         }
         return;
     }
@@ -2436,93 +2449,142 @@ document.addEventListener('mousedown', (e) => {
     }
 });
 
-// --- MOBILE TOUCH GESTURES (Pinterest Style) ---
+// --- MOBILE TOUCH GESTURES (Custom Physics Engine) ---
 let touchStartX = 0, touchStartY = 0;
 let touchEndX = 0, touchEndY = 0;
-let activeTouchImage = null; // Cache to avoid multiple querySelectors
-const DISMISS_THRESHOLD = 150; // Threshold to close by pulling down
+let activeTouchImage = null; 
+const DISMISS_THRESHOLD = 150; 
 
-// Intercept Visual Viewport scaling to hide neighboring slides when natively zoomed in
-if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', () => {
-        if (!viewer.classList.contains('active')) return;
-        if (visualViewport.scale > 1.05) {
-            viewer.classList.add('isolating-zoom');
-        } else {
-            viewer.classList.remove('isolating-zoom');
-        }
-    });
-}
+// Custom Zoom Engine States
+let customScale = 1;
+let customTranslateX = 0;
+let customTranslateY = 0;
+let basePinchDistance = null;
+let baseScale = 1;
 
 viewer.addEventListener('touchstart', (e) => {
-    // 💡 Instant Ghost UI Feedback upon touch (Bypasses scroll-swallowing bugs)
-    if (!e.target.closest('.viewer-controls') && !e.target.closest('.viewer-info-panel')) {
-        triggerMobileGhostUI();
+    // Stage 1: Ghost UI is dead. The controls are static at bottom.
+
+    if (e.touches.length === 2 && window.innerWidth <= 1024) {
+        // Init Pinch
+        const t1 = e.touches[0];
+        const t2 = e.touches[1];
+        basePinchDistance = Math.hypot(t1.screenX - t2.screenX, t1.screenY - t2.screenY);
+        baseScale = customScale;
+        activeTouchImage = slider.querySelectorAll('.viewer-slide')[currentViewerIndex]?.querySelector('img');
+        if (activeTouchImage) activeTouchImage.style.transition = 'none';
+        return;
     }
 
-    if (e.touches.length > 1) return;
-    touchStartX = e.changedTouches[0].screenX;
-    touchStartY = e.changedTouches[0].screenY;
-    
-    // Cache the image on start to avoid repetitive DOM traversal
-    const slides = slider.querySelectorAll('.viewer-slide img');
-    activeTouchImage = slides[currentViewerIndex];
-    if (activeTouchImage) activeTouchImage.style.transition = 'none';
-}, { passive: true });
+    if (e.touches.length === 1) {
+        touchStartX = e.touches[0].screenX;
+        touchStartY = e.touches[0].screenY;
+        
+        activeTouchImage = slider.querySelectorAll('.viewer-slide')[currentViewerIndex]?.querySelector('img');
+        if (activeTouchImage && customScale > 1) {
+            activeTouchImage.style.transition = 'none'; // Prepare for panning
+        }
+    }
+}, { passive: false });
 
 viewer.addEventListener('touchmove', (e) => {
-    if (e.touches.length > 1 || !activeTouchImage) return;
-    touchEndY = e.changedTouches[0].screenY;
+    if (!activeTouchImage || window.innerWidth > 1024) return;
     
-    // 💡 Pull-to-Dismiss Visual Feedback
-    const pullDist = touchEndY - touchStartY;
-    
-    if (pullDist > 0 && currentZoom <= 1.05) {
-        const pullFactor = Math.min(pullDist / 500, 1);
-        const scale = 1 - (pullFactor * 0.2);
-        const opacity = 1 - (pullFactor * 0.5);
+    // 1. Pinch to Zoom
+    if (e.touches.length === 2 && basePinchDistance) {
+        e.preventDefault(); // Kill native browser zoom!
+        const t1 = e.touches[0];
+        const t2 = e.touches[1];
+        const currentDist = Math.hypot(t1.screenX - t2.screenX, t1.screenY - t2.screenY);
         
-        activeTouchImage.style.transform = `translateY(${pullDist * 0.4}px) scale(${scale})`;
-        activeTouchImage.style.opacity = opacity;
+        customScale = Math.max(1, Math.min(baseScale * (currentDist / basePinchDistance), 5));
         
-        // Dynamic Background Fading (Pinflow Aesthetic)
-        viewer.style.backgroundColor = `rgba(0, 0, 0, ${0.98 * (1 - pullFactor)})`;
-        
-        // If pulled significantly, dim the info panel too
-        const infoPanel = viewer.querySelector('.viewer-info-panel');
-        if (infoPanel) infoPanel.style.opacity = 1 - pullFactor;
+        if (customScale > 1.05) {
+            viewer.classList.add('global-fullscreen-zoom'); 
+            isInfoEnabled = false; syncInfoState();
+            slider.style.overflowX = 'hidden'; // Freeze swipe carousel while zooming
+        }
+
+        activeTouchImage.style.transform = `translate(${customTranslateX}px, ${customTranslateY}px) scale(${customScale})`;
+        return;
     }
-}, { passive: true });
+    
+    // 2. Pan (Drag) while zoomed
+    if (e.touches.length === 1 && customScale > 1) {
+        e.preventDefault(); // Kill native scroll swipe!
+        const deltaX = e.changedTouches[0].screenX - touchStartX;
+        const deltaY = e.changedTouches[0].screenY - touchStartY;
+        
+        customTranslateX += deltaX;
+        customTranslateY += deltaY;
+        
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+        
+        activeTouchImage.style.transform = `translate(${customTranslateX}px, ${customTranslateY}px) scale(${customScale})`;
+        return;
+    }
+    
+    // 3. Pull-to-Dismiss (Only when NOT zoomed)
+    if (e.touches.length === 1 && customScale <= 1) {
+        touchEndY = e.changedTouches[0].screenY;
+        const pullDist = touchEndY - touchStartY;
+        
+        // Native horizontal scroll handles swiping organically, we only care about vertical pulls
+        if (pullDist > 0 && Math.abs(e.changedTouches[0].screenX - touchStartX) < Math.abs(pullDist)) {
+            const pullFactor = Math.min(pullDist / 500, 1);
+            const scale = 1 - (pullFactor * 0.2);
+            const opacity = 1 - (pullFactor * 0.5);
+            
+            activeTouchImage.style.transform = `translateY(${pullDist * 0.4}px) scale(${scale})`;
+            activeTouchImage.style.opacity = opacity;
+            
+            viewer.style.backgroundColor = `rgba(0, 0, 0, ${0.98 * (1 - pullFactor)})`;
+        }
+    }
+}, { passive: false }); // Needs to be false to allow preventDefault
 
 viewer.addEventListener('touchend', (e) => {
     if (e.touches.length > 0) return;
     touchEndX = e.changedTouches[0].screenX;
     touchEndY = e.changedTouches[0].screenY;
     
+    // Check custom zoom cleanup
+    if (customScale > 1) {
+        // Leave zoomed, freeze boundaries so they don't bounce back
+        return;
+    }
+    
+    // If they pinched DOWN back to 1.0 or less, seamlessly exit zoom mode
+    if (customScale <= 1 && basePinchDistance) {
+        customScale = 1;
+        customTranslateX = 0; customTranslateY = 0;
+        basePinchDistance = null;
+        if (activeTouchImage) {
+            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
+            activeTouchImage.style.transform = `translate(0, 0) scale(1)`;
+        }
+        slider.style.overflowX = 'scroll'; // Re-enable carousel
+        viewer.classList.remove('global-fullscreen-zoom');
+        return; // Don't process dismiss if they just finished zooming out
+    }
+    
     const pullDist = touchEndY - touchStartY;
     const horizontalDist = Math.abs(touchEndX - touchStartX);
 
     // 1. Check for Dismiss (Pull Down)
-    if (pullDist > DISMISS_THRESHOLD && horizontalDist < 100 && currentZoom <= 1.05) {
+    if (pullDist > DISMISS_THRESHOLD && horizontalDist < 100) {
         closeViewer();
     } else {
-        // Reset Visuals if not dismissed
+        // Snap back to normal if not dismissed
         if (activeTouchImage) {
-            activeTouchImage.style.transition = 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
-            activeTouchImage.style.transform = '';
+            activeTouchImage.style.transition = 'transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s';
+            activeTouchImage.style.transform = `scale(1) translate(0, 0)`;
             activeTouchImage.style.opacity = '1';
         }
-        
-        // Restore background and info panel
         viewer.style.backgroundColor = '';
-        const infoPanel = viewer.querySelector('.viewer-info-panel');
-        if (infoPanel) {
-            infoPanel.style.transition = 'opacity 0.3s ease';
-            infoPanel.style.opacity = '1';
-        }
     }
-    activeTouchImage = null;
-}, { passive: true });
+});
 
 
 

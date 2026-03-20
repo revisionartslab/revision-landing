@@ -677,27 +677,38 @@ header {
     }
 }
 
+/* Viewer Bottom Wrapper (PC: Right Side, Mobile: Bottom Overlay) */
+.viewer-bottom-wrapper {
+    flex: none;
+    width: 440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2200;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.rv-viewer.info-collapsed .viewer-bottom-wrapper {
+    transform: translateX(100%);
+    position: absolute;
+    right: 0;
+}
+
 /* Viewer Info Panel - Cinematic Stable Layout */
 .viewer-info-panel {
-    width: 440px;
+    flex: 1; /* Take up all space inside wrapper */
+    width: 100%;
     height: 100%;
     border-left: 1px solid var(--border-main);
     background: var(--bg-info-panel); 
     display: flex;
     flex-direction: column;
-    padding: 150px 40px 60px 40px; /* Increased top padding to 150px */
+    padding: 150px 40px 60px 40px; 
     position: relative;
-    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    z-index: 2200;
     overflow: hidden; 
-    user-select: none; /* Reverted to none */
+    user-select: none;
     -webkit-user-select: none;
-}
-
-.rv-viewer.info-collapsed .viewer-info-panel {
-    transform: translateX(100%);
-    position: absolute;
-    right: 0;
 }
 
 .viewer-header {
@@ -936,9 +947,9 @@ button .copy-feedback-mini.active {
     overflow-wrap: break-word;
 }
 
-/* Viewer Global Controls (Top Right Bar) */
+/* Viewer Global Controls (Top Right Bar on PC) */
 .viewer-controls {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 3000;
@@ -1040,11 +1051,14 @@ button .copy-feedback-mini.active {
 
     .viewer-media-panel {
         flex: none;
-        height: 65vh; /* Increase height for slider balance */
-        padding: 0;
-        order: 1;
+        position: absolute;
+        inset: 0;
         width: 100%;
-        overflow: hidden; /* Use our internal slider for scroll */
+        height: 100%;
+        padding: 0 !important;
+        background: #000;
+        order: 1;
+        overflow: hidden;
     }
 
     /* Slider Container Architecture */
@@ -1102,57 +1116,76 @@ button .copy-feedback-mini.active {
         z-index: 2200;
     }
 
-    .rv-viewer.info-collapsed .viewer-info-panel {
-        display: none; /* In collapsed mode on mobile, just hide it */
-    }
-
-    .rv-viewer.info-collapsed .viewer-media-panel {
+    .viewer-bottom-wrapper {
         position: absolute;
         inset: 0;
         width: 100%;
-        height: 100%; /* Fully dynamic height, handling landscape rotation safely */
-        padding: 0 !important;
-        background: #000; /* Deep black for true cinema feel */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        pointer-events: none; /* Pass clicks */
+        z-index: 2500;
+        transition: opacity 0.3s;
     }
 
-    /* Stage 1: Ghost UI (Hide controls until touched) */
+    /* Fixed UI bar at the bottom center */
     .viewer-controls {
-        top: 12px;
-        right: 12px;
-        background: rgba(0,0,0,0.4);
-        backdrop-filter: blur(8px);
-        padding: 4px;
-        border-radius: 20px;
-        gap: 4px;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: 20px;
+        background: rgba(10, 10, 12, 0.85); /* Deep translucent */
+        backdrop-filter: blur(12px);
+        padding: 6px 12px;
+        border-radius: 30px;
+        gap: 12px;
+        border: 1px solid var(--border-main);
+        opacity: 1 !important; /* Fully abolish Ghost UI opacity toggling */
+        pointer-events: auto !important; /* Fully clickable */
+    }
+
+    .viewer-control-btn {
+        background: transparent;
+        padding: 8px;
+        margin: 0;
+    }
+    .viewer-control-btn svg {
+        width: 22px;
+        height: 22px;
+        color: #fff;
+    }
+
+    .viewer-info-panel {
+        width: 100%;
+        height: auto;
+        max-height: 75vh;
+        border-left: none;
+        border-top: 1px solid var(--border-main);
+        padding: 30px 20px 40px 20px;
+        background: var(--bg-main);
+        pointer-events: auto;
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        transform: translateY(0);
+        position: relative; /* Inside flex */
+    }
+
+    .rv-viewer.info-collapsed .viewer-bottom-wrapper {
+        transform: none; /* Do not translate the whole wrapper on mobile! */
+        right: auto;
+    }
+
+    .rv-viewer.info-collapsed .viewer-info-panel {
+        transform: translateY(100%);
+        position: absolute; /* Take out of flow, so buttons sink to bottom */
+        bottom: 0;
+    }
+
+    /* Hide UI entirely when in full-bleed mode */
+    .rv-viewer.global-fullscreen-zoom .viewer-bottom-wrapper {
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.4s ease;
-    }
-    
-    .rv-viewer.show-mobile-controls .viewer-controls {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .viewer-control-btn svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .viewer-nav {
-        width: 40px;
-        height: 60px;
-    }
-    
-    .viewer-nav-prev { left: 0; }
-    .viewer-nav-next { right: 0; }
-
-    .viewer-title {
-        font-size: 16px;
-        -webkit-line-clamp: 4;
-        line-clamp: 4;
-        height: auto;
-        min-height: 0;
     }
 
     .viewer-meta-grid {
