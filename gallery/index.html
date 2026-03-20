@@ -94,9 +94,16 @@
                 <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
             </div>
 
-            <div class="viewer-img-container" onclick="event.stopPropagation()">
-                <img id="viewer-img" src="" alt="">
+            <!-- PC Version: Solid Single Image Container (Panning/Zooming enabled) -->
+            <div class="viewer-img-container" id="viewer-img-container">
+                <img id="viewer-img" alt="" onclick="event.stopPropagation()">
             </div>
+
+            <!-- Mobile Version: Pinterest-style Slider (Swiping enabled) -->
+            <div class="viewer-slider" id="viewer-slider" onclick="event.stopPropagation()">
+                <!-- Slides will be dynamically injected here for carousel -->
+            </div>
+
         </div>
 
         <div class="viewer-info-panel">
@@ -124,7 +131,7 @@
                             </button>
                         </div>
                     </div>
-                    <pre id="prompt-content" class="prompt-content">Loading...</pre>
+                    <pre id="prompt-content" class="prompt-content"></pre>
                 </div>
             </div>
             
@@ -143,10 +150,21 @@
         </div>
     </div>
 
-    <!-- Move to Top Button -->
-    <button id="move-to-top" class="viewer-control-btn move-to-top" onclick="scrollToTop()">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
-    </button>
+    <!-- Pinterest-style Bottom Navigation (Mobile Only) -->
+    <nav class="mobile-nav">
+        <button class="mobile-nav-item active" onclick="handleMobileNav('all', this)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            <span>Home</span>
+        </button>
+        <button class="mobile-nav-item" onclick="handleShuffle()">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+            <span>Shuffle</span>
+        </button>
+        <button class="mobile-nav-item" onclick="scrollToTop()">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span>Info</span>
+        </button>
+    </nav>
 
     <!-- Premium Toast Notification -->
     <div id="toast" class="rv-toast">Asset link copied to clipboard</div>

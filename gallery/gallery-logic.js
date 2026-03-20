@@ -4,6 +4,26 @@
  */
 
 // --- GLOBAL FEEDBACK SINGLETON (Prevents overlapping 'COPIED' messages) ---
+// --- ASSET ID GENERATION HELPER ---
+function generateAssetId(item) {
+    if (!item) return 'RV-EMPTY';
+    try {
+        const dateStr = item.uploadedAt || (item.id.match(/\d{8} \d{6}/) ? item.id.match(/\d{8} \d{6}/)[0] : null);
+        const rawAssetId = item.assetId || '';
+        
+        if (dateStr) {
+            const cleanDate = dateStr.replace(/[-T:Z ]/g, '').substring(0, 8); // YYYYMMDD
+            const suffix = rawAssetId ? rawAssetId.substring(rawAssetId.length - 4).toUpperCase() : (item.id.match(/\d{6}/) ? item.id.match(/\d{6}/)[0].substring(2,6) : 'ARCH');
+            return `RV-${cleanDate}-${suffix}`;
+        } else {
+            const fallbackSuffix = rawAssetId ? rawAssetId.substring(0, 8).toUpperCase() : item.id.substring(0, 4).toUpperCase();
+            return `RV-SER-${fallbackSuffix}`;
+        }
+    } catch (e) {
+        return `RV-A-ERR-${item.id.substring(0, 4).toUpperCase()}`;
+    }
+}
+
 let activeFeedback = null;
 let feedbackTimeout = null;
 
@@ -1792,17 +1812,49 @@ const mainContent = document.querySelector('.scroll-root');
 
 let filteredItems = [...STREAM_RECORDS];
 let itemsShown = 0;
-const BATCH_SIZE = 8;
+const BATCH_SIZE = 12;
 let currentViewerIndex = -1;
 let isInfoEnabled = true; // Global state for info panel persistent visibility
 
-// ── THEME LOGIC ─────────────────────────────────────────────────────────────
 window.toggleTheme = function() {
     const isLight = document.documentElement.getAttribute('data-theme') === 'light';
     const nextTheme = isLight ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', nextTheme);
     localStorage.setItem('rv-theme', nextTheme);
 };
+
+// ── PINTEREST SLIDER ARCHITECTURE ──────────────────────────────────────────
+const slider = document.getElementById('viewer-slider');
+let isSliderScrolling = false;
+
+function initViewerSlider() {
+    if (!slider) return;
+    if (window.innerWidth > 1024) {
+        slider.innerHTML = ''; // Keep slider empty on PC to avoid layout noise
+        return;
+    }
+    slider.innerHTML = '';
+    filteredItems.forEach((item, index) => {
+        const slide = document.createElement('div');
+        slide.className = 'viewer-slide';
+        const img = document.createElement('img');
+        img.dataset.src = item.url;
+        img.alt = escapeHtml(item.title);
+        slide.appendChild(img);
+        slider.appendChild(slide);
+    });
+}
+initViewerSlider();
+
+slider.addEventListener('scroll', () => {
+    if (isSliderScrolling) return;
+    const index = Math.round(slider.scrollLeft / slider.clientWidth);
+    if (index !== currentViewerIndex && index >= 0 && index < filteredItems.length) {
+        updateViewerMetadata(index);
+    }
+});
+
+
 
 // Initial theme load
 (function() {
@@ -1854,11 +1906,13 @@ window.handleShuffle = function () {
         galleryContainer.innerHTML = '';
         galleryContainer.style.opacity = '1';
         renderAll();
+        initViewerSlider(); // Sync slider after shuffle
         
         // Minor toast for confirmation
         showToast('Gallery layout randomized.');
     }, 150);
 };
+
 
 // --------------------------------------------------------------------------
 // Layout Logic (Masonry)
@@ -1881,41 +1935,82 @@ window.addEventListener('resize', () => {
     allItems.forEach(item => resizeGridItem(item));
 });
 
+
+let itemsRendered = 0;
+let observer = null;
+
 function renderAll() {
     loader.style.display = 'block';
+    itemsRendered = 0;
+    galleryContainer.innerHTML = '';
+    
+    // Create initial batch
+    renderNextBatch();
+    
+    // Setup observer for infinite scroll
+    if (observer) observer.disconnect();
+    
+    observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            renderNextBatch();
+        }
+    }, { rootMargin: '400px' });
 
-    // Immediate render of all items to feel like cosmos.so
-    filteredItems.forEach((item, index) => {
+    setupSentinel();
+}
+
+function setupSentinel() {
+    let sentinel = document.getElementById('sentinel');
+    if (!sentinel) {
+        sentinel = document.createElement('div');
+        sentinel.id = 'sentinel';
+        sentinel.style.height = '10px';
+        sentinel.style.width = '100%';
+    }
+    galleryContainer.after(sentinel);
+    observer.observe(sentinel);
+}
+
+function renderNextBatch() {
+    if (itemsRendered >= filteredItems.length) {
+        loader.style.display = 'none';
+        return;
+    }
+
+    const nextBatch = filteredItems.slice(itemsRendered, itemsRendered + BATCH_SIZE);
+    
+    nextBatch.forEach((item, index) => {
+        const absoluteIndex = itemsRendered + index;
         const card = document.createElement('div');
         card.className = 'rv-card';
 
         // ── SECURITY: Build card via DOM API to prevent XSS ──
         const cardMedia = document.createElement('div');
         cardMedia.className = 'card-media';
-        cardMedia.setAttribute('onclick', `openViewer(${index})`);
 
         const img = document.createElement('img');
-        img.src = item.url;                  // URL from our own Cloudinary — safe
-        img.alt = escapeHtml(item.title);    // Title escaped to prevent attr injection
+        img.src = item.url;
+        img.alt = escapeHtml(item.title);
+        img.onclick = () => openViewer(absoluteIndex);
         img.onload = function() { this.classList.add('loaded'); };
 
         const overlay = document.createElement('div');
         overlay.className = 'card-overlay';
+        overlay.onclick = () => openViewer(absoluteIndex);
         overlay.innerHTML = `<div class="zoom-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></div>`;
 
         cardMedia.appendChild(img);
         cardMedia.appendChild(overlay);
         card.appendChild(cardMedia);
 
-        
         const ro = new ResizeObserver(() => resizeGridItem(card));
         ro.observe(card);
         
         galleryContainer.appendChild(card);
     });
 
-    itemsShown = filteredItems.length;
-    loader.style.display = 'none';
+    itemsRendered += BATCH_SIZE;
+    if (itemsRendered >= filteredItems.length) loader.style.display = 'none';
 }
 
 // --------------------------------------------------------------------------
@@ -1927,26 +2022,73 @@ window.openViewer = async function (index) {
     if (!item) return;
 
     currentViewerIndex = index;
+    viewer.classList.add('active');
+    
+    const isMobile = window.innerWidth <= 1024;
+    
+    if (isMobile) {
+        // --- Mobile Mode: Pinterest Carousel ---
+        initViewerSlider(); // Ensure slides are ready
+        isSliderScrolling = true;
+        slider.scrollTo({ left: index * slider.clientWidth, behavior: 'auto' });
+        
+        loadSlideImage(index);
+        loadSlideImage(index + 1);
+        loadSlideImage(index - 1);
+        
+        setTimeout(() => { isSliderScrolling = false; }, 50);
+    } else {
+        // --- PC Mode: Robust Single Image (Pan/Zoom) ---
+        resetImage(); 
+        const vImg = document.getElementById('viewer-img');
+        if (vImg) {
+            vImg.style.transition = 'none';
+            vImg.src = item.url;
+            vImg.onload = () => vImg.style.opacity = '1';
+        }
+    }
 
-    // Hide 'Move to Top' button while viewer is open
-    const topBtn = document.getElementById('move-to-top');
-    if (topBtn) topBtn.classList.remove('visible');
+    updateViewerMetadata(index);
+    
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    if (mainContent) mainContent.style.overflow = 'hidden';
 
-    const vImg = document.getElementById('viewer-img');
+
+};
+
+function loadSlideImage(index) {
+    if (index < 0 || index >= filteredItems.length) return;
+    const slides = slider.querySelectorAll('.viewer-slide');
+    const img = slides[index]?.querySelector('img');
+    if (img && img.dataset.src) {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        img.onload = () => img.style.opacity = '1';
+    }
+
+    // Pre-fetch related prompt text for instant display if requested later
+    preloadPromptText(index);
+}
+
+function updateViewerMetadata(index) {
+    const item = filteredItems[index];
+    if (!item) return;
+    currentViewerIndex = index;
+
+
     const titleEl = document.getElementById('viewer-title');
-
+    
     // 💡 Global state to persist egg mode across transitions
     if (window.__eggMode === undefined) window.__eggMode = false;
 
-    // ★ EASTER EGG: titleEl 직접 바인딩 (openViewer마다 새로 설정)
+    // ★ EASTER EGG Setup
     titleEl._eggCount = 0;
     clearTimeout(titleEl._eggTimer);
-
     
-    // Robust listener that catches clicks even on nested spans
     titleEl.onclick = async function (e) {
-        // Prevent default only if needed, but ensure counting works
         titleEl._eggCount = (titleEl._eggCount || 0) + 1;
+        // console.log(`[EGG] Click ${titleEl._eggCount}`);
         clearTimeout(titleEl._eggTimer);
         
         if (titleEl._eggCount >= 3) {
@@ -1956,153 +2098,74 @@ window.openViewer = async function (index) {
 
             if (window.__eggMode) {
                 const content = document.getElementById('prompt-content');
-                // Force reload if mode just enabled
-                if (content) await fetchPromptContent(content);
+                if (content) fetchPromptContent(content, item);
             }
         } else {
-            titleEl._eggTimer = setTimeout(() => { titleEl._eggCount = 0; }, 700);
+            // Increased to 1500ms to allow plenty of time for 3 clicks
+            titleEl._eggTimer = setTimeout(() => { titleEl._eggCount = 0; }, 1500);
         }
     };
 
-    // 1. Initial State: Set image
-    vImg.style.opacity = '0';
-
-    // 2. Activate viewer to get layout context
-    viewer.classList.add('active');
-    syncInfoState();
-
-    // By injecting elements one-by-one and measuring instantly, we account for 
-    // dynamic layout shifts caused by our own `<br>` tags and structural changes.
-    // Cloudinary returns IDs/titles with spaces, but our premium aesthetic demands underscores.
+    // Build Title with Premium Underscores (Instant Render)
     const displayTitle = (item.title || '').replace(/ /g, '_');
+    titleEl.innerHTML = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
     
-    const parts = displayTitle.split('_');
-    titleEl.innerHTML = ''; 
-    
-    let currentLineTop = -1;
-    let underscoreCount = 0;
-
-    parts.forEach((part, i) => {
-        if (part) {
-            const span = document.createElement('span');
-            span.innerText = part;
-            titleEl.appendChild(span);
-            
-            if (currentLineTop === -1) {
-                currentLineTop = span.offsetTop;
-            } else if (span.offsetTop > currentLineTop + 8) {
-                underscoreCount = 0;
-                currentLineTop = span.offsetTop;
-            }
-        }
-        
-        if (i < parts.length - 1) {
-            const span = document.createElement('span');
-            span.innerText = '_';
-            titleEl.appendChild(span);
-            titleEl.appendChild(document.createTextNode('\u200B')); 
-            
-            if (currentLineTop === -1) {
-                currentLineTop = span.offsetTop;
-            } else if (span.offsetTop > currentLineTop + 8) {
-                underscoreCount = 0;
-                currentLineTop = span.offsetTop;
-            }
-            
-            underscoreCount++;
-            
-            if (underscoreCount === 3) {
-                titleEl.appendChild(document.createElement('br'));
-                underscoreCount = 0;
-                currentLineTop = -1; // Reset to force new line top on next iteration
-            }
-        }
-    });
-
-    // 4. Parallel Reveal
-    vImg.style.opacity = '1';
-    vImg.src = item.url;
-
-    // [CRITICAL UX DECISION: ATOMIC INSTANT RENDERING]
-    // The user explicitly prefers the "snappy, instant" layout appearance without any CSS transitions or fade-ins.
-    // By building the DOM nodes immediately with no artificial delay, the interface feels 
-    // incredibly precise, sturdy, and professional—like a high-end workstation tool.
-    // DO NOT attempt to add fade-ins, slide-ups, or opacity transitions back to the title.
-
-    const displayTags = (item.tags && item.tags.length > 0) ? item.tags.join(' / ').toUpperCase() : 'NO STREAM TAGS';
-
-    // --- ROBUST HYBRID ASSET ID SYSTEM ---
-    let viewerDisplayId = 'RV-REF-ERR'; 
-    try {
-        const rawAssetId = item.assetId || item.asset_id || '';
-        const dateStr = item.uploadedAt || (item.id.match(/\d{8} \d{6}/) ? item.id.match(/\d{8} \d{6}/)[0] : null);
-        
-        if (dateStr) {
-            const cleanDate = dateStr.replace(/[-T:Z ]/g, '').substring(0, 8); // YYYYMMDD
-            
-            let suffix = 'ARCH';
-            if (rawAssetId && rawAssetId.length >= 4) {
-                suffix = rawAssetId.substring(rawAssetId.length - 4).toUpperCase();
-            } else {
-                // Better Fallback: Look for the time part (HHMMSS) or a 6-digit number that ISN'T the date
-                const numbers = item.id.match(/\d+/g) || [];
-                // Filter out the one that looks like the date (usually 8 digits)
-                const timePart = numbers.find(n => n.length === 6 && n !== cleanDate);
-                if (timePart) {
-                    suffix = timePart.substring(2, 6); // Extract the middle part of HHMMSS
-                } else if (item.id.includes('[')) {
-                    // Try to extract from the hash/random part like [bb4c43]
-                    const hashMatch = item.id.match(/\[([a-f0-9]{4})/i);
-                    if (hashMatch) suffix = hashMatch[1].toUpperCase();
-                }
-            }
-            viewerDisplayId = `RV-${cleanDate}-${suffix}`;
-        } else {
-            const fallbackSuffix = (rawAssetId || item.id).substring(0, 4).toUpperCase();
-            viewerDisplayId = `RV-SER-${fallbackSuffix}`;
-        }
-    } catch (e) {
-        viewerDisplayId = `RV-ERR-${item.id.substring(0, 4).toUpperCase()}`;
-    }
-
-    document.getElementById('viewer-category').innerText = displayTags;
+    // Update Meta
+    document.getElementById('viewer-category').innerText = (item.tags || []).join(' / ').toUpperCase();
     document.getElementById('viewer-desc').innerText = item.description;
+    
+    // Robust Asset ID System (Dual-Source)
+    const viewerDisplayId = generateAssetId(item);
     document.getElementById('viewer-id').innerText = viewerDisplayId;
+
+    // URL Hash Sync for deep linking (Now using clean Asset ID)
+    window.location.hash = viewerDisplayId;
 
     // ── PROMPT PANEL: Apply persistent egg mode state ──
     const promptContent = document.getElementById('prompt-content');
     if (promptContent) {
-        // Only reset _loaded and content if the URL is different, 
-        // OR the user prefers it fresh every time.
-        if (promptContent._promptUrl !== item.promptUrl) {
-            promptContent.textContent = 'Loading...';
-            promptContent._loaded = false;
-            promptContent._promptUrl = item.promptUrl || null;
+        if (promptContent._itemRef !== item) {
+            if (item._promptText) {
+                promptContent.textContent = item._promptText;
+                promptContent._loaded = true;
+            } else {
+                // Instantly clear content during split-second fetch; no "Loading..." flicker
+                promptContent.textContent = '';
+                promptContent._loaded = false;
+            }
+            promptContent._itemRef = item;
         }
-    }
-
-    // ── PROMPT PRE-LOAD: Fetch immediately so it's ready for the easter egg ──
-    if (promptContent && promptContent._promptUrl && !promptContent._loaded) {
-        // We don't await here; let it load in the background
-        fetchPromptContent(promptContent);
     }
 
     // Always apply the current mode state when a new image is opened
     applyEggUIState(window.__eggMode);
+    if (window.__eggMode && promptContent && !promptContent._loaded) {
+        fetchPromptContent(promptContent, item);
+    }
 
+    // Resolution update (Dual-Mode support)
+    const isMobile = window.innerWidth <= 1024;
+    let img;
+    if (isMobile) {
+        const slides = slider.querySelectorAll('.viewer-slide');
+        img = slides[index]?.querySelector('img');
+    } else {
+        img = document.getElementById('viewer-img');
+    }
 
-    const tempImg = new Image();
-    tempImg.src = item.url;
-    tempImg.onload = () => {
-        document.getElementById('viewer-res').innerText = `${tempImg.naturalWidth} x ${tempImg.naturalHeight}`;
-    };
+    if (img && img.naturalWidth) {
+        document.getElementById('viewer-res').innerText = `${img.naturalWidth} x ${img.naturalHeight}`;
+    } else if (img) {
+        img.onload = () => {
+            document.getElementById('viewer-res').innerText = `${img.naturalWidth} x ${img.naturalHeight}`;
+            img.style.opacity = '1';
+        };
+    }
 
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-    if (mainContent) mainContent.style.overflow = 'hidden';
-
-    window.location.hash = item.id;
-};
+    // Lazy load next/prev in background
+    loadSlideImage(index + 1);
+    loadSlideImage(index - 1);
+}
 
 window.closeViewer = function () {
     isDragging = false; 
@@ -2153,14 +2216,28 @@ window.navViewer = function (step) {
     let nextIndex = currentViewerIndex + step;
     if (nextIndex < 0) nextIndex = filteredItems.length - 1;
     if (nextIndex >= filteredItems.length) nextIndex = 0;
-    openViewer(nextIndex);
+    
+    const isMobile = window.innerWidth <= 1024;
+    
+    if (isMobile) {
+        isSliderScrolling = true;
+        slider.scrollTo({ left: nextIndex * slider.clientWidth, behavior: 'smooth' });
+        updateViewerMetadata(nextIndex);
+        setTimeout(() => { isSliderScrolling = false; }, 400); // Wait for smooth scroll
+    } else {
+        // Essential for PC Mode: Trigger logic that updates img#viewer-img
+        openViewer(nextIndex); 
+    }
 };
 
+
+
 window.copyViewerLinkDirect = function () {
-    clearAllFeedback(); // Proactive instant clear on click
+    clearAllFeedback(); 
     const item = filteredItems[currentViewerIndex];
     if (!item) return;
-    const url = `${window.location.origin}${window.location.pathname}#${item.id}`;
+    const cleanId = generateAssetId(item);
+    const url = `${window.location.origin}${window.location.pathname}#${cleanId}`;
     navigator.clipboard.writeText(url).then(() => {
         const feedback = document.getElementById('share-copy-feedback');
         if (feedback) showFeedback(feedback);
@@ -2295,37 +2372,77 @@ document.addEventListener('mousedown', (e) => {
     }
 });
 
-// --- MOBILE TOUCH GESTURES (SWIPE TO NAVIGATE) ---
-let touchStartX = 0;
-let touchEndX = 0;
-const SWIPE_THRESHOLD = 50;
+// --- MOBILE TOUCH GESTURES (Pinterest Style) ---
+let touchStartX = 0, touchStartY = 0;
+let touchEndX = 0, touchEndY = 0;
+let activeTouchImage = null; // Cache to avoid multiple querySelectors
+const DISMISS_THRESHOLD = 150; // Threshold to close by pulling down
 
 viewer.addEventListener('touchstart', (e) => {
-    // Prevent swipe conflict if user is using multiple fingers (zooming)
     if (e.touches.length > 1) return;
     touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+    
+    // Cache the image on start to avoid repetitive DOM traversal
+    const slides = slider.querySelectorAll('.viewer-slide img');
+    activeTouchImage = slides[currentViewerIndex];
+    if (activeTouchImage) activeTouchImage.style.transition = 'none';
+}, { passive: true });
+
+viewer.addEventListener('touchmove', (e) => {
+    if (e.touches.length > 1 || !activeTouchImage) return;
+    touchEndY = e.changedTouches[0].screenY;
+    
+    // 💡 Pull-to-Dismiss Visual Feedback
+    const pullDist = touchEndY - touchStartY;
+    
+    if (pullDist > 0 && currentZoom <= 1.05) {
+        const pullFactor = Math.min(pullDist / 500, 1);
+        const scale = 1 - (pullFactor * 0.2);
+        const opacity = 1 - (pullFactor * 0.5);
+        
+        activeTouchImage.style.transform = `translateY(${pullDist * 0.4}px) scale(${scale})`;
+        activeTouchImage.style.opacity = opacity;
+        
+        // Dynamic Background Fading (Pinflow Aesthetic)
+        viewer.style.backgroundColor = `rgba(0, 0, 0, ${0.98 * (1 - pullFactor)})`;
+        
+        // If pulled significantly, dim the info panel too
+        const infoPanel = viewer.querySelector('.viewer-info-panel');
+        if (infoPanel) infoPanel.style.opacity = 1 - pullFactor;
+    }
 }, { passive: true });
 
 viewer.addEventListener('touchend', (e) => {
     if (e.touches.length > 0) return;
     touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
     
-    // 💡 Only navigate if the image is at base zoom
-    if (currentZoom <= 1.05) {
-        handleSwipe();
-    }
-}, { passive: true });
+    const pullDist = touchEndY - touchStartY;
+    const horizontalDist = Math.abs(touchEndX - touchStartX);
 
-function handleSwipe() {
-    const diff = touchEndX - touchStartX;
-    if (Math.abs(diff) > SWIPE_THRESHOLD) {
-        if (diff > 0) {
-            navViewer(-1); // Swipe Right -> Previous Image
-        } else {
-            navViewer(1);  // Swipe Left -> Next Image
+    // 1. Check for Dismiss (Pull Down)
+    if (pullDist > DISMISS_THRESHOLD && horizontalDist < 100 && currentZoom <= 1.05) {
+        closeViewer();
+    } else {
+        // Reset Visuals if not dismissed
+        if (activeTouchImage) {
+            activeTouchImage.style.transition = 'all 0.3s cubic-bezier(0.22, 1, 0.36, 1)';
+            activeTouchImage.style.transform = '';
+            activeTouchImage.style.opacity = '1';
+        }
+        
+        // Restore background and info panel
+        viewer.style.backgroundColor = '';
+        const infoPanel = viewer.querySelector('.viewer-info-panel');
+        if (infoPanel) {
+            infoPanel.style.transition = 'opacity 0.3s ease';
+            infoPanel.style.opacity = '1';
         }
     }
-}
+    activeTouchImage = null;
+}, { passive: true });
+
 
 
 function resetImage() {
@@ -2389,15 +2506,8 @@ document.addEventListener('mouseup', () => {
     if (vImg) vImg.style.transition = 'transform 0.1s cubic-bezier(0.2, 0, 0.2, 1)';
 });
 
-const originalOpenViewer = window.openViewer;
-window.openViewer = function (index) {
-    resetImage();
-    const vImg = document.getElementById('viewer-img');
-    if (vImg) vImg.style.transition = 'none';
-    const menu = document.getElementById('share-menu');
-    if (menu) menu.classList.remove('active');
-    originalOpenViewer(index);
-};
+// Cleaned up duplicate openViewer logic
+
 
 // --------------------------------------------------------------------------
 // Filtering logic (DYNAMIC)
@@ -2434,16 +2544,42 @@ function initFilters() {
             }
             
             renderAll();
+            initViewerSlider(); // Sync slider after filter
             if (typeof scrollToTop === 'function') scrollToTop();
         });
+
 
         headerNav.appendChild(btn);
     });
 }
 
+window.handleMobileNav = function(tagId, btn) {
+    // UI Update
+    document.querySelectorAll('.mobile-nav-item').forEach(i => i.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Logic Update (Trigger existing filter logic)
+    itemsShown = 0;
+    galleryContainer.innerHTML = '';
+    
+    if (tagId === 'all') {
+        shuffleArray(STREAM_RECORDS);
+        filteredItems = [...STREAM_RECORDS];
+    } else {
+        const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
+        shuffleArray(matchedItems);
+        filteredItems = matchedItems;
+    }
+    
+    renderAll();
+    initViewerSlider(); 
+    if (typeof scrollToTop === 'function') scrollToTop();
+};
+
 console.log('Gallery Initializing DYNAMICALLY...');
 initFilters();
 renderAll();
+initViewerSlider(); 
 
 window.scrollToTop = function() {
     if (mainContent) {
@@ -2470,33 +2606,67 @@ if (mainContent) {
 window.addEventListener('load', () => {
     const hash = window.location.hash.substring(1);
     if (hash) {
-        const index = filteredItems.findIndex(i => i.id === hash);
+        // Resolve the clean Asset ID back to the gallery item
+        const index = filteredItems.findIndex(i => generateAssetId(i) === hash);
         if (index !== -1) openViewer(index);
     }
 });
 
 // ── PROMPT PANEL LOGIC ───────────────────────────────────────────────────────
-// 공용 fetch 헬퍼 — 모듈 스코프에 먼저 선언 (이스터에그 + togglePromptPanel 공통 사용)
-async function fetchPromptContent(content) {
-    const url = content._promptUrl;
-    if (!url) { content.textContent = 'NO PROMPT LINKED.'; return; }
+// 공용 fetch 헬퍼 & Prefetcher (이스터에그 + 로딩 딜레이 제거)
+async function preloadPromptText(index) {
+    const item = filteredItems[index];
+    if (!item || !item.promptUrl || item._promptText) return;
+    if (!isSafePromptUrl(item.promptUrl)) return;
+    try {
+        const resp = await fetch(item.promptUrl);
+        if (resp.ok) {
+            item._promptText = await resp.text();
+            
+            // If the user happens to view this item right now:
+            if (currentViewerIndex === index && window.__eggMode) {
+                const content = document.getElementById('prompt-content');
+                if (content && content._itemRef === item) {
+                    content.textContent = item._promptText;
+                    content._loaded = true;
+                }
+            }
+        }
+    } catch(e) {}
+}
 
-    // ── SECURITY: Whitelist check — only Cloudinary URLs allowed ──
-    if (!isSafePromptUrl(url)) {
-        content.textContent = '⚠️ Prompt source not permitted.';
-        console.warn('[SECURITY] Blocked fetch to non-whitelisted URL:', url);
+async function fetchPromptContent(content, item) {
+    const curItem = item || content._itemRef;
+    if (!curItem || !curItem.promptUrl) { content.textContent = '// NO PROMPT ATTACHED'; return; }
+
+    if (curItem._promptText) {
+        content.textContent = curItem._promptText;
+        content._loaded = true;
+        return;
+    }
+
+    // ── SECURITY: Whitelist check
+    if (!isSafePromptUrl(curItem.promptUrl)) {
+        content.textContent = '// NO PROMPT ATTACHED';
         return;
     }
 
     try {
-        content.textContent = 'Loading prompt...';
-        const resp = await fetch(url);
+        // Clear old content immediately while fetching (No 'Loading...' noise)
+        content.textContent = '';
+        const resp = await fetch(curItem.promptUrl);
         if (!resp.ok) throw new Error('Fetch failed');
-        content.textContent = await resp.text();
-        content._loaded = true;
+        const text = await resp.text();
+        curItem._promptText = text;
+        
+        if (content._itemRef === curItem) {
+            content.textContent = text;
+            content._loaded = true;
+        }
     } catch (e) {
-        content.textContent = '⚠️ Failed to load prompt.';
-        console.error('[PROMPT]', e);
+        if (content._itemRef === curItem) {
+            content.textContent = '// NO PROMPT ATTACHED';
+        }
     }
 }
 

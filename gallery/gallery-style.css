@@ -179,13 +179,13 @@ button, input, textarea {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 20px;
+        padding: 0 16px; /* Tighten for better 2-col visual */
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 12px;
+        padding: 0 8px; /* High-density Pinterest feel */
     }
 }
 
@@ -449,7 +449,7 @@ header {
     align-items: start;
 }
 
-/* Responsive Overrides */
+/* Responsive Overrides - Pinterest Standard 2-Cols */
 @media (max-width: 1200px) { 
     :root { --grid-cols: min(var(--grid-cols), 4); } 
     .gallery-grid { gap: 0 20px; }
@@ -459,11 +459,8 @@ header {
     .gallery-grid { gap: 0 16px; }
 }
 @media (max-width: 600px) { 
-    :root { --grid-cols: min(var(--grid-cols), 2); } 
-    .gallery-grid { gap: 0 12px; }
-}
-@media (max-width: 400px) { 
-    :root { --grid-cols: 1 !important; } 
+    :root { --grid-cols: 2 !important; } /* Force 2-cols on mobile */
+    .gallery-grid { gap: 0 8px; } /* Minimizing gap for impact */
 }
 
 
@@ -605,14 +602,13 @@ header {
     padding: 60px 80px;
 }
 
-/* Visual Canvas Boundary - The "Max Box" */
+/* PC View: Solid Single Image (Zoom/Pan enabled) */
 .viewer-img-container {
     padding: 0;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: none; /* Removed heavy shadow that caused two-tone feel */
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -627,7 +623,7 @@ header {
     height: auto;
     object-fit: contain;
     border: 1px solid var(--border-main);
-    border-radius: 0; /* Sharp corners in viewer too */
+    border-radius: 0;
     cursor: grab;
     transition: transform 0.1s cubic-bezier(0.2, 0, 0.2, 1);
     transform-origin: center;
@@ -635,6 +631,47 @@ header {
 
 .viewer-img-container img:active {
     cursor: grabbing;
+}
+
+/* Mobile View: Pinterest-style Slider (Swiping enabled) */
+.viewer-slider {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .viewer-img-container {
+        display: none;
+    }
+    .viewer-slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        align-items: center;
+        mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    }
+    .viewer-slider::-webkit-scrollbar {
+        display: none;
+    }
+    .viewer-slide {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-align: center;
+    }
+    .viewer-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: opacity 0.4s ease;
+        opacity: 0;
+    }
 }
 
 /* Viewer Info Panel - Cinematic Stable Layout */
@@ -985,11 +1022,45 @@ button .copy-feedback-mini.active {
 
     .viewer-media-panel {
         flex: none;
-        height: 60vh; /* Fixed height for image area on mobile */
-        padding: 40px 20px;
+        height: 65vh; /* Increase height for slider balance */
+        padding: 0;
         order: 1;
         width: 100%;
-        transform: translateY(20px); /* Slide up effect foundation */
+        overflow: hidden; /* Use our internal slider for scroll */
+    }
+
+    /* Slider Container Architecture */
+    .viewer-slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .viewer-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .viewer-slide {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 16px; /* Spacing for neighboring images hint */
+    }
+
+    .viewer-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
     }
 
     .viewer-info-panel {
@@ -1003,6 +1074,7 @@ button .copy-feedback-mini.active {
         transform: none;
         position: relative;
         background: var(--bg-main);
+        z-index: 2200;
     }
 
     .rv-viewer.info-collapsed .viewer-info-panel {
@@ -1149,4 +1221,60 @@ button .copy-feedback-mini.active {
     scrollbar-color: var(--sb-thumb) transparent;
     user-select: text;
     -webkit-user-select: text;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Mobile Bottom Navigation (Pinterest Aesthetic)                             */
+/* -------------------------------------------------------------------------- */
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: var(--bg-modal); /* Opaque for floating feels */
+    backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-main);
+    display: none; /* Desktop hidden */
+    justify-content: space-around;
+    align-items: center;
+    z-index: 4000;
+    padding: 0 10px 10px 10px; /* Shifted up for iOS safe area */
+}
+
+@media (max-width: 600px) {
+    .mobile-nav {
+        display: flex;
+    }
+    .header-nav {
+        display: none !important; /* Hide old nav in favor of bottom nav */
+    }
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-dim);
+    font-size: 10px;
+    font-weight: 700;
+    transition: all 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+.mobile-nav-item svg {
+    width: 22px;
+    height: 22px;
+}
+
+.mobile-nav-item.active {
+    color: var(--text-main);
+}
+
+.mobile-nav-item:active {
+    transform: scale(0.9);
 }
