@@ -1912,33 +1912,7 @@ function getDynamicCategories() {
     return [{ id: 'all', label: 'ALL' }, ...sortedTags];
 }
 
-// --------------------------------------------------------------------------
-// Randomized Shuffle Logic
-// --------------------------------------------------------------------------
 
-window.handleShuffle = function () {
-    // Show loader for feedback
-    loader.style.display = 'block';
-    galleryContainer.style.opacity = '0.5';
-
-    setTimeout(() => {
-        // Shuffle the current filtered collection
-        for (let i = filteredItems.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [filteredItems[i], filteredItems[j]] = [filteredItems[j], filteredItems[i]];
-        }
-
-        // Re-render
-        itemsShown = 0;
-        galleryContainer.innerHTML = '';
-        galleryContainer.style.opacity = '1';
-        renderAll();
-        initViewerSlider(); // Sync slider after shuffle
-        
-        // Minor toast for confirmation
-        showToast('Gallery layout randomized.');
-    }, 150);
-};
 
 
 // --------------------------------------------------------------------------
@@ -2554,7 +2528,7 @@ window.shareToPlatform = function (platform) {
     switch (platform) {
         case 'pinterest': shareUrl = `https://www.pinterest.com/pin/create/button/?url=${url}&media=${media}&description=${text}`; break;
         case 'x': shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`; break;
-        case 'instagram': copyViewerLinkDirect(); showToast('Link copied! Share it on Instagram.'); return;
+        case 'instagram': copyViewerLinkDirect(); return;
     }
     if (shareUrl) window.open(shareUrl, '_blank', 'width=600,height=400');
 };
@@ -2574,13 +2548,7 @@ window.copyRawTitle = function () {
 // Removed testPreset as we successfully settled on [ATOMIC INSTANT RENDERING]
 
 
-function showToast(message) {
-    const toast = document.getElementById('toast');
-    if (!toast) return;
-    toast.innerText = message;
-    toast.classList.add('active');
-    setTimeout(() => toast.classList.remove('active'), 3000);
-}
+
 
 // Removed outside click listener for share menu since it's no longer a dropdown
 
