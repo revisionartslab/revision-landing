@@ -2463,12 +2463,15 @@ window.toggleInfoGlobal = function () {
 };
 
 function syncInfoState() {
+    const v = document.getElementById('rv-viewer');
+    if (!v) return;
     if (isInfoEnabled) {
-        viewer.classList.remove('info-collapsed');
+        v.classList.remove('info-collapsed');
     } else {
-        viewer.classList.add('info-collapsed');
+        v.classList.add('info-collapsed');
     }
 }
+syncInfoState(); // Initial sync on load to ensure PC start is consistent
 
 viewer.addEventListener('contextmenu', (e) => {
     if (viewer.classList.contains('active')) {
