@@ -751,7 +751,7 @@ header {
     background: var(--bg-info-panel); 
     display: flex;
     flex-direction: column;
-    padding: 150px 70px 60px 40px; /* Right padding matched to header theme axis (70px) */
+    padding: 150px 53px 60px 40px; /* Aligned to match 17px correction: 70px - 17px = 53px */
     position: relative;
     overflow: hidden; 
     user-select: none;
@@ -998,8 +998,8 @@ button .copy-feedback-mini.active {
 .viewer-controls {
     position: absolute;
     top: 0;
-    right: 58px; /* 70px (header axis) - 12px (button hit-area correction) = 58px to align button center visually */
-    height: 72px; /* Same as PC header height */
+    right: 48px; /* Corrected by 10px: 58px - 10px = 48px for pixel-perfect vertical alignment */
+    height: 70px; /* Exact PC header height */
     z-index: 3000;
     display: flex;
     align-items: center;
