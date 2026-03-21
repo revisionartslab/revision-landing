@@ -495,7 +495,13 @@ header {
     gap: 0 var(--rv-gap);
     width: 100%;
     align-items: start;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.gallery-grid.filtering {
+    opacity: 0;
+}
+
 
 /* Responsive Overrides - Pinterest Standard 2-Cols */
 @media (max-width: 1200px) { 
@@ -517,13 +523,21 @@ header {
     background: transparent;
     border: none;
     overflow: hidden;
-    padding-bottom: var(--rv-gap); /* Exact consistent vertical gap */
+    padding-bottom: var(--rv-gap);
+    animation: rvCardReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
 }
 
-.rv-card:hover {
-    transform: none;
-    box-shadow: none;
+@keyframes rvCardReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
 
 .card-media {
     position: relative;

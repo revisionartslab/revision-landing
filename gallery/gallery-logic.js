@@ -3624,8 +3624,8 @@ const mainContent = document.querySelector('.scroll-root');
 
 let filteredItems = [...STREAM_RECORDS];
 
-let itemsShown = 0;
-const BATCH_SIZE = 12;
+
+const BATCH_SIZE = 25;
 let currentViewerIndex = -1;
 let isInfoEnabled = true; // Global state for info panel persistent visibility
 
@@ -3762,8 +3762,8 @@ let itemsRendered = 0;
 let observer = null;
 
 function renderAll() {
-    loader.style.display = 'block';
     itemsRendered = 0;
+
     galleryContainer.innerHTML = '';
     
     // Create initial batch
@@ -3776,7 +3776,7 @@ function renderAll() {
         if (entries[0].isIntersecting) {
             renderNextBatch();
         }
-    }, { rootMargin: '400px' });
+    }, { rootMargin: '1200px' });
 
     setupSentinel();
 }
@@ -3814,6 +3814,7 @@ function renderNextBatch() {
 
         const img = document.createElement('img');
         img.src = item.url;
+        img.loading = 'lazy'; // Standard browser optimization
         img.alt = escapeHtml(item.title);
         img.onload = function() { this.classList.add('loaded'); };
         img.onerror = function() { card.style.display = 'none'; resizeGridItem(card); };
@@ -3826,6 +3827,9 @@ function renderNextBatch() {
         cardMedia.appendChild(img);
         cardMedia.appendChild(overlay);
         card.appendChild(cardMedia);
+
+        // Staggered Entrance Animation
+        card.style.animationDelay = `${index * 0.04}s`;
 
         globalGridObserver.observe(card);
         
@@ -4080,7 +4084,7 @@ window.initDiscoveryGrid = function() {
             if (entries[0].isIntersecting) {
                 renderNextDiscoveryBatch(dGrid);
             }
-        }, { rootMargin: '400px' });
+        }, { rootMargin: '800px' });
         
         renderNextDiscoveryBatch(dGrid);
         
@@ -4099,7 +4103,7 @@ function renderNextDiscoveryBatch(dGrid) {
 
     if (discoveryRendered >= discoveryPool.length) return;
     
-    const nextBatch = discoveryPool.slice(discoveryRendered, discoveryRendered + 10);
+    const nextBatch = discoveryPool.slice(discoveryRendered, discoveryRendered + 20);
     
     nextBatch.forEach((item) => {
         const realIdx = filteredItems.findIndex(fi => generateAssetId(fi) === generateAssetId(item));
@@ -4124,6 +4128,7 @@ function renderNextDiscoveryBatch(dGrid) {
         
         const img = document.createElement('img');
         img.src = item.url;
+        img.loading = 'lazy';
         img.onload = function() {
             this.classList.add('loaded');
             // Trigger initial masonry fix after load
@@ -4148,7 +4153,7 @@ function renderNextDiscoveryBatch(dGrid) {
         }
     });
     
-    discoveryRendered += 10;
+    discoveryRendered += 20;
 }
 
 window.toggleMobileInfo = function() {
@@ -4883,23 +4888,35 @@ function initFilters() {
             document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
             btn.classList.add('active');
             
-            // OPTION A: Lightning-fast Atomic Refresh
-            // No setTimeout, no opacity fade, no loader. Instant DOM replacement.
-            itemsShown = 0;
-            galleryContainer.innerHTML = '';
+            // ── PREMIUM FADE-OUT & SWAP ───────────────────────────────────
+            galleryContainer.style.minHeight = `${galleryContainer.scrollHeight}px`; // Guard against collapse
+            galleryContainer.classList.add('filtering');
             
-            if (tagId === 'all') {
-                shuffleArray(STREAM_RECORDS);
-                filteredItems = [...STREAM_RECORDS];
-            } else {
-                const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
-                shuffleArray(matchedItems);
-                filteredItems = matchedItems;
-            }
-            
-            renderAll();
-            initViewerSlider(); // Sync slider after filter
-            if (typeof scrollToTop === 'function') scrollToTop();
+            setTimeout(() => {
+                itemsRendered = 0;
+                galleryContainer.innerHTML = '';
+                
+                if (tagId === 'all') {
+                    shuffleArray(STREAM_RECORDS);
+                    filteredItems = [...STREAM_RECORDS];
+                } else {
+                    const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
+                    shuffleArray(matchedItems);
+                    filteredItems = matchedItems;
+                }
+                
+                renderAll();
+                initViewerSlider(); 
+                
+                // Fade back in
+                setTimeout(() => {
+                    galleryContainer.classList.remove('filtering');
+                    // Clean up min-height after fade-in to allow natural growth
+                    setTimeout(() => { galleryContainer.style.minHeight = ''; }, 300);
+                }, 10);
+                
+                if (typeof scrollToTop === 'function') scrollToTop();
+            }, 250); // Matches transition duration roughly
         });
 
 
@@ -4912,22 +4929,33 @@ window.handleMobileNav = function(tagId, btn) {
     document.querySelectorAll('.mobile-nav-item').forEach(i => i.classList.remove('active'));
     btn.classList.add('active');
 
-    // Logic Update (Trigger existing filter logic)
-    itemsShown = 0;
-    galleryContainer.innerHTML = '';
+    // ── PREMIUM FADE-OUT & SWAP ───────────────────────────────────
+    galleryContainer.style.minHeight = `${galleryContainer.scrollHeight}px`;
+    galleryContainer.classList.add('filtering');
     
-    if (tagId === 'all') {
-        shuffleArray(STREAM_RECORDS);
-        filteredItems = [...STREAM_RECORDS];
-    } else {
-        const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
-        shuffleArray(matchedItems);
-        filteredItems = matchedItems;
-    }
-    
-    renderAll();
-    initViewerSlider(); 
-    if (typeof scrollToTop === 'function') scrollToTop();
+    setTimeout(() => {
+        itemsRendered = 0;
+        galleryContainer.innerHTML = '';
+        
+        if (tagId === 'all') {
+            shuffleArray(STREAM_RECORDS);
+            filteredItems = [...STREAM_RECORDS];
+        } else {
+            const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
+            shuffleArray(matchedItems);
+            filteredItems = matchedItems;
+        }
+        
+        renderAll();
+        initViewerSlider(); 
+
+        setTimeout(() => {
+            galleryContainer.classList.remove('filtering');
+            setTimeout(() => { galleryContainer.style.minHeight = ''; }, 300);
+        }, 10);
+
+        if (typeof scrollToTop === 'function') scrollToTop();
+    }, 250);
 };
 
 console.log('Gallery Initializing DYNAMICALLY...');
