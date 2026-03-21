@@ -2025,19 +2025,21 @@ function renderNextBatch() {
 // Pinch zoom and pan are computed from raw Touch coordinates, completely
 // independent of any browser scroll mechanism.
 
-const mCanvas     = document.getElementById('mobile-canvas');
-let mSlotPrev   = document.getElementById('canvas-prev');
-let mSlotCurr   = document.getElementById('canvas-curr');
-let mSlotNext   = document.getElementById('canvas-next');
-const mInfoSheet  = document.getElementById('mobile-info-sheet');
-const mBottomBar  = document.getElementById('mobile-bottom-bar');
+const mCanvas       = document.getElementById('mobile-canvas');
+let mSlotPrev       = document.getElementById('canvas-prev');
+let mSlotCurr       = document.getElementById('canvas-curr');
+let mSlotNext       = document.getElementById('canvas-next');
+const mInfoOverlay  = document.getElementById('m-info-overlay');
+const mDiscoverySheet = document.getElementById('m-discovery-sheet');
 
 // Track state
-let mcIndex = 0;        // current image index in filteredItems
-let mcScale = 1;        // current zoom level
-let mcTx = 0;           // image pan X
-let mcTy = 0;           // image pan Y
-let mcInfoOpen = false; // info sheet visibility
+let mcIndex         = 0;        // current image index in filteredItems
+let mcScale         = 1;        // current zoom level
+let mcTx            = 0;        // image pan X
+let mcTy            = 0;        // image pan Y
+let mcInfoOpen      = false;    // info layer state
+let mcDiscoveryOpen = false;    // discovery panel state
+
 
 // Touch tracking for state machine
 const MC = {
@@ -2152,12 +2154,24 @@ function mcNavigate(step) {
 
 function mcOpenInfo() {
     mcInfoOpen = true;
-    mInfoSheet?.classList.add('open');
-    document.getElementById('mbb-info-btn')?.classList.add('active');
+    const overlay = document.getElementById('m-info-overlay');
+    overlay?.classList.add('open');
+    document.getElementById('m-info-btn')?.classList.add('active');
     
-    // Auto-scroll to top to ensure overlay is visible over the image
-    const rvViewer = document.getElementById('rv-viewer');
-    if (rvViewer) rvViewer.scrollTo({top: 0, behavior: 'smooth'});
+    // Swipe-down to close for Info Overlay
+    if (overlay && !overlay._initSwipe) {
+        overlay._initSwipe = true;
+        let t0y = 0;
+        overlay.addEventListener('touchstart', (e) => {
+            if (overlay.scrollTop > 5) return;
+            t0y = e.touches[0].clientY;
+        }, {passive: true});
+        overlay.addEventListener('touchend', (e) => {
+            const t1y = e.changedTouches[0].clientY;
+            if (t1y - t0y > 100) mcCloseInfo();
+        }, {passive: true});
+    }
+
     
     // Populate mobile-specific text fields
     const item = filteredItems[mcIndex];
@@ -2169,9 +2183,7 @@ function mcOpenInfo() {
     const mi = document.getElementById('m-viewer-id');
     if (mc) mc.innerText = (item.tags||[]).join(' / ').toUpperCase();
     if (mt) {
-        const titleText = (item.title || '');
-        const displayTitle = titleText.replace(/ /g, '_');
-        mt.innerHTML = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
+        mt.innerText = item.title || '';
     }
     if (md) md.innerText = item.description || '';
     if (mr) {
@@ -2187,26 +2199,60 @@ function mcOpenInfo() {
 
 function mcCloseInfo() {
     mcInfoOpen = false;
-    mInfoSheet?.classList.remove('open', 'expanded');
-    document.getElementById('mbb-info-btn')?.classList.remove('active');
+    document.getElementById('m-info-overlay')?.classList.remove('open');
+    document.getElementById('m-info-btn')?.classList.remove('active');
 }
+
+
+
+window.mcOpenDiscovery = function() {
+    mcDiscoveryOpen = true;
+    const sheet = document.getElementById('m-discovery-sheet');
+    sheet?.classList.add('open');
+    initDiscoveryGrid();
+
+    // Swipe-down to close for Discovery Sheet
+    if (sheet && !sheet._initSwipe) {
+        sheet._initSwipe = true;
+        let t0y = 0;
+        sheet.addEventListener('touchstart', (e) => {
+             // Only if at the top of scroll
+             const grid = document.getElementById('m-discovery-grid');
+             if (grid && grid.scrollTop > 5) return; 
+             t0y = e.touches[0].clientY;
+        }, {passive: true});
+        sheet.addEventListener('touchend', (e) => {
+             const t1y = e.changedTouches[0].clientY;
+             if (t1y - t0y > 100) mcCloseDiscovery();
+        }, {passive: true});
+    }
+};
+
+window.mcCloseDiscovery = function() {
+    mcDiscoveryOpen = false;
+    document.getElementById('m-discovery-sheet')?.classList.remove('open');
+};
+
 
 let discoveryPool = [];
 let discoveryRendered = 0;
 let discoveryObserver = null;
+let discoveryCurrentId = null;
 
 window.initDiscoveryGrid = function() {
     const dGrid = document.getElementById('m-discovery-grid');
     if (!dGrid) return;
     
-    // Always clear grid to reset random seed on open
-    dGrid.innerHTML = '';
+    const currentItem = filteredItems[mcIndex];
+    const currentId = currentItem ? generateAssetId(currentItem) : '';
     
-    // Reset if newly opened
+    // Always refresh if image changed
+    if (discoveryCurrentId !== currentId) {
+        dGrid.innerHTML = '';
+        discoveryCurrentId = currentId;
+    }
+    
     if (dGrid.innerHTML === '') {
-        const currentItem = filteredItems[mcIndex];
-        const currentId = currentItem ? generateAssetId(currentItem) : '';
-        
         discoveryPool = STREAM_RECORDS.filter(i => generateAssetId(i) !== currentId);
         // Shuffle pool
         for (let i = discoveryPool.length - 1; i > 0; i--) {
@@ -2229,36 +2275,34 @@ window.initDiscoveryGrid = function() {
         if (!sentinel) {
             sentinel = document.createElement('div');
             sentinel.id = 'discovery-sentinel';
-            sentinel.style.height = '10px';
+            sentinel.style.height = '40px';
             sentinel.style.width = '100%';
-            document.getElementById('m-discovery-section').appendChild(sentinel);
         }
+        dGrid.appendChild(sentinel);
         discoveryObserver.observe(sentinel);
     }
 };
-
 function renderNextDiscoveryBatch(dGrid) {
+
     if (discoveryRendered >= discoveryPool.length) return;
     
     const nextBatch = discoveryPool.slice(discoveryRendered, discoveryRendered + 10);
     
     nextBatch.forEach((item) => {
-        // Find real index in filteredItems (if filters are active), or use standalone openViewer bypass
         const realIdx = filteredItems.findIndex(fi => generateAssetId(fi) === generateAssetId(item));
         
         const card = document.createElement('div');
-        card.className = 'rv-card discovery-card-masonry';
-        card.onclick = () => {
+        card.className = 'm-discovery-card rv-card'; // Added rv-card for general styles
+        card.onclick = (e) => {
+            e.stopPropagation();
             if (realIdx !== -1) {
-                // If Item is in current filter, just navigate normally
                 openViewer(realIdx);
             } else {
-                // If Item is from full pool but filtered out, we reset filter to 'ALL' and open
-                document.querySelector('.filter-chip[data-category="all"]')?.click();
+                mobileFilterAll(); // Reset filter first
                 setTimeout(() => {
                     const idxToOpen = filteredItems.findIndex(fi => generateAssetId(fi) === generateAssetId(item));
                     if (idxToOpen !== -1) openViewer(idxToOpen);
-                }, 50);
+                }, 100);
             }
         };
 
@@ -2268,14 +2312,18 @@ function renderNextDiscoveryBatch(dGrid) {
         const img = document.createElement('img');
         img.src = item.url;
         img.onload = function() {
-            this.style.opacity = '1';
-            // Trigger masonry scale
-            const contentHeight = media.getBoundingClientRect().height;
-            card.style.gridRowEnd = `span ${Math.ceil(contentHeight + 16)}`;
+            this.classList.add('loaded');
+            // Trigger initial masonry fix after load
+            resizeGridItem(card);
         };
         
         media.appendChild(img);
         card.appendChild(media);
+        
+        // Add ResizeObserver for responsive masonry
+        const ro = new ResizeObserver(() => resizeGridItem(card));
+        ro.observe(card);
+        
         dGrid.appendChild(card);
     });
     
@@ -2283,10 +2331,56 @@ function renderNextDiscoveryBatch(dGrid) {
 }
 
 window.toggleMobileInfo = function() {
-    if (mcInfoOpen) {
-        mcCloseInfo();
-    } else {
-        mcOpenInfo();
+    if (mcInfoOpen) mcCloseInfo();
+    else mcOpenInfo();
+};
+
+window.mobileFilterAll = function() {
+    // Hide dropdown if open
+    document.getElementById('m-category-dropdown')?.classList.remove('open');
+    document.getElementById('m-category-btn')?.classList.remove('active', 'open');
+    document.getElementById('m-filter-all')?.classList.add('active');
+    
+    // Trigger existing logic
+    const allChip = document.querySelector('.filter-chip[data-category="all"]');
+    if (allChip) allChip.click();
+};
+
+window.toggleMobileCategory = function() {
+    const dropdown = document.getElementById('m-category-dropdown');
+    const btn = document.getElementById('m-category-btn');
+    if (!dropdown || !btn) return;
+    
+    const isOpen = dropdown.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    
+    if (isOpen) {
+        // Build list if empty
+        const list = document.getElementById('m-category-list');
+        if (list && list.children.length === 0) {
+            const dynamicCategories = getDynamicCategories().filter(c => c.id !== 'all');
+            dynamicCategories.forEach(cat => {
+                const item = document.createElement('button');
+                item.className = 'm-cat-item';
+                item.innerText = cat.label;
+                item.onclick = () => {
+                    // Update header visual
+                    document.getElementById('m-filter-all')?.classList.remove('active');
+                    btn.classList.add('active');
+                    btn.classList.remove('open');
+                    dropdown.classList.remove('open');
+                    
+                    // Highlight selected item in dropdown
+                    document.querySelectorAll('.m-cat-item').forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    
+                    // Trigger actual filter
+                    const chip = document.querySelector(`.filter-chip[data-category="${cat.id}"]`);
+                    if (chip) chip.click();
+                };
+                list.appendChild(item);
+            });
+        }
     }
 };
 
@@ -2354,7 +2448,6 @@ if (mCanvas) {
     }, { passive: false });
 
     mCanvas.addEventListener('touchmove', (e) => {
-        // e.preventDefault() is conditionally applied below to allow native vertical scrolling
         const touches = e.touches;
         const img = mSlotCurr.querySelector('img');
         if (!img) return;
@@ -2396,12 +2489,16 @@ if (mCanvas) {
                 }
             }
 
+            e.preventDefault(); // Always prevent default; we control everything now.
+
             if (MC.axis === 'x') {
-                e.preventDefault(); // Stop history swipe on X
                 MC.px += dx;
                 mcSetTrack(MC.px, false);
+            } else if (MC.axis === 'y') {
+                // We'll calculate the interaction in touchend, but can apply drag effects if needed.
+                // For a polished feel, we could translate the viewer slightly, but
+                // it's cleaner to just wait for the flick (touchend) to open the panels.
             }
-            // For 'y' axis, do nothing -> browser natively scrolls down and reveals discovery grid.
         }
     }, { passive: false });
 
@@ -2425,31 +2522,40 @@ if (mCanvas) {
         const totalDx = MC.tx - MC.t0x;
         const totalDy = MC.ty - MC.t0y;
         const elapsed = Date.now() - MC.startTime;
-        const velocity = Math.abs(totalDx) / elapsed;
-
-        mCanvas.style.opacity = '1';
+        const velocityDx = Math.abs(totalDx) / elapsed;
+        const velocityDy = Math.abs(totalDy) / elapsed;
 
         if (mcScale > 1) return; // Stay in zoom
 
         if (MC.axis === 'y') {
-            const viewerScroll = document.querySelector('.rv-viewer')?.scrollTop || 0;
-            if (viewerScroll <= 0 && totalDy > 100) {
-                // Swipe DOWN at the top of the page:
-                if (mcInfoOpen) {
-                    mcCloseInfo(); // Close the info sheet overlay
+            const threshold = 50; 
+            if (totalDy < -threshold || (velocityDy > 0.4 && totalDy < -10)) {
+                // Swipe UP: Open Discovery Sheet
+                if (!mcDiscoveryOpen) {
+                    mcOpenDiscovery();
+                    mcCloseInfo(); // Ensure info drops down
+                }
+            } else if (totalDy > threshold || (velocityDy > 0.4 && totalDy > 10)) {
+                // Swipe DOWN: 
+                // 1. Close discovery if open
+                // 2. Or close Info if open
+                // 3. Or close viewer
+                if (mcDiscoveryOpen) {
+                    mcCloseDiscovery();
+                } else if (mcInfoOpen) {
+                    mcCloseInfo();
                 } else {
-                    closeViewer(); // Dismiss the viewer natively
+                    closeViewer();
                 }
             }
-            // Vertical Swipe UP is handled completely natively by CSS overflow-y scrolling
             return;
         }
 
         if (MC.axis === 'x') {
             const threshold = MC_W() * 0.25; // 25% to trigger
-            if (totalDx < -threshold || (velocity > 0.4 && totalDx < -20)) {
+            if (totalDx < -threshold || (velocityDx > 0.4 && totalDx < -20)) {
                 mcNavigate(1);
-            } else if (totalDx > threshold || (velocity > 0.4 && totalDx > 20)) {
+            } else if (totalDx > threshold || (velocityDx > 0.4 && totalDx > 20)) {
                 mcNavigate(-1);
             } else {
                 mcSetTrack(0, true); // Snap back
@@ -2628,6 +2734,10 @@ window.closeViewer = function () {
     document.documentElement.style.overflow = '';
     if (mainContent) mainContent.style.overflow = 'auto';
     window.location.hash = '';
+
+    // Mobile specific cleanup
+    if (window.mcCloseInfo) mcCloseInfo();
+    if (window.mcCloseDiscovery) mcCloseDiscovery();
 
     // Restore 'Move to Top' button visibility based on scroll position
     if (mainContent && mainContent.scrollTop > 400) {
