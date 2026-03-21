@@ -1928,7 +1928,8 @@ window.resizeGridItem = function (item) {
     const media = item.querySelector('.card-media');
     if (!media) return;
     const contentHeight = media.getBoundingClientRect().height;
-    item.style.gridRowEnd = `span ${Math.ceil(contentHeight + 24)}`;
+    const pb = parseFloat(window.getComputedStyle(item).paddingBottom) || 0;
+    item.style.gridRowEnd = `span ${Math.ceil(contentHeight + pb)}`;
 };
 
 window.addEventListener('resize', () => {
