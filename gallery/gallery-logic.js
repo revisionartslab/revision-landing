@@ -2130,6 +2130,11 @@ function mcOpenInfo() {
     mcInfoOpen = true;
     mInfoSheet?.classList.add('open');
     document.getElementById('mbb-info-btn')?.classList.add('active');
+    
+    // Clear grid so it regenerates randomly on next expansion
+    const dGrid = document.getElementById('m-discovery-grid');
+    if (dGrid) dGrid.innerHTML = '';
+    
     // Populate mobile-specific text fields
     const item = filteredItems[mcIndex];
     if (!item) return;
@@ -2158,12 +2163,44 @@ function mcOpenInfo() {
 
 function mcCloseInfo() {
     mcInfoOpen = false;
-    mInfoSheet?.classList.remove('open');
+    mInfoSheet?.classList.remove('open', 'expanded');
     document.getElementById('mbb-info-btn')?.classList.remove('active');
 }
 
+window.openDiscoverySheet = function() {
+    if (!mInfoSheet) return;
+    mcInfoOpen = true;
+    mInfoSheet.classList.add('open', 'expanded');
+    document.getElementById('mbb-info-btn')?.classList.add('active');
+    
+    // Populate Grid dynamically
+    const dGrid = document.getElementById('m-discovery-grid');
+    if (dGrid && dGrid.innerHTML === '') {
+        const pool = [...filteredItems].filter(i => i.id !== filteredItems[mcIndex]?.id);
+        // Simple Shuffle
+        for (let i = pool.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [pool[i], pool[j]] = [pool[j], pool[i]];
+        }
+        const toShow = pool.slice(0, 6);
+        let html = '';
+        toShow.forEach(item => {
+            const realIdx = filteredItems.findIndex(fi => fi.id === item.id);
+            html += `<div class="discovery-card" onclick="openViewer(${realIdx})"><img src="${item.url}" onload="this.style.opacity=1" /></div>`;
+        });
+        dGrid.innerHTML = html;
+    }
+};
+
 window.toggleMobileInfo = function() {
-    mcInfoOpen ? mcCloseInfo() : mcOpenInfo();
+    // If it's expanded, close completely. If open normally, expand it. If closed, open normally.
+    if (mInfoSheet?.classList.contains('expanded')) {
+        mcCloseInfo();
+    } else if (mcInfoOpen) {
+        window.openDiscoverySheet();
+    } else {
+        mcOpenInfo();
+    }
 };
 
 // Clamp a value
@@ -2188,6 +2225,7 @@ if (mCanvas) {
             MC.t0x = MC.tx = touches[0].clientX;
             MC.t0y = MC.ty = touches[0].clientY;
             MC.px = 0;
+            MC.axis = null; // Use axis-locking ('x' or 'y')
             MC.baseImgTx = mcTx;
             MC.baseImgTy = mcTy;
             MC.startTime = Date.now();
@@ -2225,6 +2263,7 @@ if (mCanvas) {
     }, { passive: false });
 
     mCanvas.addEventListener('touchmove', (e) => {
+        // We do NOT prevent default if dragging vertically over info sheet, but since this is mCanvas (underneath), we prevent
         e.preventDefault();
         const touches = e.touches;
         const img = mSlotCurr.querySelector('img');
@@ -2234,7 +2273,6 @@ if (mCanvas) {
             const newDist = pinchDist(touches[0], touches[1]);
             const newScale = clamp(MC.pScale * (newDist / MC.pDist), 1, 5);
             mcScale = newScale;
-            // Optionally shift pan based on pinch center drift (simplified: keep center)
             img.style.transition = 'none';
             img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
             return;
@@ -2256,15 +2294,25 @@ if (mCanvas) {
             img.style.transition = 'none';
             img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
         } else {
-            // SWIPE mode: move the whole canvas track
-            MC.px += dx;
-            mcSetTrack(MC.px, false);
-
-            // Pull-to-dismiss vertical
+            // SWIPE mode: Calculate axis lock
+            const totalDx = cx - MC.t0x;
             const totalDy = cy - MC.t0y;
-            if (totalDy > 20 && Math.abs(MC.px) < 20) {
-                const opacity = clamp(1 - totalDy / 400, 0.3, 1);
-                mCanvas.style.opacity = opacity;
+
+            if (MC.axis === null) {
+                if (Math.abs(totalDx) > 8 || Math.abs(totalDy) > 8) {
+                    MC.axis = Math.abs(totalDx) > Math.abs(totalDy) ? 'x' : 'y';
+                }
+            }
+
+            if (MC.axis === 'x') {
+                MC.px += dx;
+                mcSetTrack(MC.px, false);
+            } else if (MC.axis === 'y') {
+                // Vertical Pull logic (Down to dismiss, Up to expand info)
+                if (totalDy > 0) { // Pull down
+                    const opacity = clamp(1 - totalDy / 400, 0.3, 1);
+                    mCanvas.style.opacity = opacity;
+                }
             }
         }
     }, { passive: false });
@@ -2289,26 +2337,28 @@ if (mCanvas) {
 
         mCanvas.style.opacity = '1';
 
-        if (mcScale > 1) {
-            // Stay in zoom/pan mode, no navigation
+        if (mcScale > 1) return; // Stay in zoom
+
+        if (MC.axis === 'y') {
+            if (totalDy > 100) {
+                // Swipe DOWN: Dismiss
+                closeViewer();
+            } else if (totalDy < -50) {
+                // Swipe UP: Expand Discovery
+                openDiscoverySheet();
+            }
             return;
         }
 
-        // Pull-to-dismiss: significant downward swipe
-        if (totalDy > 140 && Math.abs(totalDx) < 80) {
-            closeViewer();
-            return;
-        }
-
-        // Swipe threshold: >30% of screen width OR fast flick
-        const threshold = MC_W() * 0.3;
-        if (totalDx < -threshold || (velocity > 0.4 && totalDx < -30)) {
-            mcNavigate(1);
-        } else if (totalDx > threshold || (velocity > 0.4 && totalDx > 30)) {
-            mcNavigate(-1);
-        } else {
-            // Snap back
-            mcSetTrack(0, true);
+        if (MC.axis === 'x') {
+            const threshold = MC_W() * 0.25; // 25% to trigger
+            if (totalDx < -threshold || (velocity > 0.4 && totalDx < -20)) {
+                mcNavigate(1);
+            } else if (totalDx > threshold || (velocity > 0.4 && totalDx > 20)) {
+                mcNavigate(-1);
+            } else {
+                mcSetTrack(0, true); // Snap back
+            }
         }
     }, { passive: false });
 }

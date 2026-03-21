@@ -1250,6 +1250,57 @@ button .copy-feedback-mini.active {
     transform: translateY(0);
 }
 
+.mobile-info-sheet.expanded {
+    transform: translateY(0);
+    max-height: 92vh;
+    height: 92vh;
+}
+
+.discovery-section {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-main);
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.mobile-info-sheet.expanded .discovery-section {
+    display: block;
+}
+
+.discovery-title {
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding-bottom: 60px; /* Safe area */
+}
+
+.discovery-card {
+    width: 100%;
+    aspect-ratio: 0.8;
+    background: #111;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.discovery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
 .mis-header {
     margin-bottom: 8px; /* Reduced from 16px */
 }
