@@ -1180,35 +1180,32 @@ button .copy-feedback-mini.active {
         display: flex; /* show on mobile */
     }
 
-    /* ── Info Sheet – now acts as overlay OR native block ── */
+    /* ── Info Sheet Overlay (Toggled by "I" button) ── */
     .mobile-info-sheet {
-        display: block;
-        position: relative; /* Flow normally below media-panel */
-        bottom: auto;
-        padding-bottom: 120px; /* Space for bottom bar overlay */
-        background: #000;
-        border-top: 1px solid var(--border-main);
-        /* Default state: hidden completely until I button pressed or scrolled */
-    }
-
-    .mobile-info-sheet.overlay-mode {
         position: absolute;
         bottom: 60px; /* Above bottom bar */
         left: 0;
         right: 0;
-        max-height: 40vh; /* Shorter to allow more image to be seen */
-        border-top: none;
-        background: rgba(10, 10, 12, 0.85); /* Deep solid transparent */
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        max-height: 45vh;
+        padding: 24px 20px 24px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        background: rgba(10, 10, 15, 0.90) !important; /* Force deep solid dark frosted background */
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
         z-index: 2000;
         opacity: 0;
         transform: translateY(20px);
         pointer-events: none;
         transition: opacity 0.3s, transform 0.3s;
+        overflow-y: auto;
+
+        /* Force light-on-dark text regardless of root theme */
+        --text-main: #ffffff;
+        --text-muted: #cbd5e1;
+        --text-dim: #94a3b8;
     }
 
-    .mobile-info-sheet.overlay-mode.open {
+    .mobile-info-sheet.open {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;

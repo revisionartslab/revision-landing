@@ -2152,7 +2152,7 @@ function mcNavigate(step) {
 
 function mcOpenInfo() {
     mcInfoOpen = true;
-    mInfoSheet?.classList.add('open', 'overlay-mode');
+    mInfoSheet?.classList.add('open');
     document.getElementById('mbb-info-btn')?.classList.add('active');
     
     // Auto-scroll to top to ensure overlay is visible over the image
@@ -2187,7 +2187,7 @@ function mcOpenInfo() {
 
 function mcCloseInfo() {
     mcInfoOpen = false;
-    mInfoSheet?.classList.remove('open', 'expanded', 'overlay-mode');
+    mInfoSheet?.classList.remove('open', 'expanded');
     document.getElementById('mbb-info-btn')?.classList.remove('active');
 }
 
