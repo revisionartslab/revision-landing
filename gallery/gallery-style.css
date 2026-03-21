@@ -1100,9 +1100,11 @@ button .copy-feedback-mini.active {
     .viewer-nav { display: none; } /* Arrows are PC-only. Mobile uses swipe. */
     .viewer-controls { display: none !important; } /* Hide PC controls on mobile */
     .rv-viewer {
-        flex-direction: column;
-        overflow: hidden;
+        display: block; /* Disable flex column */
+        overflow-y: auto; /* Allow native scroll for discovery */
+        overflow-x: hidden;
         background: #000;
+        scroll-behavior: smooth;
     }
 
     /* PC info panel wrapper is fully hidden on mobile to avoid intercepting touch events */
@@ -1111,12 +1113,11 @@ button .copy-feedback-mini.active {
     }
 
     /* Media panel fills the whole screen */
+    /* Media panel fills the first fold */
     .viewer-media-panel {
-        position: absolute;
-        inset: 0;
-        flex: none;
+        position: relative; /* Let it scroll natively */
         width: 100%;
-        height: 100%;
+        height: 100dvh; /* Dynamic viewport height */
         padding: 0;
         background: #000;
         overflow: hidden;
@@ -1127,7 +1128,6 @@ button .copy-feedback-mini.active {
         display: none;
     }
 
-    /* ── Mobile Canvas Engine ── */
     .mobile-canvas {
         position: absolute;
         inset: 0;
@@ -1136,7 +1136,7 @@ button .copy-feedback-mini.active {
         display: block; /* show on mobile */
         /* Three slots: prev | curr | next  – JS controls translateX */
         overflow: visible;
-        touch-action: none; /* JS owns ALL touch events */
+        touch-action: pan-y; /* Allow native vertical scroll, JS controls X */
         user-select: none;
         -webkit-user-select: none;
     }
@@ -1180,9 +1180,36 @@ button .copy-feedback-mini.active {
         display: flex; /* show on mobile */
     }
 
-    /* ── Info Sheet – hidden by default, slides up ── */
+    /* ── Info Sheet – now acts as overlay OR native block ── */
     .mobile-info-sheet {
-        display: block; /* show on mobile */
+        display: block;
+        position: relative; /* Flow normally below media-panel */
+        bottom: auto;
+        padding-bottom: 120px; /* Space for bottom bar overlay */
+        background: #000;
+        border-top: 1px solid var(--border-main);
+        /* Default state: hidden completely until I button pressed or scrolled */
+    }
+
+    .mobile-info-sheet.overlay-mode {
+        position: absolute;
+        bottom: 60px; /* Above bottom bar */
+        left: 0;
+        right: 0;
+        max-height: 50vh; /* Don't hide the whole image */
+        border-top: none;
+        background: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0.8) 70%, transparent);
+        z-index: 2000;
+        opacity: 0;
+        transform: translateY(20px);
+        pointer-events: none;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .mobile-info-sheet.overlay-mode.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
     }
 
     /* Reduce title space on mobile for a tighter look */
@@ -1197,19 +1224,23 @@ button .copy-feedback-mini.active {
 
 /* ── Bottom Bar base styles (mobile only) ── */
 .mobile-bottom-bar {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 3000;
     background: #000 !important;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
     border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 0 12px env(safe-area-inset-bottom, 12px);
+    padding: 0 12px env(safe-area-inset-bottom, 0);
     height: 60px;
+    box-sizing: content-box;
     align-items: center;
     justify-content: space-around;
+    display: none; /* Inherits display flex from media query when needed */
+}
+
+.rv-viewer.active .mobile-bottom-bar {
+    display: flex;
 }
 
 .mbb-btn {
@@ -1227,45 +1258,14 @@ button .copy-feedback-mini.active {
 
 .mbb-btn:active { color: #fff; }
 
-.mbb-btn.active { color: var(--text-main); }
+.mbb-btn.active { color: #fff !important; }
 
-/* ── Mobile Info Sheet base styles ── */
-.mobile-info-sheet {
-    position: absolute;
-    bottom: 60px; /* sit just above bottom bar */
-    left: 0;
-    right: 0;
-    z-index: 2900;
-    background: var(--bg-main);
-    border-top: 1px solid var(--border-main);
-    padding: 24px 20px 20px;
-    max-height: 70vh;
-    overflow-y: auto;
-    transform: translateY(100%); /* hidden below screen by default */
-    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-    overscroll-behavior: contain;
-}
-
-.mobile-info-sheet.open {
-    transform: translateY(0);
-}
-
-.mobile-info-sheet.expanded {
-    transform: translateY(0);
-    max-height: 92vh;
-    height: 92vh;
-}
-
+/* Reset original info sheet styles since we moved to overlay/native scroll */
 .discovery-section {
     margin-top: 32px;
     padding-top: 24px;
     border-top: 1px solid var(--border-main);
-    display: none;
-    animation: fadeIn 0.4s ease forwards;
-}
-
-.mobile-info-sheet.expanded .discovery-section {
-    display: block;
+    display: block; /* Always natively visible */
 }
 
 .discovery-title {
@@ -1311,9 +1311,9 @@ button .copy-feedback-mini.active {
     margin-bottom: 8px; /* Reduced from 16px */
 }
 
-/* When info sheet is open, highlight bottom bar info button in white instead of blue */
+/* Ensure highlighting stays strictly pure white on active states */
 .rv-viewer.info-sheet-open .mbb-info {
-    color: var(--text-main);
+    color: #fff !important;
 }
 
 /* Move to Top Button */

@@ -2152,12 +2152,12 @@ function mcNavigate(step) {
 
 function mcOpenInfo() {
     mcInfoOpen = true;
-    mInfoSheet?.classList.add('open');
+    mInfoSheet?.classList.add('open', 'overlay-mode');
     document.getElementById('mbb-info-btn')?.classList.add('active');
     
-    // Clear grid so it regenerates randomly on next expansion
-    const dGrid = document.getElementById('m-discovery-grid');
-    if (dGrid) dGrid.innerHTML = '';
+    // Auto-scroll to top to ensure overlay is visible over the image
+    const rvViewer = document.getElementById('rv-viewer');
+    if (rvViewer) rvViewer.scrollTo({top: 0, behavior: 'smooth'});
     
     // Populate mobile-specific text fields
     const item = filteredItems[mcIndex];
@@ -2187,7 +2187,7 @@ function mcOpenInfo() {
 
 function mcCloseInfo() {
     mcInfoOpen = false;
-    mInfoSheet?.classList.remove('open', 'expanded');
+    mInfoSheet?.classList.remove('open', 'expanded', 'overlay-mode');
     document.getElementById('mbb-info-btn')?.classList.remove('active');
 }
 
@@ -2195,14 +2195,12 @@ let discoveryPool = [];
 let discoveryRendered = 0;
 let discoveryObserver = null;
 
-window.openDiscoverySheet = function() {
-    if (!mInfoSheet) return;
-    mcInfoOpen = true;
-    mInfoSheet.classList.add('open', 'expanded');
-    document.getElementById('mbb-info-btn')?.classList.add('active');
-    
+window.initDiscoveryGrid = function() {
     const dGrid = document.getElementById('m-discovery-grid');
     if (!dGrid) return;
+    
+    // Always clear grid to reset random seed on open
+    dGrid.innerHTML = '';
     
     // Reset if newly opened
     if (dGrid.innerHTML === '') {
@@ -2352,13 +2350,13 @@ if (mCanvas) {
     }, { passive: false });
 
     mCanvas.addEventListener('touchmove', (e) => {
-        // We do NOT prevent default if dragging vertically over info sheet, but since this is mCanvas (underneath), we prevent
-        e.preventDefault();
+        // e.preventDefault() is conditionally applied below to allow native vertical scrolling
         const touches = e.touches;
         const img = mSlotCurr.querySelector('img');
         if (!img) return;
 
         if (MC.state === 'PINCH' && touches.length >= 2) {
+            e.preventDefault();
             const newDist = pinchDist(touches[0], touches[1]);
             const newScale = clamp(MC.pScale * (newDist / MC.pDist), 1, 5);
             mcScale = newScale;
@@ -2377,6 +2375,7 @@ if (mCanvas) {
         MC.ty = cy;
 
         if (mcScale > 1) {
+            e.preventDefault();
             // PAN mode: move image freely
             mcTx = MC.baseImgTx + (cx - MC.t0x);
             mcTy = MC.baseImgTy + (cy - MC.t0y);
@@ -2394,15 +2393,11 @@ if (mCanvas) {
             }
 
             if (MC.axis === 'x') {
+                e.preventDefault(); // Stop history swipe on X
                 MC.px += dx;
                 mcSetTrack(MC.px, false);
-            } else if (MC.axis === 'y') {
-                // Vertical Pull logic (Down to dismiss, Up to expand info)
-                if (totalDy > 0) { // Pull down
-                    const opacity = clamp(1 - totalDy / 400, 0.3, 1);
-                    mCanvas.style.opacity = opacity;
-                }
             }
+            // For 'y' axis, do nothing -> browser natively scrolls down and reveals discovery grid.
         }
     }, { passive: false });
 
@@ -2429,17 +2424,16 @@ if (mCanvas) {
         if (mcScale > 1) return; // Stay in zoom
 
         if (MC.axis === 'y') {
-            if (totalDy > 100) {
-                // Swipe DOWN:
+            const viewerScroll = document.querySelector('.rv-viewer')?.scrollTop || 0;
+            if (viewerScroll <= 0 && totalDy > 100) {
+                // Swipe DOWN at the top of the page:
                 if (mcInfoOpen) {
-                    mcCloseInfo(); // Close the info sheet
+                    mcCloseInfo(); // Close the info sheet overlay
                 } else {
-                    closeViewer(); // Dismiss the viewer
+                    closeViewer(); // Dismiss the viewer natively
                 }
-            } else if (totalDy < -50) {
-                // Swipe UP: Expand Discovery
-                openDiscoverySheet();
             }
+            // Vertical Swipe UP is handled completely natively by CSS overflow-y scrolling
             return;
         }
 
@@ -2490,6 +2484,7 @@ window.openViewer = async function (index) {
     }
 
     updateViewerMetadata(index);
+    if (isMobile) initDiscoveryGrid();
     
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden';
