@@ -1109,11 +1109,18 @@ button .copy-feedback-mini.active {
 /* ══════════════════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
 
-    /* ── Header: single-line compact ── */
+    /* ── Header: 3-column layout (Logo | Filters | Theme) ── */
     .glass .nav-content {
         padding: 0 16px;
         height: 52px;
-        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .logo {
+        flex: 0 0 auto; /* Fixed: left side */
     }
 
     .logo h2 {
@@ -1122,19 +1129,24 @@ button .copy-feedback-mini.active {
         white-space: nowrap;
     }
 
-    .logo-sub { display: none; } /* Hide subtitle on mobile */
+    .logo-sub { display: none; }
 
     /* Hide PC filter chips and density slider */
     .header-nav    { display: none !important; }
     .density-control { display: none !important; }
 
-    /* Show mobile-only filter row */
+    /* Mobile filters: centered between logo and theme dot */
     .mobile-header-filters {
+        flex: 1 1 auto; /* Grow to fill middle */
         display: flex;
         align-items: center;
+        justify-content: center; /* Centered */
         gap: 8px;
-        flex: 1;
-        overflow: hidden;
+        padding: 0 12px;
+    }
+
+    .nav-actions {
+        flex: 0 0 auto; /* Fixed: right side */
     }
 
     .m-filter-all {
@@ -1191,11 +1203,11 @@ button .copy-feedback-mini.active {
     .m-category-dropdown {
         display: block;
         position: absolute;
-        top: 52px; /* matches header height */
+        top: 52px;
         left: 0;
         right: 0;
         background: var(--bg-element);
-        border-bottom: 1px solid var(--border-main);
+        /* NO border-bottom: header already has border-bottom. One line only. */
         z-index: 1500;
         overflow: hidden;
         max-height: 0;
@@ -1203,7 +1215,8 @@ button .copy-feedback-mini.active {
     }
 
     .m-category-dropdown.open {
-        max-height: 280px;
+        max-height: 320px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     }
 
     .m-category-list {
@@ -1239,10 +1252,13 @@ button .copy-feedback-mini.active {
     .app-footer   { display: none !important; }
     .card-overlay { display: none !important; }
 
-    /* ── Viewer: full-screen, overflow hidden for swipe ── */
+    /* ── Viewer: seamless vertical scroll canvas ── */
     .rv-viewer {
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
         background: #000;
+        scroll-snap-type: y proximity; /* proximity: snaps only near snap points, not forced */
     }
 
     /* Hide PC viewer elements */
@@ -1251,16 +1267,15 @@ button .copy-feedback-mini.active {
     .viewer-bottom-wrapper{ display: none !important; }
     .viewer-img-container { display: none; }
 
-    /* Media panel: full screen */
+    /* Media panel: FIRST FOLD — takes exactly 100dvh */
     .viewer-media-panel {
-        position: absolute;
-        inset: 0;
-        padding: 0;
+        position: relative;
+        width: 100%;
+        height: 100dvh;
+        flex-shrink: 0;
         background: #000;
         overflow: hidden;
-        flex: none;
-        width: 100%;
-        height: 100%;
+        /* scroll-snap-align removed — let content be at natural position */
     }
 
     /* ── 3-Slot canvas for smooth swipe navigation ── */
@@ -1423,50 +1438,43 @@ button .copy-feedback-mini.active {
         font-weight: 500;
     }
 
-    /* ── Discovery Sheet (swipe-up panel) ── */
+    /* ── Discovery section: sits in normal flow right under 100dvh image ── */
     .m-discovery-sheet {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 75dvh;
-        background: var(--bg-main, #0a0a0c);
-        z-index: 8500;
-        display: block;
-        transform: translateY(100%);
-        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-        border-top: 1px solid rgba(255,255,255,0.08);
-        border-radius: 16px 16px 0 0;
-        overflow: hidden;
+        position: relative;
+        width: 100%;
+        min-height: 60vh;
+        background: #000; /* Black: seamless with image above */
+        padding-top: 12px;
+        padding-bottom: env(safe-area-inset-bottom, 60px);
+        transform: none;
+        border-radius: 0;
+        border-top: none;
+        overflow: visible;
     }
 
-    .m-discovery-sheet.open {
-        transform: translateY(0);
-    }
+    .m-discovery-sheet.open { transform: none; }
 
     .m-discovery-handle {
         width: 36px;
-        height: 4px;
-        background: rgba(255,255,255,0.2);
+        height: 3px;
+        background: rgba(255,255,255,0.12);
         border-radius: 2px;
-        margin: 12px auto 0;
-        flex-shrink: 0;
+        margin: 0 auto 20px;
     }
 
     .m-discovery-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 1px;
-        gap: 0 4px;
-        padding: 12px 8px 120px;
-        overflow-y: auto;
-        height: calc(75dvh - 28px);
-        overscroll-behavior: contain;
+        grid-auto-rows: 1px; /* masonry via JS */
+        gap: 0 3px;
+        padding: 0 6px 60px;
+        /* NOT overflow:auto — native viewer scroll handles this */
+        overflow: visible;
     }
 
     .m-discovery-card {
         width: 100%;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
         background: #111;
         overflow: hidden;
         cursor: pointer;
@@ -1582,6 +1590,4 @@ button .copy-feedback-mini.active {
     -webkit-user-select: text;
 }
 
-}
 /* end of style */
-

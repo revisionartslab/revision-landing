@@ -2398,11 +2398,9 @@ function pinchCenter(t1, t2) {
 // ── State Machine Touch Handlers ──────────────────────────────────────────
 if (mCanvas) {
     mCanvas.addEventListener('touchstart', (e) => {
-        // Do NOT block button/interactive element taps - that prevents click events on bottom bar
         const isInteractive = e.target.closest('button, a, input, [onclick]');
         if (isInteractive) return;
 
-        e.preventDefault();
         const touches = e.touches;
 
         if (touches.length === 1) {
@@ -2410,7 +2408,7 @@ if (mCanvas) {
             MC.t0x = MC.tx = touches[0].clientX;
             MC.t0y = MC.ty = touches[0].clientY;
             MC.px = 0;
-            MC.axis = null; // Use axis-locking ('x' or 'y')
+            MC.axis = null;
             MC.baseImgTx = mcTx;
             MC.baseImgTy = mcTy;
             MC.startTime = Date.now();
@@ -2420,7 +2418,6 @@ if (mCanvas) {
             MC.tapCount++;
             if (MC.tapCount === 2) {
                 MC.tapCount = 0;
-                // Double tap: toggle zoom
                 if (mcScale > 1) {
                     mcResetZoom(true);
                 } else {
@@ -2445,7 +2442,7 @@ if (mCanvas) {
             MC.baseImgTx = mcTx;
             MC.baseImgTy = mcTy;
         }
-    }, { passive: false });
+    }, { passive: true }); // passive: Y-axis scroll is native
 
     mCanvas.addEventListener('touchmove', (e) => {
         const touches = e.touches;
@@ -2467,48 +2464,37 @@ if (mCanvas) {
         const cx = touches[0].clientX;
         const cy = touches[0].clientY;
         const dx = cx - MC.tx;
-        const dy = cy - MC.ty;
         MC.tx = cx;
         MC.ty = cy;
 
+        // Determine axis lock (8px threshold)
+        if (MC.axis === null) {
+            const totalDx = Math.abs(cx - MC.t0x);
+            const totalDy = Math.abs(cy - MC.t0y);
+            if (totalDx > 8 || totalDy > 8) {
+                MC.axis = totalDx > totalDy ? 'x' : 'y';
+            }
+        }
+
         if (mcScale > 1) {
+            // PAN mode: block native scroll, move image
             e.preventDefault();
-            // PAN mode: move image freely
             mcTx = MC.baseImgTx + (cx - MC.t0x);
             mcTy = MC.baseImgTy + (cy - MC.t0y);
             img.style.transition = 'none';
             img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
-        } else {
-            // SWIPE mode: Calculate axis lock
-            const totalDx = cx - MC.t0x;
-            const totalDy = cy - MC.t0y;
-
-            if (MC.axis === null) {
-                if (Math.abs(totalDx) > 8 || Math.abs(totalDy) > 8) {
-                    MC.axis = Math.abs(totalDx) > Math.abs(totalDy) ? 'x' : 'y';
-                }
-            }
-
-            e.preventDefault(); // Always prevent default; we control everything now.
-
-            if (MC.axis === 'x') {
-                MC.px += dx;
-                mcSetTrack(MC.px, false);
-            } else if (MC.axis === 'y') {
-                // We'll calculate the interaction in touchend, but can apply drag effects if needed.
-                // For a polished feel, we could translate the viewer slightly, but
-                // it's cleaner to just wait for the flick (touchend) to open the panels.
-            }
+        } else if (MC.axis === 'x') {
+            // HORIZONTAL SWIPE: JS takes over, block native scroll
+            e.preventDefault();
+            MC.px += dx;
+            mcSetTrack(MC.px, false);
         }
+        // Y-axis at scale=1: do nothing, let native scroll work
     }, { passive: false });
 
     mCanvas.addEventListener('touchend', (e) => {
-        // Don't block button taps
         const isInteractive = e.target.closest('button, a, input, [onclick]');
         if (isInteractive) return;
-
-        e.preventDefault();
-        const img = mSlotCurr.querySelector('img');
 
         if (MC.state === 'PINCH') {
             MC.state = 'IDLE';
@@ -2516,8 +2502,10 @@ if (mCanvas) {
             return;
         }
 
-        if (MC.state !== 'DRAG') return;
+        if (MC.state !== 'DRAG') { MC.state = 'IDLE'; return; }
         MC.state = 'IDLE';
+
+        if (mcScale > 1) return; // Stay in zoom mode
 
         const totalDx = MC.tx - MC.t0x;
         const totalDy = MC.ty - MC.t0y;
@@ -2525,43 +2513,29 @@ if (mCanvas) {
         const velocityDx = Math.abs(totalDx) / elapsed;
         const velocityDy = Math.abs(totalDy) / elapsed;
 
-        if (mcScale > 1) return; // Stay in zoom
-
-        if (MC.axis === 'y') {
-            const threshold = 50; 
-            if (totalDy < -threshold || (velocityDy > 0.4 && totalDy < -10)) {
-                // Swipe UP: Open Discovery Sheet
-                if (!mcDiscoveryOpen) {
-                    mcOpenDiscovery();
-                    mcCloseInfo(); // Ensure info drops down
-                }
-            } else if (totalDy > threshold || (velocityDy > 0.4 && totalDy > 10)) {
-                // Swipe DOWN: 
-                // 1. Close discovery if open
-                // 2. Or close Info if open
-                // 3. Or close viewer
-                if (mcDiscoveryOpen) {
-                    mcCloseDiscovery();
-                } else if (mcInfoOpen) {
+        if (MC.axis === 'x') {
+            // Horizontal swipe → navigate images
+            const threshold = MC_W() * 0.22;
+            if (totalDx < -threshold || (velocityDx > 0.35 && totalDx < -20)) {
+                mcNavigate(1);
+            } else if (totalDx > threshold || (velocityDx > 0.35 && totalDx > 20)) {
+                mcNavigate(-1);
+            } else {
+                mcSetTrack(0, true); // Snap back
+            }
+        } else if (MC.axis === 'y') {
+            // Swipe DOWN from the very top → close viewer (or close info first)
+            const viewer = document.getElementById('rv-viewer');
+            const atTop = viewer && viewer.scrollTop < 5;
+            if (atTop && totalDy > 80 && velocityDy > 0.2) {
+                if (mcInfoOpen) {
                     mcCloseInfo();
                 } else {
                     closeViewer();
                 }
             }
-            return;
         }
-
-        if (MC.axis === 'x') {
-            const threshold = MC_W() * 0.25; // 25% to trigger
-            if (totalDx < -threshold || (velocityDx > 0.4 && totalDx < -20)) {
-                mcNavigate(1);
-            } else if (totalDx > threshold || (velocityDx > 0.4 && totalDx > 20)) {
-                mcNavigate(-1);
-            } else {
-                mcSetTrack(0, true); // Snap back
-            }
-        }
-    }, { passive: false });
+    }, { passive: true });
 }
 
 // ─────────────────────────────────────────────────────────────────────────
