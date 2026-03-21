@@ -2026,9 +2026,9 @@ function renderNextBatch() {
 // independent of any browser scroll mechanism.
 
 const mCanvas     = document.getElementById('mobile-canvas');
-const mSlotPrev   = document.getElementById('canvas-prev');
-const mSlotCurr   = document.getElementById('canvas-curr');
-const mSlotNext   = document.getElementById('canvas-next');
+let mSlotPrev   = document.getElementById('canvas-prev');
+let mSlotCurr   = document.getElementById('canvas-curr');
+let mSlotNext   = document.getElementById('canvas-next');
 const mInfoSheet  = document.getElementById('mobile-info-sheet');
 const mBottomBar  = document.getElementById('mobile-bottom-bar');
 
@@ -2118,10 +2118,34 @@ function mcNavigate(step) {
     setTimeout(() => {
         mcResetZoom(false);
         mcIndex = next;
+        
+        // DOM Node Rotation to completely eliminate flickering
+        if (step > 0) {
+            const oldPrev = mSlotPrev;
+            mSlotPrev = mSlotCurr;
+            mSlotCurr = mSlotNext;
+            mSlotNext = oldPrev;
+        } else {
+            const oldNext = mSlotNext;
+            mSlotNext = mSlotCurr;
+            mSlotCurr = mSlotPrev;
+            mSlotPrev = oldNext;
+        }
+
+        // Apply visual positions overriding CSS
+        mSlotPrev.style.left = '-100%';
+        mSlotCurr.style.left = '0';
+        mSlotNext.style.left = '100%';
+
         mcSetTrack(0, false);
-        mcLoadSlot(mSlotPrev, mcIndex - 1);
-        mcLoadSlot(mSlotCurr, mcIndex);
-        mcLoadSlot(mSlotNext, mcIndex + 1);
+        
+        // Only load the new outer wing
+        if (step > 0) {
+            mcLoadSlot(mSlotNext, mcIndex + 1);
+        } else {
+            mcLoadSlot(mSlotPrev, mcIndex - 1);
+        }
+        
         updateViewerMetadata(mcIndex);
     }, 320);
 }
