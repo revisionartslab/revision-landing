@@ -2167,30 +2167,98 @@ function mcCloseInfo() {
     document.getElementById('mbb-info-btn')?.classList.remove('active');
 }
 
+let discoveryPool = [];
+let discoveryRendered = 0;
+let discoveryObserver = null;
+
 window.openDiscoverySheet = function() {
     if (!mInfoSheet) return;
     mcInfoOpen = true;
     mInfoSheet.classList.add('open', 'expanded');
     document.getElementById('mbb-info-btn')?.classList.add('active');
     
-    // Populate Grid dynamically
     const dGrid = document.getElementById('m-discovery-grid');
-    if (dGrid && dGrid.innerHTML === '') {
-        const pool = [...filteredItems].filter(i => i.id !== filteredItems[mcIndex]?.id);
-        // Simple Shuffle
-        for (let i = pool.length - 1; i > 0; i--) {
+    if (!dGrid) return;
+    
+    // Reset if newly opened
+    if (dGrid.innerHTML === '') {
+        const currentItem = filteredItems[mcIndex];
+        const currentId = currentItem ? generateAssetId(currentItem) : '';
+        
+        discoveryPool = STREAM_RECORDS.filter(i => generateAssetId(i) !== currentId);
+        // Shuffle pool
+        for (let i = discoveryPool.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [pool[i], pool[j]] = [pool[j], pool[i]];
+            [discoveryPool[i], discoveryPool[j]] = [discoveryPool[j], discoveryPool[i]];
         }
-        const toShow = pool.slice(0, 6);
-        let html = '';
-        toShow.forEach(item => {
-            const realIdx = filteredItems.findIndex(fi => fi.id === item.id);
-            html += `<div class="discovery-card" onclick="openViewer(${realIdx})"><img src="${item.url}" onload="this.style.opacity=1" /></div>`;
-        });
-        dGrid.innerHTML = html;
+        
+        discoveryRendered = 0;
+        
+        if (discoveryObserver) discoveryObserver.disconnect();
+        discoveryObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                renderNextDiscoveryBatch(dGrid);
+            }
+        }, { rootMargin: '400px' });
+        
+        renderNextDiscoveryBatch(dGrid);
+        
+        let sentinel = document.getElementById('discovery-sentinel');
+        if (!sentinel) {
+            sentinel = document.createElement('div');
+            sentinel.id = 'discovery-sentinel';
+            sentinel.style.height = '10px';
+            sentinel.style.width = '100%';
+            document.getElementById('m-discovery-section').appendChild(sentinel);
+        }
+        discoveryObserver.observe(sentinel);
     }
 };
+
+function renderNextDiscoveryBatch(dGrid) {
+    if (discoveryRendered >= discoveryPool.length) return;
+    
+    const nextBatch = discoveryPool.slice(discoveryRendered, discoveryRendered + 10);
+    
+    nextBatch.forEach((item) => {
+        // Find real index in filteredItems (if filters are active), or use standalone openViewer bypass
+        const realIdx = filteredItems.findIndex(fi => generateAssetId(fi) === generateAssetId(item));
+        
+        const card = document.createElement('div');
+        card.className = 'rv-card discovery-card-masonry';
+        card.onclick = () => {
+            if (realIdx !== -1) {
+                // If Item is in current filter, just navigate normally
+                openViewer(realIdx);
+            } else {
+                // If Item is from full pool but filtered out, we reset filter to 'ALL' and open
+                document.querySelector('.filter-chip[data-category="all"]')?.click();
+                setTimeout(() => {
+                    const idxToOpen = filteredItems.findIndex(fi => generateAssetId(fi) === generateAssetId(item));
+                    if (idxToOpen !== -1) openViewer(idxToOpen);
+                }, 50);
+            }
+        };
+
+        const media = document.createElement('div');
+        media.className = 'card-media';
+        
+        const img = document.createElement('img');
+        img.src = item.url;
+        img.onload = function() {
+            this.style.opacity = '1';
+            // Trigger masonry scale
+            const contentHeight = media.getBoundingClientRect().height;
+            card.style.gridRowEnd = `span ${Math.ceil(contentHeight + 16)}`;
+        };
+        
+        media.appendChild(img);
+        card.appendChild(media);
+        dGrid.appendChild(card);
+    });
+    
+    discoveryRendered += 10;
+}
 
 window.toggleMobileInfo = function() {
     // If it's expanded, close completely. If open normally, expand it. If closed, open normally.
