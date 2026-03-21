@@ -2525,8 +2525,8 @@ if (mCanvas) {
             }
         } else if (MC.axis === 'y') {
             // Swipe DOWN from the very top → close viewer (or close info first)
-            const viewer = document.getElementById('rv-viewer');
-            const atTop = viewer && viewer.scrollTop < 5;
+            const scrollWrapper = document.getElementById('m-scroll-wrapper');
+            const atTop = !scrollWrapper || scrollWrapper.scrollTop < 5;
             if (atTop && totalDy > 80 && velocityDy > 0.2) {
                 if (mcInfoOpen) {
                     mcCloseInfo();
@@ -2550,8 +2550,9 @@ window.openViewer = async function (index) {
     const isMobile = window.innerWidth <= 1024;
     
     if (isMobile) {
-        // Reset scroll to top so image is shown first
-        viewer.scrollTop = 0;
+        // Reset the SCROLL WRAPPER (not rv-viewer) to top
+        const mScrollWrapper = document.getElementById('m-scroll-wrapper');
+        if (mScrollWrapper) mScrollWrapper.scrollTop = 0;
 
         mcIndex = index;
         mcResetZoom(false);

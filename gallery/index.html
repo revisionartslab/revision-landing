@@ -100,32 +100,44 @@
     ═══════════════════════════════════════════════════════════════════════ -->
     <div id="rv-viewer" class="rv-viewer">
 
-        <!-- ── MEDIA PANEL ── -->
-        <div class="viewer-media-panel" id="viewer-media-panel">
+        <!-- ══ MOBILE SCROLL WRAPPER: the actual scrollable container ══ -->
+        <!-- PC: this wrapper is invisible; rv-viewer itself is the flex row -->
+        <div class="m-scroll-wrapper" id="m-scroll-wrapper">
 
-            <!-- PC: Arrow navigation -->
-            <div class="viewer-nav viewer-nav-prev" onclick="navViewer(-1)">
-                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            <!-- FOLD 1: Full-screen image (100dvh) -->
+            <div class="viewer-media-panel" id="viewer-media-panel">
+
+                <!-- PC: Arrow navigation -->
+                <div class="viewer-nav viewer-nav-prev" onclick="navViewer(-1)">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </div>
+                <div class="viewer-nav viewer-nav-next" onclick="navViewer(1)">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </div>
+
+                <!-- PC: Single image pan/zoom -->
+                <div class="viewer-img-container" id="viewer-img-container">
+                    <img id="viewer-img" alt="">
+                </div>
+
+                <!-- Mobile: 3-slot swipe canvas -->
+                <div class="mobile-canvas" id="mobile-canvas">
+                    <div class="canvas-slot" id="canvas-prev"><img alt="" draggable="false"></div>
+                    <div class="canvas-slot" id="canvas-curr"><img alt="" draggable="false"></div>
+                    <div class="canvas-slot" id="canvas-next"><img alt="" draggable="false"></div>
+                </div>
+
             </div>
-            <div class="viewer-nav viewer-nav-next" onclick="navViewer(1)">
-                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+
+            <!-- FOLD 2: Discovery thumbnails (seamless below image) -->
+            <div class="m-discovery-sheet" id="m-discovery-sheet">
+                <div class="m-discovery-handle"></div>
+                <div class="m-discovery-grid" id="m-discovery-grid"></div>
             </div>
 
-            <!-- PC: Single image pan/zoom -->
-            <div class="viewer-img-container" id="viewer-img-container">
-                <img id="viewer-img" alt="">
-            </div>
+        </div><!-- /.m-scroll-wrapper -->
 
-            <!-- Mobile: 3-slot swipe canvas -->
-            <div class="mobile-canvas" id="mobile-canvas">
-                <div class="canvas-slot" id="canvas-prev"><img alt="" draggable="false"></div>
-                <div class="canvas-slot" id="canvas-curr"><img alt="" draggable="false"></div>
-                <div class="canvas-slot" id="canvas-next"><img alt="" draggable="false"></div>
-            </div>
-
-        </div>
-
-        <!-- ── PC: Persistent Viewer Controls (top-right) ── -->
+        <!-- ── PC: Viewer Controls + Info Panel (unchanged) ── -->
         <div class="viewer-controls" id="viewer-controls">
             <button id="viewer-info-btn" class="viewer-control-btn" onclick="toggleInfoGlobal()">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
@@ -182,7 +194,7 @@
             </div>
         </div>
 
-        <!-- ══ MOBILE-ONLY: Ghost UI Controls (top-right over image) ══ -->
+        <!-- ══ MOBILE-ONLY: Ghost UI Controls (fixed top-right) ══ -->
         <div class="m-viewer-controls" id="m-viewer-controls">
             <button class="m-vc-btn" id="m-info-btn" onclick="toggleMobileInfo()" aria-label="Info">
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
@@ -192,7 +204,7 @@
             </button>
         </div>
 
-        <!-- ══ MOBILE-ONLY: Info overlay (toggled by i button) ══ -->
+        <!-- ══ MOBILE-ONLY: Info overlay ══ -->
         <div class="m-info-overlay" id="m-info-overlay">
             <p class="m-info-category" id="m-viewer-category"></p>
             <h2 class="m-info-title" id="m-viewer-title"></h2>
@@ -201,12 +213,6 @@
                 <div class="m-meta-item"><span class="m-meta-label">RESOLUTION</span><span id="m-viewer-res">---</span></div>
                 <div class="m-meta-item"><span class="m-meta-label">ASSET ID</span><span id="m-viewer-id">---</span></div>
             </div>
-        </div>
-
-        <!-- ══ MOBILE-ONLY: Discovery sheet (swipe up reveals this) ══ -->
-        <div class="m-discovery-sheet" id="m-discovery-sheet">
-            <div class="m-discovery-handle"></div>
-            <div class="m-discovery-grid" id="m-discovery-grid"></div>
         </div>
 
     </div><!-- /#rv-viewer -->

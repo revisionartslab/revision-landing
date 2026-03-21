@@ -1098,6 +1098,11 @@ button .copy-feedback-mini.active {
 .m-category-dropdown   { display: none; }
 .mobile-nav            { display: none !important; }
 
+/* PC: m-scroll-wrapper is invisible — rv-viewer handles layout */
+.m-scroll-wrapper {
+    display: contents; /* behave as if the children are direct children of rv-viewer */
+}
+
 /* ─── PC: Show arrows ─── */
 @media (min-width: 1025px) {
     .viewer-nav { display: flex; }
@@ -1207,7 +1212,7 @@ button .copy-feedback-mini.active {
         left: 0;
         right: 0;
         background: var(--bg-element);
-        /* NO border-bottom: header already has border-bottom. One line only. */
+        /* No border-bottom: header already has border-bottom */
         z-index: 1500;
         overflow: hidden;
         max-height: 0;
@@ -1225,7 +1230,7 @@ button .copy-feedback-mini.active {
         gap: 8px;
         padding: 16px;
         overflow-y: auto;
-        max-height: 280px;
+        max-height: 320px;
     }
 
     .m-cat-item {
@@ -1248,21 +1253,24 @@ button .copy-feedback-mini.active {
         border-color: var(--text-main);
     }
 
-    /* ── Main gallery grid: 2 columns on mobile ── */
+    /* ── Main gallery grid ── */
     .app-footer   { display: none !important; }
     .card-overlay { display: none !important; }
 
-    /* ═══════════════════════════════════════════════════
-       SEAMLESS VERTICAL SCROLL VIEWER
-       PC base has: position:fixed, display:flex(row), overflow:hidden
-       We must override ALL of these for the scroll to work.
-    ═══════════════════════════════════════════════════ */
-    .rv-viewer {
-        /* Override PC flex-row → block so children stack vertically */
-        display: block !important;
-        /* Override PC overflow:hidden → allow vertical scroll */
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
+    /* ══════════════════════════════════════════════════
+     SEAMLESS VERTICAL SCROLL VIEWER
+     rv-viewer = position:fixed (unchanged)
+     m-scroll-wrapper = actual scroll container (inset:0 inside rv-viewer)
+     viewer-media-panel = 100dvh (first fold)
+     m-discovery-sheet  = flows below (second fold)
+    ══════════════════════════════════════════════════ */
+
+    .m-scroll-wrapper {
+        display: block;
+        position: absolute;
+        inset: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         background: #000;
     }
@@ -1273,27 +1281,27 @@ button .copy-feedback-mini.active {
     .viewer-bottom-wrapper{ display: none !important; }
     .viewer-img-container { display: none; }
 
-    /* Media panel: FIRST FOLD — exactly 100dvh, clears PC animation */
+    /* FIRST FOLD: image = exactly one viewport tall */
     .viewer-media-panel {
-        /* Override PC flex:1 and animation transforms */
         flex: none !important;
         transform: none !important;
         filter: none !important;
         opacity: 1 !important;
         position: relative;
         width: 100%;
-        height: 100dvh;
+        height: 100%;
         background: #000;
         overflow: hidden;
         padding: 0 !important;
     }
 
-    /* Keep active state simple on mobile */
     .rv-viewer.active .viewer-media-panel {
         transform: none !important;
         filter: none !important;
         opacity: 1 !important;
     }
+
+
 
 
     /* ── 3-Slot canvas for smooth swipe navigation ── */
@@ -1460,6 +1468,7 @@ button .copy-feedback-mini.active {
 
     /* ── Discovery section: sits in normal flow right under 100dvh image ── */
     .m-discovery-sheet {
+        display: block;
         position: relative;
         width: 100%;
         min-height: 60vh;
