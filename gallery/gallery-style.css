@@ -1261,8 +1261,17 @@ button .copy-feedback-mini.active {
     pointer-events: auto !important; /* Always clickable */
 }
 
-.rv-viewer.active .mobile-bottom-bar {
-    display: flex;
+/* Mobile bottom bar ONLY shown on mobile – PC uses viewer-controls in top-right */
+@media (max-width: 1024px) {
+    .rv-viewer.active .mobile-bottom-bar {
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobile-bottom-bar {
+        display: none !important; /* Never show on PC */
+    }
 }
 
 .mbb-btn {
