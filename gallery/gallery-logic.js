@@ -2109,14 +2109,21 @@ function mcNavigate(step) {
         mcSetTrack(0, true);
         return;
     }
-    mcResetZoom(false);
-    mcIndex = next;
-    // Reuse slots: rotate slot references logically via transform trick
-    mcSetTrack(0, false);
-    mcLoadSlot(mSlotPrev, mcIndex - 1);
-    mcLoadSlot(mSlotCurr, mcIndex);
-    mcLoadSlot(mSlotNext, mcIndex + 1);
-    updateViewerMetadata(mcIndex);
+    
+    // Smooth Native Swipe Animation
+    const targetX = step > 0 ? -window.innerWidth : window.innerWidth;
+    mcSetTrack(targetX, true);
+    
+    // Wait for the CSS transition (0.32s) to finish before tricking the eye
+    setTimeout(() => {
+        mcResetZoom(false);
+        mcIndex = next;
+        mcSetTrack(0, false);
+        mcLoadSlot(mSlotPrev, mcIndex - 1);
+        mcLoadSlot(mSlotCurr, mcIndex);
+        mcLoadSlot(mSlotNext, mcIndex + 1);
+        updateViewerMetadata(mcIndex);
+    }, 320);
 }
 
 function mcOpenInfo() {

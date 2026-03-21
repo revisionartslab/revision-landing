@@ -316,14 +316,14 @@ header {
     }
 }
 
-.density-ctrl {
+.density-control {
     display: flex;
     align-items: center;
 }
 
-@media (max-width: 800px) {
-    .density-ctrl {
-        display: none;
+@media (max-width: 1024px) {
+    .density-control {
+        display: none !important;
     }
 }
 
