@@ -2592,9 +2592,15 @@ window.openViewer = async function (index) {
         const vImg = document.getElementById('viewer-img');
         if (vImg) {
             vImg.onload = null; // Clean up old listener
-            vImg.style.transition = 'none';
-            vImg.style.opacity = '0'; // Hide immediately
+            vImg.style.transition = 'opacity 0.2s'; // Fast fade
+            
+            // If already preloaded/cached, it might show instantly. 
+            // We still dim it slightly to show "change" even if instant.
+            vImg.style.opacity = '0.3'; 
             vImg.src = item.url;
+            vImg.onload = () => {
+                vImg.style.opacity = '1';
+            };
         }
     }
 
@@ -2731,6 +2737,19 @@ function updateViewerMetadata(index) {
     }
     loadSlideImage(index + 1);
     loadSlideImage(index - 1);
+    loadSlideImage(index + 2);
+    loadSlideImage(index - 2);
+
+    // Also preload first few discovery items if in mobile (Preload from SHUFFLED pool)
+    if (window.innerWidth <= 1024) {
+        const dBatch = (typeof discoveryPool !== 'undefined' && discoveryPool.length > 0) 
+            ? discoveryPool.slice(0, 8) 
+            : STREAM_RECORDS.slice(0, 8);
+        dBatch.forEach(i => {
+            const pi = new Image();
+            pi.src = i.url;
+        });
+    }
 }
 
 window.closeViewer = function () {
