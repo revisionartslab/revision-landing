@@ -1362,6 +1362,13 @@ button .copy-feedback-mini.active {
         gap: 4px;
         z-index: 9000;
         pointer-events: auto;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .m-viewer-controls.hidden-on-scroll {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
 
     .m-vc-btn {

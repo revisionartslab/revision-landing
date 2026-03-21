@@ -1919,6 +1919,13 @@ function getDynamicCategories() {
 // Layout Logic (Masonry)
 // --------------------------------------------------------------------------
 
+// GLOBAL ResizeObserver for all grid cards, prevents memory leaks from creating 1 per card
+const globalGridObserver = new ResizeObserver((entries) => {
+    for (let entry of entries) {
+        resizeGridItem(entry.target);
+    }
+});
+
 window.updateDensity = function (cols) {
     const safeCols = Math.max(1, parseInt(cols));
     document.documentElement.style.setProperty('--grid-cols', safeCols);
@@ -1996,6 +2003,7 @@ function renderNextBatch() {
         img.src = item.url;
         img.alt = escapeHtml(item.title);
         img.onload = function() { this.classList.add('loaded'); };
+        img.onerror = function() { card.style.display = 'none'; resizeGridItem(card); };
 
         const overlay = document.createElement('div');
         overlay.className = 'card-overlay';
@@ -2006,8 +2014,7 @@ function renderNextBatch() {
         cardMedia.appendChild(overlay);
         card.appendChild(cardMedia);
 
-        const ro = new ResizeObserver(() => resizeGridItem(card));
-        ro.observe(card);
+        globalGridObserver.observe(card);
         
         galleryContainer.appendChild(card);
     });
@@ -2039,6 +2046,16 @@ if (mScrollWrapper) {
     mScrollWrapper.addEventListener('scroll', () => {
         if (mcInfoOpen && mScrollWrapper.scrollTop > 20) {
             mcCloseInfo();
+        }
+        
+        // Hide ghost controls when scrolling past top
+        const controls = document.getElementById('m-viewer-controls');
+        if (controls) {
+            if (mScrollWrapper.scrollTop > 100) {
+                controls.classList.add('hidden-on-scroll');
+            } else {
+                controls.classList.remove('hidden-on-scroll');
+            }
         }
     }, { passive: true });
 }
@@ -2116,12 +2133,16 @@ function mcLoadSlot(slot, index) {
 }
 
 function mcNavigate(step) {
+    if (isAnimatingViewer) return;
+    
     const next = mcIndex + step;
     if (next < 0 || next >= filteredItems.length) {
         // Bounce back
         mcSetTrack(0, true);
         return;
     }
+    
+    isAnimatingViewer = true;
     
     // Smooth Native Swipe Animation
     const targetX = step > 0 ? -window.innerWidth : window.innerWidth;
@@ -2160,6 +2181,7 @@ function mcNavigate(step) {
         }
         
         updateViewerMetadata(mcIndex);
+        isAnimatingViewer = false;
     }, 320);
 }
 
@@ -2171,29 +2193,8 @@ function mcOpenInfo() {
     
     // Swipe-down to close for Info Overlay (now handled globally by canvas & scroll wrapper)
 
-    
-    // Populate mobile-specific text fields
-    const item = filteredItems[mcIndex];
-    if (!item) return;
-    const mc = document.getElementById('m-viewer-category');
-    const mt = document.getElementById('m-viewer-title');
-    const md = document.getElementById('m-viewer-desc');
-    const mr = document.getElementById('m-viewer-res');
-    const mi = document.getElementById('m-viewer-id');
-    if (mc) mc.innerText = (item.tags||[]).join(' / ').toUpperCase();
-    if (mt) {
-        mt.innerText = item.title || '';
-    }
-    if (md) md.innerText = item.description || '';
-    if (mr) {
-        if (item.resolution) {
-            mr.innerText = item.resolution;
-        } else {
-            const currentImg = mSlotCurr?.querySelector('img');
-            mr.innerText = (currentImg && currentImg.naturalWidth) ? `${currentImg.naturalWidth} x ${currentImg.naturalHeight}` : '---';
-        }
-    }
-    if (mi) mi.innerText = generateAssetId(item);
+    // Populate mobile-specific text fields is handled completely by updateViewerMetadata(mcIndex)
+    // No redundant mapping here to prevent overriding title formatting 
 }
 
 function mcCloseInfo() {
@@ -2315,15 +2316,23 @@ function renderNextDiscoveryBatch(dGrid) {
             // Trigger initial masonry fix after load
             resizeGridItem(card);
         };
+        img.onerror = function() {
+            card.style.display = 'none';
+            resizeGridItem(card);
+        };
         
         media.appendChild(img);
         card.appendChild(media);
         
         // Add ResizeObserver for responsive masonry
-        const ro = new ResizeObserver(() => resizeGridItem(card));
-        ro.observe(card);
+        globalGridObserver.observe(card);
         
-        dGrid.appendChild(card);
+        const sentinel = document.getElementById('discovery-sentinel');
+        if (sentinel) {
+            dGrid.insertBefore(card, sentinel);
+        } else {
+            dGrid.appendChild(card);
+        }
     });
     
     discoveryRendered += 10;
@@ -2395,8 +2404,11 @@ function pinchCenter(t1, t2) {
 }
 
 // ── State Machine Touch Handlers ──────────────────────────────────────────
+let isAnimatingViewer = false;
+
 if (mCanvas) {
     mCanvas.addEventListener('touchstart', (e) => {
+        if (isAnimatingViewer) return;
         const isInteractive = e.target.closest('button, a, input, [onclick]');
         if (isInteractive) return;
 
@@ -2579,9 +2591,10 @@ window.openViewer = async function (index) {
         resetImage(); 
         const vImg = document.getElementById('viewer-img');
         if (vImg) {
+            vImg.onload = null; // Clean up old listener
             vImg.style.transition = 'none';
+            vImg.style.opacity = '0'; // Hide immediately
             vImg.src = item.url;
-            vImg.onload = () => vImg.style.opacity = '1';
         }
     }
 
@@ -2696,6 +2709,7 @@ function updateViewerMetadata(index) {
         if (pcRes) pcRes.innerText = resStr;
         if (mRes) mRes.innerText = resStr;
     } else if (img) {
+        img.onload = null; // Clean up any old listeners
         img.onload = () => {
             const resStr = `${img.naturalWidth} x ${img.naturalHeight}`;
             const pcRes = document.getElementById('viewer-res');
