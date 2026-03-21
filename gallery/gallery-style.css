@@ -1369,19 +1369,19 @@ button .copy-feedback-mini.active {
         height: 44px;
         background: transparent;
         border: none;
-        color: rgba(255, 255, 255, 0.45);
+        color: var(--text-dim);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
         transition: color 0.15s, opacity 0.15s;
-        /* Drop shadow so icons are visible on any image color */
-        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.6));
     }
 
-    .m-vc-btn:active     { color: #fff; opacity: 1; }
-    .m-vc-btn.active     { color: #fff; opacity: 1; }
+    .m-vc-btn:active,
+    .m-vc-btn.active {
+        color: var(--text-main);
+    }
 
 
     /* Both buttons hidden by default; JS shows them when viewer opens */
@@ -1407,7 +1407,7 @@ button .copy-feedback-mini.active {
     .m-info-overlay.open {
         opacity: 1;
         transform: translateY(0);
-        pointer-events: auto;
+        pointer-events: none; /* Let swipes pass through to scroll wrapper */
     }
 
     .m-info-category {

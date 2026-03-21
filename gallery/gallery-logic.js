@@ -2031,6 +2031,16 @@ let mSlotCurr       = document.getElementById('canvas-curr');
 let mSlotNext       = document.getElementById('canvas-next');
 const mInfoOverlay  = document.getElementById('m-info-overlay');
 const mDiscoverySheet = document.getElementById('m-discovery-sheet');
+const mScrollWrapper = document.getElementById('m-scroll-wrapper');
+
+// Automatically close info panel if user scrolls down
+if (mScrollWrapper) {
+    mScrollWrapper.addEventListener('scroll', () => {
+        if (mcInfoOpen && mScrollWrapper.scrollTop > 20) {
+            mcCloseInfo();
+        }
+    }, { passive: true });
+}
 
 // Track state
 let mcIndex         = 0;        // current image index in filteredItems
@@ -2158,19 +2168,7 @@ function mcOpenInfo() {
     overlay?.classList.add('open');
     document.getElementById('m-info-btn')?.classList.add('active');
     
-    // Swipe-down to close for Info Overlay
-    if (overlay && !overlay._initSwipe) {
-        overlay._initSwipe = true;
-        let t0y = 0;
-        overlay.addEventListener('touchstart', (e) => {
-            if (overlay.scrollTop > 5) return;
-            t0y = e.touches[0].clientY;
-        }, {passive: true});
-        overlay.addEventListener('touchend', (e) => {
-            const t1y = e.changedTouches[0].clientY;
-            if (t1y - t0y > 100) mcCloseInfo();
-        }, {passive: true});
-    }
+    // Swipe-down to close for Info Overlay (now handled globally by canvas & scroll wrapper)
 
     
     // Populate mobile-specific text fields
@@ -2708,6 +2706,14 @@ function updateViewerMetadata(index) {
     }
 
     // Lazy load next/prev in background
+    function loadSlideImage(idx) {
+        if (idx < 0 || idx >= filteredItems.length) return;
+        const targetDesc = filteredItems[idx];
+        if (targetDesc && targetDesc.url) {
+            const preloadImg = new Image();
+            preloadImg.src = targetDesc.url;
+        }
+    }
     loadSlideImage(index + 1);
     loadSlideImage(index - 1);
 }
