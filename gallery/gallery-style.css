@@ -1252,13 +1252,19 @@ button .copy-feedback-mini.active {
     .app-footer   { display: none !important; }
     .card-overlay { display: none !important; }
 
-    /* ── Viewer: seamless vertical scroll canvas ── */
+    /* ═══════════════════════════════════════════════════
+       SEAMLESS VERTICAL SCROLL VIEWER
+       PC base has: position:fixed, display:flex(row), overflow:hidden
+       We must override ALL of these for the scroll to work.
+    ═══════════════════════════════════════════════════ */
     .rv-viewer {
-        overflow-y: auto;
-        overflow-x: hidden;
+        /* Override PC flex-row → block so children stack vertically */
+        display: block !important;
+        /* Override PC overflow:hidden → allow vertical scroll */
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
         -webkit-overflow-scrolling: touch;
         background: #000;
-        scroll-snap-type: y proximity; /* proximity: snaps only near snap points, not forced */
     }
 
     /* Hide PC viewer elements */
@@ -1267,16 +1273,28 @@ button .copy-feedback-mini.active {
     .viewer-bottom-wrapper{ display: none !important; }
     .viewer-img-container { display: none; }
 
-    /* Media panel: FIRST FOLD — takes exactly 100dvh */
+    /* Media panel: FIRST FOLD — exactly 100dvh, clears PC animation */
     .viewer-media-panel {
+        /* Override PC flex:1 and animation transforms */
+        flex: none !important;
+        transform: none !important;
+        filter: none !important;
+        opacity: 1 !important;
         position: relative;
         width: 100%;
         height: 100dvh;
-        flex-shrink: 0;
         background: #000;
         overflow: hidden;
-        /* scroll-snap-align removed — let content be at natural position */
+        padding: 0 !important;
     }
+
+    /* Keep active state simple on mobile */
+    .rv-viewer.active .viewer-media-panel {
+        transform: none !important;
+        filter: none !important;
+        opacity: 1 !important;
+    }
+
 
     /* ── 3-Slot canvas for smooth swipe navigation ── */
     .mobile-canvas {
@@ -1286,7 +1304,9 @@ button .copy-feedback-mini.active {
         height: 100%;
         display: block;
         overflow: visible;
-        touch-action: none; /* JS owns ALL touch events */
+        /* pan-y: browser handles vertical scroll (discovery reveal)
+           JS handles horizontal swipes (image navigation) */
+        touch-action: pan-y;
         user-select: none;
         -webkit-user-select: none;
     }

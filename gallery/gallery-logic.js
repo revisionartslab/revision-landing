@@ -2550,7 +2550,9 @@ window.openViewer = async function (index) {
     const isMobile = window.innerWidth <= 1024;
     
     if (isMobile) {
-        // Reset canvas engine state
+        // Reset scroll to top so image is shown first
+        viewer.scrollTop = 0;
+
         mcIndex = index;
         mcResetZoom(false);
         mcCloseInfo();
@@ -2560,8 +2562,20 @@ window.openViewer = async function (index) {
         mcLoadSlot(mSlotPrev, index - 1);
         mcLoadSlot(mSlotCurr, index);
         mcLoadSlot(mSlotNext, index + 1);
+
+        // Populate discovery grid below the image
+        initDiscoveryGrid();
+
+        // Mobile: DON'T lock body scroll — viewer itself scrolls
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        if (mainContent) mainContent.style.overflow = '';
     } else {
-        // PC Mode
+        // PC Mode: lock body scroll (viewer is full-screen flex)
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        if (mainContent) mainContent.style.overflow = 'hidden';
+
         resetImage(); 
         const vImg = document.getElementById('viewer-img');
         if (vImg) {
@@ -2572,12 +2586,8 @@ window.openViewer = async function (index) {
     }
 
     updateViewerMetadata(index);
-    if (isMobile) initDiscoveryGrid();
-    
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-    if (mainContent) mainContent.style.overflow = 'hidden';
 };
+
 
 // (loadSlideImage kept for PC metadata resolution update, mobile uses mcLoadSlot)
 function loadSlideImage(index) {
