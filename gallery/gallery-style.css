@@ -1098,6 +1098,7 @@ button .copy-feedback-mini.active {
     .app-footer { display: none !important; }
     .card-overlay { display: none !important; }
     .viewer-nav { display: none; } /* Arrows are PC-only. Mobile uses swipe. */
+    .viewer-controls { display: none !important; } /* Hide PC controls on mobile */
     .rv-viewer {
         flex-direction: column;
         overflow: hidden;
@@ -1183,6 +1184,15 @@ button .copy-feedback-mini.active {
     .mobile-info-sheet {
         display: block; /* show on mobile */
     }
+
+    /* Reduce title space on mobile for a tighter look */
+    .viewer-title {
+        height: auto !important; /* Re-flow naturally */
+        min-height: 0 !important;
+        -webkit-line-clamp: 2 !important; /* Limit to 2 lines */
+        line-clamp: 2 !important;
+        margin-bottom: 4px !important; /* Tighten spacer to description */
+    }
 }
 
 /* ── Bottom Bar base styles (mobile only) ── */
@@ -1217,7 +1227,7 @@ button .copy-feedback-mini.active {
 
 .mbb-btn:active { color: #fff; }
 
-.mbb-btn.active { color: var(--point); }
+.mbb-btn.active { color: var(--text-main); }
 
 /* ── Mobile Info Sheet base styles ── */
 .mobile-info-sheet {
@@ -1241,12 +1251,12 @@ button .copy-feedback-mini.active {
 }
 
 .mis-header {
-    margin-bottom: 16px;
+    margin-bottom: 8px; /* Reduced from 16px */
 }
 
-/* When info sheet is open, hide bottom bar info button active state */
+/* When info sheet is open, highlight bottom bar info button in white instead of blue */
 .rv-viewer.info-sheet-open .mbb-info {
-    color: var(--point);
+    color: var(--text-main);
 }
 
 /* Move to Top Button */

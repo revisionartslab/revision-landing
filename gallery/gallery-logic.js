@@ -2132,9 +2132,20 @@ function mcOpenInfo() {
     const mr = document.getElementById('m-viewer-res');
     const mi = document.getElementById('m-viewer-id');
     if (mc) mc.innerText = (item.tags||[]).join(' / ').toUpperCase();
-    if (mt) mt.innerText = item.title || '';
+    if (mt) {
+        const titleText = (item.title || '');
+        const displayTitle = titleText.replace(/ /g, '_');
+        mt.innerHTML = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
+    }
     if (md) md.innerText = item.description || '';
-    if (mr) mr.innerText = item.resolution || '---';
+    if (mr) {
+        if (item.resolution) {
+            mr.innerText = item.resolution;
+        } else {
+            const currentImg = mSlotCurr?.querySelector('img');
+            mr.innerText = (currentImg && currentImg.naturalWidth) ? `${currentImg.naturalWidth} x ${currentImg.naturalHeight}` : '---';
+        }
+    }
     if (mi) mi.innerText = generateAssetId(item);
 }
 
@@ -2380,15 +2391,26 @@ function updateViewerMetadata(index) {
 
     // Build Title with Premium Underscores (Instant Render)
     const displayTitle = (item.title || '').replace(/ /g, '_');
-    titleEl.innerHTML = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
+    const titleHtml = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
+    titleEl.innerHTML = titleHtml;
+    const mt = document.getElementById('m-viewer-title');
+    if (mt) mt.innerHTML = titleHtml;
     
     // Update Meta
-    document.getElementById('viewer-category').innerText = (item.tags || []).join(' / ').toUpperCase();
+    const categoryText = (item.tags || []).join(' / ').toUpperCase();
+    document.getElementById('viewer-category').innerText = categoryText;
+    const mc = document.getElementById('m-viewer-category');
+    if (mc) mc.innerText = categoryText;
+
     document.getElementById('viewer-desc').innerText = item.description;
+    const md = document.getElementById('m-viewer-desc');
+    if (md) md.innerText = item.description;
     
     // Robust Asset ID System (Dual-Source)
     const viewerDisplayId = generateAssetId(item);
     document.getElementById('viewer-id').innerText = viewerDisplayId;
+    const mi = document.getElementById('m-viewer-id');
+    if (mi) mi.innerText = viewerDisplayId;
 
     // URL Hash Sync for deep linking (Now using clean Asset ID)
     window.location.hash = viewerDisplayId;
@@ -2425,10 +2447,18 @@ function updateViewerMetadata(index) {
     }
 
     if (img && img.naturalWidth) {
-        document.getElementById('viewer-res').innerText = `${img.naturalWidth} x ${img.naturalHeight}`;
+        const resStr = `${img.naturalWidth} x ${img.naturalHeight}`;
+        const pcRes = document.getElementById('viewer-res');
+        const mRes = document.getElementById('m-viewer-res');
+        if (pcRes) pcRes.innerText = resStr;
+        if (mRes) mRes.innerText = resStr;
     } else if (img) {
         img.onload = () => {
-            document.getElementById('viewer-res').innerText = `${img.naturalWidth} x ${img.naturalHeight}`;
+            const resStr = `${img.naturalWidth} x ${img.naturalHeight}`;
+            const pcRes = document.getElementById('viewer-res');
+            const mRes = document.getElementById('m-viewer-res');
+            if (pcRes) pcRes.innerText = resStr;
+            if (mRes) mRes.innerText = resStr;
             img.style.opacity = '1';
         };
     }
