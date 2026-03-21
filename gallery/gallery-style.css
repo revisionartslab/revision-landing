@@ -1105,9 +1105,9 @@ button .copy-feedback-mini.active {
         background: #000;
     }
 
-    /* PC info panel is hidden on mobile – we use the mobile-info-sheet instead */
-    .viewer-info-panel {
-        display: none;
+    /* PC info panel wrapper is fully hidden on mobile to avoid intercepting touch events */
+    .viewer-bottom-wrapper {
+        display: none !important;
     }
 
     /* Media panel fills the whole screen */

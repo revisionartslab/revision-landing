@@ -2261,11 +2261,8 @@ function renderNextDiscoveryBatch(dGrid) {
 }
 
 window.toggleMobileInfo = function() {
-    // If it's expanded, close completely. If open normally, expand it. If closed, open normally.
-    if (mInfoSheet?.classList.contains('expanded')) {
+    if (mcInfoOpen) {
         mcCloseInfo();
-    } else if (mcInfoOpen) {
-        window.openDiscoverySheet();
     } else {
         mcOpenInfo();
     }
@@ -2409,8 +2406,12 @@ if (mCanvas) {
 
         if (MC.axis === 'y') {
             if (totalDy > 100) {
-                // Swipe DOWN: Dismiss
-                closeViewer();
+                // Swipe DOWN:
+                if (mcInfoOpen) {
+                    mcCloseInfo(); // Close the info sheet
+                } else {
+                    closeViewer(); // Dismiss the viewer
+                }
             } else if (totalDy < -50) {
                 // Swipe UP: Expand Discovery
                 openDiscoverySheet();
