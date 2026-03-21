@@ -1182,33 +1182,55 @@ button .copy-feedback-mini.active {
 
     /* ── Info Sheet Overlay (Toggled by "I" button) ── */
     .mobile-info-sheet {
-        position: absolute;
-        bottom: 60px; /* Above bottom bar */
+        position: fixed; /* Fixed to viewport – not affected by any parent scroll or position */
+        bottom: 60px; /* Sits directly above the fixed bottom bar */
         left: 0;
         right: 0;
         max-height: 45vh;
         padding: 24px 20px 24px;
         border-top: 1px solid rgba(255,255,255,0.1);
-        background: rgba(10, 10, 15, 0.90) !important; /* Force deep solid dark frosted background */
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        z-index: 2000;
+        background: rgba(10, 10, 15, 0.92) !important;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        z-index: 2900; /* Below bottom bar (3000) but above everything else */
         opacity: 0;
         transform: translateY(20px);
         pointer-events: none;
         transition: opacity 0.3s, transform 0.3s;
         overflow-y: auto;
+        display: block !important; /* Always in DOM, visibility controlled by opacity */
 
-        /* Force light-on-dark text regardless of root theme */
+        /* Force white text regardless of root theme */
         --text-main: #ffffff;
         --text-muted: #cbd5e1;
         --text-dim: #94a3b8;
+        color: #ffffff;
     }
 
     .mobile-info-sheet.open {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
+    }
+
+    /* Force all text inside info sheet to be white/light, regardless of theme */
+    .mobile-info-sheet .viewer-category,
+    .mobile-info-sheet .viewer-category span,
+    .mobile-info-sheet .viewer-title,
+    .mobile-info-sheet .viewer-title span,
+    .mobile-info-sheet .viewer-desc,
+    .mobile-info-sheet label,
+    .mobile-info-sheet p {
+        color: #ffffff !important;
+    }
+    .mobile-info-sheet .viewer-category {
+        color: rgba(255,255,255,0.55) !important;
+    }
+    .mobile-info-sheet .viewer-desc {
+        color: rgba(255,255,255,0.75) !important;
+    }
+    .mobile-info-sheet label {
+        color: rgba(255,255,255,0.45) !important;
     }
 
     /* Reduce title space on mobile for a tighter look */
@@ -1235,7 +1257,8 @@ button .copy-feedback-mini.active {
     box-sizing: content-box;
     align-items: center;
     justify-content: space-around;
-    display: none; /* Inherits display flex from media query when needed */
+    display: none;
+    pointer-events: auto !important; /* Always clickable */
 }
 
 .rv-viewer.active .mobile-bottom-bar {

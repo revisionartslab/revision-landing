@@ -2304,6 +2304,10 @@ function pinchCenter(t1, t2) {
 // ── State Machine Touch Handlers ──────────────────────────────────────────
 if (mCanvas) {
     mCanvas.addEventListener('touchstart', (e) => {
+        // Do NOT block button/interactive element taps - that prevents click events on bottom bar
+        const isInteractive = e.target.closest('button, a, input, [onclick]');
+        if (isInteractive) return;
+
         e.preventDefault();
         const touches = e.touches;
 
@@ -2402,6 +2406,10 @@ if (mCanvas) {
     }, { passive: false });
 
     mCanvas.addEventListener('touchend', (e) => {
+        // Don't block button taps
+        const isInteractive = e.target.closest('button, a, input, [onclick]');
+        if (isInteractive) return;
+
         e.preventDefault();
         const img = mSlotCurr.querySelector('img');
 
