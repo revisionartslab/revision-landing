@@ -42,15 +42,17 @@
             <!-- PC: Horizontal filter chips -->
             <nav class="header-nav" id="header-nav"></nav>
 
-            <!-- Mobile: ALL chip + CATEGORY button -->
+            <!-- Mobile filters: visible only ≤1024px -->
             <div class="mobile-header-filters" id="mobile-header-filters">
-                <button class="m-filter-all active" id="m-filter-all" onclick="mobileFilterAll()">ALL</button>
-                <button class="m-category-btn" id="m-category-btn" onclick="toggleMobileCategory()">
-                    CATEGORY
-                    <svg class="m-cat-arrow" viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                <!-- Default state is active and shows ALL -->
+                <button class="m-category-btn active" id="m-category-btn" onclick="toggleMobileCategory()">
+                    <span id="m-active-category-text">ALL</span>
+                    <svg class="m-cat-arrow" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
                 </button>
+                <div class="m-category-dropdown" id="m-category-dropdown">
+                    <div class="m-category-list" id="m-category-list"></div>
+                </div>
             </div>
-
             <!-- Nav Actions (PC: slider + theme dot; Mobile: theme dot only) -->
             <div class="nav-actions">
                 <div class="density-control" style="display:flex;align-items:center;justify-content:center;">

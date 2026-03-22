@@ -4207,8 +4207,14 @@ window.toggleMobileInfo = function() {
 window.mobileFilterAll = function() {
     // Hide dropdown if open
     document.getElementById('m-category-dropdown')?.classList.remove('open');
-    document.getElementById('m-category-btn')?.classList.remove('active', 'open');
-    document.getElementById('m-filter-all')?.classList.add('active');
+    document.getElementById('m-category-btn')?.classList.remove('open');
+    
+    const textSpan = document.getElementById('m-active-category-text');
+    if (textSpan) textSpan.innerText = 'ALL';
+    
+    document.querySelectorAll('.m-cat-item').forEach(i => {
+        i.classList.toggle('active', i.innerText === 'ALL');
+    });
     
     // Trigger existing logic
     const allChip = document.querySelector('.filter-chip[data-category="all"]');
@@ -4227,15 +4233,16 @@ window.toggleMobileCategory = function() {
         // Build list if empty
         const list = document.getElementById('m-category-list');
         if (list && list.children.length === 0) {
-            const dynamicCategories = getDynamicCategories().filter(c => c.id !== 'all');
+            const dynamicCategories = getDynamicCategories();
             dynamicCategories.forEach(cat => {
                 const item = document.createElement('button');
                 item.className = 'm-cat-item';
                 item.innerText = cat.label;
                 item.onclick = () => {
                     // Update header visual
-                    document.getElementById('m-filter-all')?.classList.remove('active');
-                    btn.classList.add('active');
+                    const textSpan = document.getElementById('m-active-category-text');
+                    if (textSpan) textSpan.innerText = cat.label;
+                    
                     btn.classList.remove('open');
                     dropdown.classList.remove('open');
                     

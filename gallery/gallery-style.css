@@ -1361,25 +1361,6 @@ button .copy-feedback-mini.active {
         /* Fixed: right side */
     }
 
-    .m-filter-all {
-        background: transparent;
-        border: 1px solid var(--border-active);
-        color: var(--text-main);
-        font-size: 10px;
-        font-weight: 900;
-        padding: 5px 12px;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: background 0.2s, color 0.2s;
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    .m-filter-all.active,
-    .m-filter-all:active {
-        background: var(--text-main);
-        color: var(--bg-main);
-    }
-
     .m-category-btn {
         display: flex;
         align-items: center;
@@ -1635,15 +1616,15 @@ button .copy-feedback-mini.active {
         padding: 28px 20px calc(24px + env(safe-area-inset-bottom, 0px));
         background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 0.7) 85%, transparent);
         z-index: 8000;
-    }
-
-    :root[data-theme="light"] .m-info-overlay {
-        background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.7) 85%, transparent);
         pointer-events: none;
         opacity: 0;
         transform: translateY(12px);
         transition: opacity 0.25s ease, transform 0.25s ease;
         display: block;
+    }
+
+    :root[data-theme="light"] .m-info-overlay {
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 60%, rgba(255, 255, 255, 0.7) 85%, transparent);
     }
 
     .m-info-overlay.open {
