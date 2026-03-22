@@ -1769,6 +1769,591 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-19T11:06:14Z"
     },
     {
+        "id": "master 20260321 103021 [7e151f FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103021 [7e151f FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167048/revision-arts/master%2020260321%20103021%20%5B7e151f%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "b958dea76f3ac696b0f2a3c7b26dabe6",
+        "uploadedAt": "2026-03-22T08:10:48Z"
+    },
+    {
+        "id": "master 20260321 103054 [7a239f FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103054 [7a239f FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167045/revision-arts/master%2020260321%20103054%20%5B7a239f%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "dff614c5cd856acfa27696457743dc42",
+        "uploadedAt": "2026-03-22T08:10:45Z"
+    },
+    {
+        "id": "master 20260321 103507 [e35df2 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103507 [e35df2 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167039/revision-arts/master%2020260321%20103507%20%5Be35df2%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "141ed249230bfa00f878b455c524624d",
+        "uploadedAt": "2026-03-22T08:10:39Z"
+    },
+    {
+        "id": "master 20260321 103541 [64779f FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103541 [64779f FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167032/revision-arts/master%2020260321%20103541%20%5B64779f%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "3746c2a1c75f0ed9a3741949fecee54c",
+        "uploadedAt": "2026-03-22T08:10:32Z"
+    },
+    {
+        "id": "master 20260321 103800 [5dcb1d FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103800 [5dcb1d FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167029/revision-arts/master%2020260321%20103800%20%5B5dcb1d%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "b01621d3d14461081a9a442aafeb4017",
+        "uploadedAt": "2026-03-22T08:10:29Z"
+    },
+    {
+        "id": "master 20260321 103926 [d7f192 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 103926 [d7f192 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167026/revision-arts/master%2020260321%20103926%20%5Bd7f192%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "d615d14419f1dde19868397224b8e1dd",
+        "uploadedAt": "2026-03-22T08:10:26Z"
+    },
+    {
+        "id": "master 20260321 104146 [475f48 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104146 [475f48 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167023/revision-arts/master%2020260321%20104146%20%5B475f48%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "b8c2495939a4cee31a1381820dd2cbba",
+        "uploadedAt": "2026-03-22T08:10:23Z"
+    },
+    {
+        "id": "master 20260321 104219 [f02286 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104219 [f02286 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167018/revision-arts/master%2020260321%20104219%20%5Bf02286%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "e29dd4393b26bfbdd3b1b16379ae686d",
+        "uploadedAt": "2026-03-22T08:10:18Z"
+    },
+    {
+        "id": "master 20260321 104255 [e37c9e FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104255 [e37c9e FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167013/revision-arts/master%2020260321%20104255%20%5Be37c9e%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "ae5373dfe3582a41111d6c1862ea2dbb",
+        "uploadedAt": "2026-03-22T08:10:13Z"
+    },
+    {
+        "id": "master 20260321 104331 [05d94b FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104331 [05d94b FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167010/revision-arts/master%2020260321%20104331%20%5B05d94b%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "928f786bd7cf105bb53a0ee849a572d3",
+        "uploadedAt": "2026-03-22T08:10:10Z"
+    },
+    {
+        "id": "master 20260321 104404 [d13210 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104404 [d13210 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167005/revision-arts/master%2020260321%20104404%20%5Bd13210%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "46f3f5d102d2a69fc991fde8c93965f2",
+        "uploadedAt": "2026-03-22T08:10:05Z"
+    },
+    {
+        "id": "master 20260321 104437 [9536aa FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104437 [9536aa FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774167000/revision-arts/master%2020260321%20104437%20%5B9536aa%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "0d8021378f211bc84a54a2ec81dd7659",
+        "uploadedAt": "2026-03-22T08:10:00Z"
+    },
+    {
+        "id": "master 20260321 104653 [8b17d3 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104653 [8b17d3 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166997/revision-arts/master%2020260321%20104653%20%5B8b17d3%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "911c2a43c39e1a46753aa6e76cf2b31f",
+        "uploadedAt": "2026-03-22T08:09:57Z"
+    },
+    {
+        "id": "master 20260321 104758 [b40c6c FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104758 [b40c6c FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166994/revision-arts/master%2020260321%20104758%20%5Bb40c6c%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "cf2bd824aceaadb3ebc994f51a7c6034",
+        "uploadedAt": "2026-03-22T08:09:54Z"
+    },
+    {
+        "id": "master 20260321 104829 [78921f FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104829 [78921f FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166991/revision-arts/master%2020260321%20104829%20%5B78921f%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "8929fc32c9566ab90069648cdc0f9b38",
+        "uploadedAt": "2026-03-22T08:09:51Z"
+    },
+    {
+        "id": "master 20260321 104858 [16c9d9 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104858 [16c9d9 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166988/revision-arts/master%2020260321%20104858%20%5B16c9d9%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "3cf92a51defa589737c3fb2f629c9011",
+        "uploadedAt": "2026-03-22T08:09:48Z"
+    },
+    {
+        "id": "master 20260321 104930 [19346b FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104930 [19346b FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166984/revision-arts/master%2020260321%20104930%20%5B19346b%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "4696bcf509723cd0bffe322c75d0b275",
+        "uploadedAt": "2026-03-22T08:09:44Z"
+    },
+    {
+        "id": "master 20260321 104958 [1508dd FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 104958 [1508dd FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166979/revision-arts/master%2020260321%20104958%20%5B1508dd%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "17a14c2439492171abb2dec28fb46c8f",
+        "uploadedAt": "2026-03-22T08:09:39Z"
+    },
+    {
+        "id": "master 20260321 105029 [ee9c34 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105029 [ee9c34 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166974/revision-arts/master%2020260321%20105029%20%5Bee9c34%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "401263b93c9b2730ec9b55763ab7e3a4",
+        "uploadedAt": "2026-03-22T08:09:34Z"
+    },
+    {
+        "id": "master 20260321 105101 [755df5 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105101 [755df5 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166970/revision-arts/master%2020260321%20105101%20%5B755df5%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "7774a35d0d8ebe2b71d9415ca8a825f7",
+        "uploadedAt": "2026-03-22T08:09:30Z"
+    },
+    {
+        "id": "master 20260321 105131 [d3f6a5 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105131 [d3f6a5 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166966/revision-arts/master%2020260321%20105131%20%5Bd3f6a5%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "c08b32030a25dfe2cc658e9a0b424442",
+        "uploadedAt": "2026-03-22T08:09:26Z"
+    },
+    {
+        "id": "master 20260321 105201 [ce2b3e FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105201 [ce2b3e FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166963/revision-arts/master%2020260321%20105201%20%5Bce2b3e%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "a704366516276db3c2bb7737a2a14ffd",
+        "uploadedAt": "2026-03-22T08:09:23Z"
+    },
+    {
+        "id": "master 20260321 105419 [db64d5 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105419 [db64d5 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166958/revision-arts/master%2020260321%20105419%20%5Bdb64d5%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "bf9a5f2ca39c8fe6fb0d75814cc03f00",
+        "uploadedAt": "2026-03-22T08:09:18Z"
+    },
+    {
+        "id": "master 20260321 105451 [f76d34 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105451 [f76d34 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166955/revision-arts/master%2020260321%20105451%20%5Bf76d34%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "27cef3781160715ef8722da4f75de6c9",
+        "uploadedAt": "2026-03-22T08:09:15Z"
+    },
+    {
+        "id": "master 20260321 105520 [a2c79e FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105520 [a2c79e FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166952/revision-arts/master%2020260321%20105520%20%5Ba2c79e%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "16042c634e3faf0d882d759a2332157f",
+        "uploadedAt": "2026-03-22T08:09:12Z"
+    },
+    {
+        "id": "master 20260321 105552 [88a47b FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105552 [88a47b FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166947/revision-arts/master%2020260321%20105552%20%5B88a47b%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "b834116de915d4f41cbf83915b09d0d7",
+        "uploadedAt": "2026-03-22T08:09:07Z"
+    },
+    {
+        "id": "master 20260321 105626 [09f6bb FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105626 [09f6bb FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166943/revision-arts/master%2020260321%20105626%20%5B09f6bb%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "2ee04896afd2c51b1137fa5ea263d152",
+        "uploadedAt": "2026-03-22T08:09:03Z"
+    },
+    {
+        "id": "master 20260321 105658 [1bc171 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105658 [1bc171 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166938/revision-arts/master%2020260321%20105658%20%5B1bc171%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "9221549bdaa1ef628d859c18fed98996",
+        "uploadedAt": "2026-03-22T08:08:58Z"
+    },
+    {
+        "id": "master 20260321 105730 [76f06e FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105730 [76f06e FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166933/revision-arts/master%2020260321%20105730%20%5B76f06e%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "ffbab62c15bd7cf9606c4d12eac45dbb",
+        "uploadedAt": "2026-03-22T08:08:53Z"
+    },
+    {
+        "id": "master 20260321 105800 [85c0b9 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105800 [85c0b9 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166928/revision-arts/master%2020260321%20105800%20%5B85c0b9%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "4bd829e2f3b4d9041aad324afd18ca09",
+        "uploadedAt": "2026-03-22T08:08:48Z"
+    },
+    {
+        "id": "master 20260321 105830 [4f04ac FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105830 [4f04ac FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166923/revision-arts/master%2020260321%20105830%20%5B4f04ac%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "90ce53963f9347171e68a3bea9102273",
+        "uploadedAt": "2026-03-22T08:08:43Z"
+    },
+    {
+        "id": "master 20260321 105903 [6dd0bb FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105903 [6dd0bb FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166919/revision-arts/master%2020260321%20105903%20%5B6dd0bb%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "e23a9ccc45fafff621ee91d9e0a3ac18",
+        "uploadedAt": "2026-03-22T08:08:39Z"
+    },
+    {
+        "id": "master 20260321 105936 [b02be4 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 105936 [b02be4 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166914/revision-arts/master%2020260321%20105936%20%5Bb02be4%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "dd9fc60e6bd5365b44828cdf9d331eb8",
+        "uploadedAt": "2026-03-22T08:08:34Z"
+    },
+    {
+        "id": "master 20260321 110006 [2fa9de FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110006 [2fa9de FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166910/revision-arts/master%2020260321%20110006%20%5B2fa9de%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "3daeb89e2e759ce97842e04cfd61120b",
+        "uploadedAt": "2026-03-22T08:08:30Z"
+    },
+    {
+        "id": "master 20260321 110036 [8492d4 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110036 [8492d4 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166904/revision-arts/master%2020260321%20110036%20%5B8492d4%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "a952b40c55577176df82ae7e0b198e7f",
+        "uploadedAt": "2026-03-22T08:08:24Z"
+    },
+    {
+        "id": "master 20260321 110105 [28ceff FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110105 [28ceff FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166899/revision-arts/master%2020260321%20110105%20%5B28ceff%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "e15e83e040e40ee75f60612bc2a7fe13",
+        "uploadedAt": "2026-03-22T08:08:19Z"
+    },
+    {
+        "id": "master 20260321 110137 [7a49b4 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110137 [7a49b4 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166894/revision-arts/master%2020260321%20110137%20%5B7a49b4%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "e75f74c94dc5ae93382c3306b88f2734",
+        "uploadedAt": "2026-03-22T08:08:14Z"
+    },
+    {
+        "id": "master 20260321 110208 [5b530d FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110208 [5b530d FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166887/revision-arts/master%2020260321%20110208%20%5B5b530d%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "bc2b9373e5003db4b45b3441f58d988c",
+        "uploadedAt": "2026-03-22T08:08:07Z"
+    },
+    {
+        "id": "master 20260321 110238 [9046d3 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110238 [9046d3 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166882/revision-arts/master%2020260321%20110238%20%5B9046d3%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "0d28cd9216bdfcb7fd6760e442576c78",
+        "uploadedAt": "2026-03-22T08:08:02Z"
+    },
+    {
+        "id": "master 20260321 110308 [bf5fdb FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110308 [bf5fdb FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166877/revision-arts/master%2020260321%20110308%20%5Bbf5fdb%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "be88be6b032efdf8b6c4ff640cc17b23",
+        "uploadedAt": "2026-03-22T08:07:57Z"
+    },
+    {
+        "id": "master 20260321 110339 [3cde0b FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110339 [3cde0b FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166872/revision-arts/master%2020260321%20110339%20%5B3cde0b%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "289076ce83c23ba8ee5b5190bf522e32",
+        "uploadedAt": "2026-03-22T08:07:52Z"
+    },
+    {
+        "id": "master 20260321 110412 [c9cc3d FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110412 [c9cc3d FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166868/revision-arts/master%2020260321%20110412%20%5Bc9cc3d%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "ead925d23f66746d87dd2b6c6afd57ec",
+        "uploadedAt": "2026-03-22T08:07:48Z"
+    },
+    {
+        "id": "master 20260321 110444 [e4c1a1 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110444 [e4c1a1 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166864/revision-arts/master%2020260321%20110444%20%5Be4c1a1%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "3a37dd45e71e042fec12571a6dbc50f6",
+        "uploadedAt": "2026-03-22T08:07:44Z"
+    },
+    {
+        "id": "master 20260321 110523 [75dff4 FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110523 [75dff4 FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166861/revision-arts/master%2020260321%20110523%20%5B75dff4%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "1a6e8546dc67d4d464739f7f2e7e0733",
+        "uploadedAt": "2026-03-22T08:07:41Z"
+    },
+    {
+        "id": "master 20260321 110554 [520ecc FPS original]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260321 110554 [520ecc FPS original]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774166856/revision-arts/master%2020260321%20110554%20%5B520ecc%20FPS%20original%5D.png",
+        "description": "The Instant, Scripted into Eternity.\n\nOur laboratory honors humanity’s profound artistic heritage, utilizing AI as a modern alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this space, traditional mediums and algorithmic creations coexist without distinction, merging into a single artistic horizon. We define the algorithm not as a mere imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms. This collection is a testament to the seamless synthesis of historical legacy and future technology—a deliberate documentation of tomorrow’s classics that transcends the boundary between the human touch and the machine.",
+        "promptUrl": null,
+        "assetId": "84b24f9c8adf7aaaa427f1fd93699b7a",
+        "uploadedAt": "2026-03-22T08:07:36Z"
+    },
+    {
         "id": "master 20260321 221953 [09255a FPS original]",
         "tags": [
             "emotion"
