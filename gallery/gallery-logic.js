@@ -5941,15 +5941,13 @@ window.resetGalleryState = function() {
         closeViewer();
     }
     
-    // 2. Clear any active filters and return to 'ALL'
-    // Clicking the 'ALL' chip triggers the premium fade-out/in transition.
+    // 2. Clear any active filters and return to 'ALL' (Shuffle)
+    // Clicking the 'ALL' chip triggers the premium fade-out/in transition and shuffles the records.
     const allChip = document.querySelector('.filter-chip[data-category="all"]');
     if (allChip) {
-        // If it's already active, we just need to scroll to top.
-        // If not, clicking it will trigger the filter logic.
-        if (!allChip.classList.contains('active')) {
-            allChip.click();
-        }
+        // We always click it to ensure the shuffle logic (inside the chip listener) is triggered,
+        // even if 'ALL' is already the active category.
+        allChip.click();
     }
     
     // 3. Smoothly return to the top of the gallery
