@@ -4912,6 +4912,19 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-22T14:27:00Z"
     },
     {
+        "id": "master 20260322 222600 [화면 캡처 2026 03 03 150349 FPS 21 9]",
+        "tags": [
+            "character",
+            "fashion"
+        ],
+        "title": "master 20260322 222600 [화면 캡처 2026 03 03 150349 FPS 21 9]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774190468/revision-arts/master%2020260322%20222600%20%5B%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202026%2003%2003%20150349%20FPS%2021%209%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774189371/revision-arts/prompt_20260322_222600_%5B%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2026-03-03_150349_FPS_21_9%5D",
+        "assetId": "6fa5ede65b329973a4affa1cc487bc05",
+        "uploadedAt": "2026-03-22T14:41:08Z"
+    },
+    {
         "id": "master 20260322 222610 [Gemini Generated Image m02hw9m02hw9m02h]",
         "tags": [
             "character",
