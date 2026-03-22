@@ -1017,7 +1017,7 @@ button .copy-feedback-mini.active {
     margin-bottom: 24px;
     /* Content-height only: meta grid uses margin-top: auto to anchor to bottom */
     flex-shrink: 0;
-    max-height: 160px;
+    max-height: 370px;
     overflow-y: auto;
     padding-right: 15px;
     scrollbar-width: thin;
