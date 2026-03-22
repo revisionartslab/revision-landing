@@ -5929,3 +5929,32 @@ window.filterByTag = function(tag) {
         if (allChip) allChip.click();
     }
 };
+
+/**
+ * [SOFT RESET SYSTEM]
+ * Resets the gallery to its initial state without a full page reload.
+ * Prevents flickering and layout shaking.
+ */
+window.resetGalleryState = function() {
+    // 1. Close the cinematic viewer if active
+    if (typeof closeViewer === 'function') {
+        closeViewer();
+    }
+    
+    // 2. Clear any active filters and return to 'ALL'
+    // Clicking the 'ALL' chip triggers the premium fade-out/in transition.
+    const allChip = document.querySelector('.filter-chip[data-category="all"]');
+    if (allChip) {
+        // If it's already active, we just need to scroll to top.
+        // If not, clicking it will trigger the filter logic.
+        if (!allChip.classList.contains('active')) {
+            allChip.click();
+        }
+    }
+    
+    // 3. Smoothly return to the top of the gallery
+    if (typeof window.scrollToTop === 'function') {
+        window.scrollToTop();
+    }
+};
+
