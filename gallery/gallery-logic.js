@@ -4503,9 +4503,12 @@ function renderNextBatch() {
         const cardMedia = document.createElement('div');
         cardMedia.className = 'card-media';
         
-        if (item.width && item.height) {
-            cardMedia.style.aspectRatio = `${item.width} / ${item.height}`;
-        }
+        // [SKELETON SYSTEM] Always set a default portrait aspect-ratio.
+        // This locks in the grid layout BEFORE the image loads, so cards
+        // never steal each other's positions during ResizeObserver recalculations.
+        const knownRatio = (item.width && item.height) ? `${item.width} / ${item.height}` : '3 / 4';
+        cardMedia.style.aspectRatio = knownRatio;
+        cardMedia.dataset.defaultRatio = knownRatio;
         
         // Handle click at the parent level so pseudo-elements (like ::after) don't block it
         cardMedia.onclick = () => openViewer(absoluteIndex);
@@ -4515,8 +4518,13 @@ function renderNextBatch() {
         img.loading = 'lazy'; // Standard browser optimization
         img.alt = escapeHtml(item.title);
         img.onload = function() { 
-            // Only update opacity — do NOT call resizeGridItem here.
-            // ResizeObserver handles layout; a second resize call creates position-stealing.
+            // [SKELETON SYSTEM] Once the real image dimensions are known,
+            // smoothly update the aspect-ratio so the grid reflows gently.
+            const realRatio = `${this.naturalWidth} / ${this.naturalHeight}`;
+            if (realRatio !== cardMedia.dataset.defaultRatio) {
+                cardMedia.style.transition = 'aspect-ratio 0.3s ease';
+                cardMedia.style.aspectRatio = realRatio;
+            }
             this.classList.add('loaded'); 
             cardMedia.classList.add('loaded');
         };
@@ -5703,10 +5711,13 @@ function initFilters() {
             document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
             btn.classList.add('active');
             
-            // ── PREMIUM FADE-OUT & SWAP ───────────────────────────────────
-            galleryContainer.style.minHeight = `${galleryContainer.scrollHeight}px`; // Guard against collapse
+            // ── [SMOOTH FILTER TRANSITION] ─────────────────────────────────
+            // Step 1: Fade out the gallery.
             galleryContainer.classList.add('filtering');
             
+            // Step 2: After fade-out completes (~250ms), swap data and re-render.
+            // New cards will already have a skeleton aspect-ratio set, so the grid
+            // is stable immediately. No minHeight hack needed.
             setTimeout(() => {
                 itemsRendered = 0;
                 galleryContainer.innerHTML = '';
@@ -5723,15 +5734,16 @@ function initFilters() {
                 renderAll();
                 initViewerSlider(); 
                 
-                // Fade back in
-                setTimeout(() => {
-                    galleryContainer.classList.remove('filtering');
-                    // Clean up min-height after fade-in to allow natural growth
-                    setTimeout(() => { galleryContainer.style.minHeight = ''; }, 300);
-                }, 10);
+                // Step 3: Fade back in on the next animation frame to ensure
+                // the browser has had a chance to paint the skeleton grid first.
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        galleryContainer.classList.remove('filtering');
+                    });
+                });
                 
                 if (typeof scrollToTop === 'function') scrollToTop();
-            }, 250); // Matches transition duration roughly
+            }, 280); // Slightly longer than the 0.3s CSS transition to ensure fade-out completes
         });
 
 
@@ -5764,13 +5776,15 @@ window.handleMobileNav = function(tagId, btn) {
         renderAll();
         initViewerSlider(); 
 
-        setTimeout(() => {
-            galleryContainer.classList.remove('filtering');
-            setTimeout(() => { galleryContainer.style.minHeight = ''; }, 300);
-        }, 10);
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                galleryContainer.classList.remove('filtering');
+                setTimeout(() => { galleryContainer.style.minHeight = ''; }, 300);
+            });
+        });
 
         if (typeof scrollToTop === 'function') scrollToTop();
-    }, 250);
+    }, 280);
 };
 
 console.log('Gallery Initializing DYNAMICALLY...');
