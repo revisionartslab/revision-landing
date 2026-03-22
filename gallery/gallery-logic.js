@@ -4503,12 +4503,16 @@ function renderNextBatch() {
         const cardMedia = document.createElement('div');
         cardMedia.className = 'card-media';
         
-        // [SKELETON SYSTEM] Always set a default portrait aspect-ratio.
-        // This locks in the grid layout BEFORE the image loads, so cards
-        // never steal each other's positions during ResizeObserver recalculations.
-        const knownRatio = (item.width && item.height) ? `${item.width} / ${item.height}` : '3 / 4';
-        cardMedia.style.aspectRatio = knownRatio;
-        cardMedia.dataset.defaultRatio = knownRatio;
+        // [STABLE ORGANIC MASONRY SYSTEM]
+        // Pick a deterministic ratio from a set of "premium" masonry-friendly ratios.
+        // This gives the "organic/mixed" look without the "jolt" because the 
+        // skeleton is stable from the start.
+        const PRESET_RATIOS = ['3 / 4', '4 / 5', '1 / 1', '2 / 3', '5 / 7', '4 / 3'];
+        const hash = (item.id || '').split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+        const assignedRatio = PRESET_RATIOS[hash % PRESET_RATIOS.length];
+        
+        cardMedia.style.aspectRatio = assignedRatio;
+        cardMedia.dataset.defaultRatio = assignedRatio;
         
         // Handle click at the parent level so pseudo-elements (like ::after) don't block it
         cardMedia.onclick = () => openViewer(absoluteIndex);
@@ -4518,12 +4522,13 @@ function renderNextBatch() {
         img.loading = 'lazy'; // Standard browser optimization
         img.alt = escapeHtml(item.title);
         img.onload = function() { 
-            // [SKELETON SYSTEM] Do NOT update aspect-ratio here.
-            // Changing it triggers ResizeObserver → grid-row-end recalc → visible "jolt".
-            // The fixed skeleton ratio (3:4) + object-fit:cover handles display gracefully.
+            // We NO LONGER update the aspect-ratio here to prevent the "jolt".
+            // The varied skeletons + object-fit: cover provides the perfect 
+            // balance of organic variety and rigid UI stability.
             this.classList.add('loaded'); 
             cardMedia.classList.add('loaded');
         };
+
 
         img.onerror = function() { card.style.display = 'none'; };
 
