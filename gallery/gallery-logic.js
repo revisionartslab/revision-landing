@@ -4518,16 +4518,13 @@ function renderNextBatch() {
         img.loading = 'lazy'; // Standard browser optimization
         img.alt = escapeHtml(item.title);
         img.onload = function() { 
-            // [SKELETON SYSTEM] Once the real image dimensions are known,
-            // smoothly update the aspect-ratio so the grid reflows gently.
-            const realRatio = `${this.naturalWidth} / ${this.naturalHeight}`;
-            if (realRatio !== cardMedia.dataset.defaultRatio) {
-                cardMedia.style.transition = 'aspect-ratio 0.3s ease';
-                cardMedia.style.aspectRatio = realRatio;
-            }
+            // [SKELETON SYSTEM] Do NOT update aspect-ratio here.
+            // Changing it triggers ResizeObserver → grid-row-end recalc → visible "jolt".
+            // The fixed skeleton ratio (3:4) + object-fit:cover handles display gracefully.
             this.classList.add('loaded'); 
             cardMedia.classList.add('loaded');
         };
+
         img.onerror = function() { card.style.display = 'none'; };
 
         const overlay = document.createElement('div');
