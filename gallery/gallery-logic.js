@@ -3924,15 +3924,57 @@ function mcResetZoom(animated) {
     img.style.transform = 'translate(0,0) scale(1)';
 }
 
+function showGlobalToast(msg) {
+    let toast = document.getElementById('global-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'global-toast';
+        toast.style.cssText = `
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, calc(-50% + 15px));
+            background: rgba(20, 20, 24, 0.95);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 0px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        `;
+        document.body.appendChild(toast);
+    }
+    toast.innerText = msg;
+    // Trigger paint
+    void toast.offsetWidth;
+    toast.style.transform = 'translate(-50%, -50%)';
+    toast.style.opacity = '1';
+    
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => {
+        toast.style.transform = 'translate(-50%, calc(-50% + 15px))';
+        toast.style.opacity = '0';
+    }, 1200);
+}
+
 function mcLoadSlot(slot, index) {
     const img = slot.querySelector('img');
     if (!img) return;
-    if (index < 0 || index >= filteredItems.length) {
+    if (filteredItems.length === 0) {
         img.src = '';
         img.style.opacity = '0';
         return;
     }
-    const item = filteredItems[index];
+    
+    // Array wrapping logic for infinite scrolling
+    const wrappedIndex = (index % filteredItems.length + filteredItems.length) % filteredItems.length;
+    const item = filteredItems[wrappedIndex];
 
     img.style.transition = 'none';
     img.style.transform = 'translate(0,0) scale(1)';
@@ -3946,19 +3988,19 @@ function mcLoadSlot(slot, index) {
          img.style.opacity = '0';
          img.src = targetSrc;
     }
-    preloadPromptText(index);
+    preloadPromptText(wrappedIndex);
 }
 
 function mcNavigate(step) {
     if (isAnimatingViewer) return;
     
-    const next = mcIndex + step;
-    if (next < 0 || next >= filteredItems.length) {
-        // Bounce back
+    if (filteredItems.length <= 1) {
+        showGlobalToast("A Sole Presence");
         mcSetTrack(0, true);
         return;
     }
     
+    const next = (mcIndex + step + filteredItems.length) % filteredItems.length;
     isAnimatingViewer = true;
     
     // Smooth Native Swipe Animation
@@ -4070,7 +4112,8 @@ window.initDiscoveryGrid = function() {
     }
     
     if (dGrid.innerHTML === '') {
-        discoveryPool = STREAM_RECORDS.filter(i => generateAssetId(i) !== currentId);
+        // Now using filteredItems instead of STREAM_RECORDS so discovery stays within current category
+        discoveryPool = filteredItems.filter(i => generateAssetId(i) !== currentId);
         // Shuffle pool
         for (let i = discoveryPool.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -4449,13 +4492,12 @@ function updateViewerMetadata(index) {
     titleEl._eggCount = 0;
     clearTimeout(titleEl._eggTimer);
     
-    titleEl.onclick = async function (e) {
-        titleEl._eggCount = (titleEl._eggCount || 0) + 1;
-        // console.log(`[EGG] Click ${titleEl._eggCount}`);
-        clearTimeout(titleEl._eggTimer);
+    const eggHandler = async function (e) {
+        this._eggCount = (this._eggCount || 0) + 1;
+        clearTimeout(this._eggTimer);
         
-        if (titleEl._eggCount >= 3) {
-            titleEl._eggCount = 0;
+        if (this._eggCount >= 3) {
+            this._eggCount = 0;
             window.__eggMode = !window.__eggMode;
             applyEggUIState(window.__eggMode);
 
@@ -4464,23 +4506,51 @@ function updateViewerMetadata(index) {
                 if (content) fetchPromptContent(content, item);
             }
         } else {
-            // Increased to 1500ms to allow plenty of time for 3 clicks
-            titleEl._eggTimer = setTimeout(() => { titleEl._eggCount = 0; }, 1500);
+            this._eggTimer = setTimeout(() => { this._eggCount = 0; }, 1500);
         }
     };
 
-    // Build Title with Premium Underscores (Instant Render)
-    const displayTitle = (item.title || '').replace(/ /g, '_');
-    const titleHtml = displayTitle.split('_').map(p => `<span>${p}</span>`).join('_');
-    titleEl.innerHTML = titleHtml;
+    titleEl.onclick = eggHandler;
     const mt = document.getElementById('m-viewer-title');
-    if (mt) mt.innerHTML = titleHtml;
+    if (mt) mt.onclick = eggHandler;
+
+    // Ensure the inner branded spans don't block the click? 
+    // They are within titleEl, so they should bubble up. 
+    // But if there's any absolute positioning or pointer-events: none, I should check.
+
+    // Branded Title Logic (Uses Asset ID parts for identity)
+    const assetId = generateAssetId(item); // e.g. RV-20260321-8106
+    const idParts = assetId.split('-');
+    const datePart = idParts[1] || '';
+    const suffixPart = idParts[2] || '';
     
-    // Update Meta
-    const categoryText = (item.tags || []).join(' / ').toUpperCase();
-    document.getElementById('viewer-category').innerText = categoryText;
-    const mc = document.getElementById('m-viewer-category');
-    if (mc) mc.innerText = categoryText;
+    const brandedTitleHtml = `<span class="brand-prefix">REVISION ARTS</span><span class="brand-id">${datePart}-${suffixPart}</span>`;
+    const realTitleHtml = (item.title || '').replace(/ /g, '_').split('_').map(p => `<span>${p}</span>`).join('_');
+
+    // Store real title for egg mode toggle
+    titleEl._realTitleHtml = realTitleHtml;
+    titleEl._brandedTitleHtml = brandedTitleHtml;
+    
+    // Initial Render (Branded or Real based on current egg mode)
+    titleEl.innerHTML = window.__eggMode ? realTitleHtml : brandedTitleHtml;
+    applyEggUIState(window.__eggMode); // Sync panel classes
+
+    if (mt) {
+        mt._realTitleHtml = realTitleHtml;
+        mt._brandedTitleHtml = brandedTitleHtml;
+        mt.innerHTML = window.__eggMode ? realTitleHtml : brandedTitleHtml;
+    }
+    
+    // Clickable Tags Rendering
+    const tagContainer = document.getElementById('viewer-category');
+    const mTagContainer = document.getElementById('m-viewer-category');
+    
+    const tagsHtml = (item.tags || []).map(tag => 
+        `<span class="clickable-tag" onclick="event.stopPropagation(); filterByTag('${tag}')">${tag.toUpperCase()}</span>`
+    ).join(' <span class="tag-sep">/</span> ');
+
+    if (tagContainer) tagContainer.innerHTML = tagsHtml;
+    if (mTagContainer) mTagContainer.innerHTML = tagsHtml;
 
     document.getElementById('viewer-desc').innerText = item.description;
     const md = document.getElementById('m-viewer-desc');
@@ -4624,7 +4694,38 @@ viewer.addEventListener('contextmenu', (e) => {
     }
 });
 
+window.filterByTag = function(tag) {
+    if (viewer.classList.contains('active')) {
+        closeViewer();
+    }
+    
+    // Update mobile visual UI
+    const mCatBtn = document.getElementById('m-category-btn');
+    if (mCatBtn && window.innerWidth <= 1024) {
+        document.getElementById('m-filter-all')?.classList.remove('active');
+        mCatBtn.classList.add('active');
+        mCatBtn.classList.remove('open');
+        document.getElementById('m-category-dropdown')?.classList.remove('open');
+        
+        document.querySelectorAll('.m-cat-item').forEach(i => {
+            if (i.innerText.trim().toLowerCase() === String(tag).toLowerCase()) {
+                i.classList.add('active');
+            } else {
+                i.classList.remove('active');
+            }
+        });
+    }
+
+    // Trigger actual PC/Global underlying filter
+    const chip = document.querySelector(`.filter-chip[data-category="${tag}"]`);
+    if (chip) chip.click();
+};
+
 window.navViewer = function (step) {
+    if (filteredItems.length <= 1) {
+        showGlobalToast("A Sole Presence");
+        return;
+    }
     const isMobile = window.innerWidth <= 1024;
     if (isMobile) {
         mcNavigate(step);
@@ -5074,16 +5175,43 @@ function applyEggUIState(isActive) {
     const panel   = document.getElementById('prompt-panel');
     const desc    = document.getElementById('viewer-desc');
     const meta    = document.querySelector('.viewer-meta-grid');
+    const title   = document.getElementById('viewer-title');
+    const mTitle  = document.getElementById('m-viewer-title');
+    const infoPanel = document.getElementById('viewer-info-panel');
 
     if (isActive) {
+        if (infoPanel) infoPanel.classList.add('egg-active');
         if (section) section.style.display = 'flex';
         if (panel)   panel.style.display   = 'flex';
         if (desc)    desc.style.display    = 'none';
         if (meta)    meta.style.display    = 'none';
+        
+        // Swap to REAL title
+        if (title && title._realTitleHtml) title.innerHTML = title._realTitleHtml;
+        if (mTitle && mTitle._realTitleHtml) mTitle.innerHTML = mTitle._realTitleHtml;
     } else {
+        if (infoPanel) infoPanel.classList.remove('egg-active');
         if (section) section.style.display = 'none';
         if (panel)   panel.style.display   = 'none';
         if (desc)    desc.style.display    = 'block';
         if (meta)    meta.style.display    = 'grid';
+        
+        // Swap to BRANDED title
+        if (title && title._brandedTitleHtml) title.innerHTML = title._brandedTitleHtml;
+        if (mTitle && mTitle._brandedTitleHtml) mTitle.innerHTML = mTitle._brandedTitleHtml;
     }
 }
+
+// Global Filter Helper for clicking tags within viewer
+window.filterByTag = function(tag) {
+    closeViewer();
+    const chip = document.querySelector(`.filter-chip[data-category="${tag}"]`);
+    if (chip) {
+        chip.click();
+    } else {
+        // If tag is not in primary list, go to 'all' or handle specifically
+        // Here we just try to find it or fallback
+        const allChip = document.querySelector('.filter-chip[data-category="all"]');
+        if (allChip) allChip.click();
+    }
+};

@@ -159,20 +159,16 @@
         <div class="viewer-bottom-wrapper" id="viewer-bottom-wrapper">
             <div class="viewer-info-panel" id="viewer-info-panel">
                 <div class="viewer-header">
+                    <h1 id="viewer-title" class="viewer-title"></h1>
                     <p class="viewer-category">
                         <span id="viewer-category"></span>
-                        <button class="copy-token-btn" onclick="copyRawTitle()" style="position:relative;">
-                            <span id="copy-feedback" class="copy-feedback-mini" style="position:absolute;right:50%;transform:translateX(50%) translateY(0);bottom:calc(100% + 1px);transition:opacity 0.3s,transform 0.3s;">COPIED</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="8" width="14" height="14" rx="1.5"/><rect x="8" y="2" width="14" height="14" rx="1.5" stroke="var(--bg-main)" stroke-width="2.5"/></svg>
-                        </button>
                     </p>
-                    <h1 id="viewer-title" class="viewer-title"></h1>
                 </div>
 
                 <!-- Easter egg prompt panel -->
                 <div id="prompt-section" style="display:none;">
                     <div id="prompt-panel" class="prompt-panel" style="display:none;">
-                        <div class="viewer-category" style="margin-bottom:12px;border-bottom:none;background:transparent;padding:0;">
+                        <div class="prompt-header">
                             <span>PROMPT</span>
                             <div style="display:flex;align-items:center;gap:8px;">
                                 <button class="copy-token-btn" onclick="copyPromptText()" style="position:relative;">
@@ -206,8 +202,8 @@
 
         <!-- ══ MOBILE-ONLY: Info overlay ══ -->
         <div class="m-info-overlay" id="m-info-overlay">
-            <p class="m-info-category" id="m-viewer-category"></p>
             <h2 class="m-info-title" id="m-viewer-title"></h2>
+            <p class="m-info-category" id="m-viewer-category"></p>
             <p class="m-info-desc" id="m-viewer-desc"></p>
             <div class="m-info-meta">
                 <div class="m-meta-item"><span class="m-meta-label">RESOLUTION</span><span id="m-viewer-res">---</span></div>
