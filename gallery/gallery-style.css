@@ -588,6 +588,7 @@ header {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -598,7 +599,7 @@ header {
     position: relative;
     width: 100%;
     /* Solid dark base for "dark card fade-in" feel */
-    background: #0a0a0a; 
+    background: #0a0a0a;
     cursor: pointer;
     overflow: hidden;
 }
@@ -608,9 +609,18 @@ header {
 }
 
 @keyframes skeletonPulse {
-    0% { background-color: var(--bg-element); }
-    50% { background-color: var(--bg-modal); } /* Subtle contrast */
-    100% { background-color: var(--bg-element); }
+    0% {
+        background-color: var(--bg-element);
+    }
+
+    50% {
+        background-color: var(--bg-modal);
+    }
+
+    /* Subtle contrast */
+    100% {
+        background-color: var(--bg-element);
+    }
 }
 
 .card-media::after {
@@ -635,7 +645,8 @@ header {
 
 .card-media.loaded {
     background-color: transparent !important;
-    animation: none; /* Stop pulse when image is ready */
+    animation: none;
+    /* Stop pulse when image is ready */
 }
 
 .card-media img.loaded {
@@ -1013,7 +1024,7 @@ button .copy-feedback-mini.active {
 .viewer-desc {
     font-size: 14px;
     color: var(--text-muted);
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 24px;
     /* Content-height only: meta grid uses margin-top: auto to anchor to bottom */
     flex-shrink: 0;
