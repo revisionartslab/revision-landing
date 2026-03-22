@@ -3809,6 +3809,11 @@ function renderNextBatch() {
         // ── SECURITY: Build card via DOM API to prevent XSS ──
         const cardMedia = document.createElement('div');
         cardMedia.className = 'card-media';
+        
+        if (item.width && item.height) {
+            cardMedia.style.aspectRatio = `${item.width} / ${item.height}`;
+        }
+        
         // Handle click at the parent level so pseudo-elements (like ::after) don't block it
         cardMedia.onclick = () => openViewer(absoluteIndex);
 
@@ -3816,8 +3821,13 @@ function renderNextBatch() {
         img.src = item.url;
         img.loading = 'lazy'; // Standard browser optimization
         img.alt = escapeHtml(item.title);
-        img.onload = function() { this.classList.add('loaded'); };
-        img.onerror = function() { card.style.display = 'none'; resizeGridItem(card); };
+        img.onload = function() { 
+            // Only update opacity — do NOT call resizeGridItem here.
+            // ResizeObserver handles layout; a second resize call creates position-stealing.
+            this.classList.add('loaded'); 
+            cardMedia.classList.add('loaded');
+        };
+        img.onerror = function() { card.style.display = 'none'; };
 
         const overlay = document.createElement('div');
         overlay.className = 'card-overlay';
@@ -3832,8 +3842,9 @@ function renderNextBatch() {
         card.style.animationDelay = `${index * 0.04}s`;
 
         globalGridObserver.observe(card);
-        
         galleryContainer.appendChild(card);
+        // Layout is now ONLY driven by aspect-ratio CSS + ResizeObserver.
+        // No manual resizeGridItem call here — it causes double-measure position stealing.
     });
 
     itemsRendered += BATCH_SIZE;
@@ -4169,17 +4180,20 @@ function renderNextDiscoveryBatch(dGrid) {
         const media = document.createElement('div');
         media.className = 'card-media';
         
+        if (item.width && item.height) {
+            media.style.aspectRatio = `${item.width} / ${item.height}`;
+        }
+        
         const img = document.createElement('img');
         img.src = item.url;
         img.loading = 'lazy';
         img.onload = function() {
+            // Only transition opacity — ResizeObserver handles grid span.
             this.classList.add('loaded');
-            // Trigger initial masonry fix after load
-            resizeGridItem(card);
+            media.classList.add('loaded');
         };
         img.onerror = function() {
             card.style.display = 'none';
-            resizeGridItem(card);
         };
         
         media.appendChild(img);

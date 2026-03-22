@@ -579,18 +579,17 @@ header {
     border: none;
     overflow: hidden;
     padding-bottom: var(--rv-gap);
-    animation: rvCardReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    /* Fade in only: No scale or translate to prevent grid flickering during resize calculations */
+    animation: rvCardReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    will-change: opacity, filter;
 }
 
 @keyframes rvCardReveal {
     from {
         opacity: 0;
-        transform: translateY(20px);
     }
-
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -598,9 +597,20 @@ header {
 .card-media {
     position: relative;
     width: 100%;
-    background: #000;
+    /* Solid dark base for "dark card fade-in" feel */
+    background: #0a0a0a; 
     cursor: pointer;
     overflow: hidden;
+}
+
+.card-media:not(.loaded) {
+    animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+@keyframes skeletonPulse {
+    0% { background-color: var(--bg-element); }
+    50% { background-color: var(--bg-modal); } /* Subtle contrast */
+    100% { background-color: var(--bg-element); }
 }
 
 .card-media::after {
@@ -608,15 +618,24 @@ header {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0);
-    transition: background 0.3s ease;
+    transition: background 0.4s ease;
     z-index: 1;
 }
 
 .card-media img {
     width: 100%;
+    height: 100%;
     display: block;
+    /* object-fit: cover prevents internal layout recalc jitter when image loads */
+    object-fit: cover;
     opacity: 0;
-    transition: opacity 0.8s ease;
+    /* Very elegant, slow fade-in */
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-media.loaded {
+    background-color: transparent !important;
+    animation: none; /* Stop pulse when image is ready */
 }
 
 .card-media img.loaded {
@@ -706,11 +725,9 @@ header {
     background: var(--bg-modal);
 
     /* Cinematic Reveal Performance */
-    will-change: transform, opacity, filter;
+    will-change: transform, opacity;
     transform: scale(0.97) translateY(10px);
-    filter: blur(8px);
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.5s cubic-bezier(0.22, 1, 0.36, 1),
         opacity 0.5s ease,
         flex 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     /* Symmetrical Flex Transition to prevent jolts */
@@ -719,7 +736,6 @@ header {
 
 .rv-viewer.active .viewer-media-panel {
     transform: scale(1) translateY(0);
-    filter: blur(0);
     opacity: 1;
 }
 
