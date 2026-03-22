@@ -77,14 +77,8 @@
         <div class="scroll-root">
             <div class="container">
                 <!-- Move to Top -->
-                <button id="move-to-top" onclick="scrollToTop()" style="
-                    position:fixed;bottom:32px;right:32px;z-index:999;
-                    width:42px;height:42px;border-radius:0;
-                    background:var(--bg-element);border:1px solid var(--border-main);
-                    color:var(--text-dim);cursor:pointer;display:flex;align-items:center;
-                    justify-content:center;opacity:0;pointer-events:none;
-                    transition:opacity 0.3s,color 0.3s;font-size:18px;" class="move-to-top-btn">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+                <button id="move-to-top" class="move-to-top-btn" onclick="scrollToTop()" aria-label="Move to top">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
                 </button>
 
                 <div id="gallery" class="gallery-grid"></div>

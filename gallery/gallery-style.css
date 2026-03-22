@@ -1881,3 +1881,43 @@ button .copy-feedback-mini.active {
 }
 
 /* end of style */
+
+/* -------------------------------------------------------------------------- */
+/* Move to Top Button - PC Only                                                */
+/* -------------------------------------------------------------------------- */
+.move-to-top-btn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--border-main);
+    color: var(--text-dim);
+    cursor: pointer;
+    border-radius: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.move-to-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.move-to-top-btn:hover {
+    color: var(--text-main);
+    border-color: var(--border-active);
+}
+
+/* Hidden on mobile / tablet */
+@media (max-width: 1024px) {
+    .move-to-top-btn {
+        display: none !important;
+    }
+}
