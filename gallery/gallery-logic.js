@@ -7037,20 +7037,20 @@ function renderNextDiscoveryBatch(dGrid) {
         media.appendChild(img);
         card.appendChild(media);
         
+        // [SYNCED WITH MAIN GALLERY] Add cards directly to dGrid
+        dGrid.appendChild(card);
+        
         // Add ResizeObserver for responsive masonry
         globalGridObserver.observe(card);
         // Manual immediate measure to ensure initial position is correct
         if (typeof resizeGridItem === 'function') resizeGridItem(card);
-        
-        const sentinel = document.getElementById('discovery-sentinel');
-        if (sentinel) {
-            dGrid.insertBefore(card, sentinel);
-        } else {
-            dGrid.appendChild(card);
-        }
     });
-    
-    discoveryRendered += 20;
+
+    // Move sentinel to end (triggers single bulk re-layout instead of 20 times)
+    const sentinel = document.getElementById('discovery-sentinel');
+    if (sentinel) dGrid.appendChild(sentinel);
+
+    discoveryRendered += nextBatch.length;
 }
 
 window.toggleMobileInfo = function() {

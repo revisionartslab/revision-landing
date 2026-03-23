@@ -1760,6 +1760,7 @@ button .copy-feedback-mini.active {
         grid-auto-rows: 1px;
         grid-auto-flow: dense;
         align-items: start;
+        width: 100%;
         /* masonry via JS */
         gap: 0 var(--rv-gap);
         padding: 0 var(--rv-gap) 60px;
