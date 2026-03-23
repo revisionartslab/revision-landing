@@ -8770,7 +8770,7 @@ function updateViewerMetadata(index) {
     
     const tagsHtml = (item.tags || []).map(tag => 
         `<span class="clickable-tag" onclick="event.stopPropagation(); filterByTag('${tag}')">${tag.toUpperCase()}</span>`
-    ).join(' <span class="tag-sep">/</span> ');
+    ).join(' ');
 
     if (tagContainer) tagContainer.innerHTML = tagsHtml;
     if (mTagContainer) mTagContainer.innerHTML = tagsHtml;

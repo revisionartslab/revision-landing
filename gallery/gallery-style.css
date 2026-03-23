@@ -1013,17 +1013,24 @@ button .copy-feedback-mini.active {
     transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
     display: inline-block;
     pointer-events: auto;
-    /* Ensure clicks work even if parent is none */
+    font-size: 11px;
+    color: var(--text-dim);
+    border: 1px solid var(--text-dim);
+    border-radius: 0;
+    padding: 2px 7px;
+    margin: 0 4px 6px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .clickable-tag:hover {
     color: var(--text-main);
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    border-color: var(--text-main);
 }
 
 .tag-sep {
-    color: var(--border-active);
-    margin: 0 4px;
+    display: none;
 }
 
 .viewer-desc {
@@ -1176,7 +1183,7 @@ button .copy-feedback-mini.active {
 }
 
 .meta-item label {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 900;
     color: var(--text-dim);
     text-transform: uppercase;
@@ -1400,7 +1407,7 @@ button .copy-feedback-mini.active {
         background: transparent;
         border: 1px solid var(--border-main);
         color: var(--text-dim);
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 900;
         padding: 5px 12px;
         cursor: pointer;
@@ -1456,7 +1463,7 @@ button .copy-feedback-mini.active {
         background: transparent;
         border: 1px solid var(--border-main);
         color: var(--text-dim);
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 900;
         letter-spacing: 0.08em;
         padding: 6px 14px;
@@ -1667,12 +1674,15 @@ button .copy-feedback-mini.active {
     }
 
     .m-info-category {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 900;
         color: var(--text-dim);
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         text-transform: uppercase;
         pointer-events: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
     }
 
     .m-info-title {
@@ -1715,7 +1725,7 @@ button .copy-feedback-mini.active {
     }
 
     .m-meta-label {
-        font-size: 9px;
+        font-size: 11px;
         font-weight: 900;
         color: var(--text-dim);
     }
@@ -1838,8 +1848,8 @@ button .copy-feedback-mini.active {
     padding: 8px 16px;
     background: transparent;
     border: 1px solid var(--border-main);
-    color: var(--text-muted);
-    font-size: 10px;
+    color: var(--text-dim);
+    font-size: 11px;
     font-weight: 900;
     text-transform: uppercase;
     transition: all 0.2s;
@@ -1875,6 +1885,20 @@ button .copy-feedback-mini.active {
     display: flex;
     flex-direction: column;
     min-height: 0;
+}
+
+.prompt-header {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prompt-header span {
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--text-dim);
+    text-transform: uppercase;
 }
 
 .prompt-content {

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISION ARTS - Styling Preview</title>
+    <link rel="stylesheet" href="gallery-style.css">
+    <style>
+        body {
+            background: #0a0a0c;
+            padding: 40px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        .preview-section {
+            margin-bottom: 60px;
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 30px;
+            background: #121214;
+        }
+        .preview-title {
+            font-size: 14px;
+            font-weight: 900;
+            color: #1877F2;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .mock-pc-panel {
+            width: 350px;
+            padding: 24px;
+            background: transparent;
+        }
+        .mock-m-panel {
+            width: 375px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7));
+            padding: 28px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-section">
+        <div class="preview-title">PC Viewer Metadata & Tags</div>
+        <div class="mock-pc-panel">
+            <div class="viewer-meta-grid">
+                <div class="meta-item">
+                    <label>Category</label>
+                    <div id="viewer-category">
+                        <span class="clickable-tag">SCULPTURE</span>
+                        <span class="clickable-tag">ANCIENT</span>
+                        <span class="clickable-tag">DIGITAL</span>
+                    </div>
+                </div>
+                <div class="meta-item">
+                    <label>Resolution</label>
+                    <p id="viewer-res">3840 x 2160</p>
+                </div>
+                <div class="meta-item">
+                    <label>Asset ID</label>
+                    <p id="viewer-id">RV-20260323-9479</p>
+                </div>
+            </div>
+            <div class="prompt-panel" style="margin-top:20px;">
+                <div class="prompt-header">
+                    <span>PROMPT</span>
+                </div>
+                <div class="prompt-content">Cinematic 8k sculpture of an eternal entity...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview-section">
+        <div class="preview-title">Mobile Viewer Info Overlay</div>
+        <div class="mock-m-panel">
+            <div class="m-info-category">
+                <span class="clickable-tag">SCULPTURE</span>
+                <span class="clickable-tag">ANCIENT</span>
+            </div>
+            <div class="m-info-title">master_20260323_220135 [FPS 3x4]</div>
+            <div class="m-info-meta">
+                <div class="m-meta-item">
+                    <span class="m-meta-label">Resolution</span>
+                    <span>1536 x 2048</span>
+                </div>
+                <div class="m-meta-item">
+                    <span class="m-meta-label">Asset ID</span>
+                    <span>RV-20260323-8856</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
