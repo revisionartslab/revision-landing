@@ -1796,6 +1796,11 @@ button .copy-feedback-mini.active {
         line-clamp: 2 !important;
         margin-bottom: 4px !important;
     }
+
+    /* Hide descriptions on mobile as requested */
+    .m-info-desc, #m-viewer-desc {
+        display: none !important;
+    }
 }
 
 /* ── Move to Top Button ── */
