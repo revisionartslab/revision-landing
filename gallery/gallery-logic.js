@@ -7867,15 +7867,17 @@ function initViewerSlider() {
 function getDynamicCategories() {
     const tagsSet = new Set();
     STREAM_RECORDS.forEach(item => {
-        // Now prioritizing the 'tags' array from our new CloudFlow Stream Tag system
         if (item.tags && Array.isArray(item.tags)) {
             item.tags.forEach(tag => {
-                if (tag) tagsSet.add(tag);
+                // Normalize to lowercase for set uniqueness and consistent sorting
+                if (tag) tagsSet.add(tag.trim().toLowerCase());
             });
         }
     });
     
-    const sortedTags = Array.from(tagsSet).sort().map(tag => ({
+    const sortedTags = Array.from(tagsSet).sort((a, b) => 
+        a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+    ).map(tag => ({
         id: tag,
         label: tag.toUpperCase()
     }));
@@ -8914,12 +8916,14 @@ window.filterByTag = function(tag) {
         closeViewer();
     }
     
+    const tagId = String(tag).toLowerCase().trim();
+
     // Update mobile visual UI
     const mCatBtn = document.getElementById('m-category-btn');
     if (mCatBtn && window.innerWidth <= 1024) {
         // ── Sync header label text ──
         const textSpan = document.getElementById('m-active-category-text');
-        if (textSpan) textSpan.innerText = String(tag).toUpperCase();
+        if (textSpan) textSpan.innerText = tagId.toUpperCase();
 
         document.getElementById('m-filter-all')?.classList.remove('active');
         mCatBtn.classList.add('active');
@@ -8927,7 +8931,7 @@ window.filterByTag = function(tag) {
         document.getElementById('m-category-dropdown')?.classList.remove('open');
         
         document.querySelectorAll('.m-cat-item').forEach(i => {
-            if (i.innerText.trim().toLowerCase() === String(tag).toLowerCase()) {
+            if (i.innerText.trim().toLowerCase() === tagId) {
                 i.classList.add('active');
             } else {
                 i.classList.remove('active');
@@ -8936,7 +8940,7 @@ window.filterByTag = function(tag) {
     }
 
     // Trigger actual PC/Global underlying filter
-    const chip = document.querySelector(`.filter-chip[data-category="${tag}"]`);
+    const chip = document.querySelector(`.filter-chip[data-category="${tagId}"]`);
     if (chip) chip.click();
 };
 
@@ -9223,7 +9227,10 @@ function initFilters() {
                     shuffleArray(STREAM_RECORDS);
                     filteredItems = [...STREAM_RECORDS];
                 } else {
-                    const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
+                    // Case-insensitive matching since tagId is normalized to lowercase
+                    const matchedItems = STREAM_RECORDS.filter(i => 
+                        (i.tags && Array.isArray(i.tags) && i.tags.some(t => t.toLowerCase() === tagId))
+                    );
                     shuffleArray(matchedItems);
                     filteredItems = matchedItems;
                 }
@@ -9265,7 +9272,10 @@ window.handleMobileNav = function(tagId, btn) {
             shuffleArray(STREAM_RECORDS);
             filteredItems = [...STREAM_RECORDS];
         } else {
-            const matchedItems = STREAM_RECORDS.filter(i => (i.tags && Array.isArray(i.tags) && i.tags.includes(tagId)));
+            // Case-insensitive matching since tagId is normalized to lowercase
+            const matchedItems = STREAM_RECORDS.filter(i => 
+                (i.tags && Array.isArray(i.tags) && i.tags.some(t => t.toLowerCase() === tagId))
+            );
             shuffleArray(matchedItems);
             filteredItems = matchedItems;
         }
