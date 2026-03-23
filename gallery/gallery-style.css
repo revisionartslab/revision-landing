@@ -1781,7 +1781,7 @@ button .copy-feedback-mini.active {
 
     .m-discovery-card img {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
         object-fit: cover;
         opacity: 0;
