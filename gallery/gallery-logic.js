@@ -7039,6 +7039,8 @@ function renderNextDiscoveryBatch(dGrid) {
         
         // Add ResizeObserver for responsive masonry
         globalGridObserver.observe(card);
+        // Manual immediate measure to ensure initial position is correct
+        if (typeof resizeGridItem === 'function') resizeGridItem(card);
         
         const sentinel = document.getElementById('discovery-sentinel');
         if (sentinel) {
@@ -7297,6 +7299,10 @@ window.openViewer = async function (index) {
 
         // Populate discovery grid below the image
         initDiscoveryGrid();
+        // Force a layout re-calc after the viewer opens and layout settles
+        setTimeout(() => {
+            window.dispatchEvent(new Event('resize'));
+        }, 150);
 
         // Mobile: DON'T lock body scroll — viewer itself scrolls
         document.body.style.overflow = '';
