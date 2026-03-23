@@ -7010,6 +7010,9 @@ function renderNextDiscoveryBatch(dGrid) {
             }
         };
 
+        const media = document.createElement('div');
+        media.className = 'card-media';
+
         // [STABLE ORGANIC MASONRY SYSTEM - SYNCED]
         // Must match the main gallery logic exactly to prevent mobile layout glitches.
         const PRESET_RATIOS = ['3 / 4', '4 / 5', '1 / 1', '2 / 3', '5 / 7', '4 / 3'];
@@ -8098,9 +8101,13 @@ window.resetGalleryState = function() {
         allChip.click();
     }
     
-    // 3. Smoothly return to the top of the gallery
     if (typeof window.scrollToTop === 'function') {
         window.scrollToTop();
     }
 };
+
+// Initial Load
+if (typeof renderAll === 'function') {
+    renderAll();
+}
 
