@@ -604,6 +604,8 @@ header {
     background: #0a0a0a;
     cursor: pointer;
     overflow: hidden;
+    /* [STABILITY] Prevent 1px collapse in masonry auto-rows: 1px grid */
+    min-height: 50px;
 }
 
 .card-media:not(.loaded) {
@@ -1764,8 +1766,11 @@ button .copy-feedback-mini.active {
 
     .m-discovery-card {
         width: 100%;
-        background: var(--bg-main);
+        background: transparent;
+        border: none;
         overflow: hidden;
+        /* Ensure bottom gap matches main gallery masonry */
+        padding-bottom: var(--rv-gap);
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
     }

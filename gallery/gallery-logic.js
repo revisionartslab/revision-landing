@@ -6549,9 +6549,30 @@ window.updateDensity = function (cols) {
 window.resizeGridItem = function (item) {
     const media = item.querySelector('.card-media');
     if (!media) return;
-    const contentHeight = media.getBoundingClientRect().height;
+    
+    // [ROBUST MASONRY CALC] 
+    // On mobile, if an element is just added, getBoundingClientRect().height might 
+    // return 0 or 1 before the grid layout settles.
+    let contentHeight = media.getBoundingClientRect().height;
+    
+    // Fallback: If height is 0/1 but we have an aspect-ratio, calculate height from width
+    if (contentHeight <= 1) {
+        const width = item.getBoundingClientRect().width;
+        const ratioStr = media.style.aspectRatio || media.dataset.defaultRatio || '3 / 4';
+        const parts = ratioStr.split('/').map(p => parseFloat(p.trim()));
+        if (parts.length === 2 && parts[1] !== 0 && width > 0) {
+            const ratio = parts[0] / parts[1];
+            contentHeight = width / ratio;
+        }
+    }
+
     const pb = parseFloat(window.getComputedStyle(item).paddingBottom) || 0;
-    item.style.gridRowEnd = `span ${Math.ceil(contentHeight + pb)}`;
+    const finalSpan = Math.ceil(contentHeight + pb);
+    
+    // Only update if changed to avoid ResizeObserver feedback loops
+    if (item.style.gridRowEnd !== `span ${finalSpan}`) {
+        item.style.gridRowEnd = `span ${finalSpan}`;
+    }
 };
 
 window.addEventListener('resize', () => {
@@ -6989,12 +7010,14 @@ function renderNextDiscoveryBatch(dGrid) {
             }
         };
 
-        const media = document.createElement('div');
-        media.className = 'card-media';
+        // [STABLE ORGANIC MASONRY SYSTEM - SYNCED]
+        // Must match the main gallery logic exactly to prevent mobile layout glitches.
+        const PRESET_RATIOS = ['3 / 4', '4 / 5', '1 / 1', '2 / 3', '5 / 7', '4 / 3'];
+        const hash = (item.id || '').split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+        const assignedRatio = PRESET_RATIOS[hash % PRESET_RATIOS.length];
         
-        if (item.width && item.height) {
-            media.style.aspectRatio = `${item.width} / ${item.height}`;
-        }
+        media.style.aspectRatio = assignedRatio;
+        media.dataset.defaultRatio = assignedRatio;
         
         const img = document.createElement('img');
         img.src = item.url;
