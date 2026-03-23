@@ -7561,6 +7561,10 @@ window.filterByTag = function(tag) {
     // Update mobile visual UI
     const mCatBtn = document.getElementById('m-category-btn');
     if (mCatBtn && window.innerWidth <= 1024) {
+        // ── Sync header label text ──
+        const textSpan = document.getElementById('m-active-category-text');
+        if (textSpan) textSpan.innerText = String(tag).toUpperCase();
+
         document.getElementById('m-filter-all')?.classList.remove('active');
         mCatBtn.classList.add('active');
         mCatBtn.classList.remove('open');
