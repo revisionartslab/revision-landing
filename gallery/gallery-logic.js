@@ -6494,7 +6494,7 @@ function initViewerSlider() {
         sliderObserver.observe(slide);
     });
 }
-initViewerSlider();
+// Removed redundant initViewerSlider() call here.
 
 
 
@@ -7328,13 +7328,15 @@ window.openViewer = async function (index) {
 };
 
 
-// (loadSlideImage kept for PC metadata resolution update, mobile uses mcLoadSlot)
-function loadSlideImage(index) {
-    preloadPromptText(index);
+// Preloader for cinematic viewer items
+function preloadAdjacentImages(index) {
+    if (index < 0 || index >= filteredItems.length) return;
+    const target = filteredItems[index];
+    if (target && target.url) {
+        const p = new Image();
+        p.src = target.url;
+    }
 }
-
-// triggerMobileGhostUI is no longer needed (controls are static)
-function triggerMobileGhostUI() {}
 
 function updateViewerMetadata(index) {
     const item = filteredItems[index];
@@ -7462,30 +7464,22 @@ function updateViewerMetadata(index) {
         if (pcRes) pcRes.innerText = resStr;
         if (mRes) mRes.innerText = resStr;
     } else if (img) {
-        img.onload = null; // Clean up any old listeners
-        img.onload = () => {
+        // Use addEventListener to avoid overwriting the fade-in logic in mcLoadSlot
+        const updateRes = () => {
             const resStr = `${img.naturalWidth} x ${img.naturalHeight}`;
             const pcRes = document.getElementById('viewer-res');
             const mRes = document.getElementById('m-viewer-res');
             if (pcRes) pcRes.innerText = resStr;
             if (mRes) mRes.innerText = resStr;
-            img.style.opacity = '1';
         };
+        img.addEventListener('load', updateRes, { once: true });
     }
 
     // Lazy load next/prev in background
-    function loadSlideImage(idx) {
-        if (idx < 0 || idx >= filteredItems.length) return;
-        const targetDesc = filteredItems[idx];
-        if (targetDesc && targetDesc.url) {
-            const preloadImg = new Image();
-            preloadImg.src = targetDesc.url;
-        }
-    }
-    loadSlideImage(index + 1);
-    loadSlideImage(index - 1);
-    loadSlideImage(index + 2);
-    loadSlideImage(index - 2);
+    preloadAdjacentImages(index + 1);
+    preloadAdjacentImages(index - 1);
+    preloadAdjacentImages(index + 2);
+    preloadAdjacentImages(index - 2);
 
     // Also preload first few discovery items if in mobile (Preload from SHUFFLED pool)
     if (window.innerWidth <= 1024) {
@@ -7928,6 +7922,7 @@ console.log('Gallery Initializing DYNAMICALLY...');
 initFilters();
 renderAll();
 initViewerSlider(); 
+// Fixed: Removed duplicate init calls at the end.
 
 window.scrollToTop = function() {
     if (mainContent) {
@@ -8106,8 +8101,10 @@ window.resetGalleryState = function() {
     }
 };
 
-// Initial Load
-if (typeof renderAll === 'function') {
-    renderAll();
+// Final load check (redundant but safe fallback)
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => { if (itemsRendered === 0) renderAll(); });
+} else {
+    if (itemsRendered === 0) renderAll();
 }
 
