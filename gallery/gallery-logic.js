@@ -7042,8 +7042,8 @@ function renderNextDiscoveryBatch(dGrid) {
         
         // Add ResizeObserver for responsive masonry
         globalGridObserver.observe(card);
-        // Manual immediate measure to ensure initial position is correct
-        if (typeof resizeGridItem === 'function') resizeGridItem(card);
+        // Layout is driven by aspect-ratio CSS + ResizeObserver ONLY.
+        // No manual resizeGridItem call — it causes double-measure position stealing (same as main gallery).
     });
 
     // Move sentinel to end (triggers single bulk re-layout instead of 20 times)
