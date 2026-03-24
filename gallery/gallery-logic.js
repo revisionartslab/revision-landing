@@ -8609,7 +8609,13 @@ if (mCanvas) {
         const velocityDy = Math.abs(totalDy) / elapsed;
 
         if (MC.axis === 'x') {
-            if (mcInfoOpen) return; // Disable horizontal navigation when discovery grid is open
+            if (mcInfoOpen) {
+                // Feature: A strong Left-to-Right swipe closes the viewer (Native feel)
+                if (totalDx > 40 && velocityDx > 0.15) {
+                    closeViewer();
+                }
+                return;
+            }
             // Horizontal swipe → navigate images
             const threshold = MC_W() * 0.22;
             if (totalDx < -threshold || (velocityDx > 0.35 && totalDx < -20)) {
