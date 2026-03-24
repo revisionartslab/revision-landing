@@ -138,6 +138,8 @@ body {
     font-family: var(--font-primary);
     font-size: var(--rv-font-body);
     line-height: 1.6;
+    touch-action: pan-y;
+    overscroll-behavior-x: none;
     overflow: hidden;
     /* Lock the body to prevent double scrollbars */
     height: 100vh;
