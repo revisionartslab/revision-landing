@@ -8575,6 +8575,7 @@ if (mCanvas) {
             img.style.transition = 'none';
             img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
         } else if (MC.axis === 'x') {
+            if (mcInfoOpen) return; // Disable horizontal swiping when discovery grid is open
             // HORIZONTAL SWIPE: JS takes over, block native scroll
             e.preventDefault();
             MC.px += dx;
@@ -8605,6 +8606,7 @@ if (mCanvas) {
         const velocityDy = Math.abs(totalDy) / elapsed;
 
         if (MC.axis === 'x') {
+            if (mcInfoOpen) return; // Disable horizontal navigation when discovery grid is open
             // Horizontal swipe → navigate images
             const threshold = MC_W() * 0.22;
             if (totalDx < -threshold || (velocityDx > 0.35 && totalDx < -20)) {
