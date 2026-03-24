@@ -378,20 +378,6 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-24T05:08:44Z"
     },
     {
-        "id": "master 20260324 134601 [FPS 9x16]",
-        "tags": [
-            "B&W",
-            "PLANE",
-            "portrait"
-        ],
-        "title": "master 20260324 134601 [FPS 9x16]",
-        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774328921/revision-arts/master%2020260324%20134601%20%5BFPS%209x16%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774328788/revision-arts/prompt_20260324_134601_%5BFPS_9x16%5D",
-        "assetId": "7afac86b3c853a3ab805fc1c2431a0d4",
-        "uploadedAt": "2026-03-24T05:08:41Z"
-    },
-    {
         "id": "master 20260324 134915 [FPS 9x16]",
         "tags": [
             "B&W",
