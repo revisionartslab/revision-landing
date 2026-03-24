@@ -9100,12 +9100,14 @@ viewer.addEventListener('dblclick', (e) => {
         const cx = e.touches[0].clientX;
         const cy = e.touches[0].clientY;
 
-        // Determine axis on first significant movement
+        // Determine axis — require a CLEAR, deliberate horizontal movement
+        // (min 15px total AND horizontal must be at least 2× the vertical drift)
+        // This prevents the guard from triggering on normal taps with minor finger drift.
         if (_axis === null) {
             const adx = Math.abs(cx - _sx);
             const ady = Math.abs(cy - _sy);
-            if (adx < 5 && ady < 5) return;
-            _axis = adx > ady ? 'x' : 'y';
+            if (adx < 15 && ady < 15) return; // not enough movement yet
+            _axis = (adx > ady * 2) ? 'x' : 'y';
         }
 
         if (_axis !== 'x') return; // vertical scroll — do not interfere
