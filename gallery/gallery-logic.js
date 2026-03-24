@@ -9544,3 +9544,41 @@ if (document.readyState === 'loading') {
     if (itemsRendered === 0) renderAll();
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// [HISTORY API GUARD]
+// iOS Safari intercepts left-edge swipes at the OS/WebKit level before JS fires,
+// so e.preventDefault() cannot stop the native "back" gesture animation.
+// This guard pads the browser history so the back swipe hits a dummy entry
+// instead of navigating away from the gallery entirely.
+//
+// Stack on load:  [prev site] → [gallery•guard] → [gallery•active]
+// On back swipe:  JS lands on [gallery•guard], popstate fires, we re-push
+//                 [gallery•active] instantly → user never leaves the page.
+// ─────────────────────────────────────────────────────────────────────────────
+(function initHistoryGuard() {
+    // Only apply on mobile — desktop has no edge-swipe back gesture issue
+    if (window.innerWidth > 1024) return;
+
+    // Seed the guard state — mark it so we can identify it in popstate
+    const GUARD_KEY = 'rvGalleryGuard';
+
+    // Push the dummy entry if we haven't already (handles page refreshes)
+    if (!history.state || !history.state[GUARD_KEY]) {
+        // Replace current entry with a "guard" marker so we can detect it
+        history.replaceState({ [GUARD_KEY]: true, real: false }, '');
+        // Push the "real" active state on top
+        history.pushState({ [GUARD_KEY]: true, real: true }, '');
+    }
+
+    window.addEventListener('popstate', (e) => {
+        // User hit back (swipe or button) — re-push to trap them on the page
+        history.pushState({ [GUARD_KEY]: true, real: true }, '');
+
+        // If the viewer was open, treat the back gesture as a close action
+        if (typeof closeViewer === 'function' && viewer.classList.contains('active')) {
+            closeViewer();
+        }
+    });
+})();
+
+
