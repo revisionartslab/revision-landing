@@ -384,9 +384,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 180210 [FPS 16x9]",
         "tags": [
-            "Graphics",
-            "layout",
-            "plane"
+            "B&W",
+            "editorial",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 180210 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362847/revision-arts/master%2020260323%20180210%20%5BFPS%2016x9%5D.png",
@@ -650,9 +651,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 180655 [FPS 16x9]",
         "tags": [
-            "Graphics",
-            "layout",
-            "plane"
+            "B&W",
+            "editorial",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 180655 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362861/revision-arts/master%2020260323%20180655%20%5BFPS%2016x9%5D.png",
@@ -1140,9 +1142,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 190026 [FPS 4x5]",
         "tags": [
-            "Graphics",
-            "layout",
-            "plane"
+            "B&W",
+            "editorial",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 190026 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362907/revision-arts/master%2020260323%20190026%20%5BFPS%204x5%5D.png",
@@ -1154,9 +1157,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 190146 [PFS 4x5]",
         "tags": [
-            "Graphics",
-            "layout",
-            "plane"
+            "B&W",
+            "editorial",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 190146 [PFS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362904/revision-arts/master%2020260323%20190146%20%5BPFS%204x5%5D.png",
@@ -4541,7 +4545,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215247 [FPS 9x16]",
         "tags": [
-            "OBJECT"
+            "B&W",
+            "editorial",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 215247 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359630/revision-arts/master%2020260323%20215247%20%5BFPS%209x16%5D.png",
