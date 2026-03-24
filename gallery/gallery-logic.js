@@ -8941,7 +8941,16 @@ window.filterByTag = function(tag) {
 
     // Trigger actual PC/Global underlying filter
     const chip = document.querySelector(`.filter-chip[data-category="${tagId}"]`);
-    if (chip) chip.click();
+    if (chip) {
+        chip.click();
+    } else {
+        if (typeof mobileFilterAll === 'function' && window.innerWidth <= 1024) {
+            mobileFilterAll();
+        } else {
+            const allChip = document.querySelector('.filter-chip[data-category="all"]');
+            if (allChip) allChip.click();
+        }
+    }
 };
 
 window.navViewer = function (step) {
@@ -9438,19 +9447,7 @@ function applyEggUIState(isActive) {
     }
 }
 
-// Global Filter Helper for clicking tags within viewer
-window.filterByTag = function(tag) {
-    closeViewer();
-    const chip = document.querySelector(`.filter-chip[data-category="${tag}"]`);
-    if (chip) {
-        chip.click();
-    } else {
-        // If tag is not in primary list, go to 'all' or handle specifically
-        // Here we just try to find it or fallback
-        const allChip = document.querySelector('.filter-chip[data-category="all"]');
-        if (allChip) allChip.click();
-    }
-};
+
 
 /**
  * [SOFT RESET SYSTEM]
