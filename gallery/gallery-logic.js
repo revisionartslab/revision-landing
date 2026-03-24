@@ -9077,53 +9077,8 @@ viewer.addEventListener('dblclick', (e) => {
 
 // The click listener is removed; Ghost UI is now perfectly handled by touchstart and click bubbling differently.
 
-// ─────────────────────────────────────────────────────────────────────────────
-// [GLOBAL SWIPE GUARD]
-// Blocks ALL horizontal native browser gestures (back/forward, edge overscroll)
-// across the entire app. The only exception is the image carousel (#mobile-canvas)
-// when the discovery grid is NOT open — it keeps its own swipe-to-navigate logic.
-// ─────────────────────────────────────────────────────────────────────────────
-(function() {
-    let _sx = 0, _sy = 0, _axis = null, _tracking = false;
 
-    document.addEventListener('touchstart', (e) => {
-        if (e.touches.length !== 1) { _tracking = false; return; }
-        _sx = e.touches[0].clientX;
-        _sy = e.touches[0].clientY;
-        _axis = null;
-        _tracking = true;
-    }, { passive: true });
 
-    document.addEventListener('touchmove', (e) => {
-        if (!_tracking || e.touches.length !== 1) return;
-
-        const cx = e.touches[0].clientX;
-        const cy = e.touches[0].clientY;
-
-        // Determine axis — require a CLEAR, deliberate horizontal movement
-        // (min 15px total AND horizontal must be at least 2× the vertical drift)
-        // This prevents the guard from triggering on normal taps with minor finger drift.
-        if (_axis === null) {
-            const adx = Math.abs(cx - _sx);
-            const ady = Math.abs(cy - _sy);
-            if (adx < 15 && ady < 15) return; // not enough movement yet
-            _axis = (adx > ady * 2) ? 'x' : 'y';
-        }
-
-        if (_axis !== 'x') return; // vertical scroll — do not interfere
-
-        // Exception: image carousel handles its own horizontal logic
-        const onCanvas = e.target.closest('#mobile-canvas');
-        const isViewerActive = viewer.classList.contains('active');
-        if (onCanvas && isViewerActive && !mcInfoOpen) return;
-
-        // Block ALL horizontal native browser behaviour (back/forward/overscroll)
-        e.preventDefault();
-    }, { passive: false });
-
-    // touchend: nothing extra — blocking in touchmove is sufficient.
-    document.addEventListener('touchend', () => { _tracking = false; }, { passive: true });
-})();
 
 
 
