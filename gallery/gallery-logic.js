@@ -247,6 +247,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 131516 [FPS 4x5]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -351,6 +352,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134501 [FPS 9x16]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -364,6 +366,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134528 [FPS 4x5]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -377,6 +380,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134601 [FPS 9x16]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -390,6 +394,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134915 [FPS 9x16]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -403,6 +408,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135243 [FPS 3x4]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -416,6 +422,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135331 [FPS 4x5]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -429,6 +436,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135556 [FPS 3x4]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -442,6 +450,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135848 [FPS 4x5]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -455,6 +464,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135937 [FPS 2x3]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -468,6 +478,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140039 [FPS 9x16]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
@@ -481,6 +492,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140108 [FPS 2x3]",
         "tags": [
+            "B&W",
             "PLANE",
             "portrait"
         ],
