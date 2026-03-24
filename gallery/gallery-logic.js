@@ -1138,6 +1138,34 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-24T14:27:35Z"
     },
     {
+        "id": "master 20260323 190026 [FPS 4x5]",
+        "tags": [
+            "Graphics",
+            "layout",
+            "plane"
+        ],
+        "title": "master 20260323 190026 [FPS 4x5]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362907/revision-arts/master%2020260323%20190026%20%5BFPS%204x5%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774362093/revision-arts/prompt_20260323_190026_%5BFPS_4x5%5D",
+        "assetId": "37ef22400603769c2c3fa0cc6f1d1f7b",
+        "uploadedAt": "2026-03-24T14:35:07Z"
+    },
+    {
+        "id": "master 20260323 190146 [PFS 4x5]",
+        "tags": [
+            "Graphics",
+            "layout",
+            "plane"
+        ],
+        "title": "master 20260323 190146 [PFS 4x5]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774362904/revision-arts/master%2020260323%20190146%20%5BPFS%204x5%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774362092/revision-arts/prompt_20260323_190146_%5BPFS_4x5%5D",
+        "assetId": "2aff2fabc96bf83944dadd9b81ea2a08",
+        "uploadedAt": "2026-03-24T14:35:04Z"
+    },
+    {
         "id": "master 20260323 190739 [FPS 4x5]",
         "tags": [
             "Graphics",
