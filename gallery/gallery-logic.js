@@ -74,7 +74,47 @@ function isSafePromptUrl(url) {
     }
 }
 
-const STREAM_RECORDS = [];
+const STREAM_RECORDS = [
+    {
+        "id": "master 20260324 173214 [FPS 4x5]",
+        "tags": [
+            "PLANE",
+            "portrait"
+        ],
+        "title": "master 20260324 173214 [FPS 4x5]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774341759/revision-arts/master%2020260324%20173214%20%5BFPS%204x5%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774341690/revision-arts/prompt_20260324_173214_%5BFPS_4x5%5D",
+        "assetId": "621cd8ae85e46f6de4cbae03205fbdaf",
+        "uploadedAt": "2026-03-24T08:42:39Z"
+    },
+    {
+        "id": "master 20260324 173303 [FPS 4x5]",
+        "tags": [
+            "PLANE",
+            "portrait"
+        ],
+        "title": "master 20260324 173303 [FPS 4x5]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774341756/revision-arts/master%2020260324%20173303%20%5BFPS%204x5%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774341692/revision-arts/prompt_20260324_173303_%5BFPS_4x5%5D",
+        "assetId": "0114e68d785dafe838683f2402b70208",
+        "uploadedAt": "2026-03-24T08:42:36Z"
+    },
+    {
+        "id": "master 20260324 173423 [FPS 3x4]",
+        "tags": [
+            "PLANE",
+            "portrait"
+        ],
+        "title": "master 20260324 173423 [FPS 3x4]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774341752/revision-arts/master%2020260324%20173423%20%5BFPS%203x4%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774341692/revision-arts/prompt_20260324_173423_%5BFPS_3x4%5D",
+        "assetId": "5c4b6665e1ebca0f9241c8184067294b",
+        "uploadedAt": "2026-03-24T08:42:32Z"
+    }
+];
 
 // ── AUTO-SHUFFLE ON INITIAL LOAD ───────────────────────────────────────────
 function shuffleArray(array) {
