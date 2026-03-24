@@ -174,6 +174,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193224 [FPS 3x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193224 [FPS 3x4]",
@@ -234,6 +235,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193326 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193326 [FPS 1x1]",
@@ -258,6 +260,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193350 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193350 [FPS 1x1]",
@@ -318,6 +321,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193604 [FPS 4x5]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193604 [FPS 4x5]",
@@ -390,6 +394,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193815 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193815 [FPS 1x1]",
@@ -450,6 +455,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193936 [FPS 3x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 193936 [FPS 3x4]",
@@ -486,6 +492,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194034 [FPS 4x5]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 194034 [FPS 4x5]",
@@ -534,6 +541,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194131 [FPS 4x5]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 194131 [FPS 4x5]",
@@ -546,6 +554,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194159 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 194159 [FPS 1x1]",
@@ -558,6 +567,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194205 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 194205 [FPS 2x3]",
@@ -918,6 +928,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195538 [FPS 5x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 195538 [FPS 5x4]",
@@ -978,6 +989,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195744 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 195744 [FPS 2x3]",
@@ -1014,6 +1026,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195859 [FPS 3x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 195859 [FPS 3x4]",
@@ -1050,6 +1063,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195940 [FPS 9x16]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 195940 [FPS 9x16]",
@@ -1158,6 +1172,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 200359 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 200359 [FPS 2x3]",
@@ -1362,6 +1377,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 205950 [FPS 4x5]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 205950 [FPS 4x5]",
@@ -1578,6 +1594,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210615 [FPS 5x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 210615 [FPS 5x4]",
@@ -1614,6 +1631,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210736 [FPS 5x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 210736 [FPS 5x4]",
@@ -1662,6 +1680,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210953 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 210953 [FPS 2x3]",
@@ -1686,6 +1705,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211044 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 211044 [FPS 2x3]",
@@ -1698,6 +1718,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211051 [FPS 3x4]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 211051 [FPS 3x4]",
@@ -1818,6 +1839,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211453 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 211453 [FPS 2x3]",
@@ -2310,6 +2332,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 213304 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 213304 [FPS 2x3]",
@@ -2526,6 +2549,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 214039 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 214039 [FPS 2x3]",
@@ -2574,6 +2598,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 214320 [FPS 2x3]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 214320 [FPS 2x3]",
@@ -2766,6 +2791,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215247 [FPS 9x16]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 215247 [FPS 9x16]",
@@ -2814,6 +2840,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215629 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 215629 [FPS 1x1]",
@@ -2934,6 +2961,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 220040 [FPS 4x5]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 220040 [FPS 4x5]",
@@ -2946,6 +2974,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 220155 [FPS 1x1]",
         "tags": [
+            "B&W",
             "OBJECT"
         ],
         "title": "master 20260323 220155 [FPS 1x1]",
