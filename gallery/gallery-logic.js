@@ -8575,7 +8575,10 @@ if (mCanvas) {
             img.style.transition = 'none';
             img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
         } else if (MC.axis === 'x') {
-            if (mcInfoOpen) return; // Disable horizontal swiping when discovery grid is open
+            if (mcInfoOpen) {
+                e.preventDefault(); // Block native browser edge swipe
+                return; 
+            }
             // HORIZONTAL SWIPE: JS takes over, block native scroll
             e.preventDefault();
             MC.px += dx;
