@@ -9079,11 +9079,9 @@ viewer.addEventListener('dblclick', (e) => {
 
 // ─────────────────────────────────────────────────────────────────────────────
 // [GLOBAL SWIPE GUARD]
-// Intercepts horizontal swipes at the document level to:
-//   L→R: Close the viewer (if open), feel like a native back gesture.
-//   R→L: Fully blocked (e.preventDefault) — no browser back gesture.
-// The mCanvas (image carousel) is excluded when the discovery grid is NOT open,
-// because it already has its own swipe-to-navigate logic.
+// Blocks ALL horizontal native browser gestures (back/forward, edge overscroll)
+// across the entire app. The only exception is the image carousel (#mobile-canvas)
+// when the discovery grid is NOT open — it keeps its own swipe-to-navigate logic.
 // ─────────────────────────────────────────────────────────────────────────────
 (function() {
     let _sx = 0, _sy = 0, _axis = null, _tracking = false;
@@ -9102,44 +9100,30 @@ viewer.addEventListener('dblclick', (e) => {
         const cx = e.touches[0].clientX;
         const cy = e.touches[0].clientY;
 
-        // Determine axis on the first significant movement
+        // Determine axis on first significant movement
         if (_axis === null) {
             const adx = Math.abs(cx - _sx);
             const ady = Math.abs(cy - _sy);
-            if (adx < 5 && ady < 5) return; // not enough movement yet
+            if (adx < 5 && ady < 5) return;
             _axis = adx > ady ? 'x' : 'y';
         }
 
-        if (_axis !== 'x') return; // vertical scroll — leave alone
+        if (_axis !== 'x') return; // vertical scroll — do not interfere
 
-        // If the touch is on the image canvas AND the discovery grid is NOT open,
-        // let the carousel's own handler do its thing.
+        // Exception: image carousel handles its own horizontal logic
         const onCanvas = e.target.closest('#mobile-canvas');
         const isViewerActive = viewer.classList.contains('active');
         if (onCanvas && isViewerActive && !mcInfoOpen) return;
 
-        // Block ALL horizontal native browser behaviour (back/forward gestures)
+        // Block ALL horizontal native browser behaviour (back/forward/overscroll)
         e.preventDefault();
     }, { passive: false });
 
-    document.addEventListener('touchend', (e) => {
-        if (!_tracking) return;
-        _tracking = false;
-        if (_axis !== 'x') return;
-
-        const totalDx = e.changedTouches[0].clientX - _sx;
-        const totalDy = e.changedTouches[0].clientY - _sy;
-        if (Math.abs(totalDy) > Math.abs(totalDx)) return; // mostly vertical — ignore
-
-        const isViewerActive = viewer.classList.contains('active');
-
-        // L→R swipe (positive totalDx) with enough force → close viewer
-        if (totalDx > 50 && isViewerActive) {
-            closeViewer();
-        }
-        // R→L swipe is already silenced in touchmove — nothing more to do here.
-    }, { passive: true });
+    // touchend: nothing extra — blocking in touchmove is sufficient.
+    document.addEventListener('touchend', () => { _tracking = false; }, { passive: true });
 })();
+
+
 
 
 
