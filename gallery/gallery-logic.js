@@ -7188,6 +7188,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153342 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153342 [FPS 3x2]",
@@ -7201,6 +7202,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153401 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153401 [FPS 1x1]",
@@ -7214,6 +7216,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153423 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153423 [FPS 1x1]",
@@ -7240,6 +7243,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153449 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153449 [FPS 1x1]",
@@ -7305,6 +7309,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153531 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153531 [FPS 1x1]",
@@ -7318,6 +7323,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153541 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153541 [FPS 1x1]",
@@ -7331,6 +7337,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153541 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153541 [FPS 3x2]",
@@ -7357,6 +7364,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153557 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153557 [FPS 1x1]",
@@ -7370,6 +7378,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153604 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153604 [FPS 3x2]",
@@ -7383,6 +7392,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153611 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153611 [FPS 4x3]",
@@ -7435,6 +7445,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153638 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153638 [FPS 4x3]",
@@ -7461,6 +7472,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153644 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153644 [FPS 1x1]",
@@ -7474,6 +7486,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153655 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153655 [FPS 1x1]",
@@ -7500,6 +7513,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153707 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153707 [FPS 4x3]",
@@ -7513,6 +7527,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153710 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153710 [FPS 3x2]",
@@ -7526,6 +7541,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153728 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153728 [FPS 1x1]",
@@ -7552,6 +7568,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153733 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153733 [FPS 1x1]",
@@ -7708,6 +7725,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153942 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 153942 [FPS 1x1]",
@@ -7721,6 +7739,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154005 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154005 [FPS 1x1]",
@@ -7734,6 +7753,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154014 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154014 [FPS 1x1]",
@@ -7747,6 +7767,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154017 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154017 [FPS 3x2]",
@@ -7760,6 +7781,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154029 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154029 [FPS 1x1]",
@@ -7773,6 +7795,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154037 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154037 [FPS 1x1]",
@@ -7786,6 +7809,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154038 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154038 [FPS 4x3]",
@@ -7799,6 +7823,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154040 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154040 [FPS 1x1]",
@@ -7822,22 +7847,10 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-25T02:22:13Z"
     },
     {
-        "id": "master 20260323 154102 [FPS 4x5]",
-        "tags": [
-            "GRAPHICS",
-            "plane"
-        ],
-        "title": "master 20260323 154102 [FPS 4x5]",
-        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774405330/revision-arts/master%2020260323%20154102%20%5BFPS%204x5%5D.png",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774402227/revision-arts/prompt_20260323_154102_%5BFPS_4x5%5D",
-        "assetId": "50a69ab2056aade6c732599199e09f31",
-        "uploadedAt": "2026-03-25T02:22:10Z"
-    },
-    {
         "id": "master 20260323 154102 [FPS 4x5] (1)",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154102 [FPS 4x5] (1)",
@@ -7851,6 +7864,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154105 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154105 [FPS 4x5]",
@@ -7864,6 +7878,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154123 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154123 [FPS 4x5]",
@@ -7877,6 +7892,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154127 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154127 [FPS 1x1]",
@@ -7890,6 +7906,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154130 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154130 [FPS 1x1]",
@@ -7903,6 +7920,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154134 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154134 [FPS 4x5]",
@@ -7929,6 +7947,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154152 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154152 [FPS 4x5]",
@@ -7942,6 +7961,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154158 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154158 [FPS 4x5]",
@@ -8020,6 +8040,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154241 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154241 [FPS 1x1]",
@@ -8059,6 +8080,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154256 [FPS 5x4]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154256 [FPS 5x4]",
@@ -8085,6 +8107,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154308 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154308 [FPS 4x3]",
@@ -8098,6 +8121,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154321 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154321 [FPS 1x1]",
@@ -8150,6 +8174,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154350 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154350 [FPS 3x2]",
@@ -8189,6 +8214,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154402 [FPS 16x9]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154402 [FPS 16x9]",
@@ -8202,6 +8228,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154416 [FPS 3x4]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154416 [FPS 3x4]",
@@ -8241,6 +8268,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154443 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154443 [FPS 1x1]",
@@ -8332,6 +8360,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154531 [FPS 9x16]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154531 [FPS 9x16]",
@@ -8358,6 +8387,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154539 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154539 [FPS 1x1]",
@@ -8371,6 +8401,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154544 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154544 [FPS 1x1]",
@@ -8384,6 +8415,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154553 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154553 [FPS 1x1]",
@@ -8397,6 +8429,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154604 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154604 [FPS 1x1]",
@@ -8410,6 +8443,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154608 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154608 [FPS 4x3]",
@@ -8436,6 +8470,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154628 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154628 [FPS 4x5]",
@@ -8462,6 +8497,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154643 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154643 [FPS 4x5]",
@@ -8475,6 +8511,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154654 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154654 [FPS 1x1]",
@@ -8488,6 +8525,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154703 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154703 [FPS 1x1]",
@@ -8501,6 +8539,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154708 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154708 [FPS 3x2]",
@@ -8540,6 +8579,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154734 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154734 [FPS 1x1]",
@@ -8605,6 +8645,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154829 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154829 [FPS 1x1]",
@@ -8618,6 +8659,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154830 [FPS 2x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154830 [FPS 2x3]",
@@ -8644,6 +8686,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154852 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154852 [FPS 1x1]",
@@ -8657,6 +8700,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154857 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154857 [FPS 3x2]",
@@ -8722,6 +8766,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 154943 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 154943 [FPS 1x1]",
@@ -8748,6 +8793,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155003 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155003 [FPS 1x1]",
@@ -8761,6 +8807,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155006 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155006 [FPS 4x3]",
@@ -8774,6 +8821,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155007 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155007 [FPS 1x1]",
@@ -8787,6 +8835,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155021 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155021 [FPS 1x1]",
@@ -8800,6 +8849,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155030 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155030 [FPS 4x3]",
@@ -8826,6 +8876,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155043 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155043 [FPS 4x5]",
@@ -8839,6 +8890,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155054 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155054 [FPS 1x1]",
@@ -8852,6 +8904,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155101 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155101 [FPS 4x5]",
@@ -8878,6 +8931,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155118 [FPS 3x2]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155118 [FPS 3x2]",
@@ -8891,6 +8945,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155120 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155120 [FPS 1x1]",
@@ -8904,6 +8959,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155123 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155123 [FPS 1x1]",
@@ -8917,6 +8973,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155141 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155141 [FPS 4x5]",
@@ -8930,6 +8987,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155145 [FPS 4x3]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155145 [FPS 4x3]",
@@ -8940,22 +8998,10 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-25T01:38:16Z"
     },
     {
-        "id": "master 20260323 155154 [FPS 4x5]",
-        "tags": [
-            "GRAPHICS",
-            "plane"
-        ],
-        "title": "master 20260323 155154 [FPS 4x5]",
-        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774402656/revision-arts/master%2020260323%20155154%20%5BFPS%204x5%5D.png",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774402203/revision-arts/prompt_20260323_155154_%5BFPS_4x5%5D",
-        "assetId": "0639df8e6d1c015958b5e897d824d692",
-        "uploadedAt": "2026-03-25T01:37:36Z"
-    },
-    {
         "id": "master 20260323 155200 [FPS 3x4]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155200 [FPS 3x4]",
@@ -8995,6 +9041,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155219 [FPS 16x9]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155219 [FPS 16x9]",
@@ -9008,6 +9055,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155236 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155236 [FPS 4x5]",
@@ -9021,6 +9069,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155255 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155255 [FPS 4x5]",
@@ -9034,6 +9083,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155312 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155312 [FPS 4x5]",
@@ -9047,6 +9097,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155314 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155314 [FPS 1x1]",
@@ -9060,6 +9111,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155333 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155333 [FPS 1x1]",
@@ -9073,6 +9125,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155338 [FPS 4x5]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155338 [FPS 4x5]",
@@ -9086,6 +9139,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155353 [FPS 1x1]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155353 [FPS 1x1]",
@@ -9099,6 +9153,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 155403 [FPS 9x16]",
         "tags": [
             "GRAPHICS",
+            "OBJECT",
             "plane"
         ],
         "title": "master 20260323 155403 [FPS 9x16]",
