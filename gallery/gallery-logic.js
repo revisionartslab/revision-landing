@@ -26547,6 +26547,7 @@ const STREAM_RECORDS = [
         "id": "master 20260325 192723 [FPS 1x1]",
         "tags": [
             "editorial",
+            "mono",
             "plane",
             "pop",
             "portrait"
@@ -27219,6 +27220,7 @@ const STREAM_RECORDS = [
         "tags": [
             "graphic",
             "layout",
+            "mono",
             "plane",
             "print",
             "texture"
@@ -28359,6 +28361,7 @@ const STREAM_RECORDS = [
         "id": "master 20260325 203335 [FPS 2x3]",
         "tags": [
             "editorial",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 203335 [FPS 2x3]",
@@ -28515,6 +28518,7 @@ const STREAM_RECORDS = [
         "id": "master 20260325 203601 [FPS 2x3]",
         "tags": [
             "editorial",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 203601 [FPS 2x3]",
@@ -29269,6 +29273,7 @@ const STREAM_RECORDS = [
         "id": "master 20260325 205010 [FPS 4x5]",
         "tags": [
             "editorial",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 205010 [FPS 4x5]",
