@@ -36072,8 +36072,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165105 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 165105 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452212/revision-arts/master%2020260325%20165105%20%5BFPS%204x5%5D.jpg",
@@ -36085,8 +36087,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165408 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 165408 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452203/revision-arts/master%2020260325%20165408%20%5BFPS%204x5%5D.jpg",
@@ -36098,8 +36102,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165448 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 165448 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452199/revision-arts/master%2020260325%20165448%20%5BFPS%204x5%5D.jpg",
@@ -36111,8 +36117,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165607 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 165607 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452196/revision-arts/master%2020260325%20165607%20%5BFPS%204x5%5D.jpg",
@@ -36124,8 +36132,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165809 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 165809 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452193/revision-arts/master%2020260325%20165809%20%5BFPS%204x5%5D.jpg",
@@ -36137,8 +36147,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170115 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170115 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452191/revision-arts/master%2020260325%20170115%20%5BFPS%204x5%5D.jpg",
@@ -36150,8 +36162,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170437 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170437 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452189/revision-arts/master%2020260325%20170437%20%5BFPS%204x5%5D.jpg",
@@ -36163,8 +36177,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170520 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170520 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452187/revision-arts/master%2020260325%20170520%20%5BFPS%204x5%5D.jpg",
@@ -36176,8 +36192,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170704 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170704 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452185/revision-arts/master%2020260325%20170704%20%5BFPS%204x5%5D.jpg",
@@ -36189,8 +36207,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170725 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170725 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452182/revision-arts/master%2020260325%20170725%20%5BFPS%204x5%5D.jpg",
@@ -36202,8 +36222,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170802 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170802 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452180/revision-arts/master%2020260325%20170802%20%5BFPS%204x5%5D.jpg",
@@ -36215,8 +36237,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170843 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 170843 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452178/revision-arts/master%2020260325%20170843%20%5BFPS%204x5%5D.jpg",
@@ -36228,8 +36252,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171223 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 171223 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452176/revision-arts/master%2020260325%20171223%20%5BFPS%204x5%5D.jpg",
@@ -36241,8 +36267,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171320 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 171320 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452174/revision-arts/master%2020260325%20171320%20%5BFPS%204x5%5D.jpg",
@@ -36254,8 +36282,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171422 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 171422 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452172/revision-arts/master%2020260325%20171422%20%5BFPS%204x5%5D.jpg",
@@ -36267,8 +36297,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171453 [FPS 4x5]",
         "tags": [
-            "editorial",
-            "plane"
+            "moment",
+            "mono",
+            "plane",
+            "portrait"
         ],
         "title": "master 20260325 171453 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774452170/revision-arts/master%2020260325%20171453%20%5BFPS%204x5%5D.jpg",
