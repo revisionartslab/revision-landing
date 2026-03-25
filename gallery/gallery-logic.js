@@ -132,9 +132,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123256 [fc91c5 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123256 [fc91c5 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446061/revision-arts/master%2020260321%20123256%20%5Bfc91c5%20FPS%20original%5D.png",
@@ -146,9 +148,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123325 [38e682 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123325 [38e682 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446057/revision-arts/master%2020260321%20123325%20%5B38e682%20FPS%20original%5D.png",
@@ -174,9 +178,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123352 [0f472a FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123352 [0f472a FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446047/revision-arts/master%2020260321%20123352%20%5B0f472a%20FPS%20original%5D.png",
@@ -202,9 +208,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123435 [7d0df9 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123435 [7d0df9 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446039/revision-arts/master%2020260321%20123435%20%5B7d0df9%20FPS%20original%5D.png",
@@ -216,9 +224,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123446 [c4f40a FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123446 [c4f40a FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446036/revision-arts/master%2020260321%20123446%20%5Bc4f40a%20FPS%20original%5D.png",
@@ -230,9 +240,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123547 [c1887d FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123547 [c1887d FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446033/revision-arts/master%2020260321%20123547%20%5Bc1887d%20FPS%20original%5D.png",
@@ -314,9 +326,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123641 [224b71 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123641 [224b71 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446011/revision-arts/master%2020260321%20123641%20%5B224b71%20FPS%20original%5D.png",
@@ -342,9 +356,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 123711 [92f32b FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 123711 [92f32b FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774446004/revision-arts/master%2020260321%20123711%20%5B92f32b%20FPS%20original%5D.png",
@@ -538,9 +554,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 124057 [0043a5 e8dd90 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 124057 [0043a5 e8dd90 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774445326/revision-arts/master%2020260321%20124057%20%5B0043a5%20e8dd90%20FPS%20original%5D.png",
@@ -580,9 +598,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 124124 [0043a5 5749b0 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 124124 [0043a5 5749b0 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774445155/revision-arts/master%2020260321%20124124%20%5B0043a5%205749b0%20FPS%20original%5D.png",
@@ -692,9 +712,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 124455 [0043a5 bee0b0 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 124455 [0043a5 bee0b0 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444743/revision-arts/master%2020260321%20124455%20%5B0043a5%20bee0b0%20FPS%20original%5D.png",
@@ -944,9 +966,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125020 [611b35 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125020 [611b35 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444545/revision-arts/master%2020260321%20125020%20%5B611b35%20FPS%20original%5D.png",
@@ -1112,9 +1136,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125251 [0043a5 f35e3c FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125251 [0043a5 f35e3c FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444492/revision-arts/master%2020260321%20125251%20%5B0043a5%20f35e3c%20FPS%20original%5D.png",
@@ -1126,9 +1152,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125322 [0043a5 fb140f FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125322 [0043a5 fb140f FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444488/revision-arts/master%2020260321%20125322%20%5B0043a5%20fb140f%20FPS%20original%5D.png",
@@ -1140,9 +1168,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125343 [5e6d3a FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125343 [5e6d3a FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444484/revision-arts/master%2020260321%20125343%20%5B5e6d3a%20FPS%20original%5D.png",
@@ -1224,9 +1254,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125513 [0043a5 d8f36f FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125513 [0043a5 d8f36f FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444391/revision-arts/master%2020260321%20125513%20%5B0043a5%20d8f36f%20FPS%20original%5D.png",
@@ -1266,9 +1298,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 125613 [0043a5 7e76a5 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 125613 [0043a5 7e76a5 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444361/revision-arts/master%2020260321%20125613%20%5B0043a5%207e76a5%20FPS%20original%5D.png",
@@ -1448,9 +1482,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 130300 [2f82ac FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 130300 [2f82ac FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444233/revision-arts/master%2020260321%20130300%20%5B2f82ac%20FPS%20original%5D.png",
@@ -1518,9 +1554,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 130711 [b51e2c FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 130711 [b51e2c FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444180/revision-arts/master%2020260321%20130711%20%5Bb51e2c%20FPS%20original%5D.png",
@@ -1588,9 +1626,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 130926 [9f0be1 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 130926 [9f0be1 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444124/revision-arts/master%2020260321%20130926%20%5B9f0be1%20FPS%20original%5D.png",
@@ -1630,9 +1670,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131025 [151e9f FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131025 [151e9f FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774444090/revision-arts/master%2020260321%20131025%20%5B151e9f%20FPS%20original%5D.png",
@@ -1686,9 +1728,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131119 [ccb66b FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131119 [ccb66b FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443986/revision-arts/master%2020260321%20131119%20%5Bccb66b%20FPS%20original%5D.png",
@@ -1742,9 +1786,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131311 [6fcb6b FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131311 [6fcb6b FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443941/revision-arts/master%2020260321%20131311%20%5B6fcb6b%20FPS%20original%5D.png",
@@ -1798,9 +1844,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131404 [f53f8d FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131404 [f53f8d FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443914/revision-arts/master%2020260321%20131404%20%5Bf53f8d%20FPS%20original%5D.png",
@@ -1910,9 +1958,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131715 [8e169f FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131715 [8e169f FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443841/revision-arts/master%2020260321%20131715%20%5B8e169f%20FPS%20original%5D.png",
@@ -1938,9 +1988,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 131829 [545fed FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 131829 [545fed FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443833/revision-arts/master%2020260321%20131829%20%5B545fed%20FPS%20original%5D.png",
@@ -2036,9 +2088,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 132048 [8cd1f7 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 132048 [8cd1f7 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443777/revision-arts/master%2020260321%20132048%20%5B8cd1f7%20FPS%20original%5D.png",
@@ -2064,9 +2118,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 132114 [1609b6 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 132114 [1609b6 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443770/revision-arts/master%2020260321%20132114%20%5B1609b6%20FPS%20original%5D.png",
@@ -2106,9 +2162,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 134908 [0043a5 7a9128 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 134908 [0043a5 7a9128 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443758/revision-arts/master%2020260321%20134908%20%5B0043a5%207a9128%20FPS%20original%5D.png",
@@ -2120,9 +2178,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 134936 [0043a5 3e654e FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 134936 [0043a5 3e654e FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443754/revision-arts/master%2020260321%20134936%20%5B0043a5%203e654e%20FPS%20original%5D.png",
@@ -2148,9 +2208,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 135046 [0043a5 d3743d FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 135046 [0043a5 d3743d FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443746/revision-arts/master%2020260321%20135046%20%5B0043a5%20d3743d%20FPS%20original%5D.png",
@@ -2162,9 +2224,11 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 135316 [9888f8 FPS original]",
         "tags": [
+            "editorial",
             "graphic",
             "layout",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260321 135316 [9888f8 FPS original]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774443742/revision-arts/master%2020260321%20135316%20%5B9888f8%20FPS%20original%5D.png",
@@ -2596,8 +2660,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 101733 [Active Session PFS 3 2]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 101733 [Active Session PFS 3 2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442599/revision-arts/master%2020260322%20101733%20%5BActive%20Session%20PFS%203%202%5D.png",
@@ -2610,8 +2676,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 101806 [Active Session PFS 4 3]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 101806 [Active Session PFS 4 3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442596/revision-arts/master%2020260322%20101806%20%5BActive%20Session%20PFS%204%203%5D.png",
@@ -2624,8 +2692,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 101823 [Active Session PFS 4 5]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 101823 [Active Session PFS 4 5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442593/revision-arts/master%2020260322%20101823%20%5BActive%20Session%20PFS%204%205%5D.png",
@@ -2638,8 +2708,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 103359 [Active Session FPS 1 1]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 103359 [Active Session FPS 1 1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442590/revision-arts/master%2020260322%20103359%20%5BActive%20Session%20FPS%201%201%5D.png",
@@ -2652,8 +2724,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 103650 [Active Session FPS 21 9]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 103650 [Active Session FPS 21 9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442585/revision-arts/master%2020260322%20103650%20%5BActive%20Session%20FPS%2021%209%5D.png",
@@ -2666,8 +2740,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 103728 [Active Session PFS 2 3]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 103728 [Active Session PFS 2 3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442580/revision-arts/master%2020260322%20103728%20%5BActive%20Session%20PFS%202%203%5D.png",
@@ -2680,8 +2756,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104608 [Active Session FPS 3 2]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104608 [Active Session FPS 3 2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442575/revision-arts/master%2020260322%20104608%20%5BActive%20Session%20FPS%203%202%5D.png",
@@ -2694,8 +2772,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104646 [Active Session FPS 4 3]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104646 [Active Session FPS 4 3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442572/revision-arts/master%2020260322%20104646%20%5BActive%20Session%20FPS%204%203%5D.png",
@@ -2708,8 +2788,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104724 [Active Session FPS 5 4]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104724 [Active Session FPS 5 4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442567/revision-arts/master%2020260322%20104724%20%5BActive%20Session%20FPS%205%204%5D.png",
@@ -2722,8 +2804,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104742 [Active Session FPS 9 16]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104742 [Active Session FPS 9 16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442562/revision-arts/master%2020260322%20104742%20%5BActive%20Session%20FPS%209%2016%5D.png",
@@ -2736,8 +2820,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104803 [Active Session FPS 16 9]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104803 [Active Session FPS 16 9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442557/revision-arts/master%2020260322%20104803%20%5BActive%20Session%20FPS%2016%209%5D.png",
@@ -2750,8 +2836,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104824 [Active Session FPS 21 9]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104824 [Active Session FPS 21 9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442552/revision-arts/master%2020260322%20104824%20%5BActive%20Session%20FPS%2021%209%5D.png",
@@ -2764,8 +2852,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104842 [Active Session PFS 1 1]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104842 [Active Session PFS 1 1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442549/revision-arts/master%2020260322%20104842%20%5BActive%20Session%20PFS%201%201%5D.png",
@@ -2778,8 +2868,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104901 [Active Session PFS 2 3]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104901 [Active Session PFS 2 3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442543/revision-arts/master%2020260322%20104901%20%5BActive%20Session%20PFS%202%203%5D.png",
@@ -2792,8 +2884,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104918 [Active Session PFS 3 2]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104918 [Active Session PFS 3 2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442540/revision-arts/master%2020260322%20104918%20%5BActive%20Session%20PFS%203%202%5D.png",
@@ -2806,8 +2900,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 104955 [Active Session PFS 4 3]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 104955 [Active Session PFS 4 3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442535/revision-arts/master%2020260322%20104955%20%5BActive%20Session%20PFS%204%203%5D.png",
@@ -2820,8 +2916,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 105013 [Active Session PFS 4 5]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 105013 [Active Session PFS 4 5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442532/revision-arts/master%2020260322%20105013%20%5BActive%20Session%20PFS%204%205%5D.png",
@@ -2834,8 +2932,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 105031 [Active Session PFS 5 4]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 105031 [Active Session PFS 5 4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442525/revision-arts/master%2020260322%20105031%20%5BActive%20Session%20PFS%205%204%5D.png",
@@ -2848,8 +2948,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 105050 [Active Session PFS 9 16]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 105050 [Active Session PFS 9 16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442521/revision-arts/master%2020260322%20105050%20%5BActive%20Session%20PFS%209%2016%5D.png",
@@ -2862,8 +2964,10 @@ const STREAM_RECORDS = [
         "id": "master 20260322 105109 [Active Session PFS 16 9]",
         "tags": [
             "character",
+            "editorial",
             "object",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260322 105109 [Active Session PFS 16 9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442517/revision-arts/master%2020260322%20105109%20%5BActive%20Session%20PFS%2016%209%5D.png",
@@ -10313,9 +10417,11 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153728 [FPS 1x1]",
         "tags": [
             "character",
+            "editorial",
             "graphic",
             "OBJECT",
-            "plane"
+            "plane",
+            "portrait"
         ],
         "title": "master 20260323 153728 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774405562/revision-arts/master%2020260323%20153728%20%5BFPS%201x1%5D.png",
@@ -18067,7 +18173,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231428 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231428 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359547/revision-arts/master%2020260323%20231428%20%5BFPS%204x5%5D.png",
@@ -18080,7 +18188,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231448 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231448 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359544/revision-arts/master%2020260323%20231448%20%5BFPS%203x4%5D.png",
@@ -18093,7 +18203,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231505 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231505 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359540/revision-arts/master%2020260323%20231505%20%5BFPS%204x5%5D.png",
@@ -18106,7 +18218,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231513 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231513 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359536/revision-arts/master%2020260323%20231513%20%5BFPS%204x5%5D.png",
@@ -18119,7 +18233,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231532 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231532 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359532/revision-arts/master%2020260323%20231532%20%5BFPS%201x1%5D.png",
@@ -18132,7 +18248,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231533 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231533 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359529/revision-arts/master%2020260323%20231533%20%5BFPS%201x1%5D.png",
@@ -18145,7 +18263,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231555 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231555 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359525/revision-arts/master%2020260323%20231555%20%5BFPS%202x3%5D.png",
@@ -18158,7 +18278,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231558 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231558 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359521/revision-arts/master%2020260323%20231558%20%5BFPS%203x4%5D.png",
@@ -18171,7 +18293,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231603 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231603 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359518/revision-arts/master%2020260323%20231603%20%5BFPS%209x16%5D.png",
@@ -18184,7 +18308,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231621 [FPS 3x2]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231621 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359515/revision-arts/master%2020260323%20231621%20%5BFPS%203x2%5D.png",
@@ -18197,7 +18323,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231628 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231628 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359511/revision-arts/master%2020260323%20231628%20%5BFPS%203x4%5D.png",
@@ -18210,7 +18338,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231649 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231649 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359507/revision-arts/master%2020260323%20231649%20%5BFPS%201x1%5D.png",
@@ -18223,7 +18353,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231739 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231739 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359504/revision-arts/master%2020260323%20231739%20%5BFPS%201x1%5D.png",
@@ -18236,7 +18368,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231752 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231752 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359500/revision-arts/master%2020260323%20231752%20%5BFPS%201x1%5D.png",
@@ -18249,7 +18383,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231804 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231804 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359496/revision-arts/master%2020260323%20231804%20%5BFPS%204x5%5D.png",
@@ -18262,7 +18398,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231855 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231855 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359493/revision-arts/master%2020260323%20231855%20%5BFPS%203x4%5D.png",
@@ -18275,7 +18413,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231938 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231938 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359489/revision-arts/master%2020260323%20231938%20%5BFPS%201x1%5D.png",
@@ -18288,7 +18428,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231942 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 231942 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359486/revision-arts/master%2020260323%20231942%20%5BFPS%202x3%5D.png",
@@ -18301,7 +18443,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232007 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232007 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359482/revision-arts/master%2020260323%20232007%20%5BFPS%202x3%5D.png",
@@ -18314,7 +18458,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232030 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232030 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359476/revision-arts/master%2020260323%20232030%20%5BFPS%201x1%5D.png",
@@ -18327,7 +18473,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232035 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232035 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359469/revision-arts/master%2020260323%20232035%20%5BFPS%201x1%5D.png",
@@ -18340,7 +18488,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232059 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232059 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359465/revision-arts/master%2020260323%20232059%20%5BFPS%209x16%5D.png",
@@ -18353,7 +18503,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232113 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232113 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359462/revision-arts/master%2020260323%20232113%20%5BFPS%204x5%5D.png",
@@ -18366,7 +18518,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232123 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232123 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359458/revision-arts/master%2020260323%20232123%20%5BFPS%204x5%5D.png",
@@ -18379,7 +18533,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232130 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232130 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359455/revision-arts/master%2020260323%20232130%20%5BFPS%202x3%5D.png",
@@ -18392,7 +18548,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232137 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232137 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359451/revision-arts/master%2020260323%20232137%20%5BFPS%203x4%5D.png",
@@ -18405,7 +18563,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232152 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232152 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359448/revision-arts/master%2020260323%20232152%20%5BFPS%204x5%5D.png",
@@ -18418,7 +18578,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232206 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232206 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359442/revision-arts/master%2020260323%20232206%20%5BFPS%204x5%5D.png",
@@ -18431,7 +18593,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232230 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232230 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359439/revision-arts/master%2020260323%20232230%20%5BFPS%203x4%5D.png",
@@ -18444,7 +18608,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232245 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232245 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359435/revision-arts/master%2020260323%20232245%20%5BFPS%209x16%5D.png",
@@ -18457,7 +18623,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232249 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232249 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359431/revision-arts/master%2020260323%20232249%20%5BFPS%204x5%5D.png",
@@ -18470,7 +18638,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232255 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232255 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359428/revision-arts/master%2020260323%20232255%20%5BFPS%203x4%5D.png",
@@ -18483,7 +18653,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232314 [FPS 4x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232314 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359424/revision-arts/master%2020260323%20232314%20%5BFPS%204x3%5D.png",
@@ -18496,7 +18668,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232323 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232323 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359420/revision-arts/master%2020260323%20232323%20%5BFPS%204x5%5D.png",
@@ -18509,7 +18683,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232350 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232350 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359417/revision-arts/master%2020260323%20232350%20%5BFPS%201x1%5D.png",
@@ -18522,7 +18698,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232353 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232353 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359414/revision-arts/master%2020260323%20232353%20%5BFPS%209x16%5D.png",
@@ -18535,7 +18713,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232402 [FPS 4x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232402 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359410/revision-arts/master%2020260323%20232402%20%5BFPS%204x3%5D.png",
@@ -18548,7 +18728,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232424 [FPS 3x2]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232424 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359407/revision-arts/master%2020260323%20232424%20%5BFPS%203x2%5D.png",
@@ -18561,7 +18743,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232430 [FPS 3x2]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232430 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359403/revision-arts/master%2020260323%20232430%20%5BFPS%203x2%5D.png",
@@ -18574,7 +18758,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232459 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232459 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359400/revision-arts/master%2020260323%20232459%20%5BFPS%201x1%5D.png",
@@ -18587,7 +18773,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232524 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232524 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359397/revision-arts/master%2020260323%20232524%20%5BFPS%204x5%5D.png",
@@ -18600,7 +18788,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232540 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232540 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359393/revision-arts/master%2020260323%20232540%20%5BFPS%204x5%5D.png",
@@ -18613,7 +18803,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232549 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232549 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359374/revision-arts/master%2020260323%20232549%20%5BFPS%203x4%5D.png",
@@ -18626,7 +18818,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232607 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232607 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359367/revision-arts/master%2020260323%20232607%20%5BFPS%204x5%5D.png",
@@ -18639,7 +18833,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232610 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232610 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359363/revision-arts/master%2020260323%20232610%20%5BFPS%204x5%5D.png",
@@ -18652,7 +18848,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232618 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232618 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359359/revision-arts/master%2020260323%20232618%20%5BFPS%203x4%5D.png",
@@ -18665,7 +18863,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232634 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232634 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359355/revision-arts/master%2020260323%20232634%20%5BFPS%201x1%5D.png",
@@ -18678,7 +18878,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232642 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232642 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359351/revision-arts/master%2020260323%20232642%20%5BFPS%209x16%5D.png",
@@ -18691,7 +18893,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232708 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232708 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359347/revision-arts/master%2020260323%20232708%20%5BFPS%201x1%5D.png",
@@ -18704,7 +18908,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232735 [FPS 16x9]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232735 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359343/revision-arts/master%2020260323%20232735%20%5BFPS%2016x9%5D.png",
@@ -18717,7 +18923,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232754 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232754 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359340/revision-arts/master%2020260323%20232754%20%5BFPS%209x16%5D.png",
@@ -18730,7 +18938,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232803 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232803 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359337/revision-arts/master%2020260323%20232803%20%5BFPS%201x1%5D.png",
@@ -18743,7 +18953,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232821 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232821 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359330/revision-arts/master%2020260323%20232821%20%5BFPS%201x1%5D.png",
@@ -18756,7 +18968,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232821 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232821 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359334/revision-arts/master%2020260323%20232821%20%5BFPS%204x5%5D.png",
@@ -18769,7 +18983,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232830 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232830 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359327/revision-arts/master%2020260323%20232830%20%5BFPS%201x1%5D.png",
@@ -18782,7 +18998,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232849 [FPS 4x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232849 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359322/revision-arts/master%2020260323%20232849%20%5BFPS%204x3%5D.png",
@@ -18795,7 +19013,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232924 [FPS 4x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232924 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359318/revision-arts/master%2020260323%20232924%20%5BFPS%204x3%5D.png",
@@ -18808,7 +19028,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232926 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232926 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359315/revision-arts/master%2020260323%20232926%20%5BFPS%204x5%5D.png",
@@ -18821,7 +19043,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232951 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232951 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359311/revision-arts/master%2020260323%20232951%20%5BFPS%204x5%5D.png",
@@ -18834,7 +19058,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232951 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 232951 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359308/revision-arts/master%2020260323%20232951%20%5BFPS%209x16%5D.png",
@@ -18847,7 +19073,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233000 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233000 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359305/revision-arts/master%2020260323%20233000%20%5BFPS%204x5%5D.png",
@@ -18860,7 +19088,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233017 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233017 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359301/revision-arts/master%2020260323%20233017%20%5BFPS%204x5%5D.png",
@@ -18873,7 +19103,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233026 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233026 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359298/revision-arts/master%2020260323%20233026%20%5BFPS%201x1%5D.png",
@@ -18886,7 +19118,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233037 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233037 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359294/revision-arts/master%2020260323%20233037%20%5BFPS%204x5%5D.png",
@@ -18899,7 +19133,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233101 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233101 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359290/revision-arts/master%2020260323%20233101%20%5BFPS%201x1%5D.png",
@@ -18912,7 +19148,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233107 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233107 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359267/revision-arts/master%2020260323%20233107%20%5BFPS%203x4%5D.png",
@@ -18925,7 +19163,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233127 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233127 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359206/revision-arts/master%2020260323%20233127%20%5BFPS%209x16%5D.png",
@@ -18938,7 +19178,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233152 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233152 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359150/revision-arts/master%2020260323%20233152%20%5BFPS%201x1%5D.png",
@@ -18951,7 +19193,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233156 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233156 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359090/revision-arts/master%2020260323%20233156%20%5BFPS%204x5%5D.png",
@@ -18964,7 +19208,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233221 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233221 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359031/revision-arts/master%2020260323%20233221%20%5BFPS%201x1%5D.png",
@@ -18977,7 +19223,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233250 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233250 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358961/revision-arts/master%2020260323%20233250%20%5BFPS%201x1%5D.png",
@@ -18990,7 +19238,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233252 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233252 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358898/revision-arts/master%2020260323%20233252%20%5BFPS%203x4%5D.png",
@@ -19003,7 +19253,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233314 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233314 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358837/revision-arts/master%2020260323%20233314%20%5BFPS%204x5%5D.png",
@@ -19016,7 +19268,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233335 [FPS 5x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233335 [FPS 5x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358766/revision-arts/master%2020260323%20233335%20%5BFPS%205x4%5D.png",
@@ -19029,7 +19283,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233401 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233401 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358761/revision-arts/master%2020260323%20233401%20%5BFPS%209x16%5D.png",
@@ -19042,7 +19298,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233429 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233429 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358757/revision-arts/master%2020260323%20233429%20%5BFPS%203x4%5D.png",
@@ -19055,7 +19313,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233432 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233432 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358733/revision-arts/master%2020260323%20233432%20%5BFPS%209x16%5D.png",
@@ -19068,7 +19328,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233453 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233453 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358725/revision-arts/master%2020260323%20233453%20%5BFPS%201x1%5D.png",
@@ -19081,7 +19343,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233500 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233500 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358719/revision-arts/master%2020260323%20233500%20%5BFPS%209x16%5D.png",
@@ -19094,7 +19358,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233518 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233518 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358714/revision-arts/master%2020260323%20233518%20%5BFPS%204x5%5D.png",
@@ -19107,7 +19373,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233528 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233528 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358711/revision-arts/master%2020260323%20233528%20%5BFPS%201x1%5D.png",
@@ -19120,7 +19388,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233543 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233543 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358707/revision-arts/master%2020260323%20233543%20%5BFPS%203x4%5D.png",
@@ -19133,7 +19403,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233557 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233557 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358704/revision-arts/master%2020260323%20233557%20%5BFPS%201x1%5D.png",
@@ -19146,7 +19418,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233610 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233610 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358700/revision-arts/master%2020260323%20233610%20%5BFPS%202x3%5D.png",
@@ -19159,7 +19433,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233626 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233626 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358696/revision-arts/master%2020260323%20233626%20%5BFPS%201x1%5D.png",
@@ -19172,7 +19448,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233653 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233653 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358649/revision-arts/master%2020260323%20233653%20%5BFPS%202x3%5D.png",
@@ -19185,7 +19463,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233700 [FPS 4x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233700 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358585/revision-arts/master%2020260323%20233700%20%5BFPS%204x3%5D.png",
@@ -19198,7 +19478,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233734 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233734 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358517/revision-arts/master%2020260323%20233734%20%5BFPS%201x1%5D.png",
@@ -19211,7 +19493,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233753 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233753 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358512/revision-arts/master%2020260323%20233753%20%5BFPS%202x3%5D.png",
@@ -19224,7 +19508,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233818 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233818 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358508/revision-arts/master%2020260323%20233818%20%5BFPS%201x1%5D.png",
@@ -19237,7 +19523,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233845 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233845 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358504/revision-arts/master%2020260323%20233845%20%5BFPS%204x5%5D.png",
@@ -19250,7 +19538,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233912 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233912 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358499/revision-arts/master%2020260323%20233912%20%5BFPS%203x4%5D.png",
@@ -19263,7 +19553,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233923 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 233923 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358496/revision-arts/master%2020260323%20233923%20%5BFPS%204x5%5D.png",
@@ -19276,7 +19568,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234000 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234000 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358489/revision-arts/master%2020260323%20234000%20%5BFPS%203x4%5D.png",
@@ -19289,7 +19583,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234038 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234038 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358486/revision-arts/master%2020260323%20234038%20%5BFPS%202x3%5D.png",
@@ -19302,7 +19598,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234103 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234103 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358482/revision-arts/master%2020260323%20234103%20%5BFPS%202x3%5D.png",
@@ -19315,7 +19613,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234129 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234129 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358478/revision-arts/master%2020260323%20234129%20%5BFPS%201x1%5D.png",
@@ -19328,7 +19628,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234158 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234158 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358475/revision-arts/master%2020260323%20234158%20%5BFPS%204x5%5D.png",
@@ -19341,7 +19643,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234318 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234318 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358470/revision-arts/master%2020260323%20234318%20%5BFPS%209x16%5D.png",
@@ -19354,7 +19658,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234348 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234348 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358467/revision-arts/master%2020260323%20234348%20%5BFPS%201x1%5D.png",
@@ -19367,7 +19673,9 @@ const STREAM_RECORDS = [
         "id": "master 20260323 234442 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260323 234442 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358463/revision-arts/master%2020260323%20234442%20%5BFPS%201x1%5D.png",
@@ -19380,7 +19688,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 105007 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 105007 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358456/revision-arts/master%2020260324%20105007%20%5BFPS%201x1%5D.png",
@@ -19393,7 +19703,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 110430 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 110430 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358452/revision-arts/master%2020260324%20110430%20%5BFPS%204x5%5D.jpg",
@@ -20191,7 +20503,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 153425 [FPS 3x2]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 153425 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358319/revision-arts/master%2020260324%20153425%20%5BFPS%203x2%5D.png",
@@ -20217,7 +20531,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 153531 [FPS 2x3]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 153531 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358312/revision-arts/master%2020260324%20153531%20%5BFPS%202x3%5D.png",
@@ -20242,7 +20558,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 153713 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 153713 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358305/revision-arts/master%2020260324%20153713%20%5BFPS%203x4%5D.png",
@@ -20255,7 +20573,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 153753 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 153753 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358302/revision-arts/master%2020260324%20153753%20%5BFPS%201x1%5D.png",
@@ -20268,7 +20588,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 153904 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 153904 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358298/revision-arts/master%2020260324%20153904%20%5BFPS%204x5%5D.png",
@@ -20332,7 +20654,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 154550 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 154550 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358280/revision-arts/master%2020260324%20154550%20%5BFPS%204x5%5D.png",
@@ -20345,6 +20669,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 154700 [FPS 1x1]",
         "tags": [
             "character",
+            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -20384,7 +20709,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 154918 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 154918 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358266/revision-arts/master%2020260324%20154918%20%5BFPS%204x5%5D.png",
@@ -20397,7 +20724,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 154959 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 154959 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358263/revision-arts/master%2020260324%20154959%20%5BFPS%204x5%5D.png",
@@ -20422,7 +20751,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 155221 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 155221 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358255/revision-arts/master%2020260324%20155221%20%5BFPS%204x5%5D.png",
@@ -20484,7 +20815,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 155708 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 155708 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358218/revision-arts/master%2020260324%20155708%20%5BFPS%201x1%5D.png",
@@ -20497,7 +20830,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 155735 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 155735 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358215/revision-arts/master%2020260324%20155735%20%5BFPS%201x1%5D.png",
@@ -20510,7 +20845,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160013 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160013 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358210/revision-arts/master%2020260324%20160013%20%5BFPS%204x5%5D.png",
@@ -20523,6 +20860,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160046 [FPS 4x3]",
         "tags": [
             "character",
+            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -20537,7 +20875,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160121 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160121 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358204/revision-arts/master%2020260324%20160121%20%5BFPS%204x5%5D.png",
@@ -20550,7 +20890,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160157 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160157 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358200/revision-arts/master%2020260324%20160157%20%5BFPS%204x5%5D.png",
@@ -20563,7 +20905,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160425 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160425 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358197/revision-arts/master%2020260324%20160425%20%5BFPS%201x1%5D.png",
@@ -20576,6 +20920,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160500 [FPS 3x4]",
         "tags": [
             "character",
+            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -20614,7 +20959,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160739 [FPS 9x16]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160739 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358149/revision-arts/master%2020260324%20160739%20%5BFPS%209x16%5D.png",
@@ -20627,7 +20974,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160812 [FPS 1x1]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160812 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358144/revision-arts/master%2020260324%20160812%20%5BFPS%201x1%5D.png",
@@ -20652,7 +21001,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160916 [FPS 4x5]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160916 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358136/revision-arts/master%2020260324%20160916%20%5BFPS%204x5%5D.png",
@@ -20665,7 +21016,9 @@ const STREAM_RECORDS = [
         "id": "master 20260324 160951 [FPS 3x4]",
         "tags": [
             "character",
-            "OBJECT"
+            "editorial",
+            "OBJECT",
+            "portrait"
         ],
         "title": "master 20260324 160951 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358130/revision-arts/master%2020260324%20160951%20%5BFPS%203x4%5D.png",
