@@ -101,6 +101,76 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-25T01:43:56Z"
     },
     {
+        "id": "master 20260323 140656 [25b5b23bd90151c40dcd07e0d80fe623 FPS ori]",
+        "tags": [
+            "NOSTALGIA",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260323 140656 [25b5b23bd90151c40dcd07e0d80fe623 FPS ori]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415184/revision-arts/master%2020260323%20140656%20%5B25b5b23bd90151c40dcd07e0d80fe623%20FPS%20ori%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774415161/revision-arts/prompt_20260323_140656_%5B25b5b23bd90151c40dcd07e0d80fe623_FPS_ori%5D",
+        "assetId": "0856aaf19451051594fd8353e6487a1e",
+        "uploadedAt": "2026-03-25T05:06:24Z"
+    },
+    {
+        "id": "master 20260323 140701 [0a30ab081039b66a6657058e3120fd4c FPS ori]",
+        "tags": [
+            "NOSTALGIA",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260323 140701 [0a30ab081039b66a6657058e3120fd4c FPS ori]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415198/revision-arts/master%2020260323%20140701%20%5B0a30ab081039b66a6657058e3120fd4c%20FPS%20ori%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774415162/revision-arts/prompt_20260323_140701_%5B0a30ab081039b66a6657058e3120fd4c_FPS_ori%5D",
+        "assetId": "809b3017397ebc82da773174330e077e",
+        "uploadedAt": "2026-03-25T05:06:38Z"
+    },
+    {
+        "id": "master 20260323 140748 [29b262e52562c82bd9dba8b3cc06bfc2 FPS ori]",
+        "tags": [
+            "NOSTALGIA",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260323 140748 [29b262e52562c82bd9dba8b3cc06bfc2 FPS ori]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415195/revision-arts/master%2020260323%20140748%20%5B29b262e52562c82bd9dba8b3cc06bfc2%20FPS%20ori%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774415161/revision-arts/prompt_20260323_140748_%5B29b262e52562c82bd9dba8b3cc06bfc2_FPS_ori%5D",
+        "assetId": "48bffd27bf234105755e472761a78cf7",
+        "uploadedAt": "2026-03-25T05:06:35Z"
+    },
+    {
+        "id": "master 20260323 140801 [0a51908c047263134401f416c88e309e FPS ori]",
+        "tags": [
+            "NOSTALGIA",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260323 140801 [0a51908c047263134401f416c88e309e FPS ori]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415192/revision-arts/master%2020260323%20140801%20%5B0a51908c047263134401f416c88e309e%20FPS%20ori%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774415161/revision-arts/prompt_20260323_140801_%5B0a51908c047263134401f416c88e309e_FPS_ori%5D",
+        "assetId": "ead2f3016e078af3374430d528f054a3",
+        "uploadedAt": "2026-03-25T05:06:32Z"
+    },
+    {
+        "id": "master 20260323 140821 [32f49b8a3456f1b9ea7481c69fb43c78 FPS ori]",
+        "tags": [
+            "NOSTALGIA",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260323 140821 [32f49b8a3456f1b9ea7481c69fb43c78 FPS ori]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415188/revision-arts/master%2020260323%20140821%20%5B32f49b8a3456f1b9ea7481c69fb43c78%20FPS%20ori%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774415161/revision-arts/prompt_20260323_140821_%5B32f49b8a3456f1b9ea7481c69fb43c78_FPS_ori%5D",
+        "assetId": "2f292d37eaae90b9833109208c869fa9",
+        "uploadedAt": "2026-03-25T05:06:28Z"
+    },
+    {
         "id": "master 20260323 140900 [5cf38e29527498ba6380e9083eecfbcc FPS ori]",
         "tags": [
             "NOSTALGIA",
