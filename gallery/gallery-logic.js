@@ -11906,7 +11906,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191224 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11920,7 +11920,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191241 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11934,7 +11934,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191253 [FPS 3x4]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11948,7 +11948,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191310 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11962,7 +11962,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191344 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11976,7 +11976,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191440 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -11990,7 +11990,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191449 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12004,7 +12004,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191513 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12018,7 +12018,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191536 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12032,7 +12032,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191540 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12046,7 +12046,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191556 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12060,7 +12060,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191608 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12074,7 +12074,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191625 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12088,7 +12088,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191635 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12102,7 +12102,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191706 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12116,7 +12116,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191731 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12130,7 +12130,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191734 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12144,7 +12144,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191829 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12158,7 +12158,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191838 [FPS 3x4]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12172,7 +12172,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191848 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12186,7 +12186,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191856 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12200,7 +12200,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191938 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12214,7 +12214,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 191957 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12228,7 +12228,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192003 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12242,7 +12242,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192013 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12256,7 +12256,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192030 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12270,7 +12270,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192041 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12284,7 +12284,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192059 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12298,7 +12298,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192105 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12312,7 +12312,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192123 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12326,7 +12326,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192130 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12340,7 +12340,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192149 [FPS 2x3]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12354,7 +12354,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192157 [FPS 5x4]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12368,7 +12368,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192230 [FPS 9x16]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12382,7 +12382,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192255 [FPS 4x5]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
@@ -12396,7 +12396,7 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 192322 [FPS 1x1]",
         "tags": [
-            "Graphics",
+            "graphic",
             "layout",
             "plane"
         ],
