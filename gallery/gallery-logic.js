@@ -26156,14 +26156,14 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165105 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
-        "title": "master 20260325 165105 [FPS 4x5]",
+        "title": "TEST_BATCH_TITLE",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774427067/revision-arts/master%2020260325%20165105%20%5BFPS%204x5%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "description": "TEST_BATCH_TITLE",
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774426934/revision-arts/prompt_20260325_165105_%5BFPS_4x5%5D",
         "assetId": "97a1aa0cf594e4bdb4f1a29050c539c0",
         "uploadedAt": "2026-03-25T08:24:27Z"
@@ -26171,14 +26171,14 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165408 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
-        "title": "master 20260325 165408 [FPS 4x5]",
+        "title": "TEST_BATCH_TITLE",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774427064/revision-arts/master%2020260325%20165408%20%5BFPS%204x5%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "description": "TEST_BATCH_TITLE",
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774426934/revision-arts/prompt_20260325_165408_%5BFPS_4x5%5D",
         "assetId": "fe0bc23a7640fec18d250574dc2b7242",
         "uploadedAt": "2026-03-25T08:24:24Z"
@@ -26186,14 +26186,14 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165448 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
-        "title": "master 20260325 165448 [FPS 4x5]",
+        "title": "TEST_BATCH_TITLE",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774427061/revision-arts/master%2020260325%20165448%20%5BFPS%204x5%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "description": "TEST_BATCH_TITLE",
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774426934/revision-arts/prompt_20260325_165448_%5BFPS_4x5%5D",
         "assetId": "275ab855ef6c80371471cd902ba9d090",
         "uploadedAt": "2026-03-25T08:24:21Z"
@@ -26201,14 +26201,14 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165607 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
-        "title": "master 20260325 165607 [FPS 4x5]",
+        "title": "TEST_BATCH_TITLE",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774427058/revision-arts/master%2020260325%20165607%20%5BFPS%204x5%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "description": "TEST_BATCH_TITLE",
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774426934/revision-arts/prompt_20260325_165607_%5BFPS_4x5%5D",
         "assetId": "ceab3708a89d2633f0751fb3a1572c9d",
         "uploadedAt": "2026-03-25T08:24:18Z"
@@ -26216,14 +26216,14 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 165809 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
-        "title": "master 20260325 165809 [FPS 4x5]",
+        "title": "TEST_BATCH_TITLE",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774427055/revision-arts/master%2020260325%20165809%20%5BFPS%204x5%5D.jpg",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "description": "TEST_BATCH_TITLE",
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774426932/revision-arts/prompt_20260325_165809_%5BFPS_4x5%5D",
         "assetId": "f29102019767ae0c4e0fe880ba945152",
         "uploadedAt": "2026-03-25T08:24:15Z"
@@ -26231,8 +26231,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170115 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26246,8 +26246,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170437 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26261,8 +26261,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170704 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26276,8 +26276,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170725 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26291,8 +26291,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170802 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26306,8 +26306,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 170843 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26321,8 +26321,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171223 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26336,8 +26336,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171320 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26351,8 +26351,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171422 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -26366,8 +26366,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 171453 [FPS 4x5]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
