@@ -10895,7 +10895,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 180210 [FPS 16x9]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "plane",
@@ -11163,7 +11162,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 180655 [FPS 16x9]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "plane",
@@ -11655,7 +11653,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 190026 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "plane",
@@ -11671,7 +11668,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 190146 [PFS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "plane",
@@ -12443,7 +12439,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193224 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12505,7 +12500,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193326 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12531,7 +12525,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193350 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12593,7 +12586,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193604 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12667,7 +12659,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193815 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12729,7 +12720,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 193936 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12767,7 +12757,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194034 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12817,7 +12806,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194131 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12831,7 +12819,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194159 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -12845,7 +12832,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 194205 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13207,7 +13193,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195538 [FPS 5x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13269,7 +13254,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195744 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13307,7 +13291,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195859 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13345,7 +13328,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 195940 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13455,7 +13437,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 200359 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13661,7 +13642,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 205950 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13879,7 +13859,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210615 [FPS 5x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13917,7 +13896,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210736 [FPS 5x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13967,7 +13945,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 210953 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -13993,7 +13970,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211044 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -14007,7 +13983,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211051 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -14129,7 +14104,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 211453 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -14623,7 +14597,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 213304 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -14841,7 +14814,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 214039 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -14891,7 +14863,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 214320 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -15085,7 +15056,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215247 [FPS 9x16]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "plane",
@@ -15137,7 +15107,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215629 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -15259,7 +15228,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 220040 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -15273,7 +15241,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 220155 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "OBJECT"
         ],
@@ -16935,7 +16902,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134501 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -16950,7 +16916,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134528 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -16965,7 +16930,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 134915 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -16980,7 +16944,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135243 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -16995,7 +16958,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135331 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17010,7 +16972,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135556 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17025,7 +16986,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135848 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17040,7 +17000,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 135937 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17055,7 +17014,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140039 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17070,7 +17028,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140108 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17098,7 +17055,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140848 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17113,7 +17069,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140920 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17128,7 +17083,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 140954 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17143,7 +17097,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141028 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17158,7 +17111,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141310 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17173,7 +17125,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141402 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17201,7 +17152,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141553 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17216,7 +17166,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141629 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17231,7 +17180,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141706 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17246,7 +17194,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141739 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17261,7 +17208,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141810 [FPS 1x1]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17276,7 +17222,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141845 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17291,7 +17236,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 141928 [FPS 3x4]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17306,7 +17250,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142206 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17321,7 +17264,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142247 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17336,7 +17278,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142330 [FPS 9x16]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17351,7 +17292,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142533 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17366,7 +17306,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142559 [FPS 4x5]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -17381,7 +17320,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 142636 [FPS 2x3]",
         "tags": [
-            "B&W",
             "mono",
             "PLANE",
             "portrait"
@@ -19712,7 +19650,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192001 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -19770,7 +19707,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192115 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -19870,7 +19806,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192345 [FPS 3x4]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -19928,7 +19863,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192519 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -19986,7 +19920,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192604 [FPS 3x4]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20072,7 +20005,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192733 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20088,7 +20020,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192749 [FPS 3x4]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20174,7 +20105,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 192845 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20330,7 +20260,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 193041 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20752,7 +20681,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 193716 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20922,7 +20850,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 194051 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20952,7 +20879,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 194120 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -20968,7 +20894,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 194140 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -21054,7 +20979,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 194425 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -21126,7 +21050,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 194804 [FPS 4x5]",
         "tags": [
-            "B&W",
             "editorial",
             "mono",
             "PLANE",
@@ -22584,7 +22507,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113407 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22600,7 +22522,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113433 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22616,7 +22537,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113459 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22632,7 +22552,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113529 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22648,7 +22567,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113536 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22664,7 +22582,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113554 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22680,7 +22597,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113607 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22696,7 +22612,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113623 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22712,7 +22627,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113638 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22728,7 +22642,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113648 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22744,7 +22657,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113703 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22760,7 +22672,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113715 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22776,7 +22687,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113726 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22792,7 +22702,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113741 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22808,7 +22717,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113751 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22824,7 +22732,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113815 [FPS 3x4]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22840,7 +22747,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113819 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22856,7 +22762,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113849 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22872,7 +22777,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113907 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22888,7 +22792,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113919 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22904,7 +22807,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 113945 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22920,7 +22822,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114014 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22936,7 +22837,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114042 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22952,7 +22852,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114106 [FPS 16x9]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22968,7 +22867,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114128 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -22984,7 +22882,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114149 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23000,7 +22897,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114156 [FPS 3x4]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23016,7 +22912,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114213 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23032,7 +22927,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114240 [FPS 16x9]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23048,7 +22942,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114309 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23064,7 +22957,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114339 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23080,7 +22972,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114411 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23096,7 +22987,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114436 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23112,7 +23002,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114502 [FPS 3x4]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23128,7 +23017,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114528 [FPS 3x4]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23144,7 +23032,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114548 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23160,7 +23047,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114555 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23176,7 +23062,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114614 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23192,7 +23077,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114622 [FPS 16x9]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23208,7 +23092,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114639 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23224,7 +23107,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114646 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23240,7 +23122,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114705 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23256,7 +23137,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114709 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23272,7 +23152,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114734 [FPS 16x9]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23288,7 +23167,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114754 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23304,7 +23182,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114757 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23320,7 +23197,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114826 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23336,7 +23212,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114847 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23352,7 +23227,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114916 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23368,7 +23242,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 114944 [FPS 5x4]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23384,7 +23257,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115239 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23400,7 +23272,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115304 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23416,7 +23287,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115419 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23432,7 +23302,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115446 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23448,7 +23317,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115544 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23464,7 +23332,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115636 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23480,7 +23347,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115706 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23496,7 +23362,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115732 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23512,7 +23377,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115758 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23528,7 +23392,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115828 [FPS 4x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23544,7 +23407,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 115954 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23560,7 +23422,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120021 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23576,7 +23437,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120103 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23592,7 +23452,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120129 [FPS 1x1]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23608,7 +23467,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120155 [FPS 3x2]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23624,7 +23482,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120222 [FPS 4x5]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23640,7 +23497,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 120247 [FPS 2x3]",
         "tags": [
-            "B&W",
             "landscape",
             "Minimal",
             "mono",
@@ -23656,7 +23512,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122119 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23673,7 +23528,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122133 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23690,7 +23544,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122151 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23707,7 +23560,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122202 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23724,7 +23576,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122217 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23741,7 +23592,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122229 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23758,7 +23608,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122242 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23775,7 +23624,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122253 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23792,7 +23640,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122310 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23809,7 +23656,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122316 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23826,7 +23672,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122342 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23843,7 +23688,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122353 [FPS 16x9]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23860,7 +23704,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122405 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23877,7 +23720,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122421 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23894,7 +23736,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122429 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23911,7 +23752,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122455 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23928,7 +23768,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122500 [FPS 16x9]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23945,7 +23784,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122524 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23962,7 +23800,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122530 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23979,7 +23816,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122550 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -23996,7 +23832,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122552 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24013,7 +23848,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122618 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24030,7 +23864,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122623 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24047,7 +23880,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122645 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24064,7 +23896,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122654 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24081,7 +23912,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122712 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24098,7 +23928,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122716 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24115,7 +23944,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122742 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24132,7 +23960,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122744 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24149,7 +23976,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122813 [FPS 16x9]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24166,7 +23992,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122837 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24183,7 +24008,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122859 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24200,7 +24024,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122937 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24217,7 +24040,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 122938 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24234,7 +24056,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123005 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24251,7 +24072,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123005 [FPS 4x5] (1)",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24268,7 +24088,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123029 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24285,7 +24104,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123032 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24302,7 +24120,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123052 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24319,7 +24136,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123101 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24336,7 +24152,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123117 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24353,7 +24168,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123124 [FPS 16x9]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24370,7 +24184,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123143 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24387,7 +24200,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123151 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24404,7 +24216,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123214 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24421,7 +24232,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123228 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24438,7 +24248,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123243 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24455,7 +24264,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123258 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24472,7 +24280,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123304 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24489,7 +24296,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123331 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24506,7 +24312,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123332 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24523,7 +24328,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123356 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24540,7 +24344,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123356 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24557,7 +24360,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123423 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24574,7 +24376,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123424 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24591,7 +24392,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123452 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24608,7 +24408,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123504 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24625,7 +24424,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123524 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24642,7 +24440,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123525 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24659,7 +24456,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123545 [FPS 3x2]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24676,7 +24472,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123548 [FPS 5x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24693,7 +24488,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123610 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24710,7 +24504,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123611 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24727,7 +24520,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123642 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24744,7 +24536,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123643 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24761,7 +24552,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123704 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24778,7 +24568,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123708 [FPS 16x9]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24795,7 +24584,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123728 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24812,7 +24600,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123735 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24829,7 +24616,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123752 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24846,7 +24632,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123756 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24863,7 +24648,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123817 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24880,7 +24664,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123835 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24897,7 +24680,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123845 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24914,7 +24696,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123903 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24931,7 +24712,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123928 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24948,7 +24728,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 123959 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24965,7 +24744,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124024 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24982,7 +24760,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124041 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -24999,7 +24776,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124050 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25016,7 +24792,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124108 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25033,7 +24808,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124111 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25050,7 +24824,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124132 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25067,7 +24840,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124150 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25084,7 +24856,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124158 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25101,7 +24872,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124211 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25118,7 +24888,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124224 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25135,7 +24904,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124237 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25152,7 +24920,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124250 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25169,7 +24936,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124303 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25186,7 +24952,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124316 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25203,7 +24968,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124331 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25220,7 +24984,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124346 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25237,7 +25000,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124411 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25254,7 +25016,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124413 [FPS 4x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25271,7 +25032,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124441 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25288,7 +25048,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124530 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25305,7 +25064,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124557 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25322,7 +25080,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124615 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25339,7 +25096,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124621 [FPS 2x3]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25356,7 +25112,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124643 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25373,7 +25128,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124711 [FPS 3x4]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25390,7 +25144,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124737 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25407,7 +25160,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124804 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25424,7 +25176,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124835 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25441,7 +25192,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124901 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25458,7 +25208,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 124936 [FPS 1x1]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25475,7 +25224,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 125151 [FPS 9x16]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25492,7 +25240,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 125411 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25509,7 +25256,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 125440 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
@@ -25526,7 +25272,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 125501 [FPS 4x5]",
         "tags": [
-            "B&W",
             "GRAPHICS",
             "LAYOUT",
             "mono",
