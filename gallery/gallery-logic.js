@@ -26516,8 +26516,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 192618 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 192618 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442067/revision-arts/master%2020260325%20192618%20%5BFPS%201x1%5D.png",
@@ -26529,8 +26531,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 192657 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 192657 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442063/revision-arts/master%2020260325%20192657%20%5BFPS%201x1%5D.png",
@@ -26542,8 +26546,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 192723 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 192723 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442060/revision-arts/master%2020260325%20192723%20%5BFPS%201x1%5D.png",
@@ -26555,8 +26561,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 192824 [FPS 9x16]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 192824 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442057/revision-arts/master%2020260325%20192824%20%5BFPS%209x16%5D.png",
@@ -26581,8 +26589,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193025 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193025 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442048/revision-arts/master%2020260325%20193025%20%5BFPS%201x1%5D.png",
@@ -26594,8 +26604,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193120 [FPS 3x4]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193120 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442043/revision-arts/master%2020260325%20193120%20%5BFPS%203x4%5D.png",
@@ -26620,8 +26632,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193245 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193245 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442035/revision-arts/master%2020260325%20193245%20%5BFPS%201x1%5D.png",
@@ -26646,8 +26660,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193513 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193513 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442027/revision-arts/master%2020260325%20193513%20%5BFPS%201x1%5D.png",
@@ -26659,8 +26675,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193541 [FPS 1x1]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193541 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442024/revision-arts/master%2020260325%20193541%20%5BFPS%201x1%5D.png",
@@ -26672,8 +26690,10 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 193611 [FPS 2x3]",
         "tags": [
+            "editorial",
             "plane",
-            "pop"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260325 193611 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774442020/revision-arts/master%2020260325%20193611%20%5BFPS%202x3%5D.png",
