@@ -10897,6 +10897,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -11164,6 +11165,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -11655,6 +11657,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -11670,6 +11673,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -12440,6 +12444,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193224 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193224 [FPS 3x4]",
@@ -12501,6 +12506,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193326 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193326 [FPS 1x1]",
@@ -12526,6 +12532,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193350 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193350 [FPS 1x1]",
@@ -12587,6 +12594,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193604 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193604 [FPS 4x5]",
@@ -12660,6 +12668,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193815 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193815 [FPS 1x1]",
@@ -12721,6 +12730,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 193936 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 193936 [FPS 3x4]",
@@ -12758,6 +12768,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 194034 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 194034 [FPS 4x5]",
@@ -12807,6 +12818,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 194131 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 194131 [FPS 4x5]",
@@ -12820,6 +12832,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 194159 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 194159 [FPS 1x1]",
@@ -12833,6 +12846,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 194205 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 194205 [FPS 2x3]",
@@ -13194,6 +13208,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 195538 [FPS 5x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 195538 [FPS 5x4]",
@@ -13255,6 +13270,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 195744 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 195744 [FPS 2x3]",
@@ -13292,6 +13308,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 195859 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 195859 [FPS 3x4]",
@@ -13329,6 +13346,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 195940 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 195940 [FPS 9x16]",
@@ -13438,6 +13456,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 200359 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 200359 [FPS 2x3]",
@@ -13643,6 +13662,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 205950 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 205950 [FPS 4x5]",
@@ -13860,6 +13880,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 210615 [FPS 5x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 210615 [FPS 5x4]",
@@ -13897,6 +13918,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 210736 [FPS 5x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 210736 [FPS 5x4]",
@@ -13946,6 +13968,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 210953 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 210953 [FPS 2x3]",
@@ -13971,6 +13994,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 211044 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 211044 [FPS 2x3]",
@@ -13984,6 +14008,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 211051 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 211051 [FPS 3x4]",
@@ -14105,6 +14130,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 211453 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 211453 [FPS 2x3]",
@@ -14598,6 +14624,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 213304 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 213304 [FPS 2x3]",
@@ -14815,6 +14842,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 214039 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 214039 [FPS 2x3]",
@@ -14864,6 +14892,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 214320 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 214320 [FPS 2x3]",
@@ -15058,6 +15087,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "plane",
             "portrait"
         ],
@@ -15108,6 +15138,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 215629 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 215629 [FPS 1x1]",
@@ -15229,6 +15260,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 220040 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 220040 [FPS 4x5]",
@@ -15242,6 +15274,7 @@ const STREAM_RECORDS = [
         "id": "master 20260323 220155 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "OBJECT"
         ],
         "title": "master 20260323 220155 [FPS 1x1]",
@@ -16903,6 +16936,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 134501 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16917,6 +16951,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 134528 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16931,6 +16966,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 134915 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16945,6 +16981,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 135243 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16959,6 +16996,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 135331 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16973,6 +17011,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 135556 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -16987,6 +17026,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 135848 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17001,6 +17041,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 135937 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17015,6 +17056,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 140039 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17029,6 +17071,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 140108 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17056,6 +17099,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 140848 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17070,6 +17114,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 140920 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17084,6 +17129,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 140954 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17098,6 +17144,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141028 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17112,6 +17159,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141310 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17126,6 +17174,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141402 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17153,6 +17202,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141553 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17167,6 +17217,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141629 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17181,6 +17232,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141706 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17195,6 +17247,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141739 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17209,6 +17262,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141810 [FPS 1x1]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17223,6 +17277,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141845 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17237,6 +17292,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 141928 [FPS 3x4]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17251,6 +17307,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142206 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17265,6 +17322,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142247 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17279,6 +17337,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142330 [FPS 9x16]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17293,6 +17352,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142533 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17307,6 +17367,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142559 [FPS 4x5]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -17321,6 +17382,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 142636 [FPS 2x3]",
         "tags": [
             "B&W",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19131,8 +19193,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 180116 [FPS 3x4]",
         "tags": [
-            "b&w",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19652,6 +19714,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19709,6 +19772,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19808,6 +19872,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19865,6 +19930,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -19922,6 +19988,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20007,6 +20074,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20022,6 +20090,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20107,6 +20176,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20262,6 +20332,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20683,6 +20754,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20852,6 +20924,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20881,6 +20954,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20896,6 +20970,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -20981,6 +21056,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -21052,6 +21128,7 @@ const STREAM_RECORDS = [
         "tags": [
             "B&W",
             "editorial",
+            "mono",
             "PLANE",
             "portrait"
         ],
@@ -22510,6 +22587,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113407 [FPS 3x2]",
@@ -22525,6 +22603,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113433 [FPS 1x1]",
@@ -22540,6 +22619,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113459 [FPS 3x2]",
@@ -22555,6 +22635,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113529 [FPS 1x1]",
@@ -22570,6 +22651,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113536 [FPS 1x1]",
@@ -22585,6 +22667,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113554 [FPS 1x1]",
@@ -22600,6 +22683,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113607 [FPS 4x5]",
@@ -22615,6 +22699,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113623 [FPS 4x5]",
@@ -22630,6 +22715,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113638 [FPS 1x1]",
@@ -22645,6 +22731,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113648 [FPS 1x1]",
@@ -22660,6 +22747,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113703 [FPS 4x5]",
@@ -22675,6 +22763,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113715 [FPS 4x3]",
@@ -22690,6 +22779,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113726 [FPS 3x2]",
@@ -22705,6 +22795,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113741 [FPS 1x1]",
@@ -22720,6 +22811,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113751 [FPS 4x5]",
@@ -22735,6 +22827,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113815 [FPS 3x4]",
@@ -22750,6 +22843,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113819 [FPS 4x5]",
@@ -22765,6 +22859,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113849 [FPS 4x5]",
@@ -22780,6 +22875,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113907 [FPS 1x1]",
@@ -22795,6 +22891,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113919 [FPS 1x1]",
@@ -22810,6 +22907,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 113945 [FPS 4x5]",
@@ -22825,6 +22923,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114014 [FPS 3x2]",
@@ -22840,6 +22939,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114042 [FPS 3x2]",
@@ -22855,6 +22955,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114106 [FPS 16x9]",
@@ -22870,6 +22971,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114128 [FPS 1x1]",
@@ -22885,6 +22987,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114149 [FPS 1x1]",
@@ -22900,6 +23003,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114156 [FPS 3x4]",
@@ -22915,6 +23019,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114213 [FPS 1x1]",
@@ -22930,6 +23035,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114240 [FPS 16x9]",
@@ -22945,6 +23051,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114309 [FPS 4x3]",
@@ -22960,6 +23067,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114339 [FPS 4x3]",
@@ -22975,6 +23083,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114411 [FPS 1x1]",
@@ -22990,6 +23099,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114436 [FPS 1x1]",
@@ -23005,6 +23115,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114502 [FPS 3x4]",
@@ -23020,6 +23131,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114528 [FPS 3x4]",
@@ -23035,6 +23147,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114548 [FPS 4x5]",
@@ -23050,6 +23163,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114555 [FPS 1x1]",
@@ -23065,6 +23179,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114614 [FPS 3x2]",
@@ -23080,6 +23195,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114622 [FPS 16x9]",
@@ -23095,6 +23211,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114639 [FPS 3x2]",
@@ -23110,6 +23227,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114646 [FPS 1x1]",
@@ -23125,6 +23243,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114705 [FPS 1x1]",
@@ -23140,6 +23259,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114709 [FPS 1x1]",
@@ -23155,6 +23275,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114734 [FPS 16x9]",
@@ -23170,6 +23291,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114754 [FPS 4x5]",
@@ -23185,6 +23307,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114757 [FPS 4x5]",
@@ -23200,6 +23323,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114826 [FPS 4x3]",
@@ -23215,6 +23339,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114847 [FPS 3x2]",
@@ -23230,6 +23355,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114916 [FPS 1x1]",
@@ -23245,6 +23371,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 114944 [FPS 5x4]",
@@ -23260,6 +23387,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115239 [FPS 3x2]",
@@ -23275,6 +23403,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115304 [FPS 4x3]",
@@ -23290,6 +23419,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115419 [FPS 1x1]",
@@ -23305,6 +23435,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115446 [FPS 4x5]",
@@ -23320,6 +23451,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115544 [FPS 3x2]",
@@ -23335,6 +23467,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115636 [FPS 4x3]",
@@ -23350,6 +23483,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115706 [FPS 1x1]",
@@ -23365,6 +23499,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115732 [FPS 4x3]",
@@ -23380,6 +23515,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115758 [FPS 1x1]",
@@ -23395,6 +23531,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115828 [FPS 4x3]",
@@ -23410,6 +23547,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 115954 [FPS 3x2]",
@@ -23425,6 +23563,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120021 [FPS 4x5]",
@@ -23440,6 +23579,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120103 [FPS 4x5]",
@@ -23455,6 +23595,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120129 [FPS 1x1]",
@@ -23470,6 +23611,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120155 [FPS 3x2]",
@@ -23485,6 +23627,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120222 [FPS 4x5]",
@@ -23500,6 +23643,7 @@ const STREAM_RECORDS = [
             "B&W",
             "landscape",
             "Minimal",
+            "mono",
             "plane"
         ],
         "title": "master 20260325 120247 [FPS 2x3]",
@@ -23515,6 +23659,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23531,6 +23676,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23547,6 +23693,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23563,6 +23710,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23579,6 +23727,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23595,6 +23744,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23611,6 +23761,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23627,6 +23778,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23643,6 +23795,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23659,6 +23812,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23675,6 +23829,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23691,6 +23846,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23707,6 +23863,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23723,6 +23880,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23739,6 +23897,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23755,6 +23914,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23771,6 +23931,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23787,6 +23948,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23803,6 +23965,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23819,6 +23982,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23835,6 +23999,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23851,6 +24016,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23867,6 +24033,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23883,6 +24050,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23899,6 +24067,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23915,6 +24084,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23931,6 +24101,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23947,6 +24118,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23963,6 +24135,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23979,6 +24152,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -23995,6 +24169,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24011,6 +24186,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24027,6 +24203,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24043,6 +24220,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24059,6 +24237,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24075,6 +24254,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24091,6 +24271,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24107,6 +24288,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24123,6 +24305,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24139,6 +24322,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24155,6 +24339,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24171,6 +24356,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24187,6 +24373,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24203,6 +24390,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24219,6 +24407,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24235,6 +24424,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24251,6 +24441,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24267,6 +24458,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24283,6 +24475,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24299,6 +24492,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24315,6 +24509,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24331,6 +24526,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24347,6 +24543,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24363,6 +24560,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24379,6 +24577,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24395,6 +24594,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24411,6 +24611,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24427,6 +24628,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24443,6 +24645,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24459,6 +24662,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24475,6 +24679,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24491,6 +24696,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24507,6 +24713,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24523,6 +24730,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24539,6 +24747,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24555,6 +24764,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24571,6 +24781,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24587,6 +24798,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24603,6 +24815,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24619,6 +24832,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24635,6 +24849,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24651,6 +24866,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24667,6 +24883,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24683,6 +24900,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24699,6 +24917,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24715,6 +24934,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24731,6 +24951,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24747,6 +24968,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24763,6 +24985,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24779,6 +25002,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24795,6 +25019,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24811,6 +25036,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24827,6 +25053,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24843,6 +25070,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24859,6 +25087,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24875,6 +25104,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24891,6 +25121,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24907,6 +25138,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24923,6 +25155,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24939,6 +25172,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24955,6 +25189,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24971,6 +25206,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -24987,6 +25223,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25003,6 +25240,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25019,6 +25257,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25035,6 +25274,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25051,6 +25291,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25067,6 +25308,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25083,6 +25325,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25099,6 +25342,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25115,6 +25359,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25131,6 +25376,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25147,6 +25393,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25163,6 +25410,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25179,6 +25427,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25195,6 +25444,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25211,6 +25461,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25227,6 +25478,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25243,6 +25495,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25259,6 +25512,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
@@ -25275,6 +25529,7 @@ const STREAM_RECORDS = [
             "B&W",
             "GRAPHICS",
             "LAYOUT",
+            "mono",
             "plane",
             "Textures"
         ],
