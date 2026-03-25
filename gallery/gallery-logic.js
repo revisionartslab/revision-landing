@@ -22704,7 +22704,6 @@ const STREAM_RECORDS = [
         "tags": [
             "landscape",
             "Minimal",
-            "mono",
             "plane"
         ],
         "title": "master 20260325 113741 [FPS 1x1]",
@@ -23610,7 +23609,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -23722,7 +23720,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -23738,7 +23735,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -23850,7 +23846,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -23946,7 +23941,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -24058,7 +24052,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -24394,7 +24387,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -24954,7 +24946,6 @@ const STREAM_RECORDS = [
         "tags": [
             "GRAPHICS",
             "LAYOUT",
-            "mono",
             "plane",
             "Textures"
         ],
@@ -26443,7 +26434,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260325 175718 [FPS 4x3]",
         "tags": [
-            "mono",
             "plane"
         ],
         "title": "master 20260325 175718 [FPS 4x3]",
