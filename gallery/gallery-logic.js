@@ -23570,7 +23570,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122119 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415756/revision-arts/master%2020260325%20122119%20%5BFPS%201x1%5D.png",
@@ -23586,7 +23586,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122133 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415753/revision-arts/master%2020260325%20122133%20%5BFPS%202x3%5D.png",
@@ -23602,7 +23602,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122151 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415749/revision-arts/master%2020260325%20122151%20%5BFPS%202x3%5D.png",
@@ -23618,7 +23618,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122202 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415746/revision-arts/master%2020260325%20122202%20%5BFPS%202x3%5D.png",
@@ -23634,7 +23634,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122217 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415743/revision-arts/master%2020260325%20122217%20%5BFPS%209x16%5D.png",
@@ -23650,7 +23650,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122229 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415740/revision-arts/master%2020260325%20122229%20%5BFPS%202x3%5D.png",
@@ -23665,7 +23665,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122242 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415737/revision-arts/master%2020260325%20122242%20%5BFPS%202x3%5D.png",
@@ -23681,7 +23681,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122253 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415734/revision-arts/master%2020260325%20122253%20%5BFPS%204x5%5D.png",
@@ -23697,7 +23697,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122310 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415731/revision-arts/master%2020260325%20122310%20%5BFPS%209x16%5D.png",
@@ -23713,7 +23713,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122316 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415728/revision-arts/master%2020260325%20122316%20%5BFPS%201x1%5D.png",
@@ -23729,7 +23729,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122342 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415725/revision-arts/master%2020260325%20122342%20%5BFPS%201x1%5D.png",
@@ -23745,7 +23745,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122353 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415722/revision-arts/master%2020260325%20122353%20%5BFPS%2016x9%5D.png",
@@ -23761,7 +23761,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122405 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415719/revision-arts/master%2020260325%20122405%20%5BFPS%204x5%5D.png",
@@ -23776,7 +23776,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122421 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415716/revision-arts/master%2020260325%20122421%20%5BFPS%204x5%5D.png",
@@ -23791,7 +23791,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122429 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415713/revision-arts/master%2020260325%20122429%20%5BFPS%201x1%5D.png",
@@ -23807,7 +23807,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122455 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415710/revision-arts/master%2020260325%20122455%20%5BFPS%204x5%5D.png",
@@ -23823,7 +23823,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122500 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415707/revision-arts/master%2020260325%20122500%20%5BFPS%2016x9%5D.png",
@@ -23839,7 +23839,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122524 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415704/revision-arts/master%2020260325%20122524%20%5BFPS%203x4%5D.png",
@@ -23855,7 +23855,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122530 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415701/revision-arts/master%2020260325%20122530%20%5BFPS%204x5%5D.png",
@@ -23871,7 +23871,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122550 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415698/revision-arts/master%2020260325%20122550%20%5BFPS%202x3%5D.png",
@@ -23887,7 +23887,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122552 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415695/revision-arts/master%2020260325%20122552%20%5BFPS%204x5%5D.png",
@@ -23902,7 +23902,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122618 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415692/revision-arts/master%2020260325%20122618%20%5BFPS%204x5%5D.png",
@@ -23918,7 +23918,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122623 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415689/revision-arts/master%2020260325%20122623%20%5BFPS%201x1%5D.png",
@@ -23934,7 +23934,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122645 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415686/revision-arts/master%2020260325%20122645%20%5BFPS%201x1%5D.png",
@@ -23950,7 +23950,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122654 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415683/revision-arts/master%2020260325%20122654%20%5BFPS%201x1%5D.png",
@@ -23966,7 +23966,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122712 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415680/revision-arts/master%2020260325%20122712%20%5BFPS%201x1%5D.png",
@@ -23982,7 +23982,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122716 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415677/revision-arts/master%2020260325%20122716%20%5BFPS%204x5%5D.png",
@@ -23997,7 +23997,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122742 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415674/revision-arts/master%2020260325%20122742%20%5BFPS%201x1%5D.png",
@@ -24013,7 +24013,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122744 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415671/revision-arts/master%2020260325%20122744%20%5BFPS%201x1%5D.png",
@@ -24029,7 +24029,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122813 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415668/revision-arts/master%2020260325%20122813%20%5BFPS%2016x9%5D.png",
@@ -24045,7 +24045,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122837 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415664/revision-arts/master%2020260325%20122837%20%5BFPS%201x1%5D.png",
@@ -24061,7 +24061,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122859 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415661/revision-arts/master%2020260325%20122859%20%5BFPS%201x1%5D.png",
@@ -24077,7 +24077,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122937 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415658/revision-arts/master%2020260325%20122937%20%5BFPS%204x5%5D.png",
@@ -24093,7 +24093,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 122938 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415655/revision-arts/master%2020260325%20122938%20%5BFPS%209x16%5D.png",
@@ -24108,7 +24108,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123005 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415652/revision-arts/master%2020260325%20123005%20%5BFPS%204x5%5D.png",
@@ -24124,7 +24124,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123005 [FPS 4x5] (1)",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415649/revision-arts/master%2020260325%20123005%20%5BFPS%204x5%5D%20%281%29.png",
@@ -24140,7 +24140,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123029 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415646/revision-arts/master%2020260325%20123029%20%5BFPS%204x5%5D.png",
@@ -24156,7 +24156,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123032 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415643/revision-arts/master%2020260325%20123032%20%5BFPS%204x5%5D.png",
@@ -24172,7 +24172,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123052 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415640/revision-arts/master%2020260325%20123052%20%5BFPS%203x4%5D.png",
@@ -24188,7 +24188,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123101 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415636/revision-arts/master%2020260325%20123101%20%5BFPS%202x3%5D.png",
@@ -24204,7 +24204,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123117 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415633/revision-arts/master%2020260325%20123117%20%5BFPS%201x1%5D.png",
@@ -24220,7 +24220,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123124 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415629/revision-arts/master%2020260325%20123124%20%5BFPS%2016x9%5D.png",
@@ -24236,7 +24236,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123143 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415626/revision-arts/master%2020260325%20123143%20%5BFPS%202x3%5D.png",
@@ -24252,7 +24252,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123151 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415623/revision-arts/master%2020260325%20123151%20%5BFPS%202x3%5D.png",
@@ -24268,7 +24268,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123214 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415620/revision-arts/master%2020260325%20123214%20%5BFPS%202x3%5D.png",
@@ -24284,7 +24284,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123228 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415617/revision-arts/master%2020260325%20123228%20%5BFPS%209x16%5D.png",
@@ -24300,7 +24300,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123243 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415614/revision-arts/master%2020260325%20123243%20%5BFPS%204x5%5D.png",
@@ -24316,7 +24316,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123258 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415611/revision-arts/master%2020260325%20123258%20%5BFPS%209x16%5D.png",
@@ -24332,7 +24332,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123304 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415608/revision-arts/master%2020260325%20123304%20%5BFPS%204x5%5D.png",
@@ -24348,7 +24348,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123331 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415605/revision-arts/master%2020260325%20123331%20%5BFPS%201x1%5D.png",
@@ -24364,7 +24364,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123332 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415601/revision-arts/master%2020260325%20123332%20%5BFPS%202x3%5D.png",
@@ -24380,7 +24380,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123356 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415598/revision-arts/master%2020260325%20123356%20%5BFPS%202x3%5D.png",
@@ -24396,7 +24396,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123356 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415595/revision-arts/master%2020260325%20123356%20%5BFPS%204x5%5D.png",
@@ -24412,7 +24412,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123423 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415589/revision-arts/master%2020260325%20123423%20%5BFPS%203x4%5D.png",
@@ -24428,7 +24428,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123424 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415592/revision-arts/master%2020260325%20123424%20%5BFPS%202x3%5D.png",
@@ -24443,7 +24443,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123452 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415586/revision-arts/master%2020260325%20123452%20%5BFPS%203x4%5D.png",
@@ -24459,7 +24459,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123504 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415583/revision-arts/master%2020260325%20123504%20%5BFPS%209x16%5D.png",
@@ -24475,7 +24475,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123524 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415581/revision-arts/master%2020260325%20123524%20%5BFPS%209x16%5D.png",
@@ -24491,7 +24491,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123525 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415578/revision-arts/master%2020260325%20123525%20%5BFPS%201x1%5D.png",
@@ -24507,7 +24507,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123545 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415575/revision-arts/master%2020260325%20123545%20%5BFPS%203x2%5D.png",
@@ -24523,7 +24523,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123548 [FPS 5x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415571/revision-arts/master%2020260325%20123548%20%5BFPS%205x4%5D.png",
@@ -24539,7 +24539,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123610 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415568/revision-arts/master%2020260325%20123610%20%5BFPS%203x4%5D.png",
@@ -24555,7 +24555,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123611 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415566/revision-arts/master%2020260325%20123611%20%5BFPS%201x1%5D.png",
@@ -24571,7 +24571,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123642 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415562/revision-arts/master%2020260325%20123642%20%5BFPS%204x5%5D.png",
@@ -24587,7 +24587,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123643 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415559/revision-arts/master%2020260325%20123643%20%5BFPS%201x1%5D.png",
@@ -24603,7 +24603,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123704 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415556/revision-arts/master%2020260325%20123704%20%5BFPS%201x1%5D.png",
@@ -24619,7 +24619,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123708 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415553/revision-arts/master%2020260325%20123708%20%5BFPS%2016x9%5D.png",
@@ -24635,7 +24635,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123728 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415550/revision-arts/master%2020260325%20123728%20%5BFPS%204x5%5D.png",
@@ -24651,7 +24651,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123735 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415547/revision-arts/master%2020260325%20123735%20%5BFPS%204x5%5D.png",
@@ -24667,7 +24667,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123752 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415544/revision-arts/master%2020260325%20123752%20%5BFPS%202x3%5D.png",
@@ -24683,7 +24683,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123756 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415541/revision-arts/master%2020260325%20123756%20%5BFPS%204x5%5D.png",
@@ -24699,7 +24699,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123817 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415538/revision-arts/master%2020260325%20123817%20%5BFPS%201x1%5D.png",
@@ -24715,7 +24715,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123835 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415535/revision-arts/master%2020260325%20123835%20%5BFPS%202x3%5D.png",
@@ -24731,7 +24731,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123845 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415532/revision-arts/master%2020260325%20123845%20%5BFPS%201x1%5D.png",
@@ -24747,7 +24747,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123903 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415529/revision-arts/master%2020260325%20123903%20%5BFPS%202x3%5D.png",
@@ -24763,7 +24763,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123928 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415526/revision-arts/master%2020260325%20123928%20%5BFPS%201x1%5D.png",
@@ -24779,7 +24779,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 123959 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415522/revision-arts/master%2020260325%20123959%20%5BFPS%202x3%5D.png",
@@ -24795,7 +24795,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124024 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415519/revision-arts/master%2020260325%20124024%20%5BFPS%204x5%5D.png",
@@ -24811,7 +24811,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124041 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415516/revision-arts/master%2020260325%20124041%20%5BFPS%203x4%5D.png",
@@ -24827,7 +24827,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124050 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415513/revision-arts/master%2020260325%20124050%20%5BFPS%209x16%5D.png",
@@ -24843,7 +24843,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124108 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415510/revision-arts/master%2020260325%20124108%20%5BFPS%209x16%5D.png",
@@ -24859,7 +24859,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124111 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415507/revision-arts/master%2020260325%20124111%20%5BFPS%202x3%5D.png",
@@ -24875,7 +24875,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124132 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415504/revision-arts/master%2020260325%20124132%20%5BFPS%204x5%5D.png",
@@ -24891,7 +24891,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124150 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415500/revision-arts/master%2020260325%20124150%20%5BFPS%204x5%5D.png",
@@ -24907,7 +24907,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124158 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415497/revision-arts/master%2020260325%20124158%20%5BFPS%201x1%5D.png",
@@ -24923,7 +24923,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124211 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415494/revision-arts/master%2020260325%20124211%20%5BFPS%209x16%5D.png",
@@ -24939,7 +24939,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124224 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415490/revision-arts/master%2020260325%20124224%20%5BFPS%204x5%5D.png",
@@ -24955,7 +24955,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124237 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415487/revision-arts/master%2020260325%20124237%20%5BFPS%201x1%5D.png",
@@ -24971,7 +24971,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124250 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415484/revision-arts/master%2020260325%20124250%20%5BFPS%204x5%5D.png",
@@ -24987,7 +24987,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124303 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415481/revision-arts/master%2020260325%20124303%20%5BFPS%203x4%5D.png",
@@ -25002,7 +25002,7 @@ const STREAM_RECORDS = [
             "graphic",
             "LAYOUT",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124316 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415478/revision-arts/master%2020260325%20124316%20%5BFPS%202x3%5D.png",
@@ -25018,7 +25018,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124331 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415475/revision-arts/master%2020260325%20124331%20%5BFPS%204x5%5D.png",
@@ -25034,7 +25034,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124346 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415472/revision-arts/master%2020260325%20124346%20%5BFPS%204x5%5D.png",
@@ -25050,7 +25050,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124411 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415469/revision-arts/master%2020260325%20124411%20%5BFPS%201x1%5D.png",
@@ -25066,7 +25066,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124441 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415463/revision-arts/master%2020260325%20124441%20%5BFPS%203x4%5D.png",
@@ -25082,7 +25082,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124530 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415460/revision-arts/master%2020260325%20124530%20%5BFPS%201x1%5D.png",
@@ -25098,7 +25098,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124557 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415457/revision-arts/master%2020260325%20124557%20%5BFPS%201x1%5D.png",
@@ -25114,7 +25114,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124615 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415454/revision-arts/master%2020260325%20124615%20%5BFPS%203x4%5D.png",
@@ -25130,7 +25130,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124621 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415451/revision-arts/master%2020260325%20124621%20%5BFPS%202x3%5D.png",
@@ -25146,7 +25146,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124643 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415448/revision-arts/master%2020260325%20124643%20%5BFPS%204x5%5D.png",
@@ -25162,7 +25162,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124711 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415444/revision-arts/master%2020260325%20124711%20%5BFPS%203x4%5D.png",
@@ -25178,7 +25178,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124737 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415432/revision-arts/master%2020260325%20124737%20%5BFPS%204x5%5D.png",
@@ -25194,7 +25194,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124804 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415407/revision-arts/master%2020260325%20124804%20%5BFPS%201x1%5D.png",
@@ -25210,7 +25210,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124835 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415401/revision-arts/master%2020260325%20124835%20%5BFPS%201x1%5D.png",
@@ -25226,7 +25226,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124901 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415398/revision-arts/master%2020260325%20124901%20%5BFPS%201x1%5D.png",
@@ -25242,7 +25242,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 124936 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415394/revision-arts/master%2020260325%20124936%20%5BFPS%201x1%5D.png",
@@ -25258,7 +25258,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 125151 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415391/revision-arts/master%2020260325%20125151%20%5BFPS%209x16%5D.png",
@@ -25274,7 +25274,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 125411 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415388/revision-arts/master%2020260325%20125411%20%5BFPS%204x5%5D.png",
@@ -25290,7 +25290,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 125440 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415385/revision-arts/master%2020260325%20125440%20%5BFPS%204x5%5D.png",
@@ -25306,7 +25306,7 @@ const STREAM_RECORDS = [
             "LAYOUT",
             "mono",
             "plane",
-            "Textures"
+            "texture"
         ],
         "title": "master 20260325 125501 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774415382/revision-arts/master%2020260325%20125501%20%5BFPS%204x5%5D.png",
@@ -26583,7 +26583,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195657 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438838/revision-arts/master%2020260325%20195657%20%5BFPS%201x1%5D.png",
@@ -26599,7 +26599,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195705 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438835/revision-arts/master%2020260325%20195705%20%5BFPS%201x1%5D.png",
@@ -26615,7 +26615,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195725 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438832/revision-arts/master%2020260325%20195725%20%5BFPS%201x1%5D.png",
@@ -26631,7 +26631,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195735 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438826/revision-arts/master%2020260325%20195735%20%5BFPS%201x1%5D.png",
@@ -26647,7 +26647,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195735 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438829/revision-arts/master%2020260325%20195735%20%5BFPS%202x3%5D.png",
@@ -26663,7 +26663,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195755 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438823/revision-arts/master%2020260325%20195755%20%5BFPS%203x4%5D.png",
@@ -26679,7 +26679,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195802 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438820/revision-arts/master%2020260325%20195802%20%5BFPS%201x1%5D.png",
@@ -26695,7 +26695,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195821 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438816/revision-arts/master%2020260325%20195821%20%5BFPS%201x1%5D.png",
@@ -26711,7 +26711,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195825 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438812/revision-arts/master%2020260325%20195825%20%5BFPS%203x4%5D.png",
@@ -26727,7 +26727,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195830 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438809/revision-arts/master%2020260325%20195830%20%5BFPS%201x1%5D.png",
@@ -26743,7 +26743,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195847 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438804/revision-arts/master%2020260325%20195847%20%5BFPS%201x1%5D.png",
@@ -26759,7 +26759,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195851 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438801/revision-arts/master%2020260325%20195851%20%5BFPS%201x1%5D.png",
@@ -26775,7 +26775,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195900 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438798/revision-arts/master%2020260325%20195900%20%5BFPS%204x3%5D.png",
@@ -26791,7 +26791,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195934 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438795/revision-arts/master%2020260325%20195934%20%5BFPS%201x1%5D.png",
@@ -26807,7 +26807,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195936 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438791/revision-arts/master%2020260325%20195936%20%5BFPS%201x1%5D.png",
@@ -26823,7 +26823,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 195944 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438788/revision-arts/master%2020260325%20195944%20%5BFPS%204x5%5D.png",
@@ -26839,7 +26839,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200010 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438785/revision-arts/master%2020260325%20200010%20%5BFPS%201x1%5D.png",
@@ -26855,7 +26855,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200034 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438782/revision-arts/master%2020260325%20200034%20%5BFPS%204x5%5D.png",
@@ -26871,7 +26871,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200035 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438779/revision-arts/master%2020260325%20200035%20%5BFPS%203x2%5D.png",
@@ -26887,7 +26887,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200037 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438776/revision-arts/master%2020260325%20200037%20%5BFPS%201x1%5D.png",
@@ -26903,7 +26903,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200058 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438773/revision-arts/master%2020260325%20200058%20%5BFPS%203x2%5D.png",
@@ -26919,7 +26919,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200138 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438770/revision-arts/master%2020260325%20200138%20%5BFPS%201x1%5D.png",
@@ -26935,7 +26935,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200153 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438766/revision-arts/master%2020260325%20200153%20%5BFPS%203x2%5D.png",
@@ -26951,7 +26951,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200225 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438763/revision-arts/master%2020260325%20200225%20%5BFPS%204x3%5D.png",
@@ -26967,7 +26967,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200232 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438760/revision-arts/master%2020260325%20200232%20%5BFPS%204x3%5D.png",
@@ -26983,7 +26983,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200239 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438757/revision-arts/master%2020260325%20200239%20%5BFPS%203x2%5D.png",
@@ -26999,7 +26999,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200256 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438753/revision-arts/master%2020260325%20200256%20%5BFPS%201x1%5D.png",
@@ -27015,7 +27015,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200300 [FPS 5x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438750/revision-arts/master%2020260325%20200300%20%5BFPS%205x4%5D.png",
@@ -27031,7 +27031,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200323 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438747/revision-arts/master%2020260325%20200323%20%5BFPS%201x1%5D.png",
@@ -27047,7 +27047,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200331 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438744/revision-arts/master%2020260325%20200331%20%5BFPS%204x5%5D.png",
@@ -27063,7 +27063,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200402 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438741/revision-arts/master%2020260325%20200402%20%5BFPS%204x5%5D.png",
@@ -27079,7 +27079,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200407 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438738/revision-arts/master%2020260325%20200407%20%5BFPS%204x5%5D.png",
@@ -27095,7 +27095,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200425 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438735/revision-arts/master%2020260325%20200425%20%5BFPS%201x1%5D.png",
@@ -27111,7 +27111,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200431 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438732/revision-arts/master%2020260325%20200431%20%5BFPS%201x1%5D.png",
@@ -27127,7 +27127,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200449 [FPS 21x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438729/revision-arts/master%2020260325%20200449%20%5BFPS%2021x9%5D.png",
@@ -27143,7 +27143,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200455 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438726/revision-arts/master%2020260325%20200455%20%5BFPS%203x2%5D.png",
@@ -27159,7 +27159,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200508 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438723/revision-arts/master%2020260325%20200508%20%5BFPS%203x4%5D.png",
@@ -27175,7 +27175,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200515 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438720/revision-arts/master%2020260325%20200515%20%5BFPS%204x5%5D.png",
@@ -27191,7 +27191,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200536 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438717/revision-arts/master%2020260325%20200536%20%5BFPS%204x5%5D.png",
@@ -27207,7 +27207,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200541 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438714/revision-arts/master%2020260325%20200541%20%5BFPS%201x1%5D.png",
@@ -27223,7 +27223,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200547 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438710/revision-arts/master%2020260325%20200547%20%5BFPS%201x1%5D.png",
@@ -27239,7 +27239,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200609 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438707/revision-arts/master%2020260325%20200609%20%5BFPS%201x1%5D.png",
@@ -27255,7 +27255,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200613 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438703/revision-arts/master%2020260325%20200613%20%5BFPS%203x2%5D.png",
@@ -27271,7 +27271,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200639 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438699/revision-arts/master%2020260325%20200639%20%5BFPS%203x2%5D.png",
@@ -27287,7 +27287,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200704 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438686/revision-arts/master%2020260325%20200704%20%5BFPS%204x3%5D.png",
@@ -27303,7 +27303,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200708 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438683/revision-arts/master%2020260325%20200708%20%5BFPS%204x5%5D.png",
@@ -27319,7 +27319,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200709 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438679/revision-arts/master%2020260325%20200709%20%5BFPS%204x5%5D.png",
@@ -27335,7 +27335,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200737 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438675/revision-arts/master%2020260325%20200737%20%5BFPS%201x1%5D.png",
@@ -27351,7 +27351,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200740 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438663/revision-arts/master%2020260325%20200740%20%5BFPS%201x1%5D.png",
@@ -27367,7 +27367,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200821 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438638/revision-arts/master%2020260325%20200821%20%5BFPS%203x4%5D.png",
@@ -27383,7 +27383,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200828 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438615/revision-arts/master%2020260325%20200828%20%5BFPS%204x5%5D.png",
@@ -27399,7 +27399,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200856 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438590/revision-arts/master%2020260325%20200856%20%5BFPS%202x3%5D.png",
@@ -27415,7 +27415,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200912 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438569/revision-arts/master%2020260325%20200912%20%5BFPS%203x4%5D.png",
@@ -27431,7 +27431,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 200941 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438565/revision-arts/master%2020260325%20200941%20%5BFPS%204x5%5D.png",
@@ -27447,7 +27447,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201001 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438561/revision-arts/master%2020260325%20201001%20%5BFPS%204x5%5D.png",
@@ -27463,7 +27463,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201012 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438541/revision-arts/master%2020260325%20201012%20%5BFPS%201x1%5D.png",
@@ -27479,7 +27479,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201037 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438513/revision-arts/master%2020260325%20201037%20%5BFPS%201x1%5D.png",
@@ -27495,7 +27495,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201110 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438491/revision-arts/master%2020260325%20201110%20%5BFPS%201x1%5D.png",
@@ -27511,7 +27511,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201121 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438466/revision-arts/master%2020260325%20201121%20%5BFPS%204x5%5D.png",
@@ -27527,7 +27527,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201134 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438445/revision-arts/master%2020260325%20201134%20%5BFPS%204x5%5D.png",
@@ -27543,7 +27543,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201135 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438422/revision-arts/master%2020260325%20201135%20%5BFPS%204x5%5D.png",
@@ -27559,7 +27559,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201142 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438417/revision-arts/master%2020260325%20201142%20%5BFPS%201x1%5D.png",
@@ -27575,7 +27575,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201209 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438413/revision-arts/master%2020260325%20201209%20%5BFPS%202x3%5D.png",
@@ -27591,7 +27591,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201210 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438410/revision-arts/master%2020260325%20201210%20%5BFPS%203x4%5D.png",
@@ -27607,7 +27607,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201229 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438404/revision-arts/master%2020260325%20201229%20%5BFPS%201x1%5D.png",
@@ -27623,7 +27623,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201232 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438401/revision-arts/master%2020260325%20201232%20%5BFPS%202x3%5D.png",
@@ -27639,7 +27639,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201254 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438392/revision-arts/master%2020260325%20201254%20%5BFPS%201x1%5D.png",
@@ -27655,7 +27655,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201327 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438378/revision-arts/master%2020260325%20201327%20%5BFPS%204x5%5D.png",
@@ -27671,7 +27671,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201328 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438383/revision-arts/master%2020260325%20201328%20%5BFPS%201x1%5D.png",
@@ -27687,7 +27687,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201351 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438373/revision-arts/master%2020260325%20201351%20%5BFPS%204x5%5D.png",
@@ -27703,7 +27703,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201353 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438368/revision-arts/master%2020260325%20201353%20%5BFPS%201x1%5D.png",
@@ -27719,7 +27719,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201414 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438363/revision-arts/master%2020260325%20201414%20%5BFPS%203x2%5D.png",
@@ -27735,7 +27735,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201417 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438359/revision-arts/master%2020260325%20201417%20%5BFPS%203x2%5D.png",
@@ -27751,7 +27751,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201437 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438354/revision-arts/master%2020260325%20201437%20%5BFPS%201x1%5D.png",
@@ -27767,7 +27767,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201506 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438349/revision-arts/master%2020260325%20201506%20%5BFPS%201x1%5D.png",
@@ -27783,7 +27783,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201517 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438344/revision-arts/master%2020260325%20201517%20%5BFPS%201x1%5D.png",
@@ -27799,7 +27799,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201607 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438340/revision-arts/master%2020260325%20201607%20%5BFPS%204x5%5D.png",
@@ -27815,7 +27815,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201622 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438336/revision-arts/master%2020260325%20201622%20%5BFPS%204x5%5D.png",
@@ -27831,7 +27831,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201714 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438331/revision-arts/master%2020260325%20201714%20%5BFPS%203x4%5D.png",
@@ -27847,7 +27847,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201731 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438328/revision-arts/master%2020260325%20201731%20%5BFPS%201x1%5D.png",
@@ -27863,7 +27863,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201740 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438322/revision-arts/master%2020260325%20201740%20%5BFPS%204x5%5D.png",
@@ -27879,7 +27879,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201806 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438318/revision-arts/master%2020260325%20201806%20%5BFPS%203x4%5D.png",
@@ -27895,7 +27895,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201914 [FPS 3x2]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438313/revision-arts/master%2020260325%20201914%20%5BFPS%203x2%5D.png",
@@ -27911,7 +27911,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201925 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438304/revision-arts/master%2020260325%20201925%20%5BFPS%204x5%5D.png",
@@ -27927,7 +27927,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 201951 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438298/revision-arts/master%2020260325%20201951%20%5BFPS%201x1%5D.png",
@@ -27943,7 +27943,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202001 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438294/revision-arts/master%2020260325%20202001%20%5BFPS%204x5%5D.png",
@@ -27959,7 +27959,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202009 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438289/revision-arts/master%2020260325%20202009%20%5BFPS%204x5%5D.png",
@@ -27975,7 +27975,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202016 [FPS 1x1]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438285/revision-arts/master%2020260325%20202016%20%5BFPS%201x1%5D.png",
@@ -27991,7 +27991,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202021 [FPS 2x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438280/revision-arts/master%2020260325%20202021%20%5BFPS%202x3%5D.png",
@@ -28007,7 +28007,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202041 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438276/revision-arts/master%2020260325%20202041%20%5BFPS%2016x9%5D.png",
@@ -28023,7 +28023,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202049 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438272/revision-arts/master%2020260325%20202049%20%5BFPS%204x3%5D.png",
@@ -28039,7 +28039,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202104 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438268/revision-arts/master%2020260325%20202104%20%5BFPS%209x16%5D.png",
@@ -28055,7 +28055,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202107 [FPS 16x9]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438265/revision-arts/master%2020260325%20202107%20%5BFPS%2016x9%5D.png",
@@ -28071,7 +28071,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202111 [FPS 3x4]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438261/revision-arts/master%2020260325%20202111%20%5BFPS%203x4%5D.png",
@@ -28087,7 +28087,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202139 [FPS 4x3]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438258/revision-arts/master%2020260325%20202139%20%5BFPS%204x3%5D.png",
@@ -28103,7 +28103,7 @@ const STREAM_RECORDS = [
             "layout",
             "plane",
             "print",
-            "TEXTURES"
+            "texture"
         ],
         "title": "master 20260325 202201 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774438254/revision-arts/master%2020260325%20202201%20%5BFPS%204x5%5D.png",
