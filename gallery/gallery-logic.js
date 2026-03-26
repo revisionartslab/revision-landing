@@ -78,13 +78,12 @@ const STREAM_RECORDS = [
     {
         "id": "Bronze statue of 202603241303",
         "tags": [
-            "character",
             "object"
         ],
         "title": "Bronze statue of 202603241303",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358361/revision-arts/Bronze%20statue%20of%20202603241303.jpg",
         "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774356689/revision-arts/Bronze_statue_of_202603241303",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774525960/revision-arts/Bronze_statue_of_202603241303",
         "assetId": "6db76e0746a9f1b57e8adcfbb05ada48",
         "uploadedAt": "2026-03-24T13:19:21Z"
     },
