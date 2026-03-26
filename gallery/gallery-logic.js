@@ -79,8 +79,7 @@ const STREAM_RECORDS = [
         "id": "Bronze statue of 202603241303",
         "tags": [
             "character",
-            "object",
-            "pop"
+            "object"
         ],
         "title": "Bronze statue of 202603241303",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358361/revision-arts/Bronze%20statue%20of%20202603241303.jpg",
@@ -26157,8 +26156,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 113804 [FPS 4x5]",
         "tags": [
             "character",
-            "object",
-            "pop"
+            "object"
         ],
         "title": "master 20260324 113804 [FPS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358449/revision-arts/master%2020260324%20113804%20%5BFPS%204x5%5D.jpg",
@@ -26171,8 +26169,7 @@ const STREAM_RECORDS = [
         "id": "master 20260324 125547 [PFS 4x5]",
         "tags": [
             "character",
-            "object",
-            "pop"
+            "object"
         ],
         "title": "master 20260324 125547 [PFS 4x5]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774358416/revision-arts/master%2020260324%20125547%20%5BPFS%204x5%5D.jpg",
