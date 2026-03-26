@@ -907,7 +907,7 @@ header {
 .copy-bubble {
     position: absolute;
     right: 50%;
-    bottom: calc(100% + 2px);
+    bottom: 100%; /* Lowered from calc(100% + 2px) */
     transform: translateX(50%) translateY(5px);
     font-size: 9px;
     font-weight: 900;
@@ -920,6 +920,11 @@ header {
     pointer-events: none;
     white-space: nowrap;
     z-index: 100;
+}
+
+/* Compensate for 8px padding in viewer control buttons to keep bubble height consistent */
+.viewer-control-btn .copy-bubble {
+    bottom: calc(100% - 6px);
 }
 
 .copy-bubble.active {
