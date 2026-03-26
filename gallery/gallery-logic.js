@@ -47,7 +47,7 @@ function clearAllFeedback() {
         feedbackTimeout = null;
     }
     activeFeedback = null;
-    document.querySelectorAll('.copy-feedback-mini').forEach(fb => fb.classList.remove('active'));
+    document.querySelectorAll('.copy-bubble').forEach(fb => fb.classList.remove('active'));
 }
 
 // ── SECURITY: HTML Escape utility ─────────────────────────────────────────
@@ -40492,6 +40492,34 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-26T02:52:31Z"
     },
     {
+        "id": "master 20260326 110630 [FPS 2x3] 10",
+        "tags": [
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 10",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774496093/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%2010.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774496033/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_10",
+        "assetId": "e50967e83c2936fa3b6b6fbe69a25f24",
+        "uploadedAt": "2026-03-26T03:34:53Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 11",
+        "tags": [
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 11",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774496097/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%2011.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774496089/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_11",
+        "assetId": "4881f273b91ddcb81a3f7a948a63dec6",
+        "uploadedAt": "2026-03-26T03:34:57Z"
+    },
+    {
         "id": "master 20260326 110630 [FPS 2x3] 2",
         "tags": [
             "moment",
@@ -40588,6 +40616,20 @@ const STREAM_RECORDS = [
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774493540/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_8",
         "assetId": "013981e3c4d208ae621143d6da004c7c",
         "uploadedAt": "2026-03-26T02:52:32Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 9",
+        "tags": [
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 9",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774496095/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%209.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774496033/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_9",
+        "assetId": "351359a392ee381b4a0153705d21b450",
+        "uploadedAt": "2026-03-26T03:34:55Z"
     }
 ];
 
@@ -41825,7 +41867,7 @@ window.copyEmailGlobal = function (btn) {
     clearAllFeedback(); // Proactive instant clear on click
     const email = "revisionartslab@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
-        const feedback = btn.querySelector('.email-feedback');
+        const feedback = btn.querySelector('.copy-bubble');
         if (feedback) showFeedback(feedback);
     });
 };
