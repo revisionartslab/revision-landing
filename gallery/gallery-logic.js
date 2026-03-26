@@ -39021,6 +39021,636 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-25T12:20:38Z"
     },
     {
+        "id": "master 20260326 101401 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101401 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522897/revision-arts/master%2020260326%20101401%20%5BFPS%202x3%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522348/revision-arts/prompt_20260326_101401_%5BFPS_2x3%5D",
+        "assetId": "2d2c7c7a45dcc7544ddfa0e73afffccb",
+        "uploadedAt": "2026-03-26T11:01:37Z"
+    },
+    {
+        "id": "master 20260326 101449 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101449 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522894/revision-arts/master%2020260326%20101449%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522347/revision-arts/prompt_20260326_101449_%5BFPS_2x3%5D",
+        "assetId": "35c13b74e00e459035afaa01e31e2171",
+        "uploadedAt": "2026-03-26T11:01:34Z"
+    },
+    {
+        "id": "master 20260326 101458 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101458 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522892/revision-arts/master%2020260326%20101458%20%5BFPS%202x3%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522347/revision-arts/prompt_20260326_101458_%5BFPS_2x3%5D",
+        "assetId": "39c1bda9aa3d17961fb002204e62dd9e",
+        "uploadedAt": "2026-03-26T11:01:32Z"
+    },
+    {
+        "id": "master 20260326 101714 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101714 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522889/revision-arts/master%2020260326%20101714%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522344/revision-arts/prompt_20260326_101714_%5BFPS_2x3%5D",
+        "assetId": "d53b786b635d1051f9c9b9e95606bc1a",
+        "uploadedAt": "2026-03-26T11:01:29Z"
+    },
+    {
+        "id": "master 20260326 101850 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101850 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522887/revision-arts/master%2020260326%20101850%20%5BFPS%202x3%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522342/revision-arts/prompt_20260326_101850_%5BFPS_2x3%5D",
+        "assetId": "864e928f0f0ca17c0a6730624a4f4c0a",
+        "uploadedAt": "2026-03-26T11:01:27Z"
+    },
+    {
+        "id": "master 20260326 101944 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 101944 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522883/revision-arts/master%2020260326%20101944%20%5BFPS%202x3%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522342/revision-arts/prompt_20260326_101944_%5BFPS_2x3%5D",
+        "assetId": "34af9eca0dde7f2151615ae95962753e",
+        "uploadedAt": "2026-03-26T11:01:23Z"
+    },
+    {
+        "id": "master 20260326 102156 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102156 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522879/revision-arts/master%2020260326%20102156%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522340/revision-arts/prompt_20260326_102156_%5BFPS_2x3%5D",
+        "assetId": "35f9566f8238c3c34d41933b4ad45997",
+        "uploadedAt": "2026-03-26T11:01:19Z"
+    },
+    {
+        "id": "master 20260326 102202 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102202 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522877/revision-arts/master%2020260326%20102202%20%5BFPS%202x3%5D.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522340/revision-arts/prompt_20260326_102202_%5BFPS_2x3%5D",
+        "assetId": "83ff21b356171c7d1d3c94281c4c6ce4",
+        "uploadedAt": "2026-03-26T11:01:17Z"
+    },
+    {
+        "id": "master 20260326 102342 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102342 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522874/revision-arts/master%2020260326%20102342%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522339/revision-arts/prompt_20260326_102342_%5BFPS_2x3%5D",
+        "assetId": "4883584e358a990c160fd04f63323a77",
+        "uploadedAt": "2026-03-26T11:01:14Z"
+    },
+    {
+        "id": "master 20260326 102415 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102415 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522872/revision-arts/master%2020260326%20102415%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522338/revision-arts/prompt_20260326_102415_%5BFPS_2x3%5D",
+        "assetId": "9dd74d5df369b3751a7ec9c78168f1af",
+        "uploadedAt": "2026-03-26T11:01:12Z"
+    },
+    {
+        "id": "master 20260326 102444 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102444 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522870/revision-arts/master%2020260326%20102444%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522337/revision-arts/prompt_20260326_102444_%5BFPS_2x3%5D",
+        "assetId": "fb804ee3a3675f580c4a655d81d3781c",
+        "uploadedAt": "2026-03-26T11:01:10Z"
+    },
+    {
+        "id": "master 20260326 102627 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102627 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522868/revision-arts/master%2020260326%20102627%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522336/revision-arts/prompt_20260326_102627_%5BFPS_2x3%5D",
+        "assetId": "36b43603c9be02068d84cb620689fd4d",
+        "uploadedAt": "2026-03-26T11:01:08Z"
+    },
+    {
+        "id": "master 20260326 102659 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102659 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522865/revision-arts/master%2020260326%20102659%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522336/revision-arts/prompt_20260326_102659_%5BFPS_2x3%5D",
+        "assetId": "cf62a1213c2700f964e849269a6a5715",
+        "uploadedAt": "2026-03-26T11:01:05Z"
+    },
+    {
+        "id": "master 20260326 102755 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102755 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522862/revision-arts/master%2020260326%20102755%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522336/revision-arts/prompt_20260326_102755_%5BFPS_2x3%5D",
+        "assetId": "0c8b825b650e0bee16fe1a1c56eb4fc0",
+        "uploadedAt": "2026-03-26T11:01:02Z"
+    },
+    {
+        "id": "master 20260326 102833 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102833 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522860/revision-arts/master%2020260326%20102833%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522334/revision-arts/prompt_20260326_102833_%5BFPS_2x3%5D",
+        "assetId": "dabf6c48aac2054bc3a1e09aacb1c3d1",
+        "uploadedAt": "2026-03-26T11:01:00Z"
+    },
+    {
+        "id": "master 20260326 102910 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102910 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522856/revision-arts/master%2020260326%20102910%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522334/revision-arts/prompt_20260326_102910_%5BFPS_2x3%5D",
+        "assetId": "e035b11631d79aa9e6db10b1c779b01c",
+        "uploadedAt": "2026-03-26T11:00:56Z"
+    },
+    {
+        "id": "master 20260326 102944 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 102944 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522853/revision-arts/master%2020260326%20102944%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522332/revision-arts/prompt_20260326_102944_%5BFPS_2x3%5D",
+        "assetId": "d5801c9b6899e55029c605df289a9743",
+        "uploadedAt": "2026-03-26T11:00:53Z"
+    },
+    {
+        "id": "master 20260326 103015 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103015 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522851/revision-arts/master%2020260326%20103015%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522332/revision-arts/prompt_20260326_103015_%5BFPS_2x3%5D",
+        "assetId": "21b4c35a4f8378d697d9c8204c83eab5",
+        "uploadedAt": "2026-03-26T11:00:51Z"
+    },
+    {
+        "id": "master 20260326 103051 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103051 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522849/revision-arts/master%2020260326%20103051%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522330/revision-arts/prompt_20260326_103051_%5BFPS_2x3%5D",
+        "assetId": "6ffcdd1065237d0d3bbe1b1876280d17",
+        "uploadedAt": "2026-03-26T11:00:49Z"
+    },
+    {
+        "id": "master 20260326 103400 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103400 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522846/revision-arts/master%2020260326%20103400%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522328/revision-arts/prompt_20260326_103400_%5BFPS_2x3%5D",
+        "assetId": "26f45bd957303b4d0b4f492c1f0bcc9c",
+        "uploadedAt": "2026-03-26T11:00:46Z"
+    },
+    {
+        "id": "master 20260326 103433 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103433 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522842/revision-arts/master%2020260326%20103433%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522327/revision-arts/prompt_20260326_103433_%5BFPS_2x3%5D",
+        "assetId": "d5af128bc7b00d30119b083201aba5e3",
+        "uploadedAt": "2026-03-26T11:00:42Z"
+    },
+    {
+        "id": "master 20260326 103507 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103507 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522840/revision-arts/master%2020260326%20103507%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522327/revision-arts/prompt_20260326_103507_%5BFPS_2x3%5D",
+        "assetId": "ba8a51e01b4a5c57876964dbff16d9ba",
+        "uploadedAt": "2026-03-26T11:00:40Z"
+    },
+    {
+        "id": "master 20260326 103613 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103613 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522838/revision-arts/master%2020260326%20103613%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522327/revision-arts/prompt_20260326_103613_%5BFPS_2x3%5D",
+        "assetId": "82a6d7fb3abfd368236cde3a29d24492",
+        "uploadedAt": "2026-03-26T11:00:38Z"
+    },
+    {
+        "id": "master 20260326 103648 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103648 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522835/revision-arts/master%2020260326%20103648%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522327/revision-arts/prompt_20260326_103648_%5BFPS_2x3%5D",
+        "assetId": "d81a9fd3e8de5515fdcbc03e49af22fe",
+        "uploadedAt": "2026-03-26T11:00:35Z"
+    },
+    {
+        "id": "master 20260326 103826 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 103826 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522832/revision-arts/master%2020260326%20103826%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522325/revision-arts/prompt_20260326_103826_%5BFPS_2x3%5D",
+        "assetId": "6f4bd5cbed979e086235e58440d44e35",
+        "uploadedAt": "2026-03-26T11:00:32Z"
+    },
+    {
+        "id": "master 20260326 104130 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 104130 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522830/revision-arts/master%2020260326%20104130%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522325/revision-arts/prompt_20260326_104130_%5BFPS_2x3%5D",
+        "assetId": "80b445dda5a17bdf6b4b8a87eb5c8726",
+        "uploadedAt": "2026-03-26T11:00:30Z"
+    },
+    {
+        "id": "master 20260326 104202 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 104202 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522827/revision-arts/master%2020260326%20104202%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522325/revision-arts/prompt_20260326_104202_%5BFPS_2x3%5D",
+        "assetId": "35126a8a31ba0866ae8fb51009d6a2a9",
+        "uploadedAt": "2026-03-26T11:00:27Z"
+    },
+    {
+        "id": "master 20260326 104314 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 104314 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522825/revision-arts/master%2020260326%20104314%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522325/revision-arts/prompt_20260326_104314_%5BFPS_2x3%5D",
+        "assetId": "cd1d69e5d4bc5a02d9b7c52b8157cd64",
+        "uploadedAt": "2026-03-26T11:00:25Z"
+    },
+    {
+        "id": "master 20260326 104351 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 104351 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522823/revision-arts/master%2020260326%20104351%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522324/revision-arts/prompt_20260326_104351_%5BFPS_2x3%5D",
+        "assetId": "46fb65970eb5121f27411a2d91318778",
+        "uploadedAt": "2026-03-26T11:00:23Z"
+    },
+    {
+        "id": "master 20260326 105043 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105043 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522821/revision-arts/master%2020260326%20105043%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522324/revision-arts/prompt_20260326_105043_%5BFPS_2x3%5D",
+        "assetId": "b7de79629d7086fd67c8ad80d0c10d5e",
+        "uploadedAt": "2026-03-26T11:00:21Z"
+    },
+    {
+        "id": "master 20260326 105351 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105351 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522818/revision-arts/master%2020260326%20105351%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522322/revision-arts/prompt_20260326_105351_%5BFPS_2x3%5D",
+        "assetId": "06df30f95d39107d222088adc5808ceb",
+        "uploadedAt": "2026-03-26T11:00:18Z"
+    },
+    {
+        "id": "master 20260326 105508 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105508 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522816/revision-arts/master%2020260326%20105508%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522322/revision-arts/prompt_20260326_105508_%5BFPS_2x3%5D",
+        "assetId": "df43ae79b3c27dcd92e978b381fa83bc",
+        "uploadedAt": "2026-03-26T11:00:16Z"
+    },
+    {
+        "id": "master 20260326 105647 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105647 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522814/revision-arts/master%2020260326%20105647%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522321/revision-arts/prompt_20260326_105647_%5BFPS_2x3%5D",
+        "assetId": "268c5a28e92d4fd973e1a1b2a4f9c0d0",
+        "uploadedAt": "2026-03-26T11:00:14Z"
+    },
+    {
+        "id": "master 20260326 105728 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105728 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522810/revision-arts/master%2020260326%20105728%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522321/revision-arts/prompt_20260326_105728_%5BFPS_2x3%5D",
+        "assetId": "22a07198c3612bb301d475c0ef2037f2",
+        "uploadedAt": "2026-03-26T11:00:10Z"
+    },
+    {
+        "id": "master 20260326 105805 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 105805 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522808/revision-arts/master%2020260326%20105805%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522321/revision-arts/prompt_20260326_105805_%5BFPS_2x3%5D",
+        "assetId": "2f2d4d36ce28f94b9106adbaa62113cb",
+        "uploadedAt": "2026-03-26T11:00:08Z"
+    },
+    {
+        "id": "master 20260326 110241 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110241 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522806/revision-arts/master%2020260326%20110241%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522318/revision-arts/prompt_20260326_110241_%5BFPS_2x3%5D",
+        "assetId": "51563a7a51d5151e03a966418bb70844",
+        "uploadedAt": "2026-03-26T11:00:06Z"
+    },
+    {
+        "id": "master 20260326 110324 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110324 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522804/revision-arts/master%2020260326%20110324%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522318/revision-arts/prompt_20260326_110324_%5BFPS_2x3%5D",
+        "assetId": "24725981e9f0992b6429429000e42ee3",
+        "uploadedAt": "2026-03-26T11:00:04Z"
+    },
+    {
+        "id": "master 20260326 110400 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110400 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522801/revision-arts/master%2020260326%20110400%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522318/revision-arts/prompt_20260326_110400_%5BFPS_2x3%5D",
+        "assetId": "4c7d3a9bfc27c39fb5f00219a24d7d27",
+        "uploadedAt": "2026-03-26T11:00:01Z"
+    },
+    {
+        "id": "master 20260326 110520 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110520 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522799/revision-arts/master%2020260326%20110520%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522318/revision-arts/prompt_20260326_110520_%5BFPS_2x3%5D",
+        "assetId": "0778118ebd557fe95c40b8f6aa6f9463",
+        "uploadedAt": "2026-03-26T10:59:59Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3]",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3]",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522797/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522317/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D",
+        "assetId": "7f779d5dfc72f7e0b4a8e1f9108812a3",
+        "uploadedAt": "2026-03-26T10:59:57Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 1",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 1",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522794/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%201.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522315/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_1",
+        "assetId": "94919814455271a045a5b4870a83d605",
+        "uploadedAt": "2026-03-26T10:59:54Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 10",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 10",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522774/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%2010.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522311/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_10",
+        "assetId": "6c103bde8aff0354400b28b2c1363bbd",
+        "uploadedAt": "2026-03-26T10:59:34Z"
+    },
+    {
         "id": "master 20260326 110630 [FPS 2x3] 11",
         "tags": [
             "moment",
@@ -39033,6 +39663,126 @@ const STREAM_RECORDS = [
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774501594/revision-arts/prompt_20260326_110630_[FPS_2x3]_11",
         "assetId": "91f1dede31ab94d1ae2c73c05a828c58",
         "uploadedAt": "2026-03-26T05:06:52Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 2",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 2",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522792/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%202.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522313/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_2",
+        "assetId": "b07ca7b96020c53b7b404cc659e121bb",
+        "uploadedAt": "2026-03-26T10:59:52Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 3",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 3",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522789/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%203.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522313/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_3",
+        "assetId": "56245c74efad01e10e876a656d8accc4",
+        "uploadedAt": "2026-03-26T10:59:49Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 4",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 4",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522787/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%204.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522313/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_4",
+        "assetId": "2da7dd174033ae34a1db11672d50b484",
+        "uploadedAt": "2026-03-26T10:59:47Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 5",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 5",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522785/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%205.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522313/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_5",
+        "assetId": "e39f72fed41f6577ccfcdd913ac16dad",
+        "uploadedAt": "2026-03-26T10:59:45Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 6",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 6",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522782/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%206.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522312/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_6",
+        "assetId": "5001a7b4e9969c4fe928a0e0fe2efc87",
+        "uploadedAt": "2026-03-26T10:59:42Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 7",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 7",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522780/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%207.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522311/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_7",
+        "assetId": "9fbc9e06853f5d293c5e3a1106e2b915",
+        "uploadedAt": "2026-03-26T10:59:40Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 8",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 8",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522779/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%208.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522313/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_8",
+        "assetId": "4e9dfbcffe35b2eb695f11426aa9df73",
+        "uploadedAt": "2026-03-26T10:59:39Z"
+    },
+    {
+        "id": "master 20260326 110630 [FPS 2x3] 9",
+        "tags": [
+            "editorial",
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260326 110630 [FPS 2x3] 9",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774522776/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%209.jpg",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774522311/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_9",
+        "assetId": "9fd98f42e6bc1c3e6668e16145a5f18f",
+        "uploadedAt": "2026-03-26T10:59:36Z"
     }
 ];
 
