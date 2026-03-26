@@ -24465,10 +24465,8 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260323 215247 [FPS 9x16]",
         "tags": [
-            "editorial",
             "mono",
-            "plane",
-            "portrait"
+            "object"
         ],
         "title": "master 20260323 215247 [FPS 9x16]",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774359630/revision-arts/master%2020260323%20215247%20%5BFPS%209x16%5D.png",
