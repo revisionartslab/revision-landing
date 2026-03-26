@@ -93,7 +93,8 @@ const STREAM_RECORDS = [
         "tags": [
             "moment",
             "plane",
-            "portrait"
+            "portrait",
+            "test"
         ],
         "title": "master 20260223 1104",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774500165/revision-arts/master%2020260223%201104.png",
@@ -107,7 +108,8 @@ const STREAM_RECORDS = [
         "tags": [
             "moment",
             "plane",
-            "portrait"
+            "portrait",
+            "test"
         ],
         "title": "master 20260223 1225",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774500167/revision-arts/master%2020260223%201225.png",
