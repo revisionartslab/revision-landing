@@ -93,34 +93,35 @@ const STREAM_RECORDS = [
         "tags": [
             "moment",
             "plane",
-            "portrait",
-            "test"
+            "portrait"
         ],
         "title": "master 20260223 1104",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774501609/revision-arts/master%2020260223%201104.png",
         "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774501594/revision-arts/prompt_20260223_1104",
+        "promptUrl": null,
         "assetId": "6c77758d8dc10bfb9f9c8776c161656f",
         "uploadedAt": "2026-03-26T05:06:49Z"
     },
     {
         "id": "master 20260223 1225",
         "tags": [
-            "moment",
+            "character",
+            "graphic",
             "plane",
-            "portrait",
-            "test"
+            "pop",
+            "portrait"
         ],
         "title": "master 20260223 1225",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774501607/revision-arts/master%2020260223%201225.png",
         "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774501594/revision-arts/prompt_20260223_1225",
+        "promptUrl": null,
         "assetId": "0d3600cdfae540929584d5b67ffd2cdb",
         "uploadedAt": "2026-03-26T05:06:47Z"
     },
     {
         "id": "master 20260223 1227",
         "tags": [
+            "editorial",
             "moment",
             "plane",
             "portrait"
@@ -128,7 +129,7 @@ const STREAM_RECORDS = [
         "title": "master 20260223 1227",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774501888/revision-arts/master%2020260223%201227.png",
         "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774501879/revision-arts/prompt_20260223_1227",
+        "promptUrl": null,
         "assetId": "841f768eb5ad94852ec33593a59fe01e",
         "uploadedAt": "2026-03-26T05:11:28Z"
     },
@@ -38981,13 +38982,12 @@ const STREAM_RECORDS = [
         "tags": [
             "moment",
             "plane",
-            "portrait",
-            "test"
+            "portrait"
         ],
         "title": "master 20260326 110630 [FPS 2x3] 11",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774501612/revision-arts/master%2020260326%20110630%20%5BFPS%202x3%5D%2011.jpg",
         "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774501594/revision-arts/prompt_20260326_110630_%5BFPS_2x3%5D_11",
+        "promptUrl": null,
         "assetId": "91f1dede31ab94d1ae2c73c05a828c58",
         "uploadedAt": "2026-03-26T05:06:52Z"
     }
