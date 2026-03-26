@@ -40725,8 +40725,28 @@ function initViewerSlider() {
 
 // Initial theme load
 (function() {
-    const savedTheme = localStorage.getItem('rv-theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
+    const savedTheme = localStorage.getItem('rv-theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    // Priority: 1. saved, 2. system, 3. hardcoded light
+    let themeToApply = 'light';
+    if (savedTheme) {
+        themeToApply = savedTheme;
+    } else if (prefersDark) {
+        themeToApply = 'dark';
+    }
+    
+    document.documentElement.setAttribute('data-theme', themeToApply);
+
+    // Real-time synchronization: sync if no local preference is set
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('rv-theme')) {
+                const nextScheme = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', nextScheme);
+            }
+        });
+    }
 })();
 
 // --------------------------------------------------------------------------
