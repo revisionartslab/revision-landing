@@ -110,7 +110,8 @@ const STREAM_RECORDS = [
             "graphic",
             "plane",
             "pop",
-            "portrait"
+            "portrait",
+            "test"
         ],
         "title": "master 20260223 1225",
         "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774498664/revision-arts/master%2020260223%201225.png",
