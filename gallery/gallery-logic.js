@@ -40541,7 +40541,7 @@ function getDynamicCategories() {
 // GLOBAL ResizeObserver for all grid cards, prevents memory leaks from creating 1 per card
 const globalGridObserver = new ResizeObserver((entries) => {
     for (let entry of entries) {
-        resizeGridItem(entry.target);
+        resizeGridItem(entry.target, entry.contentRect);
     }
 });
 
@@ -40550,23 +40550,28 @@ window.updateDensity = function (cols) {
     document.documentElement.style.setProperty('--grid-cols', safeCols);
 };
 
-window.resizeGridItem = function (item) {
+window.resizeGridItem = function (item, contentRect) {
     const media = item.querySelector('.card-media');
     if (!media) return;
     
-    // [ROBUST MASONRY CALC] 
-    // On mobile, if an element is just added, getBoundingClientRect().height might 
-    // return 0 or 1 before the grid layout settles.
-    let contentHeight = media.getBoundingClientRect().height;
+    // [OPTIMIZED MASONRY CALC]
+    // Use the height provided by ResizeObserver (contentRect) if available.
+    // This avoids calling getBoundingClientRect() which triggers forced layout.
+    let contentHeight = contentRect ? contentRect.height : 0;
     
-    // Fallback: If height is 0/1 but we have an aspect-ratio, calculate height from width
+    // Fallback only if ResizeObserver didn't provide height (e.g. initial render or manual call)
     if (contentHeight <= 1) {
-        const width = item.getBoundingClientRect().width;
-        const ratioStr = media.style.aspectRatio || media.dataset.defaultRatio || '3 / 4';
-        const parts = ratioStr.split('/').map(p => parseFloat(p.trim()));
-        if (parts.length === 2 && parts[1] !== 0 && width > 0) {
-            const ratio = parts[0] / parts[1];
-            contentHeight = width / ratio;
+        contentHeight = media.getBoundingClientRect().height;
+        
+        // Secondary fallback for zero-height elements (common on initial mobile load)
+        if (contentHeight <= 1) {
+            const width = item.getBoundingClientRect().width;
+            const ratioStr = media.style.aspectRatio || media.dataset.defaultRatio || '3 / 4';
+            const parts = ratioStr.split('/').map(p => parseFloat(p.trim()));
+            if (parts.length === 2 && parts[1] !== 0 && width > 0) {
+                const ratio = parts[0] / parts[1];
+                contentHeight = width / ratio;
+            }
         }
     }
 
@@ -40752,15 +40757,19 @@ const MC = {
 const MC_W = () => window.innerWidth;
 
 function mcSetTrack(offsetX, animated) {
-    // offsetX = canvas track translateX (e.g. -MC_W() for prev, 0 for curr, +MC_W() for next)
-    mCanvas.style.transition = animated ? 'transform 0.32s cubic-bezier(0.22,1,0.36,1)' : 'none';
-    mCanvas.style.transform = `translateX(${offsetX}px)`;
+    // [PERFORMANCE] Use rAF to synchronize with screen refresh
+    requestAnimationFrame(() => {
+        mCanvas.style.transition = animated ? 'transform 0.32s cubic-bezier(0.22,1,0.36,1)' : 'none';
+        mCanvas.style.transform = `translateX(${offsetX}px)`;
+    });
 }
 
 function mcSetImage(img, item) {
-    // Apply zoom+pan transform to the image in curr slot
-    img.style.transition = 'none';
-    img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
+    // [PERFORMANCE] Use rAF for zoom/pan to prevent main-thread jank
+    requestAnimationFrame(() => {
+        img.style.transition = 'none';
+        img.style.transform = `translate(${mcTx}px, ${mcTy}px) scale(${mcScale})`;
+    });
 }
 
 function mcResetZoom(animated) {
@@ -40955,6 +40964,10 @@ window.initDiscoveryGrid = function() {
     
     // Always refresh if image changed
     if (discoveryCurrentId !== currentId) {
+        // Explicitly unobserve old cards for ResizeObserver hygiene
+        const oldCards = dGrid.querySelectorAll('.m-discovery-card');
+        oldCards.forEach(c => globalGridObserver.unobserve(c));
+        
         dGrid.innerHTML = '';
         discoveryCurrentId = currentId;
     }
@@ -41525,6 +41538,19 @@ window.closeViewer = function () {
     // Mobile specific cleanup
     if (window.mcCloseInfo) mcCloseInfo();
     if (window.mcCloseDiscovery) mcCloseDiscovery();
+    
+    // [PERFORMANCE] Explicitly clear discovery grid and unobserve for ResizeObserver hygiene
+    const dGrid = document.getElementById('m-discovery-grid');
+    if (dGrid) {
+        const cards = dGrid.querySelectorAll('.m-discovery-card');
+        cards.forEach(c => globalGridObserver.unobserve(c));
+        dGrid.innerHTML = '';
+        discoveryCurrentId = null; // Force refresh on next open
+    }
+    if (discoveryObserver) {
+        discoveryObserver.disconnect();
+        discoveryObserver = null;
+    }
 
     // Restore 'Move to Top' button visibility based on scroll position
     if (mainContent && mainContent.scrollTop > 400) {
