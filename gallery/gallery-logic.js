@@ -4600,7 +4600,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 225601 [Active Session FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260321 225601 [Active Session FPS original]",
@@ -4665,7 +4664,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 225834 [Active Session FPS 1 1]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260321 225834 [Active Session FPS 1 1]",
@@ -4717,7 +4715,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260321 230210 [Active Session FPS 21 9]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260321 230210 [Active Session FPS 21 9]",
@@ -6154,7 +6151,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 194621 [A 1 1 imgi 61 62 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 194621 [A 1 1 imgi 61 62 FPS original]",
@@ -6167,7 +6163,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 194651 [A 1 1 imgi 75 76 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 194651 [A 1 1 imgi 75 76 FPS original]",
@@ -6180,7 +6175,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 194749 [A 1 1 imgi 73 74 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 194749 [A 1 1 imgi 73 74 FPS original]",
@@ -6219,7 +6213,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 194847 [A 1 1 imgi 77 78 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 194847 [A 1 1 imgi 77 78 FPS original]",
@@ -6245,7 +6238,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 194913 [A 1 1 imgi 66 67 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 194913 [A 1 1 imgi 66 67 FPS original]",
@@ -6258,7 +6250,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 195013 [A 1 1 imgi 64 65 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 195013 [A 1 1 imgi 64 65 FPS original]",
@@ -6297,7 +6288,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 195351 [A 1 1 imgi 52 53 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 195351 [A 1 1 imgi 52 53 FPS original]",
@@ -6310,7 +6300,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 195452 [A 1 1 imgi 57 58 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 195452 [A 1 1 imgi 57 58 FPS original]",
@@ -6323,7 +6312,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 195527 [A 1 1 imgi 78 79 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 195527 [A 1 1 imgi 78 79 FPS original]",
@@ -6427,7 +6415,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 195823 [A 1 1 imgi 46 47 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 195823 [A 1 1 imgi 46 47 FPS original]",
@@ -6596,7 +6583,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200421 [A 1 1 imgi 49 50 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200421 [A 1 1 imgi 49 50 FPS original]",
@@ -6687,7 +6673,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200715 [20150415213621 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200715 [20150415213621 PFS original]",
@@ -6700,7 +6685,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200721 [A 1 1 imgi 37 38 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200721 [A 1 1 imgi 37 38 FPS original]",
@@ -6726,7 +6710,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200752 [A 1 1 imgi 35 36 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200752 [A 1 1 imgi 35 36 FPS original]",
@@ -6752,7 +6735,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200807 [20150415213644 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200807 [20150415213644 PFS original]",
@@ -6765,7 +6747,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200814 [imgi 69 70 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200814 [imgi 69 70 PFS original]",
@@ -6778,7 +6759,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200838 [20180910162415 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200838 [20180910162415 PFS original]",
@@ -6791,7 +6771,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200841 [imgi 62 63 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200841 [imgi 62 63 PFS original]",
@@ -6817,7 +6796,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200909 [20180908175805 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200909 [20180908175805 PFS original]",
@@ -6830,7 +6808,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200916 [A 1 1 imgi 41 42 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200916 [A 1 1 imgi 41 42 FPS original]",
@@ -6856,7 +6833,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 200935 [20150415213556 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 200935 [20150415213556 PFS original]",
@@ -6869,7 +6845,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201004 [20150415214540 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201004 [20150415214540 PFS original]",
@@ -6882,7 +6857,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201004 [imgi 68 69 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201004 [imgi 68 69 PFS original]",
@@ -6908,7 +6882,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201030 [imgi 65 66 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201030 [imgi 65 66 PFS original]",
@@ -6934,7 +6907,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201055 [20180908174907 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201055 [20180908174907 PFS original]",
@@ -6960,7 +6932,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201122 [20180908174153 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201122 [20180908174153 PFS original]",
@@ -6973,7 +6944,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201127 [imgi 56 57 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201127 [imgi 56 57 PFS original]",
@@ -6986,7 +6956,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201142 [A 1 1 imgi 21 22 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201142 [A 1 1 imgi 21 22 FPS original]",
@@ -6999,7 +6968,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201147 [20150415214531 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201147 [20150415214531 PFS original]",
@@ -7025,7 +6993,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201152 [imgi 54 55 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201152 [imgi 54 55 PFS original]",
@@ -7051,7 +7018,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201216 [20150415214756 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201216 [20150415214756 PFS original]",
@@ -7064,7 +7030,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201243 [20150415214813 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201243 [20150415214813 PFS original]",
@@ -7090,7 +7055,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201245 [imgi 61 62 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201245 [imgi 61 62 PFS original]",
@@ -7103,7 +7067,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201333 [imgi 76 77 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201333 [imgi 76 77 PFS original]",
@@ -7116,7 +7079,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201358 [imgi 73 74 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201358 [imgi 73 74 PFS original]",
@@ -7129,7 +7091,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201421 [imgi 74 75 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201421 [imgi 74 75 PFS original]",
@@ -7142,7 +7103,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201429 [A 1 1 imgi 10 10 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201429 [A 1 1 imgi 10 10 FPS original]",
@@ -7155,7 +7115,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201445 [imgi 77 78 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201445 [imgi 77 78 PFS original]",
@@ -7168,7 +7127,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201452 [20150415214627 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201452 [20150415214627 PFS original]",
@@ -7181,7 +7139,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201458 [A 1 1 imgi 3 3 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201458 [A 1 1 imgi 3 3 FPS original]",
@@ -7207,7 +7164,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201527 [A 1 1 imgi 5 5 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201527 [A 1 1 imgi 5 5 FPS original]",
@@ -7220,7 +7176,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201542 [20150415214828 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201542 [20150415214828 PFS original]",
@@ -7259,7 +7214,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201646 [imgi 64 65 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201646 [imgi 64 65 PFS original]",
@@ -7272,7 +7226,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201650 [A 1 1 imgi 18 19 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201650 [A 1 1 imgi 18 19 FPS original]",
@@ -7298,7 +7251,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201658 [20180908174212 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201658 [20180908174212 PFS original]",
@@ -7311,7 +7263,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201720 [A 1 1 imgi 15 15 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201720 [A 1 1 imgi 15 15 FPS original]",
@@ -7324,7 +7275,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201720 [imgi 63 64 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201720 [imgi 63 64 PFS original]",
@@ -7350,7 +7300,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201724 [20180908174257 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201724 [20180908174257 PFS original]",
@@ -7376,7 +7325,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201759 [20180908174334 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201759 [20180908174334 PFS original]",
@@ -7389,7 +7337,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201818 [imgi 55 56 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201818 [imgi 55 56 PFS original]",
@@ -7415,7 +7362,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201822 [20180908174225 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201822 [20180908174225 PFS original]",
@@ -7428,7 +7374,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201826 [A 1 1 imgi 9 9 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201826 [A 1 1 imgi 9 9 FPS original]",
@@ -7441,7 +7386,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201845 [20180908174245 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201845 [20180908174245 PFS original]",
@@ -7454,7 +7398,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201857 [A 1 1 imgi 16 16 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201857 [A 1 1 imgi 16 16 FPS original]",
@@ -7467,7 +7410,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201914 [20180908174314 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201914 [20180908174314 PFS original]",
@@ -7493,7 +7435,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201938 [imgi 59 60 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201938 [imgi 59 60 PFS original]",
@@ -7506,7 +7447,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 201953 [A 1 1 imgi 1 1 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 201953 [A 1 1 imgi 1 1 FPS original]",
@@ -7519,7 +7459,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202004 [imgi 57 58 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202004 [imgi 57 58 PFS original]",
@@ -7532,7 +7471,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202007 [20180908182351 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202007 [20180908182351 PFS original]",
@@ -7545,7 +7483,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202028 [imgi 78 79 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202028 [imgi 78 79 PFS original]",
@@ -7558,7 +7495,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202034 [20180908182403 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202034 [20180908182403 PFS original]",
@@ -7571,7 +7507,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202102 [20180908182450 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202102 [20180908182450 PFS original]",
@@ -7584,7 +7519,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202120 [A 1 1 imgi 6 6 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202120 [A 1 1 imgi 6 6 FPS original]",
@@ -7597,7 +7531,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202129 [20180908182415 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202129 [20180908182415 PFS original]",
@@ -7623,7 +7556,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202153 [A 1 1 imgi 7 7 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202153 [A 1 1 imgi 7 7 FPS original]",
@@ -7636,7 +7568,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202215 [imgi 43 44 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202215 [imgi 43 44 PFS original]",
@@ -7662,7 +7593,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202242 [imgi 51 52 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202242 [imgi 51 52 PFS original]",
@@ -7675,7 +7605,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202255 [20180908174921 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202255 [20180908174921 PFS original]",
@@ -7701,7 +7630,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202336 [imgi 40 41 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202336 [imgi 40 41 PFS original]",
@@ -7714,7 +7642,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202349 [20180908175110 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202349 [20180908175110 PFS original]",
@@ -7727,7 +7654,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202401 [imgi 32 33 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202401 [imgi 32 33 PFS original]",
@@ -7753,7 +7679,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202429 [imgi 31 31 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202429 [imgi 31 31 PFS original]",
@@ -7779,7 +7704,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202439 [20180908174935 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202439 [20180908174935 PFS original]",
@@ -7792,7 +7716,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202453 [imgi 30 32 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202453 [imgi 30 32 PFS original]",
@@ -7818,7 +7741,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202519 [imgi 29 30 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202519 [imgi 29 30 PFS original]",
@@ -7831,7 +7753,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202533 [20180908175042 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202533 [20180908175042 PFS original]",
@@ -7844,7 +7765,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202614 [imgi 28 29 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202614 [imgi 28 29 PFS original]",
@@ -7857,7 +7777,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202631 [20180910162525 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202631 [20180910162525 PFS original]",
@@ -7870,7 +7789,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202700 [20180910162509 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202700 [20180910162509 PFS original]",
@@ -7883,7 +7801,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202711 [imgi 25 26 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202711 [imgi 25 26 PFS original]",
@@ -7909,7 +7826,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202737 [imgi 23 24 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202737 [imgi 23 24 PFS original]",
@@ -7922,7 +7838,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202747 [20180910162825 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202747 [20180910162825 PFS original]",
@@ -7935,7 +7850,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202802 [imgi 42 43 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202802 [imgi 42 43 PFS original]",
@@ -7948,7 +7862,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202833 [imgi 48 49 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202833 [imgi 48 49 PFS original]",
@@ -7961,7 +7874,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202836 [20180908175651 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202836 [20180908175651 PFS original]",
@@ -7974,7 +7886,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202904 [20180910162545 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202904 [20180910162545 PFS original]",
@@ -7987,7 +7898,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202934 [20180908175847 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202934 [20180908175847 PFS original]",
@@ -8000,7 +7910,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 202959 [imgi 50 51 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 202959 [imgi 50 51 PFS original]",
@@ -8013,7 +7922,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203002 [20180908175859 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203002 [20180908175859 PFS original]",
@@ -8026,7 +7934,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203028 [imgi 22 23 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203028 [imgi 22 23 PFS original]",
@@ -8039,7 +7946,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203058 [20180908175945 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203058 [20180908175945 PFS original]",
@@ -8052,7 +7958,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203122 [imgi 35 36 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203122 [imgi 35 36 PFS original]",
@@ -8065,7 +7970,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203149 [imgi 27 28 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203149 [imgi 27 28 PFS original]",
@@ -8078,7 +7982,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203218 [imgi 39 40 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203218 [imgi 39 40 PFS original]",
@@ -8091,7 +7994,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203245 [imgi 41 42 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203245 [imgi 41 42 PFS original]",
@@ -8104,7 +8006,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203310 [imgi 36 37 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203310 [imgi 36 37 PFS original]",
@@ -8117,7 +8018,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203610 [imgi 19 20 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203610 [imgi 19 20 PFS original]",
@@ -8130,7 +8030,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203637 [imgi 12 12 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203637 [imgi 12 12 PFS original]",
@@ -8143,7 +8042,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 203923 [imgi 20 21 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 203923 [imgi 20 21 PFS original]",
@@ -8156,7 +8054,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 204017 [imgi 15 15 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 204017 [imgi 15 15 PFS original]",
@@ -8169,7 +8066,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 204050 [imgi 14 14 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 204050 [imgi 14 14 PFS original]",
@@ -8182,7 +8078,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 204300 [imgi 2 2 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 204300 [imgi 2 2 PFS original]",
@@ -8195,7 +8090,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 204326 [imgi 8 8 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 204326 [imgi 8 8 PFS original]",
@@ -8208,7 +8102,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 204412 [imgi 7 7 PFS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 204412 [imgi 7 7 PFS original]",
@@ -8221,7 +8114,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 205832 [0043a5 000c0e FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 205832 [0043a5 000c0e FPS original]",
@@ -8234,7 +8126,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 205857 [0043a5 00f198 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 205857 [0043a5 00f198 FPS original]",
@@ -8260,7 +8151,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 205952 [0043a5 0aa679 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 205952 [0043a5 0aa679 FPS original]",
@@ -8299,7 +8189,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 210210 [0043a5 0cc6dd FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 210210 [0043a5 0cc6dd FPS original]",
@@ -8312,7 +8201,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 210236 [0043a5 0cead8 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 210236 [0043a5 0cead8 FPS original]",
@@ -8390,7 +8278,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 211033 [0043a5 2b85ea FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 211033 [0043a5 2b85ea FPS original]",
@@ -8403,7 +8290,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 211156 [0043a5 2d6f18 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 211156 [0043a5 2d6f18 FPS original]",
@@ -8416,7 +8302,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212404 [2f2c1f FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212404 [2f2c1f FPS original]",
@@ -8429,7 +8314,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212437 [2f2c76 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212437 [2f2c76 FPS original]",
@@ -8442,7 +8326,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212459 [2f84f9 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212459 [2f84f9 FPS original]",
@@ -8468,7 +8351,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212637 [3b12be FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212637 [3b12be FPS original]",
@@ -8494,7 +8376,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212719 [70aba9 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212719 [70aba9 FPS original]",
@@ -8507,7 +8388,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212735 [3d5ad3 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212735 [3d5ad3 FPS original]",
@@ -8520,7 +8400,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212740 [71ce3a FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212740 [71ce3a FPS original]",
@@ -8546,7 +8425,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212759 [3f09d2 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212759 [3f09d2 FPS original]",
@@ -8559,7 +8437,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212817 [71ff69 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212817 [71ff69 FPS original]",
@@ -8572,7 +8449,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212826 [3fe6c8 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212826 [3fe6c8 FPS original]",
@@ -8585,7 +8461,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212852 [3fe521 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212852 [3fe521 FPS original]",
@@ -8598,7 +8473,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212854 [76b548 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212854 [76b548 FPS original]",
@@ -8624,7 +8498,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212950 [4c290f FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212950 [4c290f FPS original]",
@@ -8637,7 +8510,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 212959 [649f93 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 212959 [649f93 FPS original]",
@@ -8676,7 +8548,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213023 [710d2d FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213023 [710d2d FPS original]",
@@ -8689,7 +8560,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213044 [4f187c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213044 [4f187c FPS original]",
@@ -8702,7 +8572,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213113 [768f7c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213113 [768f7c FPS original]",
@@ -8754,7 +8623,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213238 [80f680 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213238 [80f680 FPS original]",
@@ -8767,7 +8635,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213305 [81c172 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213305 [81c172 FPS original]",
@@ -8780,7 +8647,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213307 [6c1572 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213307 [6c1572 FPS original]",
@@ -8819,7 +8685,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213349 [976a90 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213349 [976a90 FPS original]",
@@ -8832,7 +8697,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213402 [5be6f6 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213402 [5be6f6 FPS original]",
@@ -8845,7 +8709,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213407 [82d2f7 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213407 [82d2f7 FPS original]",
@@ -8858,7 +8721,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213422 [6d8f75 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213422 [6d8f75 FPS original]",
@@ -8871,7 +8733,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213426 [5c4b56 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213426 [5c4b56 FPS original]",
@@ -8884,7 +8745,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213428 [83e914 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213428 [83e914 FPS original]",
@@ -8910,7 +8770,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213607 [4293d7 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213607 [4293d7 FPS original]",
@@ -8923,7 +8782,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213607 [87bdcd FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213607 [87bdcd FPS original]",
@@ -8949,7 +8807,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213639 [87f1dc FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213639 [87f1dc FPS original]",
@@ -8988,7 +8845,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213703 [5dc57f FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213703 [5dc57f FPS original]",
@@ -9001,7 +8857,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213704 [87fa02 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213704 [87fa02 FPS original]",
@@ -9040,7 +8895,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213728 [088e30 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213728 [088e30 FPS original]",
@@ -9053,7 +8907,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213808 [6a854a FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213808 [6a854a FPS original]",
@@ -9066,7 +8919,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213815 [6522f9 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213815 [6522f9 FPS original]",
@@ -9079,7 +8931,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213824 [89c903 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213824 [89c903 FPS original]",
@@ -9092,7 +8943,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213841 [6855a5 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213841 [6855a5 FPS original]",
@@ -9118,7 +8968,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 213945 [91e3fe FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 213945 [91e3fe FPS original]",
@@ -9144,7 +8993,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214112 [8ece28 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214112 [8ece28 FPS original]",
@@ -9157,7 +9005,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214146 [95c181 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214146 [95c181 FPS original]",
@@ -9196,7 +9043,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214228 [9a1bde FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214228 [9a1bde FPS original]",
@@ -9235,7 +9081,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214352 [25208f FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214352 [25208f FPS original]",
@@ -9261,7 +9106,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214436 [9d58f3 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214436 [9d58f3 FPS original]",
@@ -9274,7 +9118,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214444 [135ae0 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214444 [135ae0 FPS original]",
@@ -9313,7 +9156,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214608 [39212d FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214608 [39212d FPS original]",
@@ -9352,7 +9194,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214652 [13ef7c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214652 [13ef7c FPS original]",
@@ -9404,7 +9245,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214746 [17bb20 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214746 [17bb20 FPS original]",
@@ -9456,7 +9296,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214921 [298d4b FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214921 [298d4b FPS original]",
@@ -9469,7 +9308,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214938 [46cb7d FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214938 [46cb7d FPS original]",
@@ -9482,7 +9320,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 214946 [322c32 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 214946 [322c32 FPS original]",
@@ -9495,7 +9332,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215002 [47a6b7 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215002 [47a6b7 FPS original]",
@@ -9521,7 +9357,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215048 [49e51d FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215048 [49e51d FPS original]",
@@ -9547,7 +9382,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215113 [49fc3b FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215113 [49fc3b FPS original]",
@@ -9560,7 +9394,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215119 [445a25 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215119 [445a25 FPS original]",
@@ -9573,7 +9406,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215205 [51c1fd FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215205 [51c1fd FPS original]",
@@ -9586,7 +9418,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215229 [54b622 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215229 [54b622 FPS original]",
@@ -9612,7 +9443,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215310 [0561ea FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215310 [0561ea FPS original]",
@@ -9625,7 +9455,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215311 [97368c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215311 [97368c FPS original]",
@@ -9638,7 +9467,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215327 [54f2c9 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215327 [54f2c9 FPS original]",
@@ -9651,7 +9479,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215333 [593a4c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215333 [593a4c FPS original]",
@@ -9677,7 +9504,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215341 [401999 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215341 [401999 FPS original]",
@@ -9690,7 +9516,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215353 [61f36c FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215353 [61f36c FPS original]",
@@ -9703,7 +9528,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215419 [63a428 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215419 [63a428 FPS original]",
@@ -9716,7 +9540,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215436 [593661 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215436 [593661 FPS original]",
@@ -9729,7 +9552,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215501 [738173 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215501 [738173 FPS original]",
@@ -9742,7 +9564,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215508 [66ddc1 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215508 [66ddc1 FPS original]",
@@ -9755,7 +9576,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215603 [69e045 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215603 [69e045 FPS original]",
@@ -9781,7 +9601,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215638 [226939 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215638 [226939 FPS original]",
@@ -9794,7 +9613,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260322 215845 [310293 FPS original]",
         "tags": [
-            "editorial",
             "plane"
         ],
         "title": "master 20260322 215845 [310293 FPS original]",
@@ -17247,7 +17065,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 153728 [FPS 1x1]",
         "tags": [
             "character",
-            "editorial",
             "graphic",
             "OBJECT",
             "plane",
@@ -25001,7 +24818,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 231428 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25800,7 +25616,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232926 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25815,7 +25630,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 232951 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25845,7 +25659,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233000 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25860,7 +25673,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233017 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25875,7 +25687,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233026 [FPS 1x1]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25890,7 +25701,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233037 [FPS 4x5]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25905,7 +25715,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233101 [FPS 1x1]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25920,7 +25729,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233107 [FPS 3x4]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -25935,7 +25743,6 @@ const STREAM_RECORDS = [
         "id": "master 20260323 233127 [FPS 9x16]",
         "tags": [
             "character",
-            "editorial",
             "OBJECT",
             "portrait"
         ],
@@ -31236,7 +31043,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 203421 [FPS 2x3]",
         "tags": [
-            "editorial",
             "PLANE",
             "portrait"
         ],
@@ -31250,7 +31056,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 203714 [FPS 4x5]",
         "tags": [
-            "editorial",
             "PLANE",
             "portrait"
         ],
@@ -31484,20 +31289,6 @@ const STREAM_RECORDS = [
         "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774354438/revision-arts/prompt_20260324_204541_[FPS_4x5]",
         "assetId": "16722df87926cba61613a45bdd2dc0ff",
         "uploadedAt": "2026-03-24T12:22:02Z"
-    },
-    {
-        "id": "master 20260324 204606 [FPS 4x5]",
-        "tags": [
-            "editorial",
-            "PLANE",
-            "portrait"
-        ],
-        "title": "master 20260324 204606 [FPS 4x5]",
-        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774354918/revision-arts/master%2020260324%20204606%20%5BFPS%204x5%5D.png",
-        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
-        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774354437/revision-arts/prompt_20260324_204606_[FPS_4x5]",
-        "assetId": "6255f66f6388ff4df002d915a580e635",
-        "uploadedAt": "2026-03-24T12:21:58Z"
     },
     {
         "id": "master 20260324 204614 [FPS 1x1]",
@@ -32090,7 +31881,6 @@ const STREAM_RECORDS = [
     {
         "id": "master 20260324 210610 [FPS 1x1]",
         "tags": [
-            "editorial",
             "PLANE",
             "portrait"
         ],
