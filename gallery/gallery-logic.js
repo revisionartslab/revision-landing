@@ -89,6 +89,34 @@ const STREAM_RECORDS = [
         "uploadedAt": "2026-03-24T13:19:21Z"
     },
     {
+        "id": "master 20260223 1104",
+        "tags": [
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260223 1104",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774500165/revision-arts/master%2020260223%201104.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774499983/revision-arts/prompt_20260223_1104",
+        "assetId": "eaaaf8655e9f99ffe0d8b011dbdba1db",
+        "uploadedAt": "2026-03-26T04:42:45Z"
+    },
+    {
+        "id": "master 20260223 1225",
+        "tags": [
+            "moment",
+            "plane",
+            "portrait"
+        ],
+        "title": "master 20260223 1225",
+        "url": "https://res.cloudinary.com/dy2gu58kz/image/upload/v1774500167/revision-arts/master%2020260223%201225.png",
+        "description": "REVISION ARTS honors humanity’s artistic heritage by utilizing algorithmic intelligence as an alchemical tool to deconstruct and reconstruct aesthetic DNA. Within this horizon, traditional mediums and computational creations coexist without distinction, merging into a singular vision. We define these tools not as an imitation, but as a transformative instrument and an expanded gaze that crystallizes fleeting thoughts into eternal forms.",
+        "promptUrl": "https://res.cloudinary.com/dy2gu58kz/raw/upload/v1774499983/revision-arts/prompt_20260223_1225",
+        "assetId": "78e8d96ad57fdedfdddf384f0a3c9add",
+        "uploadedAt": "2026-03-26T04:42:47Z"
+    },
+    {
         "id": "master 20260321 123009 [5d4dd7 FPS original]",
         "tags": [
             "graphic",
