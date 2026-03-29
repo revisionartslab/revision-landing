@@ -138,9 +138,15 @@
                     </svg>
                 </div>
 
-                <!-- PC: Single image pan/zoom -->
+                <!-- PC: Dual-layer image for Cinematic Cross-fade (Ken Burns ready) -->
                 <div class="viewer-img-container" id="viewer-img-container">
-                    <img id="viewer-img" alt="">
+                    <img id="viewer-img-1" class="v-layer active" alt="">
+                    <img id="viewer-img-2" class="v-layer buffer" alt="">
+                </div>
+
+                <!-- Slideshow Progress Bar -->
+                <div class="viewer-progress-container" id="slideshow-progress">
+                    <div class="viewer-progress-fill" id="slideshow-progress-fill"></div>
                 </div>
 
                 <!-- Mobile: 3-slot swipe canvas -->
@@ -162,6 +168,14 @@
 
         <!-- ── PC: Viewer Controls + Info Panel (unchanged) ── -->
         <div class="viewer-controls" id="viewer-controls">
+            <button id="viewer-play-btn" class="viewer-control-btn play-toggle" onclick="toggleSlideshow()" aria-label="Toggle Slideshow">
+                <svg class="play-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display:none;">
+                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                </svg>
+            </button>
             <button id="viewer-info-btn" class="viewer-control-btn" onclick="toggleInfoGlobal()">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                     <path
